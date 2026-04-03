@@ -938,12 +938,13 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 st.caption(
-    "Cell-line model tested on 1,912 real breast cancer patients with known drug response "
-    "(CTR-DB 2.0 / GEO). Patient-trained model uses leave-one-dataset-out cross-validation."
+    "Models tested on real breast cancer patients with known drug response "
+    "(CTR-DB 2.0 / GEO). Leave-one-dataset-out cross-validation."
 )
 
 _val_path = RESULTS / "ctrdb_validation_results.csv"
 _lodo_path = RESULTS / "patient_model_lodo_results.csv"
+_pancancer_path = RESULTS / "pan_cancer_model_lodo_results.csv"
 
 if _val_path.exists() and _lodo_path.exists():
     _val = pd.read_csv(_val_path)
@@ -951,22 +952,42 @@ if _val_path.exists() and _lodo_path.exists():
     _lodo_datasets = _lodo[_lodo["held_out_dataset"] != "MEAN"]
     _lodo_mean = _lodo[_lodo["held_out_dataset"] == "MEAN"]
 
+    # Load pan-cancer results if available
+    _pancancer_breast_auc = None
+    _pancancer_auc_map = {}
+    if _pancancer_path.exists():
+        _pc = pd.read_csv(_pancancer_path)
+        _pc_breast = _pc[_pc.get("cancer_type", pd.Series(dtype=str)).str.contains("Breast", case=False, na=False)]
+        if not _pc_breast.empty:
+            _pancancer_breast_auc = _pc_breast["auc"].mean()
+            _pancancer_auc_map = dict(zip(_pc["held_out_dataset"], _pc["auc"]))
+
     # Summary metrics
-    col_v1, col_v2, col_v3 = st.columns(3)
-    with col_v1:
+    n_metric_cols = 4 if _pancancer_breast_auc else 3
+    metric_cols = st.columns(n_metric_cols)
+    with metric_cols[0]:
         st.metric(
-            "Cell-line model on patients",
+            "Cell-line model",
             f"AUC {_val['auc'].mean():.2f}",
-            help="Mean AUC across 10 CTR-DB datasets (0.5 = random)",
+            help="LINCS/GDSC2 cell-line LightGBM tested on patients (0.5 = random)",
         )
-    with col_v2:
+    with metric_cols[1]:
         _lodo_auc = float(_lodo_mean["auc"].iloc[0]) if not _lodo_mean.empty else 0
         st.metric(
-            "Patient-trained model",
+            "Breast-only patient model",
             f"AUC {_lodo_auc:.2f}",
-            help="Leave-one-dataset-out CV on CTR-DB patient expression",
+            help="Trained on 10 breast cancer CTR-DB datasets, LODO-CV",
         )
-    with col_v3:
+    if _pancancer_breast_auc:
+        with metric_cols[2]:
+            _delta = f"+{(_pancancer_breast_auc - _lodo_auc):.2f}" if _pancancer_breast_auc > _lodo_auc else f"{(_pancancer_breast_auc - _lodo_auc):.2f}"
+            st.metric(
+                "Pan-cancer patient model",
+                f"AUC {_pancancer_breast_auc:.2f}",
+                delta=_delta,
+                help="Trained on 3,730 patients across 11 cancer types, evaluated on breast held-out sets",
+            )
+    with metric_cols[-1]:
         st.metric(
             "Validation datasets",
             f"{len(_val)} datasets",
@@ -981,11 +1002,22 @@ if _val_path.exists() and _lodo_path.exists():
         "Cell-line AUC": _val["auc"],
     })
     _lodo_auc_map = dict(zip(_lodo_datasets["held_out_dataset"], _lodo_datasets["auc"]))
-    _combined["Patient AUC"] = _combined["Dataset"].map(_lodo_auc_map)
+    _combined["Breast-only AUC"] = _combined["Dataset"].map(_lodo_auc_map)
+    if _pancancer_auc_map:
+        _combined["Pan-cancer AUC"] = _combined["Dataset"].map(_pancancer_auc_map)
+
+    _melt_cols = ["Cell-line AUC", "Breast-only AUC"]
+    _color_map = {
+        "Cell-line AUC": COLORS["muted"],
+        "Breast-only AUC": COLORS["primary_light"],
+    }
+    if "Pan-cancer AUC" in _combined.columns:
+        _melt_cols.append("Pan-cancer AUC")
+        _color_map["Pan-cancer AUC"] = COLORS["success"]
 
     _melted = _combined.melt(
         id_vars=["Dataset", "Drug", "N"],
-        value_vars=["Cell-line AUC", "Patient AUC"],
+        value_vars=_melt_cols,
         var_name="Model",
         value_name="AUC",
     ).dropna(subset=["AUC"])
@@ -996,10 +1028,7 @@ if _val_path.exists() and _lodo_path.exists():
         y="AUC",
         color="Model",
         barmode="group",
-        color_discrete_map={
-            "Cell-line AUC": COLORS["muted"],
-            "Patient AUC": COLORS["primary_light"],
-        },
+        color_discrete_map=_color_map,
         hover_data=["Drug", "N"],
     )
     fig_val.add_hline(
@@ -1014,10 +1043,11 @@ if _val_path.exists() and _lodo_path.exists():
     # Table
     with st.expander("Per-dataset details"):
         _display = _combined.copy()
-        _display["Cell-line AUC"] = _display["Cell-line AUC"].map("{:.3f}".format)
-        _display["Patient AUC"] = _display["Patient AUC"].map(
-            lambda x: f"{x:.3f}" if pd.notna(x) else "—"
-        )
+        for _col in ["Cell-line AUC", "Breast-only AUC", "Pan-cancer AUC"]:
+            if _col in _display.columns:
+                _display[_col] = _display[_col].map(
+                    lambda x: f"{x:.3f}" if pd.notna(x) else "—"
+                )
         st.dataframe(_display, use_container_width=True, hide_index=True)
 else:
     st.info("Validation results not yet generated. Run the CTR-DB validation pipeline.")
