@@ -1,0 +1,11 @@
+geo_id,drug,n_patients,n_responders,n_nonresponders,auc,wilcoxon_pvalue,mean_score_responders,mean_score_nonresponders,mean_diff,cohens_d,n_genes_used
+GSE20194,TFAC (Cyclophosphamide+Doxorubicin+Fluorouracil+Paclitaxel),278,56,222,0.508,0.853172,103.7124,103.2137,0.4986,0.063,964
+GSE20271,FAC (Cyclophosphamide+Doxorubicin+Fluorouracil),178,26,152,0.4813,0.762102,102.296,102.5536,-0.2576,-0.0399,964
+GSE25066,Anthracycline+Taxane,488,99,389,0.577,0.017902,105.1667,103.0943,2.0723,0.2535,964
+GSE32646,TFEC (Cyclophosphamide+Epirubicin+Fluorouracil+Paclitaxel),115,27,88,0.4604,0.537268,100.6258,101.4199,-0.7941,-0.09,964
+GSE41998,AC (Cyclophosphamide+Doxorubicin)+Ixabepilone,206,201,5,0.4597,0.768207,101.4316,102.7081,-1.2765,-0.1416,964
+GSE4779,Cyclophosphamide+Epirubicin+Fluorouracil,102,39,63,0.5425,0.4739,101.2075,99.5746,1.6329,0.1785,938
+GSE50948,AT (Doxorubicin+Paclitaxel)+CMF (Cyclophosphamide+Fluorouracil+Methotrexate)+Trastuzumab,156,53,103,0.3982,0.037828,99.2741,101.9189,-2.6448,-0.3071,964
+GSE66999,Docetaxel+Epirubicin+Pegfilgrastim,76,70,6,0.2452,0.037946,99.8827,110.71,-10.8273,-0.897,962
+GSE6861,Cyclophosphamide+Epirubicin+Fluorouracil,161,66,95,0.4931,0.883859,100.8249,100.3722,0.4526,0.0503,938
+GSE82172,Tamoxifen,152,21,131,0.5089,0.898032,101.7339,101.7541,-0.0203,-0.0023,955
