@@ -1,0 +1,104 @@
+{
+  "cv_rmse_mean": 17.005789879434797,
+  "cv_rmse_std": 1.2831767267581715,
+  "n_samples": 656,
+  "n_features": 2003,
+  "best_params": {
+    "n_estimators": "900",
+    "learning_rate": "0.03637234828810855",
+    "num_leaves": "43",
+    "max_depth": "3",
+    "subsample": "0.9586084666828139",
+    "colsample_bytree": "0.5696436652361008",
+    "reg_alpha": "2.7717375068504033",
+    "reg_lambda": "0.015224794543086916",
+    "min_child_samples": "6",
+    "objective": "regression",
+    "metric": "rmse",
+    "boosting_type": "gbdt",
+    "random_state": "42",
+    "verbose": "-1"
+  },
+  "top_gene_features": [
+    {
+      "feature": "ELOVL6",
+      "importance": 31
+    },
+    {
+      "feature": "MAPK13",
+      "importance": 30
+    },
+    {
+      "feature": "ARID5B",
+      "importance": 29
+    },
+    {
+      "feature": "ZW10",
+      "importance": 29
+    },
+    {
+      "feature": "NUP85",
+      "importance": 28
+    },
+    {
+      "feature": "LYRM1",
+      "importance": 28
+    },
+    {
+      "feature": "ITGB1BP1",
+      "importance": 27
+    },
+    {
+      "feature": "UFM1",
+      "importance": 27
+    },
+    {
+      "feature": "PPIE",
+      "importance": 26
+    },
+    {
+      "feature": "SLC5A6",
+      "importance": 26
+    },
+    {
+      "feature": "MAP7",
+      "importance": 25
+    },
+    {
+      "feature": "PGAM1",
+      "importance": 25
+    },
+    {
+      "feature": "PAX8",
+      "importance": 25
+    },
+    {
+      "feature": "HOMER2",
+      "importance": 24
+    },
+    {
+      "feature": "CFLAR",
+      "importance": 24
+    },
+    {
+      "feature": "ASAH1",
+      "importance": 24
+    },
+    {
+      "feature": "ARHGAP1",
+      "importance": 24
+    },
+    {
+      "feature": "ATF6",
+      "importance": 23
+    },
+    {
+      "feature": "PSMB10",
+      "importance": 22
+    },
+    {
+      "feature": "LGMN",
+      "importance": 22
+    }
+  ]
+}

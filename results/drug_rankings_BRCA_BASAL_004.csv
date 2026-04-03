@@ -1,0 +1,11 @@
+drug_name,best_dose_um,predicted_inhibition,top_contributing_genes,confidence
+abemaciclib,10.0,41.297440447822524,ESR1(408); PGR(312); MKI67(76); TOP2A(70); EGFR(66),moderate
+tucatinib,10.0,41.033684848389015,ESR1(408); PGR(312); MKI67(76); TOP2A(70); EGFR(66),moderate
+paclitaxel,10.0,40.969971293041304,ESR1(408); PGR(312); MKI67(76); TOP2A(70); EGFR(66),moderate
+ribociclib,10.0,40.1637146942701,ESR1(408); PGR(312); MKI67(76); TOP2A(70); EGFR(66),moderate
+ipatasertib,10.0,39.8678888215789,ESR1(408); PGR(312); MKI67(76); TOP2A(70); EGFR(66),moderate
+letrozole,10.0,39.86685602643553,ESR1(408); PGR(312); MKI67(76); TOP2A(70); EGFR(66),moderate
+dasatinib,10.0,39.56818831397983,ESR1(408); PGR(312); MKI67(76); TOP2A(70); EGFR(66),moderate
+olaparib,10.0,39.25708937855185,ESR1(408); PGR(312); MKI67(76); TOP2A(70); EGFR(66),moderate
+alpelisib,10.0,39.16820639798541,ESR1(408); PGR(312); MKI67(76); TOP2A(70); EGFR(66),moderate
+tamoxifen,10.0,39.09523570035457,ESR1(408); PGR(312); MKI67(76); TOP2A(70); EGFR(66),moderate

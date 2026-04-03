@@ -1,0 +1,710 @@
+{
+  "TCGA-BH-A1EY-01": {
+    "paclitaxel": [
+      {
+        "nct_id": "NCT02788981",
+        "title": "Abraxane\u00ae With or Without Mifepristone for Advanced, Glucocorticoid Receptor-Positive, Triple-Negative Breast Cancer",
+        "phase": "PHASE2",
+        "status": "ACTIVE_NOT_RECRUITING",
+        "interventions": [
+          "Mifepristone",
+          "Placebo",
+          "Nab-Paclitaxel"
+        ],
+        "eligibility_snippet": "Inclusion Criteria:\n\n1. Patients must have histologically or cytologically confirmed breast cancer with stage IV or unresectable stage III disease.\n2. Patients must have measurable disease, defined as at least one lesion that can be accurately measured in at least one dimension (longest diameter to be recorded for non-nodal lesions and short axis for nodal lesions) as \u226520 mm with conventional techniques or as \u226510 mm with spiral CT scan, MRI, or calipers by clinical exam. To be considered patholo"
+      },
+      {
+        "nct_id": "NCT07191405",
+        "title": "Clinical Study of Chemotherapy and Immunotherapy Combined With Lactobacillus Johnsonii in Patients With Multiple Irresectable Solid Tumors",
+        "phase": "NA",
+        "status": "NOT_YET_RECRUITING",
+        "interventions": [
+          "oral Lactobacillus johnsonii (1\u00d710\u00b9\u00b9 CFU, twice daily)",
+          "Placebo"
+        ],
+        "eligibility_snippet": "Inclusion Criteria:\n\n1. Signed informed consent.\n2. Age 18-75 years.\n3. Histologically confirmed unresectable/metastatic tumors:\n\n   EGFR/ALK wild-type adenocarcinoma non-small cell lung cancer (NSCLC) PD-L1+ (CPS\u22651) triple-negative breast cancer (TNBC) HER2- gastric/gastroesophageal adenocarcinoma\n4. \u22651 measurable lesion (RECIST v1.1).\n5. Progression after PD-1/PD-L1 inhibitor therapy (defined as:\n\n   * \u22652 doses administred.\n   * Radiographic progression per RECIST/iRECIST/irRECIST, confirmed \u2265"
+      }
+    ],
+    "docetaxel": [
+      {
+        "nct_id": "NCT00798070",
+        "title": "Panther: A Study Comparing Biweekly and Tailored EC-T Versus Three Weekly FEC-T in Breast Cancer Patients",
+        "phase": "PHASE3",
+        "status": "ACTIVE_NOT_RECRUITING",
+        "interventions": [
+          "dtEC\u2192dtT",
+          "FEC\u2192T"
+        ],
+        "eligibility_snippet": "Inclusion Criteria:\n\n* Histological proven invasive primary breast cancer, with at least 5 (recommended 10) removed axillary lymph nodes OR negative sentinel node biopsy performed for the node negative cohort. Interval between definitive surgery that includes axillary lymph node dissection and registration must be less than 60 days. Paraffin block from the primary tumour must be retained (not mandatory for Austrian sites). Frozen tumour tissue is strongly recommended to be stored.\n* Receptor neg"
+      },
+      {
+        "nct_id": "NCT05296746",
+        "title": "Neoadjuvant and Adjuvant Ribociclib and ET for Clinically High-risk ER+ and HER2- Breast Cancer",
+        "phase": "PHASE2",
+        "status": "RECRUITING",
+        "interventions": [
+          "Ribociclib (neoadjuvant)",
+          "Chemotherapy (adjuvant)",
+          "Ribociclib (adjuvant)"
+        ],
+        "eligibility_snippet": "Inclusion Criteria:\n\n1. Signed Informed Consent Form prior to any study-specific procedure. Patients must be willing and able to comply with the protocol for the duration of the study including scheduled visits, treatment plan, laboratory tests and other study procedures.\n\n   Note: Candidate patients in France must be affiliated to a Social Security System (or equivalent)\n2. Male (\u226518 years old) or pre-menopausal women (\u226540 years old) or post-menopausal women. Premenopausal/male patients will re"
+      }
+    ],
+    "vinorelbine": [
+      {
+        "nct_id": "NCT05954442",
+        "title": "Everolimus With Investigator's Choice of Chemotherapy in Advanced Triple-Negative Breast Cancer (TNBC) With Luminal Androgen Receptor (LAR) Subtype",
+        "phase": "PHASE3",
+        "status": "RECRUITING",
+        "interventions": [
+          "Everolimus",
+          "Investigator's Choice of Chemotherapy"
+        ],
+        "eligibility_snippet": "Inclusion Criteria:\n\n* Patients need to meet all of the following conditions\n\n  * Patients must be \u226518 and \u2264 70 years of age;\n  * Eastern Cooperative Oncology Group (ECOG) performance status 0 or 1;\n  * The expected survival is more than 3 months;\n  * Pathologically confirmed breast cancer is triple negative breast cancer (IHC ER \\< 1%, PR\\<1%, HER2 0 OR +, if HER2++, FISH negative), and LAR subtype with mutation in PAM pathway;\n  * Recurrent or metastatic breast cancer; Patients with local recu"
+      },
+      {
+        "nct_id": "NCT06875128",
+        "title": "Evaluation of the Safety and Efficacy of Treatment w/High Dose Melphalan Given Directly Into the Liver Followed by Treatment w/Approved Cancer Treatment or Approved Cancer Treatment Alone in Patients w/ Metastatic Breast Cancer w/Liver Dominant Disease",
+        "phase": "PHASE2",
+        "status": "RECRUITING",
+        "interventions": [
+          "Melphalan/HDS followed by Physician's choice of SOC (eribulin, vinorelbine, or capecitabine)",
+          "Physician's choice of SOC (eribulin, vinorelbine, or capecitabine)"
+        ],
+        "eligibility_snippet": "Inclusion Criteria:\n\n* Histologically confirmed diagnosis of MBC.\n* Patients with HER2-negative (IHC 0 or 1+ or 2+ and ISH non-amplified) MBC (including triple negative disease).\n* Patient with Hormone Receptor-Positive disease has progressed on or intolerant of prior endocrine therapy and CDK 4/6 inhibitors.\n* Disease progression after TOPO-1 isomerase inhibitor payload ADC, such as sacituzumab govitecan and/or trastuzumab deruxtecan. Patients not eligible or suitable for ADCs can be considered"
+      }
+    ],
+    "vinblastine": [
+      {
+        "nct_id": "NCT02299999",
+        "title": "SAFIR02_Breast - Efficacy of Genome Analysis as a Therapeutic Decision Tool for Patients With Metastatic Breast Cancer",
+        "phase": "PHASE2",
+        "status": "ACTIVE_NOT_RECRUITING",
+        "interventions": [
+          "AZD2014",
+          "AZD4547",
+          "AZD5363",
+          "AZD8931",
+          "Selumetinib",
+          "Vandetanib",
+          "Bicalutamide",
+          "Olaparib",
+          "Anthracyclines",
+          "Taxanes",
+          "cyclophosphamide",
+          "DNA intercalators",
+          "Methotrexate",
+          "vinca alkaloids",
+          "Platinum based chemotherapies",
+          "Bevacizumab",
+          "Mitomycin C",
+          "Eribulin",
+          "MEDI4736"
+        ],
+        "eligibility_snippet": "Screening phase:\n\nInclusion Criteria:\n\n* Women (or men) with histologically proven breast cancer\n* Metastatic relapse or progression or stage IV at diagnosis\n* No Her2 over-expression\n* Patients with metastases that can be biopsied, except bone metastases\n* Patients who are eligible for a first or a second line of chemotherapy in metastatic setting (left to the discretion of investigators), or who are currently treated with a first or second line of chemotherapy with a maximum of 2 cycles at the"
+      },
+      {
+        "nct_id": "NCT06358573",
+        "title": "Intratumoral INT230-6 Followed by Neoadjuvant Immuno-chemotherapy in Patients With Early TNBC. INVINCIBLE-4-SAKK",
+        "phase": "PHASE2",
+        "status": "RECRUITING",
+        "interventions": [
+          "INT230-6",
+          "neoadjuvant immuno-chemotherapy"
+        ],
+        "eligibility_snippet": "Inclusion Criteria:\n\n* Written informed consent according to country specific law and ICH GCP E6(R2) regulations before registration and prior to any trial specific procedures.\n* Newly histologically diagnosed, previously untreated locally advanced non-metastatic TNBC as defined by the most recent American Society of Clinical Oncology (ASCO) / College of American Pathologist (CAP) guidelines .\n* The following stages according to staging per American Joint Committee on Cancer (AJCC) for breast ca"
+      }
+    ],
+    "methotrexate": [
+      {
+        "nct_id": "NCT06085742",
+        "title": "BRE-08 Phase II Study of CMC Regimen for Early Stage Breast Cancer",
+        "phase": "PHASE2",
+        "status": "RECRUITING",
+        "interventions": [
+          "Cyclophosphamide",
+          "Methotrexate",
+          "Capecitabine"
+        ],
+        "eligibility_snippet": "Inclusion Criteria:\n\nI\u2022 Age \u2265 18 years of age at time of consent\n\n* ECOG performance status 0, 1, or 2\n* Histologically confirmed invasive breast cancer documented by biopsy or surgical excision.\n* Underwent potentially curative resection of primary breast tumor(s) with no gross residual local-regional disease (patients with microscopically positive margins are eligible if adjuvant radiotherapy is planned), with most recent breast or axillary surgery \\< 90 days prior to date of signed consent.\n*"
+      },
+      {
+        "nct_id": "NCT02422641",
+        "title": "Prospective Evaluation Of High-Dose Systemic Methotrexate In Patients With Breast Cancer And Leptomeningeal Metastasis",
+        "phase": "PHASE2",
+        "status": "RECRUITING",
+        "interventions": [
+          "High-dose Methotrexate (8 gm/m2; HD-MTX)"
+        ],
+        "eligibility_snippet": "Inclusion Criteria\n\n* Adults (male and female) age \\>18\n* Eastern Cooperative Group (ECOG) Performance Scale 0-1 (see Appendix I)\n* Histologically or cytologically confirmed invasive breast cancer of the following subtype:\n* TRIPLE NEGATIVE (ER-negative, PR-negative, and HER2-negative disease). Triple-negative patients will be defined per ASCO-CAP Guidelines.\n* HER2-POSITIVE: HER2-positive patients will be defined per ASCO-CAP Guidelines.\n* HORMONE REFRACTORY: Patients with ER/PR-positive diseas"
+      }
+    ]
+  },
+  "TCGA-A8-A093-01": {
+    "paclitaxel": [
+      {
+        "nct_id": "NCT02788981",
+        "title": "Abraxane\u00ae With or Without Mifepristone for Advanced, Glucocorticoid Receptor-Positive, Triple-Negative Breast Cancer",
+        "phase": "PHASE2",
+        "status": "ACTIVE_NOT_RECRUITING",
+        "interventions": [
+          "Mifepristone",
+          "Placebo",
+          "Nab-Paclitaxel"
+        ],
+        "eligibility_snippet": "Inclusion Criteria:\n\n1. Patients must have histologically or cytologically confirmed breast cancer with stage IV or unresectable stage III disease.\n2. Patients must have measurable disease, defined as at least one lesion that can be accurately measured in at least one dimension (longest diameter to be recorded for non-nodal lesions and short axis for nodal lesions) as \u226520 mm with conventional techniques or as \u226510 mm with spiral CT scan, MRI, or calipers by clinical exam. To be considered patholo"
+      },
+      {
+        "nct_id": "NCT07191405",
+        "title": "Clinical Study of Chemotherapy and Immunotherapy Combined With Lactobacillus Johnsonii in Patients With Multiple Irresectable Solid Tumors",
+        "phase": "NA",
+        "status": "NOT_YET_RECRUITING",
+        "interventions": [
+          "oral Lactobacillus johnsonii (1\u00d710\u00b9\u00b9 CFU, twice daily)",
+          "Placebo"
+        ],
+        "eligibility_snippet": "Inclusion Criteria:\n\n1. Signed informed consent.\n2. Age 18-75 years.\n3. Histologically confirmed unresectable/metastatic tumors:\n\n   EGFR/ALK wild-type adenocarcinoma non-small cell lung cancer (NSCLC) PD-L1+ (CPS\u22651) triple-negative breast cancer (TNBC) HER2- gastric/gastroesophageal adenocarcinoma\n4. \u22651 measurable lesion (RECIST v1.1).\n5. Progression after PD-1/PD-L1 inhibitor therapy (defined as:\n\n   * \u22652 doses administred.\n   * Radiographic progression per RECIST/iRECIST/irRECIST, confirmed \u2265"
+      }
+    ],
+    "docetaxel": [
+      {
+        "nct_id": "NCT00798070",
+        "title": "Panther: A Study Comparing Biweekly and Tailored EC-T Versus Three Weekly FEC-T in Breast Cancer Patients",
+        "phase": "PHASE3",
+        "status": "ACTIVE_NOT_RECRUITING",
+        "interventions": [
+          "dtEC\u2192dtT",
+          "FEC\u2192T"
+        ],
+        "eligibility_snippet": "Inclusion Criteria:\n\n* Histological proven invasive primary breast cancer, with at least 5 (recommended 10) removed axillary lymph nodes OR negative sentinel node biopsy performed for the node negative cohort. Interval between definitive surgery that includes axillary lymph node dissection and registration must be less than 60 days. Paraffin block from the primary tumour must be retained (not mandatory for Austrian sites). Frozen tumour tissue is strongly recommended to be stored.\n* Receptor neg"
+      },
+      {
+        "nct_id": "NCT05296746",
+        "title": "Neoadjuvant and Adjuvant Ribociclib and ET for Clinically High-risk ER+ and HER2- Breast Cancer",
+        "phase": "PHASE2",
+        "status": "RECRUITING",
+        "interventions": [
+          "Ribociclib (neoadjuvant)",
+          "Chemotherapy (adjuvant)",
+          "Ribociclib (adjuvant)"
+        ],
+        "eligibility_snippet": "Inclusion Criteria:\n\n1. Signed Informed Consent Form prior to any study-specific procedure. Patients must be willing and able to comply with the protocol for the duration of the study including scheduled visits, treatment plan, laboratory tests and other study procedures.\n\n   Note: Candidate patients in France must be affiliated to a Social Security System (or equivalent)\n2. Male (\u226518 years old) or pre-menopausal women (\u226540 years old) or post-menopausal women. Premenopausal/male patients will re"
+      }
+    ],
+    "vinorelbine": [
+      {
+        "nct_id": "NCT05954442",
+        "title": "Everolimus With Investigator's Choice of Chemotherapy in Advanced Triple-Negative Breast Cancer (TNBC) With Luminal Androgen Receptor (LAR) Subtype",
+        "phase": "PHASE3",
+        "status": "RECRUITING",
+        "interventions": [
+          "Everolimus",
+          "Investigator's Choice of Chemotherapy"
+        ],
+        "eligibility_snippet": "Inclusion Criteria:\n\n* Patients need to meet all of the following conditions\n\n  * Patients must be \u226518 and \u2264 70 years of age;\n  * Eastern Cooperative Oncology Group (ECOG) performance status 0 or 1;\n  * The expected survival is more than 3 months;\n  * Pathologically confirmed breast cancer is triple negative breast cancer (IHC ER \\< 1%, PR\\<1%, HER2 0 OR +, if HER2++, FISH negative), and LAR subtype with mutation in PAM pathway;\n  * Recurrent or metastatic breast cancer; Patients with local recu"
+      },
+      {
+        "nct_id": "NCT06875128",
+        "title": "Evaluation of the Safety and Efficacy of Treatment w/High Dose Melphalan Given Directly Into the Liver Followed by Treatment w/Approved Cancer Treatment or Approved Cancer Treatment Alone in Patients w/ Metastatic Breast Cancer w/Liver Dominant Disease",
+        "phase": "PHASE2",
+        "status": "RECRUITING",
+        "interventions": [
+          "Melphalan/HDS followed by Physician's choice of SOC (eribulin, vinorelbine, or capecitabine)",
+          "Physician's choice of SOC (eribulin, vinorelbine, or capecitabine)"
+        ],
+        "eligibility_snippet": "Inclusion Criteria:\n\n* Histologically confirmed diagnosis of MBC.\n* Patients with HER2-negative (IHC 0 or 1+ or 2+ and ISH non-amplified) MBC (including triple negative disease).\n* Patient with Hormone Receptor-Positive disease has progressed on or intolerant of prior endocrine therapy and CDK 4/6 inhibitors.\n* Disease progression after TOPO-1 isomerase inhibitor payload ADC, such as sacituzumab govitecan and/or trastuzumab deruxtecan. Patients not eligible or suitable for ADCs can be considered"
+      }
+    ],
+    "vinblastine": [
+      {
+        "nct_id": "NCT02299999",
+        "title": "SAFIR02_Breast - Efficacy of Genome Analysis as a Therapeutic Decision Tool for Patients With Metastatic Breast Cancer",
+        "phase": "PHASE2",
+        "status": "ACTIVE_NOT_RECRUITING",
+        "interventions": [
+          "AZD2014",
+          "AZD4547",
+          "AZD5363",
+          "AZD8931",
+          "Selumetinib",
+          "Vandetanib",
+          "Bicalutamide",
+          "Olaparib",
+          "Anthracyclines",
+          "Taxanes",
+          "cyclophosphamide",
+          "DNA intercalators",
+          "Methotrexate",
+          "vinca alkaloids",
+          "Platinum based chemotherapies",
+          "Bevacizumab",
+          "Mitomycin C",
+          "Eribulin",
+          "MEDI4736"
+        ],
+        "eligibility_snippet": "Screening phase:\n\nInclusion Criteria:\n\n* Women (or men) with histologically proven breast cancer\n* Metastatic relapse or progression or stage IV at diagnosis\n* No Her2 over-expression\n* Patients with metastases that can be biopsied, except bone metastases\n* Patients who are eligible for a first or a second line of chemotherapy in metastatic setting (left to the discretion of investigators), or who are currently treated with a first or second line of chemotherapy with a maximum of 2 cycles at the"
+      },
+      {
+        "nct_id": "NCT06358573",
+        "title": "Intratumoral INT230-6 Followed by Neoadjuvant Immuno-chemotherapy in Patients With Early TNBC. INVINCIBLE-4-SAKK",
+        "phase": "PHASE2",
+        "status": "RECRUITING",
+        "interventions": [
+          "INT230-6",
+          "neoadjuvant immuno-chemotherapy"
+        ],
+        "eligibility_snippet": "Inclusion Criteria:\n\n* Written informed consent according to country specific law and ICH GCP E6(R2) regulations before registration and prior to any trial specific procedures.\n* Newly histologically diagnosed, previously untreated locally advanced non-metastatic TNBC as defined by the most recent American Society of Clinical Oncology (ASCO) / College of American Pathologist (CAP) guidelines .\n* The following stages according to staging per American Joint Committee on Cancer (AJCC) for breast ca"
+      }
+    ],
+    "methotrexate": [
+      {
+        "nct_id": "NCT06085742",
+        "title": "BRE-08 Phase II Study of CMC Regimen for Early Stage Breast Cancer",
+        "phase": "PHASE2",
+        "status": "RECRUITING",
+        "interventions": [
+          "Cyclophosphamide",
+          "Methotrexate",
+          "Capecitabine"
+        ],
+        "eligibility_snippet": "Inclusion Criteria:\n\nI\u2022 Age \u2265 18 years of age at time of consent\n\n* ECOG performance status 0, 1, or 2\n* Histologically confirmed invasive breast cancer documented by biopsy or surgical excision.\n* Underwent potentially curative resection of primary breast tumor(s) with no gross residual local-regional disease (patients with microscopically positive margins are eligible if adjuvant radiotherapy is planned), with most recent breast or axillary surgery \\< 90 days prior to date of signed consent.\n*"
+      },
+      {
+        "nct_id": "NCT02422641",
+        "title": "Prospective Evaluation Of High-Dose Systemic Methotrexate In Patients With Breast Cancer And Leptomeningeal Metastasis",
+        "phase": "PHASE2",
+        "status": "RECRUITING",
+        "interventions": [
+          "High-dose Methotrexate (8 gm/m2; HD-MTX)"
+        ],
+        "eligibility_snippet": "Inclusion Criteria\n\n* Adults (male and female) age \\>18\n* Eastern Cooperative Group (ECOG) Performance Scale 0-1 (see Appendix I)\n* Histologically or cytologically confirmed invasive breast cancer of the following subtype:\n* TRIPLE NEGATIVE (ER-negative, PR-negative, and HER2-negative disease). Triple-negative patients will be defined per ASCO-CAP Guidelines.\n* HER2-POSITIVE: HER2-positive patients will be defined per ASCO-CAP Guidelines.\n* HORMONE REFRACTORY: Patients with ER/PR-positive diseas"
+      }
+    ]
+  },
+  "TCGA-D8-A1JE-01": {
+    "paclitaxel": [
+      {
+        "nct_id": "NCT02788981",
+        "title": "Abraxane\u00ae With or Without Mifepristone for Advanced, Glucocorticoid Receptor-Positive, Triple-Negative Breast Cancer",
+        "phase": "PHASE2",
+        "status": "ACTIVE_NOT_RECRUITING",
+        "interventions": [
+          "Mifepristone",
+          "Placebo",
+          "Nab-Paclitaxel"
+        ],
+        "eligibility_snippet": "Inclusion Criteria:\n\n1. Patients must have histologically or cytologically confirmed breast cancer with stage IV or unresectable stage III disease.\n2. Patients must have measurable disease, defined as at least one lesion that can be accurately measured in at least one dimension (longest diameter to be recorded for non-nodal lesions and short axis for nodal lesions) as \u226520 mm with conventional techniques or as \u226510 mm with spiral CT scan, MRI, or calipers by clinical exam. To be considered patholo"
+      },
+      {
+        "nct_id": "NCT07191405",
+        "title": "Clinical Study of Chemotherapy and Immunotherapy Combined With Lactobacillus Johnsonii in Patients With Multiple Irresectable Solid Tumors",
+        "phase": "NA",
+        "status": "NOT_YET_RECRUITING",
+        "interventions": [
+          "oral Lactobacillus johnsonii (1\u00d710\u00b9\u00b9 CFU, twice daily)",
+          "Placebo"
+        ],
+        "eligibility_snippet": "Inclusion Criteria:\n\n1. Signed informed consent.\n2. Age 18-75 years.\n3. Histologically confirmed unresectable/metastatic tumors:\n\n   EGFR/ALK wild-type adenocarcinoma non-small cell lung cancer (NSCLC) PD-L1+ (CPS\u22651) triple-negative breast cancer (TNBC) HER2- gastric/gastroesophageal adenocarcinoma\n4. \u22651 measurable lesion (RECIST v1.1).\n5. Progression after PD-1/PD-L1 inhibitor therapy (defined as:\n\n   * \u22652 doses administred.\n   * Radiographic progression per RECIST/iRECIST/irRECIST, confirmed \u2265"
+      }
+    ],
+    "docetaxel": [
+      {
+        "nct_id": "NCT00798070",
+        "title": "Panther: A Study Comparing Biweekly and Tailored EC-T Versus Three Weekly FEC-T in Breast Cancer Patients",
+        "phase": "PHASE3",
+        "status": "ACTIVE_NOT_RECRUITING",
+        "interventions": [
+          "dtEC\u2192dtT",
+          "FEC\u2192T"
+        ],
+        "eligibility_snippet": "Inclusion Criteria:\n\n* Histological proven invasive primary breast cancer, with at least 5 (recommended 10) removed axillary lymph nodes OR negative sentinel node biopsy performed for the node negative cohort. Interval between definitive surgery that includes axillary lymph node dissection and registration must be less than 60 days. Paraffin block from the primary tumour must be retained (not mandatory for Austrian sites). Frozen tumour tissue is strongly recommended to be stored.\n* Receptor neg"
+      },
+      {
+        "nct_id": "NCT05296746",
+        "title": "Neoadjuvant and Adjuvant Ribociclib and ET for Clinically High-risk ER+ and HER2- Breast Cancer",
+        "phase": "PHASE2",
+        "status": "RECRUITING",
+        "interventions": [
+          "Ribociclib (neoadjuvant)",
+          "Chemotherapy (adjuvant)",
+          "Ribociclib (adjuvant)"
+        ],
+        "eligibility_snippet": "Inclusion Criteria:\n\n1. Signed Informed Consent Form prior to any study-specific procedure. Patients must be willing and able to comply with the protocol for the duration of the study including scheduled visits, treatment plan, laboratory tests and other study procedures.\n\n   Note: Candidate patients in France must be affiliated to a Social Security System (or equivalent)\n2. Male (\u226518 years old) or pre-menopausal women (\u226540 years old) or post-menopausal women. Premenopausal/male patients will re"
+      }
+    ],
+    "vinorelbine": [
+      {
+        "nct_id": "NCT05954442",
+        "title": "Everolimus With Investigator's Choice of Chemotherapy in Advanced Triple-Negative Breast Cancer (TNBC) With Luminal Androgen Receptor (LAR) Subtype",
+        "phase": "PHASE3",
+        "status": "RECRUITING",
+        "interventions": [
+          "Everolimus",
+          "Investigator's Choice of Chemotherapy"
+        ],
+        "eligibility_snippet": "Inclusion Criteria:\n\n* Patients need to meet all of the following conditions\n\n  * Patients must be \u226518 and \u2264 70 years of age;\n  * Eastern Cooperative Oncology Group (ECOG) performance status 0 or 1;\n  * The expected survival is more than 3 months;\n  * Pathologically confirmed breast cancer is triple negative breast cancer (IHC ER \\< 1%, PR\\<1%, HER2 0 OR +, if HER2++, FISH negative), and LAR subtype with mutation in PAM pathway;\n  * Recurrent or metastatic breast cancer; Patients with local recu"
+      },
+      {
+        "nct_id": "NCT06875128",
+        "title": "Evaluation of the Safety and Efficacy of Treatment w/High Dose Melphalan Given Directly Into the Liver Followed by Treatment w/Approved Cancer Treatment or Approved Cancer Treatment Alone in Patients w/ Metastatic Breast Cancer w/Liver Dominant Disease",
+        "phase": "PHASE2",
+        "status": "RECRUITING",
+        "interventions": [
+          "Melphalan/HDS followed by Physician's choice of SOC (eribulin, vinorelbine, or capecitabine)",
+          "Physician's choice of SOC (eribulin, vinorelbine, or capecitabine)"
+        ],
+        "eligibility_snippet": "Inclusion Criteria:\n\n* Histologically confirmed diagnosis of MBC.\n* Patients with HER2-negative (IHC 0 or 1+ or 2+ and ISH non-amplified) MBC (including triple negative disease).\n* Patient with Hormone Receptor-Positive disease has progressed on or intolerant of prior endocrine therapy and CDK 4/6 inhibitors.\n* Disease progression after TOPO-1 isomerase inhibitor payload ADC, such as sacituzumab govitecan and/or trastuzumab deruxtecan. Patients not eligible or suitable for ADCs can be considered"
+      }
+    ],
+    "vinblastine": [
+      {
+        "nct_id": "NCT02299999",
+        "title": "SAFIR02_Breast - Efficacy of Genome Analysis as a Therapeutic Decision Tool for Patients With Metastatic Breast Cancer",
+        "phase": "PHASE2",
+        "status": "ACTIVE_NOT_RECRUITING",
+        "interventions": [
+          "AZD2014",
+          "AZD4547",
+          "AZD5363",
+          "AZD8931",
+          "Selumetinib",
+          "Vandetanib",
+          "Bicalutamide",
+          "Olaparib",
+          "Anthracyclines",
+          "Taxanes",
+          "cyclophosphamide",
+          "DNA intercalators",
+          "Methotrexate",
+          "vinca alkaloids",
+          "Platinum based chemotherapies",
+          "Bevacizumab",
+          "Mitomycin C",
+          "Eribulin",
+          "MEDI4736"
+        ],
+        "eligibility_snippet": "Screening phase:\n\nInclusion Criteria:\n\n* Women (or men) with histologically proven breast cancer\n* Metastatic relapse or progression or stage IV at diagnosis\n* No Her2 over-expression\n* Patients with metastases that can be biopsied, except bone metastases\n* Patients who are eligible for a first or a second line of chemotherapy in metastatic setting (left to the discretion of investigators), or who are currently treated with a first or second line of chemotherapy with a maximum of 2 cycles at the"
+      },
+      {
+        "nct_id": "NCT06358573",
+        "title": "Intratumoral INT230-6 Followed by Neoadjuvant Immuno-chemotherapy in Patients With Early TNBC. INVINCIBLE-4-SAKK",
+        "phase": "PHASE2",
+        "status": "RECRUITING",
+        "interventions": [
+          "INT230-6",
+          "neoadjuvant immuno-chemotherapy"
+        ],
+        "eligibility_snippet": "Inclusion Criteria:\n\n* Written informed consent according to country specific law and ICH GCP E6(R2) regulations before registration and prior to any trial specific procedures.\n* Newly histologically diagnosed, previously untreated locally advanced non-metastatic TNBC as defined by the most recent American Society of Clinical Oncology (ASCO) / College of American Pathologist (CAP) guidelines .\n* The following stages according to staging per American Joint Committee on Cancer (AJCC) for breast ca"
+      }
+    ],
+    "methotrexate": [
+      {
+        "nct_id": "NCT06085742",
+        "title": "BRE-08 Phase II Study of CMC Regimen for Early Stage Breast Cancer",
+        "phase": "PHASE2",
+        "status": "RECRUITING",
+        "interventions": [
+          "Cyclophosphamide",
+          "Methotrexate",
+          "Capecitabine"
+        ],
+        "eligibility_snippet": "Inclusion Criteria:\n\nI\u2022 Age \u2265 18 years of age at time of consent\n\n* ECOG performance status 0, 1, or 2\n* Histologically confirmed invasive breast cancer documented by biopsy or surgical excision.\n* Underwent potentially curative resection of primary breast tumor(s) with no gross residual local-regional disease (patients with microscopically positive margins are eligible if adjuvant radiotherapy is planned), with most recent breast or axillary surgery \\< 90 days prior to date of signed consent.\n*"
+      },
+      {
+        "nct_id": "NCT02422641",
+        "title": "Prospective Evaluation Of High-Dose Systemic Methotrexate In Patients With Breast Cancer And Leptomeningeal Metastasis",
+        "phase": "PHASE2",
+        "status": "RECRUITING",
+        "interventions": [
+          "High-dose Methotrexate (8 gm/m2; HD-MTX)"
+        ],
+        "eligibility_snippet": "Inclusion Criteria\n\n* Adults (male and female) age \\>18\n* Eastern Cooperative Group (ECOG) Performance Scale 0-1 (see Appendix I)\n* Histologically or cytologically confirmed invasive breast cancer of the following subtype:\n* TRIPLE NEGATIVE (ER-negative, PR-negative, and HER2-negative disease). Triple-negative patients will be defined per ASCO-CAP Guidelines.\n* HER2-POSITIVE: HER2-positive patients will be defined per ASCO-CAP Guidelines.\n* HORMONE REFRACTORY: Patients with ER/PR-positive diseas"
+      }
+    ]
+  },
+  "TCGA-A2-A25B-01": {
+    "paclitaxel": [
+      {
+        "nct_id": "NCT02788981",
+        "title": "Abraxane\u00ae With or Without Mifepristone for Advanced, Glucocorticoid Receptor-Positive, Triple-Negative Breast Cancer",
+        "phase": "PHASE2",
+        "status": "ACTIVE_NOT_RECRUITING",
+        "interventions": [
+          "Mifepristone",
+          "Placebo",
+          "Nab-Paclitaxel"
+        ],
+        "eligibility_snippet": "Inclusion Criteria:\n\n1. Patients must have histologically or cytologically confirmed breast cancer with stage IV or unresectable stage III disease.\n2. Patients must have measurable disease, defined as at least one lesion that can be accurately measured in at least one dimension (longest diameter to be recorded for non-nodal lesions and short axis for nodal lesions) as \u226520 mm with conventional techniques or as \u226510 mm with spiral CT scan, MRI, or calipers by clinical exam. To be considered patholo"
+      },
+      {
+        "nct_id": "NCT07191405",
+        "title": "Clinical Study of Chemotherapy and Immunotherapy Combined With Lactobacillus Johnsonii in Patients With Multiple Irresectable Solid Tumors",
+        "phase": "NA",
+        "status": "NOT_YET_RECRUITING",
+        "interventions": [
+          "oral Lactobacillus johnsonii (1\u00d710\u00b9\u00b9 CFU, twice daily)",
+          "Placebo"
+        ],
+        "eligibility_snippet": "Inclusion Criteria:\n\n1. Signed informed consent.\n2. Age 18-75 years.\n3. Histologically confirmed unresectable/metastatic tumors:\n\n   EGFR/ALK wild-type adenocarcinoma non-small cell lung cancer (NSCLC) PD-L1+ (CPS\u22651) triple-negative breast cancer (TNBC) HER2- gastric/gastroesophageal adenocarcinoma\n4. \u22651 measurable lesion (RECIST v1.1).\n5. Progression after PD-1/PD-L1 inhibitor therapy (defined as:\n\n   * \u22652 doses administred.\n   * Radiographic progression per RECIST/iRECIST/irRECIST, confirmed \u2265"
+      }
+    ],
+    "docetaxel": [
+      {
+        "nct_id": "NCT00798070",
+        "title": "Panther: A Study Comparing Biweekly and Tailored EC-T Versus Three Weekly FEC-T in Breast Cancer Patients",
+        "phase": "PHASE3",
+        "status": "ACTIVE_NOT_RECRUITING",
+        "interventions": [
+          "dtEC\u2192dtT",
+          "FEC\u2192T"
+        ],
+        "eligibility_snippet": "Inclusion Criteria:\n\n* Histological proven invasive primary breast cancer, with at least 5 (recommended 10) removed axillary lymph nodes OR negative sentinel node biopsy performed for the node negative cohort. Interval between definitive surgery that includes axillary lymph node dissection and registration must be less than 60 days. Paraffin block from the primary tumour must be retained (not mandatory for Austrian sites). Frozen tumour tissue is strongly recommended to be stored.\n* Receptor neg"
+      },
+      {
+        "nct_id": "NCT05296746",
+        "title": "Neoadjuvant and Adjuvant Ribociclib and ET for Clinically High-risk ER+ and HER2- Breast Cancer",
+        "phase": "PHASE2",
+        "status": "RECRUITING",
+        "interventions": [
+          "Ribociclib (neoadjuvant)",
+          "Chemotherapy (adjuvant)",
+          "Ribociclib (adjuvant)"
+        ],
+        "eligibility_snippet": "Inclusion Criteria:\n\n1. Signed Informed Consent Form prior to any study-specific procedure. Patients must be willing and able to comply with the protocol for the duration of the study including scheduled visits, treatment plan, laboratory tests and other study procedures.\n\n   Note: Candidate patients in France must be affiliated to a Social Security System (or equivalent)\n2. Male (\u226518 years old) or pre-menopausal women (\u226540 years old) or post-menopausal women. Premenopausal/male patients will re"
+      }
+    ],
+    "vinorelbine": [
+      {
+        "nct_id": "NCT05954442",
+        "title": "Everolimus With Investigator's Choice of Chemotherapy in Advanced Triple-Negative Breast Cancer (TNBC) With Luminal Androgen Receptor (LAR) Subtype",
+        "phase": "PHASE3",
+        "status": "RECRUITING",
+        "interventions": [
+          "Everolimus",
+          "Investigator's Choice of Chemotherapy"
+        ],
+        "eligibility_snippet": "Inclusion Criteria:\n\n* Patients need to meet all of the following conditions\n\n  * Patients must be \u226518 and \u2264 70 years of age;\n  * Eastern Cooperative Oncology Group (ECOG) performance status 0 or 1;\n  * The expected survival is more than 3 months;\n  * Pathologically confirmed breast cancer is triple negative breast cancer (IHC ER \\< 1%, PR\\<1%, HER2 0 OR +, if HER2++, FISH negative), and LAR subtype with mutation in PAM pathway;\n  * Recurrent or metastatic breast cancer; Patients with local recu"
+      },
+      {
+        "nct_id": "NCT06875128",
+        "title": "Evaluation of the Safety and Efficacy of Treatment w/High Dose Melphalan Given Directly Into the Liver Followed by Treatment w/Approved Cancer Treatment or Approved Cancer Treatment Alone in Patients w/ Metastatic Breast Cancer w/Liver Dominant Disease",
+        "phase": "PHASE2",
+        "status": "RECRUITING",
+        "interventions": [
+          "Melphalan/HDS followed by Physician's choice of SOC (eribulin, vinorelbine, or capecitabine)",
+          "Physician's choice of SOC (eribulin, vinorelbine, or capecitabine)"
+        ],
+        "eligibility_snippet": "Inclusion Criteria:\n\n* Histologically confirmed diagnosis of MBC.\n* Patients with HER2-negative (IHC 0 or 1+ or 2+ and ISH non-amplified) MBC (including triple negative disease).\n* Patient with Hormone Receptor-Positive disease has progressed on or intolerant of prior endocrine therapy and CDK 4/6 inhibitors.\n* Disease progression after TOPO-1 isomerase inhibitor payload ADC, such as sacituzumab govitecan and/or trastuzumab deruxtecan. Patients not eligible or suitable for ADCs can be considered"
+      }
+    ],
+    "vinblastine": [
+      {
+        "nct_id": "NCT02299999",
+        "title": "SAFIR02_Breast - Efficacy of Genome Analysis as a Therapeutic Decision Tool for Patients With Metastatic Breast Cancer",
+        "phase": "PHASE2",
+        "status": "ACTIVE_NOT_RECRUITING",
+        "interventions": [
+          "AZD2014",
+          "AZD4547",
+          "AZD5363",
+          "AZD8931",
+          "Selumetinib",
+          "Vandetanib",
+          "Bicalutamide",
+          "Olaparib",
+          "Anthracyclines",
+          "Taxanes",
+          "cyclophosphamide",
+          "DNA intercalators",
+          "Methotrexate",
+          "vinca alkaloids",
+          "Platinum based chemotherapies",
+          "Bevacizumab",
+          "Mitomycin C",
+          "Eribulin",
+          "MEDI4736"
+        ],
+        "eligibility_snippet": "Screening phase:\n\nInclusion Criteria:\n\n* Women (or men) with histologically proven breast cancer\n* Metastatic relapse or progression or stage IV at diagnosis\n* No Her2 over-expression\n* Patients with metastases that can be biopsied, except bone metastases\n* Patients who are eligible for a first or a second line of chemotherapy in metastatic setting (left to the discretion of investigators), or who are currently treated with a first or second line of chemotherapy with a maximum of 2 cycles at the"
+      },
+      {
+        "nct_id": "NCT06358573",
+        "title": "Intratumoral INT230-6 Followed by Neoadjuvant Immuno-chemotherapy in Patients With Early TNBC. INVINCIBLE-4-SAKK",
+        "phase": "PHASE2",
+        "status": "RECRUITING",
+        "interventions": [
+          "INT230-6",
+          "neoadjuvant immuno-chemotherapy"
+        ],
+        "eligibility_snippet": "Inclusion Criteria:\n\n* Written informed consent according to country specific law and ICH GCP E6(R2) regulations before registration and prior to any trial specific procedures.\n* Newly histologically diagnosed, previously untreated locally advanced non-metastatic TNBC as defined by the most recent American Society of Clinical Oncology (ASCO) / College of American Pathologist (CAP) guidelines .\n* The following stages according to staging per American Joint Committee on Cancer (AJCC) for breast ca"
+      }
+    ],
+    "temsirolimus": [
+      {
+        "nct_id": "NCT05954442",
+        "title": "Everolimus With Investigator's Choice of Chemotherapy in Advanced Triple-Negative Breast Cancer (TNBC) With Luminal Androgen Receptor (LAR) Subtype",
+        "phase": "PHASE3",
+        "status": "RECRUITING",
+        "interventions": [
+          "Everolimus",
+          "Investigator's Choice of Chemotherapy"
+        ],
+        "eligibility_snippet": "Inclusion Criteria:\n\n* Patients need to meet all of the following conditions\n\n  * Patients must be \u226518 and \u2264 70 years of age;\n  * Eastern Cooperative Oncology Group (ECOG) performance status 0 or 1;\n  * The expected survival is more than 3 months;\n  * Pathologically confirmed breast cancer is triple negative breast cancer (IHC ER \\< 1%, PR\\<1%, HER2 0 OR +, if HER2++, FISH negative), and LAR subtype with mutation in PAM pathway;\n  * Recurrent or metastatic breast cancer; Patients with local recu"
+      },
+      {
+        "nct_id": "NCT05508906",
+        "title": "Phase 1b Study of OP-1250 (Palazestrant) in Combination With Ribociclib, Alpelisib, Everolimus, or Atirmociclib in ER+, HER2- Breast Cancer",
+        "phase": "PHASE1",
+        "status": "RECRUITING",
+        "interventions": [
+          "Palazestrant",
+          "Ribociclib",
+          "Alpelisib",
+          "Everolimus",
+          "Atirmociclib"
+        ],
+        "eligibility_snippet": "Inclusion Criteria:\n\n* Female or male aged \\>18 years.\n* Willing and able to participate and comply with all study requirements.\n* Histologically- or cytologically-confirmed advanced or metastatic Breast Cancer (mBC).\n* ER+/HER2- disease, as determined in the most recently obtained archival tumor tissue sample from a metastatic site, using locally accepted criteria by the local pathology report.\n* Evaluable disease with one of the following: Measurable disease, ie, at least 1 measurable lesion a"
+      }
+    ]
+  },
+  "TCGA-C8-A12L-01": {
+    "paclitaxel": [
+      {
+        "nct_id": "NCT02788981",
+        "title": "Abraxane\u00ae With or Without Mifepristone for Advanced, Glucocorticoid Receptor-Positive, Triple-Negative Breast Cancer",
+        "phase": "PHASE2",
+        "status": "ACTIVE_NOT_RECRUITING",
+        "interventions": [
+          "Mifepristone",
+          "Placebo",
+          "Nab-Paclitaxel"
+        ],
+        "eligibility_snippet": "Inclusion Criteria:\n\n1. Patients must have histologically or cytologically confirmed breast cancer with stage IV or unresectable stage III disease.\n2. Patients must have measurable disease, defined as at least one lesion that can be accurately measured in at least one dimension (longest diameter to be recorded for non-nodal lesions and short axis for nodal lesions) as \u226520 mm with conventional techniques or as \u226510 mm with spiral CT scan, MRI, or calipers by clinical exam. To be considered patholo"
+      },
+      {
+        "nct_id": "NCT07191405",
+        "title": "Clinical Study of Chemotherapy and Immunotherapy Combined With Lactobacillus Johnsonii in Patients With Multiple Irresectable Solid Tumors",
+        "phase": "NA",
+        "status": "NOT_YET_RECRUITING",
+        "interventions": [
+          "oral Lactobacillus johnsonii (1\u00d710\u00b9\u00b9 CFU, twice daily)",
+          "Placebo"
+        ],
+        "eligibility_snippet": "Inclusion Criteria:\n\n1. Signed informed consent.\n2. Age 18-75 years.\n3. Histologically confirmed unresectable/metastatic tumors:\n\n   EGFR/ALK wild-type adenocarcinoma non-small cell lung cancer (NSCLC) PD-L1+ (CPS\u22651) triple-negative breast cancer (TNBC) HER2- gastric/gastroesophageal adenocarcinoma\n4. \u22651 measurable lesion (RECIST v1.1).\n5. Progression after PD-1/PD-L1 inhibitor therapy (defined as:\n\n   * \u22652 doses administred.\n   * Radiographic progression per RECIST/iRECIST/irRECIST, confirmed \u2265"
+      }
+    ],
+    "docetaxel": [
+      {
+        "nct_id": "NCT00798070",
+        "title": "Panther: A Study Comparing Biweekly and Tailored EC-T Versus Three Weekly FEC-T in Breast Cancer Patients",
+        "phase": "PHASE3",
+        "status": "ACTIVE_NOT_RECRUITING",
+        "interventions": [
+          "dtEC\u2192dtT",
+          "FEC\u2192T"
+        ],
+        "eligibility_snippet": "Inclusion Criteria:\n\n* Histological proven invasive primary breast cancer, with at least 5 (recommended 10) removed axillary lymph nodes OR negative sentinel node biopsy performed for the node negative cohort. Interval between definitive surgery that includes axillary lymph node dissection and registration must be less than 60 days. Paraffin block from the primary tumour must be retained (not mandatory for Austrian sites). Frozen tumour tissue is strongly recommended to be stored.\n* Receptor neg"
+      },
+      {
+        "nct_id": "NCT05296746",
+        "title": "Neoadjuvant and Adjuvant Ribociclib and ET for Clinically High-risk ER+ and HER2- Breast Cancer",
+        "phase": "PHASE2",
+        "status": "RECRUITING",
+        "interventions": [
+          "Ribociclib (neoadjuvant)",
+          "Chemotherapy (adjuvant)",
+          "Ribociclib (adjuvant)"
+        ],
+        "eligibility_snippet": "Inclusion Criteria:\n\n1. Signed Informed Consent Form prior to any study-specific procedure. Patients must be willing and able to comply with the protocol for the duration of the study including scheduled visits, treatment plan, laboratory tests and other study procedures.\n\n   Note: Candidate patients in France must be affiliated to a Social Security System (or equivalent)\n2. Male (\u226518 years old) or pre-menopausal women (\u226540 years old) or post-menopausal women. Premenopausal/male patients will re"
+      }
+    ],
+    "vinorelbine": [
+      {
+        "nct_id": "NCT05954442",
+        "title": "Everolimus With Investigator's Choice of Chemotherapy in Advanced Triple-Negative Breast Cancer (TNBC) With Luminal Androgen Receptor (LAR) Subtype",
+        "phase": "PHASE3",
+        "status": "RECRUITING",
+        "interventions": [
+          "Everolimus",
+          "Investigator's Choice of Chemotherapy"
+        ],
+        "eligibility_snippet": "Inclusion Criteria:\n\n* Patients need to meet all of the following conditions\n\n  * Patients must be \u226518 and \u2264 70 years of age;\n  * Eastern Cooperative Oncology Group (ECOG) performance status 0 or 1;\n  * The expected survival is more than 3 months;\n  * Pathologically confirmed breast cancer is triple negative breast cancer (IHC ER \\< 1%, PR\\<1%, HER2 0 OR +, if HER2++, FISH negative), and LAR subtype with mutation in PAM pathway;\n  * Recurrent or metastatic breast cancer; Patients with local recu"
+      },
+      {
+        "nct_id": "NCT06875128",
+        "title": "Evaluation of the Safety and Efficacy of Treatment w/High Dose Melphalan Given Directly Into the Liver Followed by Treatment w/Approved Cancer Treatment or Approved Cancer Treatment Alone in Patients w/ Metastatic Breast Cancer w/Liver Dominant Disease",
+        "phase": "PHASE2",
+        "status": "RECRUITING",
+        "interventions": [
+          "Melphalan/HDS followed by Physician's choice of SOC (eribulin, vinorelbine, or capecitabine)",
+          "Physician's choice of SOC (eribulin, vinorelbine, or capecitabine)"
+        ],
+        "eligibility_snippet": "Inclusion Criteria:\n\n* Histologically confirmed diagnosis of MBC.\n* Patients with HER2-negative (IHC 0 or 1+ or 2+ and ISH non-amplified) MBC (including triple negative disease).\n* Patient with Hormone Receptor-Positive disease has progressed on or intolerant of prior endocrine therapy and CDK 4/6 inhibitors.\n* Disease progression after TOPO-1 isomerase inhibitor payload ADC, such as sacituzumab govitecan and/or trastuzumab deruxtecan. Patients not eligible or suitable for ADCs can be considered"
+      }
+    ],
+    "vinblastine": [
+      {
+        "nct_id": "NCT02299999",
+        "title": "SAFIR02_Breast - Efficacy of Genome Analysis as a Therapeutic Decision Tool for Patients With Metastatic Breast Cancer",
+        "phase": "PHASE2",
+        "status": "ACTIVE_NOT_RECRUITING",
+        "interventions": [
+          "AZD2014",
+          "AZD4547",
+          "AZD5363",
+          "AZD8931",
+          "Selumetinib",
+          "Vandetanib",
+          "Bicalutamide",
+          "Olaparib",
+          "Anthracyclines",
+          "Taxanes",
+          "cyclophosphamide",
+          "DNA intercalators",
+          "Methotrexate",
+          "vinca alkaloids",
+          "Platinum based chemotherapies",
+          "Bevacizumab",
+          "Mitomycin C",
+          "Eribulin",
+          "MEDI4736"
+        ],
+        "eligibility_snippet": "Screening phase:\n\nInclusion Criteria:\n\n* Women (or men) with histologically proven breast cancer\n* Metastatic relapse or progression or stage IV at diagnosis\n* No Her2 over-expression\n* Patients with metastases that can be biopsied, except bone metastases\n* Patients who are eligible for a first or a second line of chemotherapy in metastatic setting (left to the discretion of investigators), or who are currently treated with a first or second line of chemotherapy with a maximum of 2 cycles at the"
+      },
+      {
+        "nct_id": "NCT06358573",
+        "title": "Intratumoral INT230-6 Followed by Neoadjuvant Immuno-chemotherapy in Patients With Early TNBC. INVINCIBLE-4-SAKK",
+        "phase": "PHASE2",
+        "status": "RECRUITING",
+        "interventions": [
+          "INT230-6",
+          "neoadjuvant immuno-chemotherapy"
+        ],
+        "eligibility_snippet": "Inclusion Criteria:\n\n* Written informed consent according to country specific law and ICH GCP E6(R2) regulations before registration and prior to any trial specific procedures.\n* Newly histologically diagnosed, previously untreated locally advanced non-metastatic TNBC as defined by the most recent American Society of Clinical Oncology (ASCO) / College of American Pathologist (CAP) guidelines .\n* The following stages according to staging per American Joint Committee on Cancer (AJCC) for breast ca"
+      }
+    ],
+    "methotrexate": [
+      {
+        "nct_id": "NCT06085742",
+        "title": "BRE-08 Phase II Study of CMC Regimen for Early Stage Breast Cancer",
+        "phase": "PHASE2",
+        "status": "RECRUITING",
+        "interventions": [
+          "Cyclophosphamide",
+          "Methotrexate",
+          "Capecitabine"
+        ],
+        "eligibility_snippet": "Inclusion Criteria:\n\nI\u2022 Age \u2265 18 years of age at time of consent\n\n* ECOG performance status 0, 1, or 2\n* Histologically confirmed invasive breast cancer documented by biopsy or surgical excision.\n* Underwent potentially curative resection of primary breast tumor(s) with no gross residual local-regional disease (patients with microscopically positive margins are eligible if adjuvant radiotherapy is planned), with most recent breast or axillary surgery \\< 90 days prior to date of signed consent.\n*"
+      },
+      {
+        "nct_id": "NCT02422641",
+        "title": "Prospective Evaluation Of High-Dose Systemic Methotrexate In Patients With Breast Cancer And Leptomeningeal Metastasis",
+        "phase": "PHASE2",
+        "status": "RECRUITING",
+        "interventions": [
+          "High-dose Methotrexate (8 gm/m2; HD-MTX)"
+        ],
+        "eligibility_snippet": "Inclusion Criteria\n\n* Adults (male and female) age \\>18\n* Eastern Cooperative Group (ECOG) Performance Scale 0-1 (see Appendix I)\n* Histologically or cytologically confirmed invasive breast cancer of the following subtype:\n* TRIPLE NEGATIVE (ER-negative, PR-negative, and HER2-negative disease). Triple-negative patients will be defined per ASCO-CAP Guidelines.\n* HER2-POSITIVE: HER2-positive patients will be defined per ASCO-CAP Guidelines.\n* HORMONE REFRACTORY: Patients with ER/PR-positive diseas"
+      }
+    ]
+  }
+}

@@ -1,0 +1,11 @@
+drug_name,best_dose_um,predicted_inhibition,top_contributing_genes,confidence
+paclitaxel,10.0,45.65256714189335,PGR(225); ESR1(204); ERBB2(95); MKI67(57); EGFR(55),moderate
+letrozole,10.0,44.43316758183578,PGR(225); ESR1(204); ERBB2(95); MKI67(57); EGFR(55),moderate
+pembrolizumab,10.0,44.08511270923391,PGR(225); ESR1(204); ERBB2(95); MKI67(57); EGFR(55),moderate
+vorinostat,10.0,44.00584285219611,PGR(225); ESR1(204); ERBB2(95); MKI67(57); EGFR(55),moderate
+abemaciclib,10.0,43.98555231658254,PGR(225); ESR1(204); ERBB2(95); MKI67(57); EGFR(55),moderate
+ribociclib,10.0,43.791994431669394,PGR(225); ESR1(204); ERBB2(95); MKI67(57); EGFR(55),moderate
+talazoparib,10.0,43.38823436993981,PGR(225); ESR1(204); ERBB2(95); MKI67(57); EGFR(55),moderate
+doxorubicin,10.0,43.22370863890605,PGR(225); ESR1(204); ERBB2(95); MKI67(57); EGFR(55),moderate
+ipatasertib,10.0,43.175512098556425,PGR(225); ESR1(204); ERBB2(95); MKI67(57); EGFR(55),moderate
+olaparib,10.0,43.15760739466571,PGR(225); ESR1(204); ERBB2(95); MKI67(57); EGFR(55),moderate

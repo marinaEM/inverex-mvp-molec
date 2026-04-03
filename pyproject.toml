@@ -1,0 +1,58 @@
+[project]
+authors = [{name = "marinaEM", email = "marina.estebanm@gmail.com"}]
+dependencies = ["gseapy>=1.1.13,<2", "cmappy>=4.0.1,<5"]
+name = "inverex-mvp"
+requires-python = ">= 3.12, < 3.13"
+version = "0.1.0"
+
+[build-system]
+build-backend = "hatchling.build"
+requires = ["hatchling"]
+
+[tool.pixi.workspace]
+channels = ["conda-forge"]
+platforms = ["osx-arm64"]
+
+[tool.pixi.pypi-dependencies]
+inverex_mvp = { path = ".", editable = true }
+
+[tool.pixi.tasks]
+pipeline-demo = "python -m src.run_pipeline --demo"
+pipeline-real = "python -m src.run_pipeline --real"
+pipeline-optimize = "python -m src.run_pipeline --real --optimize --trials 50"
+streamlit = "streamlit run app/main.py --server.headless true"
+verify-imports = """python -c "
+from src.config import *
+from src.data_ingestion.lincs import load_landmark_genes
+from src.data_ingestion.pharmacodb import load_gdsc_dose_response, build_dose_response_reference
+from src.data_ingestion.pubchem import smiles_to_ecfp4
+from src.data_ingestion.tcga import load_tcga_expression
+from src.features.build_training_matrix import build_training_matrix
+from src.models.train_lightgbm import train_lightgbm
+from src.models.predict_patients import predict_drugs_for_patient
+print('All imports OK')
+print(f'Project root: {ROOT}')
+print(f'Data raw: {DATA_RAW}')
+print(f'Data cache: {DATA_CACHE}')
+"
+"""
+
+[tool.pixi.dependencies]
+python = ">=3.12,<3.13"
+numpy = ">=1.24"
+pandas = ">=2.0"
+scipy = ">=1.10"
+scikit-learn = ">=1.3"
+lightgbm = ">=4.0"
+requests = ">=2.31"
+pyarrow = ">=14.0"
+tqdm = ">=4.66"
+joblib = ">=1.3"
+optuna = ">=3.4"
+matplotlib = ">=3.7"
+seaborn = ">=0.13"
+plotly = ">=5.18"
+h5py = ">=3.9"
+openpyxl = ">=3.1"
+streamlit = ">=1.28"
+rdkit = "*"
