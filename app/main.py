@@ -170,32 +170,38 @@ def inject_custom_css():
     /* ====================================================================
        EXPANDER (Trial matching)
        ==================================================================== */
+    [data-testid="stExpander"] {{
+        background: {COLORS['surface_solid']} !important;
+        border: 1px solid {COLORS['border']} !important;
+        border-radius: 12px !important;
+    }}
+
+    [data-testid="stExpander"] details {{
+        background: transparent !important;
+        border: none !important;
+    }}
+
+    [data-testid="stExpander"] summary {{
+        color: {COLORS['text']} !important;
+        font-weight: 500 !important;
+    }}
+
+    [data-testid="stExpander"] [data-testid="stExpanderDetails"] {{
+        background: transparent !important;
+    }}
+
+    /* Legacy selectors for older Streamlit versions */
     .streamlit-expanderHeader {{
-        background: {COLORS['surface']} !important;
-        backdrop-filter: blur(12px);
-        -webkit-backdrop-filter: blur(12px);
+        background: {COLORS['surface_solid']} !important;
         border: 1px solid {COLORS['border']} !important;
         border-radius: 12px !important;
         color: {COLORS['text']} !important;
-        font-weight: 500 !important;
     }}
 
     details {{
         background: {COLORS['surface_solid']} !important;
         border: 1px solid {COLORS['border']} !important;
         border-radius: 12px !important;
-        overflow: visible !important;
-    }}
-
-    details > div {{
-        background: transparent !important;
-        position: relative;
-        z-index: 1;
-    }}
-
-    /* Ensure expander summary text is readable */
-    details summary span {{
-        color: {COLORS['text']} !important;
     }}
 
     /* ====================================================================
@@ -584,14 +590,6 @@ with st.sidebar:
         '<div class="brand-subtitle">Breast Cancer Drug Ranking</div>',
         unsafe_allow_html=True,
     )
-
-    # Branding image
-    brand_b64 = _img_to_b64(BRANDING_IMG_PATH)
-    if brand_b64:
-        st.markdown(f"""
-        <img class="branding-image" src="data:image/png;base64,{brand_b64}"
-             alt="INVEREX Branding" />
-        """, unsafe_allow_html=True)
 
     st.markdown("---")
 
