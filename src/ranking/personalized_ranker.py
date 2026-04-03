@@ -178,6 +178,7 @@ class PersonalizedDrugRanker:
         drug_fingerprints: pd.DataFrame,
         lincs_signatures: pd.DataFrame,
         model: Any | None = None,
+        pancancer_model: Any | None = None,
         metadata_path: Path = DEFAULT_METADATA_PATH,
         config_path: Path = DEFAULT_CONFIG_PATH,
     ) -> None:
@@ -187,6 +188,7 @@ class PersonalizedDrugRanker:
         self.config = load_personalized_ranking_config(config_path)
         self.weights = self.config["weights"]
         self.model = model
+        self.pancancer_model = pancancer_model
 
         ensure_drug_metadata(self.candidate_drugs, metadata_path)
         metadata = load_drug_metadata(self.candidate_drugs, metadata_path)
@@ -200,6 +202,7 @@ class PersonalizedDrugRanker:
     def from_project_artifacts(
         cls,
         model_path: Path = RESULTS / "lightgbm_drug_model.joblib",
+        pancancer_model_path: Path = RESULTS / "pan_cancer_patient_model.joblib",
         fp_path: Path = DATA_CACHE / "drug_fingerprints.parquet",
         lincs_path: Path = DATA_CACHE / "breast_l1000_signatures.parquet",
         metadata_path: Path = DEFAULT_METADATA_PATH,
@@ -212,10 +215,15 @@ class PersonalizedDrugRanker:
             model = joblib.load(model_path) if model_path.exists() else None
         except Exception:
             model = None
+        try:
+            pancancer_model = joblib.load(pancancer_model_path) if pancancer_model_path.exists() else None
+        except Exception:
+            pancancer_model = None
         return cls(
             drug_fingerprints=drug_fingerprints,
             lincs_signatures=lincs_signatures,
             model=model,
+            pancancer_model=pancancer_model,
             metadata_path=metadata_path,
             config_path=config_path,
         )
@@ -337,6 +345,42 @@ class PersonalizedDrugRanker:
             "top_down_genes": profile.top_down_genes,
             "pathway_scores": profile.pathway_scores,
         }
+
+    def _compute_treatability_score(self, profile: PatientProfile) -> dict[str, Any]:
+        """Compute a patient-level treatability score using the pan-cancer model.
+
+        This is NOT drug-specific — it estimates how likely this patient is
+        to respond to treatment in general, based on expression patterns
+        learned from 3,730 patients across 11 cancer types.
+
+        Returns dict with probability, label, and note.
+        """
+        if self.pancancer_model is None:
+            return {"probability": None, "label": "unavailable", "note": "Pan-cancer model not loaded"}
+
+        try:
+            model_features = self.pancancer_model.feature_name_
+            patient_values = np.array(
+                [float(profile.signature.get(gene, 0.0)) for gene in model_features],
+                dtype=np.float32,
+            ).reshape(1, -1)
+            prob = float(self.pancancer_model.predict_proba(patient_values)[0, 1])
+
+            if prob >= 0.65:
+                label = "high"
+            elif prob >= 0.45:
+                label = "moderate"
+            else:
+                label = "low"
+
+            return {
+                "probability": round(prob, 3),
+                "label": label,
+                "note": f"Pan-cancer response probability {prob:.1%} ({label}) — "
+                        f"based on expression patterns from 3,730 patients across 11 cancer types.",
+            }
+        except Exception as exc:
+            return {"probability": None, "label": "error", "note": f"Pan-cancer score failed: {exc}"}
 
     def _predict_ml_component(self, profile: PatientProfile) -> pd.DataFrame:
         """Score the optional LightGBM component for each drug.
@@ -642,6 +686,7 @@ class PersonalizedDrugRanker:
     ) -> tuple[pd.DataFrame, dict[str, Any]]:
         """Rank drugs for one TCGA-BRCA patient and return rankings plus summary."""
         profile = self.build_patient_profile(sample_id, expression, cohort, landmark_genes)
+        treatability = self._compute_treatability_score(profile)
         ml_component = self._predict_ml_component(profile)
         ml_lookup = ml_component.set_index("drug_name").to_dict("index") if not ml_component.empty else {}
 
@@ -682,8 +727,10 @@ class PersonalizedDrugRanker:
                 rationale_short_parts.append(f"ML prior {predicted_inhibition:.1f}%")
 
             confidence_notes = [
-                "LightGBM is used only as an auxiliary ranking prior from breast cell-line inhibition, not as a validated patient response predictor."
+                "LightGBM is used only as an auxiliary ranking prior from breast cell-line inhibition, not as a validated patient response predictor.",
             ]
+            if treatability["probability"] is not None:
+                confidence_notes.append(treatability["note"])
             if evidence_tier == "Tier 3":
                 confidence_notes.append("Evidence is mainly computational or preclinical.")
             if excluded_flag:
@@ -722,6 +769,8 @@ class PersonalizedDrugRanker:
                     "evidence_tier": evidence_tier,
                     "excluded_flag": excluded_flag,
                     "confidence_notes": " ".join(confidence_notes),
+                    "treatability_prob": treatability["probability"],
+                    "treatability_label": treatability["label"],
                     "trial_query_term": metadata["trial_query_term"],
                 }
             )
@@ -735,12 +784,25 @@ class PersonalizedDrugRanker:
         non_excluded = ranking[~ranking["excluded_flag"]].copy()
         if not non_excluded.empty:
             percentile = non_excluded["final_score"].rank(method="average", pct=True)
-            non_excluded["confidence"] = pd.cut(
+            base_confidence = pd.cut(
                 percentile,
                 bins=[0.0, 0.4, 0.75, 0.9, 1.0],
                 labels=["low", "moderate", "high", "very_high"],
                 include_lowest=True,
             ).astype(str)
+
+            # Boost confidence when pan-cancer treatability is high AND drug is Tier 1
+            _conf_order = ["low", "moderate", "high", "very_high"]
+            def _boost(row_idx):
+                conf = base_confidence.iloc[row_idx]
+                tier = non_excluded.iloc[row_idx]["evidence_tier"]
+                treat = treatability["label"]
+                if treat == "high" and tier == "Tier 1" and conf in ("high", "moderate"):
+                    pos = _conf_order.index(conf)
+                    return _conf_order[min(pos + 1, 3)]
+                return conf
+
+            non_excluded["confidence"] = [_boost(i) for i in range(len(non_excluded))]
             ranking = ranking.drop(columns=["confidence"], errors="ignore").merge(
                 non_excluded[["drug_name", "confidence"]],
                 on="drug_name",
@@ -752,7 +814,9 @@ class PersonalizedDrugRanker:
             ranking = ranking[~ranking["excluded_flag"]].copy()
 
         ranking = ranking.head(top_k).reset_index(drop=True)
-        return ranking, self.summarize_patient(profile)
+        summary = self.summarize_patient(profile)
+        summary["treatability"] = treatability
+        return ranking, summary
 
 
 def rank_tcga_patient(

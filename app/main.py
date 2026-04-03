@@ -671,6 +671,29 @@ if patient_row.get("ERBB2_amp", 0) == 1:
     </div>
     """, unsafe_allow_html=True)
 
+# Treatability score from rankings CSV (set by personalized ranker)
+_rankings_path_early = RESULTS / f"drug_rankings_{selected_sid.replace('/', '_')}.csv"
+if _rankings_path_early.exists():
+    _rank_df = pd.read_csv(_rankings_path_early)
+    if "treatability_prob" in _rank_df.columns and _rank_df["treatability_prob"].notna().any():
+        _treat_prob = _rank_df["treatability_prob"].iloc[0]
+        _treat_label = _rank_df["treatability_label"].iloc[0]
+        _treat_color = {"high": COLORS["success"], "moderate": COLORS["accent"], "low": COLORS["warning"]}.get(_treat_label, COLORS["muted"])
+        st.markdown(
+            f'<div style="background:{COLORS["surface"]};border:1px solid {COLORS["border"]};'
+            f'border-radius:12px;padding:0.8rem 1.2rem;margin:0.5rem 0;">'
+            f'<span style="color:{COLORS["muted"]};font-size:0.8rem;text-transform:uppercase;letter-spacing:0.08em;">'
+            f'Pan-cancer treatability</span><br/>'
+            f'<span style="color:{_treat_color};font-size:1.3rem;font-weight:700;">{_treat_prob:.0%}</span>'
+            f'<span style="color:{_treat_color};font-size:0.85rem;margin-left:0.5rem;">{_treat_label}</span>'
+            f'<span title="Probability of treatment response estimated from expression patterns '
+            f'learned across 3,730 patients and 11 cancer types. Not drug-specific."'
+            f' style="color:{COLORS["muted"]};font-size:0.75rem;margin-left:0.8rem;'
+            f'border-bottom:1px dotted {COLORS["muted"]};cursor:help;">what is this?</span>'
+            f'</div>',
+            unsafe_allow_html=True,
+        )
+
 
 # == 2. Drug Rankings ======================================================
 st.markdown("""
