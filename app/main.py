@@ -181,10 +181,21 @@ def inject_custom_css():
     }}
 
     details {{
-        background: {COLORS['surface']} !important;
-        backdrop-filter: blur(12px);
+        background: {COLORS['surface_solid']} !important;
         border: 1px solid {COLORS['border']} !important;
         border-radius: 12px !important;
+        overflow: visible !important;
+    }}
+
+    details > div {{
+        background: transparent !important;
+        position: relative;
+        z-index: 1;
+    }}
+
+    /* Ensure expander summary text is readable */
+    details summary span {{
+        color: {COLORS['text']} !important;
     }}
 
     /* ====================================================================
@@ -772,18 +783,18 @@ if rankings_path.exists():
         with st.expander(f"**{drug_name}** — {len(trials)} trial(s)"):
             if trials:
                 for t in trials:
-                    st.markdown(f"""
-                    <div class="trial-card">
-                        <a href="https://clinicaltrials.gov/study/{t['nct_id']}"
-                           target="_blank">{t['nct_id']}</a>
-                        <br/>{t['title']}
-                        <div class="trial-meta">
-                            Phase: {t.get('phase', 'N/A')} &bull;
-                            Status: {t.get('status', 'N/A')} &bull;
-                            Interventions: {', '.join(t.get('interventions', [])[:4])}
-                        </div>
-                    </div>
-                    """, unsafe_allow_html=True)
+                    nct = t.get("nct_id", "")
+                    title = t.get("title", "")
+                    phase = t.get("phase", "N/A")
+                    status = t.get("status", "N/A")
+                    intv = ", ".join(t.get("interventions", [])[:4])
+                    st.markdown(
+                        f"[**{nct}**](https://clinicaltrials.gov/study/{nct})  \n"
+                        f"{title}  \n"
+                        f"*Phase:* {phase} | *Status:* {status}  \n"
+                        f"*Interventions:* {intv}"
+                    )
+                    st.divider()
             else:
                 st.write("No active breast cancer trials found for this compound.")
 else:
