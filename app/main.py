@@ -57,9 +57,14 @@ CHART_SEQUENTIAL = [
 
 
 # -- Helpers: encode assets as base64 for embedding -----------------------
-def _svg_to_b64(path: Path) -> str:
+def _svg_to_b64(path: Path, recolor: str | None = None) -> str:
     if path.exists():
-        return base64.b64encode(path.read_bytes()).decode()
+        content = path.read_text()
+        if recolor:
+            # Replace the fill color so the logo is visible on dark backgrounds
+            content = content.replace("fill: #2d2659;", f"fill: {recolor};")
+            content = content.replace("fill:#2d2659", f"fill:{recolor}")
+        return base64.b64encode(content.encode()).decode()
     return ""
 
 
@@ -503,8 +508,16 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # -- Title area ------------------------------------------------------------
-st.markdown("""
-<h1 style="margin-bottom: 0.1rem;">INVEREX</h1>
+_title_logo_b64 = _svg_to_b64(LOGO_SVG_PATH, recolor=COLORS["accent"])
+_title_logo_html = (
+    f'<img src="data:image/svg+xml;base64,{_title_logo_b64}" '
+    f'style="height:2.2rem;vertical-align:middle;margin-right:0.6rem;" />'
+    if _title_logo_b64 else ""
+)
+st.markdown(f"""
+<h1 style="margin-bottom: 0.1rem; display: flex; align-items: center;">
+    {_title_logo_html}INVEREX
+</h1>
 """, unsafe_allow_html=True)
 
 st.caption(
@@ -538,24 +551,16 @@ def load_data():
     else:
         metrics = {}
 
-    # Load trial matches
-    trial_path = RESULTS / "trial_matches.json"
-    if trial_path.exists():
-        with open(trial_path) as f:
-            trial_matches = json.load(f)
-    else:
-        trial_matches = {}
-
-    return examples, reports, importances, metrics, trial_matches
+    return examples, reports, importances, metrics
 
 
-examples, reports, importances, metrics, trial_matches = load_data()
+examples, reports, importances, metrics = load_data()
 
 
 # -- Sidebar ---------------------------------------------------------------
 with st.sidebar:
     # Logo
-    logo_b64 = _svg_to_b64(LOGO_SVG_PATH)
+    logo_b64 = _svg_to_b64(LOGO_SVG_PATH, recolor=COLORS["accent"])
     if logo_b64:
         st.markdown(f"""
         <div class="logo-container">
@@ -620,6 +625,10 @@ with st.sidebar:
         st.metric("CV RMSE", f"{metrics.get('cv_rmse_mean', 0):.1f}%")
         st.metric("Training Samples", f"{metrics.get('n_samples', 0):,}")
         st.metric("Features", f"{metrics.get('n_features', 0):,}")
+        # Show matched drugs from top gene features list
+        top_genes = metrics.get("top_gene_features", [])
+        if top_genes:
+            st.metric("Top Gene", top_genes[0].get("feature", "N/A"))
 
 
 # -- Main content -----------------------------------------------------------
@@ -722,9 +731,44 @@ st.caption(
     "Inclusion criteria and eligibility require manual review."
 )
 
-if selected_sid in trial_matches:
-    patient_trials = trial_matches[selected_sid]
-    for drug_name, trials in patient_trials.items():
+def _fetch_trials_for_drug(drug_name: str, max_results: int = 3) -> list[dict]:
+    """Fetch active breast cancer trials from ClinicalTrials.gov API v2."""
+    import requests as _req
+    try:
+        params = {
+            "query.cond": "breast cancer",
+            "query.intr": drug_name,
+            "filter.overallStatus": "RECRUITING,NOT_YET_RECRUITING,ACTIVE_NOT_RECRUITING",
+            "pageSize": max_results,
+            "format": "json",
+        }
+        resp = _req.get("https://clinicaltrials.gov/api/v2/studies", params=params, timeout=10)
+        if resp.status_code != 200:
+            return []
+        studies = resp.json().get("studies", [])
+        results = []
+        for s in studies:
+            proto = s.get("protocolSection", {})
+            ident = proto.get("identificationModule", {})
+            status = proto.get("statusModule", {})
+            design = proto.get("designModule", {})
+            arms = proto.get("armsInterventionsModule", {})
+            results.append({
+                "nct_id": ident.get("nctId"),
+                "title": ident.get("briefTitle"),
+                "phase": design.get("phases", [None])[0] if design.get("phases") else None,
+                "status": status.get("overallStatus"),
+                "interventions": [i.get("name") for i in arms.get("interventions", [])],
+            })
+        return results
+    except Exception:
+        return []
+
+# Fetch trials live for top 5 drugs of selected patient
+if rankings_path.exists():
+    top_drugs = rankings.head(5)["drug_name"].tolist()
+    for drug_name in top_drugs:
+        trials = _fetch_trials_for_drug(drug_name)
         with st.expander(f"**{drug_name}** — {len(trials)} trial(s)"):
             if trials:
                 for t in trials:
@@ -743,11 +787,7 @@ if selected_sid in trial_matches:
             else:
                 st.write("No active breast cancer trials found for this compound.")
 else:
-    st.markdown("""
-    <div class="glass-card" style="text-align:center; color:{muted};">
-        Trial matching data not available for this patient. Run Phase 6 to generate.
-    </div>
-    """.format(muted=COLORS["muted"]), unsafe_allow_html=True)
+    st.info("Select a patient to see matched clinical trials.")
 
 
 # == 4. Model Rationale ====================================================
