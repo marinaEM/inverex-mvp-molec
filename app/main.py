@@ -678,8 +678,8 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 st.caption(
-    "Drugs ranked by predicted percent inhibition from the LightGBM model. "
-    "When available, the app now shows a composite personalized score built from RNA reversal, mutation/pathway logic, subtype context, clinical actionability, and an optional ML prior."
+    "Drugs ranked by a composite score combining molecular, clinical, and computational evidence. "
+    "Hover over 'Composite Personalized Score' below for details."
 )
 
 safe_id = selected_sid.replace("/", "_")
@@ -689,6 +689,22 @@ if rankings_path.exists():
     rankings = pd.read_csv(rankings_path)
     score_column = "final_score" if "final_score" in rankings.columns else "predicted_inhibition"
     score_label = "Composite Personalized Score" if score_column == "final_score" else "Predicted Inhibition (%)"
+
+    if score_column == "final_score":
+        st.markdown(
+            '<p style="margin:0 0 1rem 0; font-size:0.9rem;">'
+            'Ranked by <span title="Weighted sum of 5 components: '
+            'RNA reversal vs LINCS signatures (35%), '
+            'mutation/pathway match (22%), '
+            'PAM50 subtype context (18%), '
+            'clinical actionability (17%), '
+            'and cell-line ML prior (8%). '
+            'Evidence tiers reflect biomarker-drug pairing across 11 molecular markers."'
+            f' style="border-bottom:1px dotted {COLORS["accent"]}; cursor:help; '
+            f'color:{COLORS["accent"]};">'
+            'Composite Personalized Score</span></p>',
+            unsafe_allow_html=True,
+        )
 
     # Bar chart
     fig = px.bar(
