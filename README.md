@@ -7,18 +7,28 @@
 
 ## Architecture
 
-### Drug Ranking Model (inspired by scTherapy)
+### Composite Personalized Ranker
+
+The ranking layer is now explicit and modular for each patient-drug pair:
+
+- **RNA reversal score**: patient RNA dysregulation versus breast LINCS perturbation signatures
+- **Mutation / pathway score**: curated biomarker-pathway bonuses such as HER2 and PI3K/AKT/mTOR
+- **Subtype / tissue-context score**: PAM50-aware breast-cancer context rules
+- **Clinical actionability score**: favors clinically plausible breast-cancer agents and penalizes tool compounds
+- **Optional ML prior**: LightGBM cell-line inhibition model used only as an auxiliary ranking prior
+
+Final rankings are therefore not driven by perturbation potency alone.
+
+### Auxiliary LightGBM Drug-Response Model (inspired by scTherapy)
 
 Trained on the same data schema as scTherapy (Ianevski & Nader et al., Nat Commun 2024),
-but **scoped to breast cancer cell lines** and **rebuilt locally** for full interpretability:
+but **scoped to breast cancer cell lines** and **rebuilt locally** for interpretability:
 
 - **Features**: L1000 landmark gene fold-changes (~978) + ECFP4 drug fingerprints (1024-bit) + log-dose
 - **Target**: Percent cell inhibition (continuous, from PharmacoDB dose-response curves)
 - **Model**: LightGBM regressor with Bayesian hyperparameter optimization
 
-At inference, TCGA-BRCA patient DEGs (vs. subtype-aware centroid) substitute for
-drug-induced expression changes, and the model predicts which drugs at which doses
-would produce the strongest inhibition.
+Important: this model is not treated as a validated patient response predictor. It is one component inside the broader personalized rationale stack.
 
 ### Baseline: Signature Reversal Score
 
@@ -55,6 +65,10 @@ python -m src.models.train_lightgbm
 
 # 4. Run inference on TCGA-BRCA patients
 python -m src.models.predict_patients
+
+# 4b. Programmatic personalized ranking
+# from src.ranking.personalized_ranker import rank_tcga_patient
+# rankings, summary = rank_tcga_patient("TCGA-A2-A04W-01", top_k=15)
 
 # 5. Launch Streamlit app
 streamlit run app/main.py

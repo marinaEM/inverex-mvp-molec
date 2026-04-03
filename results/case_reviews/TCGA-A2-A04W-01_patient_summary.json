@@ -1,0 +1,34 @@
+{
+  "patient_id": "TCGA-A2-A04W-01",
+  "pam50_subtype": "Her2",
+  "er_status": "Negative",
+  "pr_status": "Negative",
+  "her2_status": "Positive",
+  "active_mutations": [
+    "TP53",
+    "PIK3CA",
+    "ERBB2_amp"
+  ],
+  "top_up_genes": [
+    "SHH",
+    "GLI1",
+    "JUN",
+    "HES1",
+    "ACTB"
+  ],
+  "top_down_genes": [
+    "CCNA2",
+    "TYMS",
+    "EZH2",
+    "PARP2",
+    "MSH2"
+  ],
+  "pathway_scores": {
+    "her2_egfr": 0.13515966398058432,
+    "pi3k_mtor": -0.5868586075559882,
+    "proliferation": -0.7004987093483689,
+    "er_luminal": -0.2797179204535562,
+    "dna_damage": -1.0808827365418954,
+    "immune_inflammation": -0.79220765878976
+  }
+}

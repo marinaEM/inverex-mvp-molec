@@ -1,0 +1,12 @@
+{
+  "weights": {
+    "rna_score": 0.35,
+    "mutation_pathway_score": 0.22,
+    "subtype_context_score": 0.18,
+    "clinical_actionability_score": 0.17,
+    "ml_score": 0.08
+  },
+  "rna_top_k_signatures": 3,
+  "rna_top_k_genes": 5,
+  "component_clip": 1.0
+}

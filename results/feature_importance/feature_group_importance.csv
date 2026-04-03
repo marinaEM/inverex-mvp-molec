@@ -1,0 +1,4 @@
+feature_group,importance,fraction
+dose,88.0,0.013784461152882205
+gene_expression,5663.0,0.8870614035087719
+drug_fingerprint,633.0,0.09915413533834587

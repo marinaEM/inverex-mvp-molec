@@ -63,9 +63,14 @@ def map_trials_for_rankings(
     Returns dict: drug_name -> list of trial dicts
     """
     trial_map = {}
-    for _, row in rankings_df.head(top_n).iterrows():
+    filtered = rankings_df.copy()
+    if "excluded_flag" in filtered.columns:
+        filtered = filtered[~filtered["excluded_flag"].fillna(False)]
+
+    for _, row in filtered.head(top_n).iterrows():
         drug = row["drug_name"]
-        trials = search_breast_trials(drug, max_results=max_trials_per_drug)
+        query_term = row.get("trial_query_term", drug)
+        trials = search_breast_trials(query_term, max_results=max_trials_per_drug)
         trial_map[drug] = trials
         if trials:
             logger.info(f"  {drug}: {len(trials)} active trial(s)")

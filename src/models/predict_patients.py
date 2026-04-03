@@ -10,10 +10,9 @@ then predict which drugs at which doses would produce the highest inhibition.
 """
 import logging
 from pathlib import Path
-from typing import Optional
+from typing import Any, Optional
 
 import joblib
-import lightgbm as lgb
 import numpy as np
 import pandas as pd
 
@@ -29,8 +28,14 @@ from src.data_ingestion.tcga import (
     compute_patient_signature,
     load_tcga_expression,
 )
+from src.ranking.personalized_ranker import PersonalizedDrugRanker
 
 logger = logging.getLogger(__name__)
+
+try:  # pragma: no cover - environment-dependent optional dependency
+    import lightgbm as lgb  # type: ignore
+except ImportError:  # pragma: no cover - environment-dependent optional dependency
+    lgb = Any
 
 # Standard doses to evaluate (µM), matching common LINCS concentrations
 EVAL_DOSES = [0.04, 0.12, 0.37, 1.11, 3.33, 10.0]
@@ -38,7 +43,7 @@ EVAL_DOSES = [0.04, 0.12, 0.37, 1.11, 3.33, 10.0]
 
 def predict_drugs_for_patient(
     sample_id: str,
-    model: lgb.LGBMRegressor,
+    model: Any,
     drug_fingerprints: pd.DataFrame,
     expression: Optional[pd.DataFrame] = None,
     cohort: Optional[pd.DataFrame] = None,
@@ -248,6 +253,87 @@ def predict_all_patients(
         df.to_csv(output_dir / f"drug_rankings_{safe_id}.csv", index=False)
 
     return results
+
+
+def predict_personalized_drugs_for_patient(
+    sample_id: str,
+    ranker: PersonalizedDrugRanker,
+    expression: Optional[pd.DataFrame] = None,
+    cohort: Optional[pd.DataFrame] = None,
+    landmark_genes: Optional[list[str]] = None,
+    top_k: int = 30,
+) -> tuple[pd.DataFrame, dict]:
+    """
+    Run the personalized composite ranker for a single TCGA-BRCA patient.
+
+    Returns:
+        ranking_df, patient_summary
+    """
+    if expression is None:
+        expression = load_tcga_expression()
+    if cohort is None:
+        cohort = build_patient_cohort()
+
+    rankings, patient_summary = ranker.rank_patient(
+        sample_id=sample_id,
+        expression=expression,
+        cohort=cohort,
+        landmark_genes=landmark_genes,
+        top_k=top_k,
+    )
+    return rankings, patient_summary
+
+
+def predict_all_patients_personalized(
+    sample_ids: list[str],
+    ranker: Optional[PersonalizedDrugRanker] = None,
+    output_dir: Path = RESULTS,
+    top_k: int = 20,
+) -> tuple[dict[str, pd.DataFrame], list[dict]]:
+    """
+    Run personalized drug rankings for multiple TCGA-BRCA patients.
+
+    Returns:
+        dict(sample_id -> ranking_df), list(patient_summary)
+    """
+    if ranker is None:
+        ranker = PersonalizedDrugRanker.from_project_artifacts()
+
+    expression = load_tcga_expression()
+    cohort = build_patient_cohort()
+    landmark_genes = load_landmark_genes()["gene_symbol"].tolist()
+
+    results = {}
+    summaries = []
+    for sid in sample_ids:
+        if sid not in expression.index:
+            logger.warning(f"Sample {sid} not found in expression data. Skipping.")
+            continue
+        try:
+            rankings, patient_summary = predict_personalized_drugs_for_patient(
+                sample_id=sid,
+                ranker=ranker,
+                expression=expression,
+                cohort=cohort,
+                landmark_genes=landmark_genes,
+                top_k=top_k,
+            )
+            results[sid] = rankings
+            summaries.append(patient_summary)
+            if not rankings.empty:
+                logger.info(
+                    f"  {sid}: top drug = {rankings.iloc[0]['drug_name']} "
+                    f"(final_score={rankings.iloc[0]['final_score']:.3f})"
+                )
+        except Exception as exc:
+            logger.error(f"Failed personalized ranking for {sid}: {exc}")
+
+    output_dir.mkdir(parents=True, exist_ok=True)
+    for sid, df in results.items():
+        safe_id = sid.replace("/", "_")
+        df.to_csv(output_dir / f"drug_rankings_{safe_id}.csv", index=False)
+
+    return results, summaries
 
 
 def compute_reversal_score(
