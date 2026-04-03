@@ -1,18 +1,18 @@
 {
-  "cv_rmse_mean": 17.005789879434797,
-  "cv_rmse_std": 1.2831767267581715,
-  "n_samples": 656,
+  "cv_rmse_mean": 16.659279407011233,
+  "cv_rmse_std": 0.6414699410685302,
+  "n_samples": 719,
   "n_features": 2003,
   "best_params": {
-    "n_estimators": "900",
-    "learning_rate": "0.03637234828810855",
-    "num_leaves": "43",
+    "n_estimators": "1000",
+    "learning_rate": "0.04580409201769861",
+    "num_leaves": "34",
     "max_depth": "3",
-    "subsample": "0.9586084666828139",
-    "colsample_bytree": "0.5696436652361008",
-    "reg_alpha": "2.7717375068504033",
-    "reg_lambda": "0.015224794543086916",
-    "min_child_samples": "6",
+    "subsample": "0.7991052528348199",
+    "colsample_bytree": "0.5252017245880792",
+    "reg_alpha": "0.02650755868827237",
+    "reg_lambda": "0.2580520752480695",
+    "min_child_samples": "5",
     "objective": "regression",
     "metric": "rmse",
     "boosting_type": "gbdt",
@@ -21,84 +21,84 @@
   },
   "top_gene_features": [
     {
-      "feature": "ELOVL6",
-      "importance": 31
-    },
-    {
-      "feature": "MAPK13",
-      "importance": 30
-    },
-    {
-      "feature": "ARID5B",
-      "importance": 29
-    },
-    {
-      "feature": "ZW10",
-      "importance": 29
-    },
-    {
-      "feature": "NUP85",
-      "importance": 28
-    },
-    {
-      "feature": "LYRM1",
-      "importance": 28
-    },
-    {
-      "feature": "ITGB1BP1",
-      "importance": 27
-    },
-    {
-      "feature": "UFM1",
-      "importance": 27
-    },
-    {
-      "feature": "PPIE",
-      "importance": 26
-    },
-    {
-      "feature": "SLC5A6",
-      "importance": 26
-    },
-    {
-      "feature": "MAP7",
-      "importance": 25
-    },
-    {
-      "feature": "PGAM1",
-      "importance": 25
-    },
-    {
-      "feature": "PAX8",
-      "importance": 25
-    },
-    {
-      "feature": "HOMER2",
-      "importance": 24
+      "feature": "PLS1",
+      "importance": 35
     },
     {
       "feature": "CFLAR",
+      "importance": 29
+    },
+    {
+      "feature": "NSDHL",
+      "importance": 28
+    },
+    {
+      "feature": "NCOA3",
+      "importance": 26
+    },
+    {
+      "feature": "CDK7",
       "importance": 24
     },
     {
-      "feature": "ASAH1",
+      "feature": "SLC35A1",
       "importance": 24
     },
     {
-      "feature": "ARHGAP1",
-      "importance": 24
-    },
-    {
-      "feature": "ATF6",
+      "feature": "PGAM1",
       "importance": 23
     },
     {
-      "feature": "PSMB10",
+      "feature": "SPP1",
+      "importance": 23
+    },
+    {
+      "feature": "TUBB6",
+      "importance": 23
+    },
+    {
+      "feature": "MAP7",
+      "importance": 23
+    },
+    {
+      "feature": "EPHB2",
+      "importance": 23
+    },
+    {
+      "feature": "ZW10",
+      "importance": 23
+    },
+    {
+      "feature": "IFRD2",
       "importance": 22
     },
     {
-      "feature": "LGMN",
+      "feature": "NUP85",
       "importance": 22
+    },
+    {
+      "feature": "PPARG",
+      "importance": 22
+    },
+    {
+      "feature": "DERA",
+      "importance": 22
+    },
+    {
+      "feature": "TES",
+      "importance": 22
+    },
+    {
+      "feature": "ELOVL6",
+      "importance": 22
+    },
+    {
+      "feature": "RHOA",
+      "importance": 21
+    },
+    {
+      "feature": "CLTB",
+      "importance": 21
     }
   ]
 }

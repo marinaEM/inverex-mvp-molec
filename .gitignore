@@ -27,3 +27,6 @@ data/processed/
 
 # Streamlit secrets
 .streamlit/secrets.toml
+.claude/
+CLAUDE.md
+INVEREX_FOLLOWUP_PROMPT.md
