@@ -643,7 +643,7 @@ patient_row = examples.loc[selected_sid]
 
 # == 1. Molecular Summary ==================================================
 st.markdown("""
-<h2><span class="section-number">1</span> Molecular Summary</h2>
+<h2><span class="section-number">1</span> Molecular summary</h2>
 """, unsafe_allow_html=True)
 
 col1, col2, col3 = st.columns(3)
@@ -674,7 +674,7 @@ if patient_row.get("ERBB2_amp", 0) == 1:
 
 # == 2. Drug Rankings ======================================================
 st.markdown("""
-<h2><span class="section-number">2</span> Computationally Ranked Drugs</h2>
+<h2><span class="section-number">2</span> Computationally ranked drugs</h2>
 """, unsafe_allow_html=True)
 
 st.caption(
@@ -761,7 +761,7 @@ else:
 
 # == 3. Mapped Clinical Trials =============================================
 st.markdown("""
-<h2><span class="section-number">3</span> Mapped Breast Cancer Trials</h2>
+<h2><span class="section-number">3</span> Mapped breast cancer trials</h2>
 """, unsafe_allow_html=True)
 
 st.caption(
@@ -836,7 +836,7 @@ else:
 
 # == 4. Model Rationale ====================================================
 st.markdown("""
-<h2><span class="section-number">4</span> Model Rationale</h2>
+<h2><span class="section-number">4</span> Model rationale</h2>
 """, unsafe_allow_html=True)
 
 col_left, col_right = st.columns(2)
@@ -898,7 +898,7 @@ with col_right:
 
 # == 5. Cohort Overview ====================================================
 st.markdown("""
-<h2><span class="section-number">5</span> Cohort Overview</h2>
+<h2><span class="section-number">5</span> Cohort overview</h2>
 """, unsafe_allow_html=True)
 
 subtype_counts = examples["pam50_subtype"].value_counts()
@@ -930,6 +930,97 @@ fig_subtypes.update_traces(
     opacity=0.9,
 )
 st.plotly_chart(fig_subtypes, use_container_width=True)
+
+
+# == 6. Patient validation =================================================
+st.markdown("""
+<h2><span class="section-number">6</span> Patient validation</h2>
+""", unsafe_allow_html=True)
+
+st.caption(
+    "Cell-line model tested on 1,912 real breast cancer patients with known drug response "
+    "(CTR-DB 2.0 / GEO). Patient-trained model uses leave-one-dataset-out cross-validation."
+)
+
+_val_path = RESULTS / "ctrdb_validation_results.csv"
+_lodo_path = RESULTS / "patient_model_lodo_results.csv"
+
+if _val_path.exists() and _lodo_path.exists():
+    _val = pd.read_csv(_val_path)
+    _lodo = pd.read_csv(_lodo_path)
+    _lodo_datasets = _lodo[_lodo["held_out_dataset"] != "MEAN"]
+    _lodo_mean = _lodo[_lodo["held_out_dataset"] == "MEAN"]
+
+    # Summary metrics
+    col_v1, col_v2, col_v3 = st.columns(3)
+    with col_v1:
+        st.metric(
+            "Cell-line model on patients",
+            f"AUC {_val['auc'].mean():.2f}",
+            help="Mean AUC across 10 CTR-DB datasets (0.5 = random)",
+        )
+    with col_v2:
+        _lodo_auc = float(_lodo_mean["auc"].iloc[0]) if not _lodo_mean.empty else 0
+        st.metric(
+            "Patient-trained model",
+            f"AUC {_lodo_auc:.2f}",
+            help="Leave-one-dataset-out CV on CTR-DB patient expression",
+        )
+    with col_v3:
+        st.metric(
+            "Validation datasets",
+            f"{len(_val)} datasets",
+            help=f"{int(_val['n_patients'].sum()):,} patients total",
+        )
+
+    # Per-dataset comparison chart
+    _combined = pd.DataFrame({
+        "Dataset": _val["geo_id"],
+        "Drug": _val["drug"].str[:30],
+        "N": _val["n_patients"],
+        "Cell-line AUC": _val["auc"],
+    })
+    _lodo_auc_map = dict(zip(_lodo_datasets["held_out_dataset"], _lodo_datasets["auc"]))
+    _combined["Patient AUC"] = _combined["Dataset"].map(_lodo_auc_map)
+
+    _melted = _combined.melt(
+        id_vars=["Dataset", "Drug", "N"],
+        value_vars=["Cell-line AUC", "Patient AUC"],
+        var_name="Model",
+        value_name="AUC",
+    ).dropna(subset=["AUC"])
+
+    fig_val = px.bar(
+        _melted,
+        x="Dataset",
+        y="AUC",
+        color="Model",
+        barmode="group",
+        color_discrete_map={
+            "Cell-line AUC": COLORS["muted"],
+            "Patient AUC": COLORS["primary_light"],
+        },
+        hover_data=["Drug", "N"],
+    )
+    fig_val.add_hline(
+        y=0.5, line_dash="dot",
+        line_color=COLORS["warning"],
+        annotation_text="random (0.5)",
+        annotation_font_color=COLORS["muted"],
+    )
+    fig_val = styled_plotly(fig_val, height=380, bargap=0.25)
+    st.plotly_chart(fig_val, use_container_width=True)
+
+    # Table
+    with st.expander("Per-dataset details"):
+        _display = _combined.copy()
+        _display["Cell-line AUC"] = _display["Cell-line AUC"].map("{:.3f}".format)
+        _display["Patient AUC"] = _display["Patient AUC"].map(
+            lambda x: f"{x:.3f}" if pd.notna(x) else "—"
+        )
+        st.dataframe(_display, use_container_width=True, hide_index=True)
+else:
+    st.info("Validation results not yet generated. Run the CTR-DB validation pipeline.")
 
 
 # -- Footer / Disclaimer ---------------------------------------------------
