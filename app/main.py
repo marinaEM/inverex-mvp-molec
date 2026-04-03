@@ -526,16 +526,15 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # -- Title area ------------------------------------------------------------
+_title_sym_b64 = _svg_to_b64(LOGO_SVG_PATH, recolor=COLORS["accent"])
 _title_wm_b64 = _svg_to_b64(WORDMARK_SVG_PATH)
-if _title_wm_b64:
-    st.markdown(f"""
-    <div style="margin-bottom: 0.5rem;">
-        <img src="data:image/svg+xml;base64,{_title_wm_b64}"
-             style="height:2.5rem;" alt="INVEREX" />
-    </div>
-    """, unsafe_allow_html=True)
-else:
-    st.markdown('<h1 style="margin-bottom: 0.1rem;">INVEREX</h1>', unsafe_allow_html=True)
+_sym_html = f'<img src="data:image/svg+xml;base64,{_title_sym_b64}" style="height:2rem;vertical-align:middle;margin-right:0.5rem;" />' if _title_sym_b64 else ""
+_wm_html = f'<img src="data:image/svg+xml;base64,{_title_wm_b64}" style="height:2.2rem;vertical-align:middle;" alt="INVEREX" />' if _title_wm_b64 else "INVEREX"
+st.markdown(f"""
+<div style="display:flex; align-items:center; margin-bottom:0.5rem;">
+    {_sym_html}{_wm_html}
+</div>
+""", unsafe_allow_html=True)
 
 st.caption(
     "Retrospective mock demo: TCGA-BRCA patient molecular profile \u2192 "
@@ -576,24 +575,19 @@ examples, reports, importances, metrics = load_data()
 
 # -- Sidebar ---------------------------------------------------------------
 with st.sidebar:
-    # Wordmark logo
+    # Symbol logo on top, wordmark below, then tagline
+    symbol_b64 = _svg_to_b64(LOGO_SVG_PATH, recolor=COLORS["accent"])
     wordmark_b64 = _svg_to_b64(WORDMARK_SVG_PATH)
-    if wordmark_b64:
-        st.markdown(f"""
-        <div style="text-align:center; padding: 1rem 0 0.3rem 0;">
-            <img src="data:image/svg+xml;base64,{wordmark_b64}"
-                 alt="INVEREX" style="width: 80%; max-width: 220px;" />
+    st.markdown(f"""
+    <div style="text-align:center; padding: 1rem 0 0;">
+        {'<img src="data:image/svg+xml;base64,' + symbol_b64 + '" alt="INVEREX Symbol" style="width:60px; margin-bottom:0.5rem;" />' if symbol_b64 else ''}
+        <br/>
+        {'<img src="data:image/svg+xml;base64,' + wordmark_b64 + '" alt="INVEREX" style="width:80%; max-width:220px;" />' if wordmark_b64 else '<div class="brand-title">INVEREX</div>'}
+        <div style="color:{COLORS['muted']}; font-size:0.8rem; line-height:1.4; margin-top:0.4rem;">
+            Explainable AI<br/>for decisions that matter
         </div>
-        """, unsafe_allow_html=True)
-    else:
-        st.markdown('<div class="brand-title">INVEREX</div>', unsafe_allow_html=True)
-
-    st.markdown(
-        f'<div style="text-align:center; color:{COLORS["muted"]}; '
-        f'font-size:0.8rem; line-height:1.4; margin-bottom:0.5rem;">'
-        f'Explainable AI<br/>for decisions that matter</div>',
-        unsafe_allow_html=True,
-    )
+    </div>
+    """, unsafe_allow_html=True)
 
     st.markdown("---")
 
@@ -685,7 +679,7 @@ st.markdown("""
 
 st.caption(
     "Drugs ranked by predicted percent inhibition from the LightGBM model. "
-    "Rankings are based on expression signature reversal and have no clinical validation."
+    "When available, the app now shows a composite personalized score built from RNA reversal, mutation/pathway logic, subtype context, clinical actionability, and an optional ML prior."
 )
 
 safe_id = selected_sid.replace("/", "_")
@@ -693,18 +687,20 @@ rankings_path = RESULTS / f"drug_rankings_{safe_id}.csv"
 
 if rankings_path.exists():
     rankings = pd.read_csv(rankings_path)
+    score_column = "final_score" if "final_score" in rankings.columns else "predicted_inhibition"
+    score_label = "Composite Personalized Score" if score_column == "final_score" else "Predicted Inhibition (%)"
 
     # Bar chart
     fig = px.bar(
         rankings.head(20),
-        x="predicted_inhibition",
+        x=score_column,
         y="drug_name",
         orientation="h",
-        color="predicted_inhibition",
+        color=score_column,
         color_continuous_scale=CHART_SEQUENTIAL,
-        range_color=[0, 100],
+        range_color=[rankings[score_column].min(), rankings[score_column].max()],
         labels={
-            "predicted_inhibition": "Predicted Inhibition (%)",
+            score_column: score_label,
             "drug_name": "Drug",
         },
     )
@@ -713,23 +709,36 @@ if rankings_path.exists():
         yaxis=dict(autorange="reversed", gridcolor="rgba(139,127,212,0.1)"),
         height=600,
         coloraxis_colorbar=dict(
-            title=dict(text="Inhibition %", font=dict(color=COLORS["muted"])),
+            title=dict(text=score_label, font=dict(color=COLORS["muted"])),
             tickfont=dict(color=COLORS["muted"]),
         ),
     )
     st.plotly_chart(fig, use_container_width=True)
 
     # Table
-    display_cols = [
-        "drug_name", "predicted_inhibition", "best_dose_um",
-        "confidence", "top_contributing_genes",
-    ]
-    display_df = rankings[display_cols].copy()
-    display_df.columns = [
-        "Drug", "Pred. Inhibition (%)", "Best Dose (uM)",
-        "Confidence", "Top Contributing Genes",
-    ]
+    display_cols = ["drug_name"]
+    display_labels = ["Drug"]
+    if "final_score" in rankings.columns:
+        display_cols.extend(["final_score", "evidence_tier", "predicted_inhibition", "best_dose_um", "confidence", "rationale_short"])
+        display_labels.extend(["Final Score", "Evidence Tier", "ML Pred. Inhibition (%)", "Best Dose (uM)", "Confidence", "Short Rationale"])
+    else:
+        display_cols.extend(["predicted_inhibition", "best_dose_um", "confidence", "top_contributing_genes"])
+        display_labels.extend(["Pred. Inhibition (%)", "Best Dose (uM)", "Confidence", "Top Contributing Genes"])
+
+    display_df = rankings[[col for col in display_cols if col in rankings.columns]].copy()
+    display_df.columns = display_labels[: len(display_df.columns)]
     st.dataframe(display_df, use_container_width=True, hide_index=True)
+
+    if "rationale_long" in rankings.columns:
+        st.markdown("#### Top Drug Rationales")
+        for _, row in rankings.head(5).iterrows():
+            with st.expander(f"{row['drug_name']}  |  {row.get('evidence_tier', 'NA')}"):
+                st.markdown(f"**Composite score:** {row.get('final_score', float('nan')):.3f}")
+                st.markdown(f"**RNA rationale:** {row.get('rna_rationale', 'NA')}")
+                st.markdown(f"**Mutation rationale:** {row.get('mutation_rationale', 'NA')}")
+                st.markdown(f"**Context rationale:** {row.get('context_rationale', 'NA')}")
+                st.markdown(f"**Clinical rationale:** {row.get('clinical_rationale', 'NA')}")
+                st.markdown(f"**Confidence notes:** {row.get('confidence_notes', 'NA')}")
 else:
     st.error(f"No ranking file found for {selected_sid}")
 
@@ -779,9 +788,15 @@ def _fetch_trials_for_drug(drug_name: str, max_results: int = 3) -> list[dict]:
 
 # Fetch trials live for top 5 drugs of selected patient
 if rankings_path.exists():
-    top_drugs = rankings.head(5)["drug_name"].tolist()
-    for drug_name in top_drugs:
-        trials = _fetch_trials_for_drug(drug_name)
+    if "excluded_flag" in rankings.columns:
+        trial_rankings = rankings[~rankings["excluded_flag"].fillna(False)].copy()
+    else:
+        trial_rankings = rankings.copy()
+
+    for _, row in trial_rankings.head(5).iterrows():
+        drug_name = row["drug_name"]
+        query_term = row.get("trial_query_term", drug_name)
+        trials = _fetch_trials_for_drug(query_term)
         with st.expander(f"**{drug_name}** — {len(trials)} trial(s)"):
             if trials:
                 for t in trials:
