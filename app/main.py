@@ -691,9 +691,8 @@ if rankings_path.exists():
         yaxis=dict(autorange="reversed", gridcolor="rgba(139,127,212,0.1)"),
         height=600,
         coloraxis_colorbar=dict(
-            title="Inhibition %",
+            title=dict(text="Inhibition %", font=dict(color=COLORS["muted"])),
             tickfont=dict(color=COLORS["muted"]),
-            titlefont=dict(color=COLORS["muted"]),
         ),
     )
     st.plotly_chart(fig, use_container_width=True)
