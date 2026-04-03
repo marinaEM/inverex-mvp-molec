@@ -27,6 +27,7 @@ def _find_asset(name: str) -> Path:
     return APP_DIR / name
 
 LOGO_SVG_PATH = _find_asset("Symbol.svg")
+WORDMARK_SVG_PATH = _find_asset("logo_inverex_light_blue.svg")
 BRANDING_IMG_PATH = _find_asset("Branding Visual 6.png")
 
 # -- Color palette ---------------------------------------------------------
@@ -525,17 +526,16 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # -- Title area ------------------------------------------------------------
-_title_logo_b64 = _svg_to_b64(LOGO_SVG_PATH, recolor=COLORS["accent"])
-_title_logo_html = (
-    f'<img src="data:image/svg+xml;base64,{_title_logo_b64}" '
-    f'style="height:2.2rem;vertical-align:middle;margin-right:0.6rem;" />'
-    if _title_logo_b64 else ""
-)
-st.markdown(f"""
-<h1 style="margin-bottom: 0.1rem; display: flex; align-items: center;">
-    {_title_logo_html}INVEREX
-</h1>
-""", unsafe_allow_html=True)
+_title_wm_b64 = _svg_to_b64(WORDMARK_SVG_PATH)
+if _title_wm_b64:
+    st.markdown(f"""
+    <div style="margin-bottom: 0.5rem;">
+        <img src="data:image/svg+xml;base64,{_title_wm_b64}"
+             style="height:2.5rem;" alt="INVEREX" />
+    </div>
+    """, unsafe_allow_html=True)
+else:
+    st.markdown('<h1 style="margin-bottom: 0.1rem;">INVEREX</h1>', unsafe_allow_html=True)
 
 st.caption(
     "Retrospective mock demo: TCGA-BRCA patient molecular profile \u2192 "
@@ -576,18 +576,22 @@ examples, reports, importances, metrics = load_data()
 
 # -- Sidebar ---------------------------------------------------------------
 with st.sidebar:
-    # Logo
-    logo_b64 = _svg_to_b64(LOGO_SVG_PATH, recolor=COLORS["accent"])
-    if logo_b64:
+    # Wordmark logo
+    wordmark_b64 = _svg_to_b64(WORDMARK_SVG_PATH)
+    if wordmark_b64:
         st.markdown(f"""
-        <div class="logo-container">
-            <img src="data:image/svg+xml;base64,{logo_b64}" alt="INVEREX Logo" />
+        <div style="text-align:center; padding: 1rem 0 0.3rem 0;">
+            <img src="data:image/svg+xml;base64,{wordmark_b64}"
+                 alt="INVEREX" style="width: 80%; max-width: 220px;" />
         </div>
         """, unsafe_allow_html=True)
+    else:
+        st.markdown('<div class="brand-title">INVEREX</div>', unsafe_allow_html=True)
 
-    st.markdown('<div class="brand-title">INVEREX</div>', unsafe_allow_html=True)
     st.markdown(
-        '<div class="brand-subtitle">Breast Cancer Drug Ranking</div>',
+        f'<div style="text-align:center; color:{COLORS["muted"]}; '
+        f'font-size:0.8rem; line-height:1.4; margin-bottom:0.5rem;">'
+        f'Explainable AI<br/>for decisions that matter</div>',
         unsafe_allow_html=True,
     )
 
