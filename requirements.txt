@@ -1,18 +1,21 @@
-numpy>=1.24
-pandas>=2.0
-scipy>=1.10
-scikit-learn>=1.3
-lightgbm>=4.0
-requests>=2.31
-rdkit-pypi>=2023.9.1
-gseapy>=1.0
+# ── App runtime (Streamlit Cloud) ──
 streamlit>=1.28
+pandas>=2.0
 plotly>=5.18
-matplotlib>=3.7
-seaborn>=0.13
 pyarrow>=14.0
-tqdm>=4.66
-joblib>=1.3
-optuna>=3.4
-cmapPy>=4.0.1
-h5py>=3.9
+requests>=2.31
+
+# ── Pipeline (local only — not needed on Streamlit Cloud) ──
+# numpy>=1.24
+# scipy>=1.10
+# scikit-learn>=1.3
+# lightgbm>=4.0
+# rdkit-pypi>=2023.9.1
+# gseapy>=1.0
+# matplotlib>=3.7
+# seaborn>=0.13
+# tqdm>=4.66
+# joblib>=1.3
+# optuna>=3.4
+# cmapPy>=4.0.1
+# h5py>=3.9
