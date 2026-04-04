@@ -1,0 +1,33 @@
+held_out_dataset	feature_set	auc	n_test	n_test_pos	n_train	n_train_pos	n_features	drug
+GSE20194	A_ssGSEA_Hallmark	0.6362	278	56	1070	433	48	TFAC (Cyclophosphamide+Doxorubicin+Fluorouracil+Paclitaxel)
+GSE20194	B_PROGENy_only	0.5906	278	56	1070	433	13	TFAC (Cyclophosphamide+Doxorubicin+Fluorouracil+Paclitaxel)
+GSE20194	C_ssGSEA_plus_PROGENy	0.6072	278	56	1070	433	61	TFAC (Cyclophosphamide+Doxorubicin+Fluorouracil+Paclitaxel)
+GSE20194	D_PROGENy_drug_specific	0.5917	278	56	1070	433	13	TFAC (Cyclophosphamide+Doxorubicin+Fluorouracil+Paclitaxel)
+GSE20271	A_ssGSEA_Hallmark	0.7012	178	26	1170	463	48	FAC (Cyclophosphamide+Doxorubicin+Fluorouracil)
+GSE20271	B_PROGENy_only	0.6002	178	26	1170	463	13	FAC (Cyclophosphamide+Doxorubicin+Fluorouracil)
+GSE20271	C_ssGSEA_plus_PROGENy	0.6561	178	26	1170	463	61	FAC (Cyclophosphamide+Doxorubicin+Fluorouracil)
+GSE20271	D_PROGENy_drug_specific	0.6022	178	26	1170	463	13	FAC (Cyclophosphamide+Doxorubicin+Fluorouracil)
+GSE32646	A_ssGSEA_Hallmark	0.7306	115	27	1233	462	48	TFEC (Cyclophosphamide+Epirubicin+Fluorouracil+Paclitaxel)
+GSE32646	B_PROGENy_only	0.6549	115	27	1233	462	13	TFEC (Cyclophosphamide+Epirubicin+Fluorouracil+Paclitaxel)
+GSE32646	C_ssGSEA_plus_PROGENy	0.7214	115	27	1233	462	61	TFEC (Cyclophosphamide+Epirubicin+Fluorouracil+Paclitaxel)
+GSE32646	D_PROGENy_drug_specific	0.6553	115	27	1233	462	13	TFEC (Cyclophosphamide+Epirubicin+Fluorouracil+Paclitaxel)
+GSE41998	A_ssGSEA_Hallmark	0.7512	206	201	1142	288	48	AC (Cyclophosphamide+Doxorubicin)+Ixabepilone
+GSE41998	B_PROGENy_only	0.6766	206	201	1142	288	13	AC (Cyclophosphamide+Doxorubicin)+Ixabepilone
+GSE41998	C_ssGSEA_plus_PROGENy	0.7522	206	201	1142	288	61	AC (Cyclophosphamide+Doxorubicin)+Ixabepilone
+GSE41998	D_PROGENy_drug_specific	0.6766	206	201	1142	288	13	AC (Cyclophosphamide+Doxorubicin)+Ixabepilone
+GSE4779	A_ssGSEA_Hallmark	0.6602	102	39	1246	450	48	Cyclophosphamide+Epirubicin+Fluorouracil
+GSE4779	B_PROGENy_only	0.6585	102	39	1246	450	13	Cyclophosphamide+Epirubicin+Fluorouracil
+GSE4779	C_ssGSEA_plus_PROGENy	0.6842	102	39	1246	450	61	Cyclophosphamide+Epirubicin+Fluorouracil
+GSE4779	D_PROGENy_drug_specific	0.6585	102	39	1246	450	13	Cyclophosphamide+Epirubicin+Fluorouracil
+GSE50948	A_ssGSEA_Hallmark	0.5944	156	53	1192	436	48	AT (Doxorubicin+Paclitaxel)+CMF (Cyclophosphamide+Fluorouracil+Methotrexate)+Trastuzumab
+GSE50948	B_PROGENy_only	0.4596	156	53	1192	436	13	AT (Doxorubicin+Paclitaxel)+CMF (Cyclophosphamide+Fluorouracil+Methotrexate)+Trastuzumab
+GSE50948	C_ssGSEA_plus_PROGENy	0.5525	156	53	1192	436	61	AT (Doxorubicin+Paclitaxel)+CMF (Cyclophosphamide+Fluorouracil+Methotrexate)+Trastuzumab
+GSE50948	D_PROGENy_drug_specific	0.4594	156	53	1192	436	13	AT (Doxorubicin+Paclitaxel)+CMF (Cyclophosphamide+Fluorouracil+Methotrexate)+Trastuzumab
+GSE6861	A_ssGSEA_Hallmark	0.6215	161	66	1187	423	48	Cyclophosphamide+Epirubicin+Fluorouracil
+GSE6861	B_PROGENy_only	0.6011	161	66	1187	423	13	Cyclophosphamide+Epirubicin+Fluorouracil
+GSE6861	C_ssGSEA_plus_PROGENy	0.6308	161	66	1187	423	61	Cyclophosphamide+Epirubicin+Fluorouracil
+GSE6861	D_PROGENy_drug_specific	0.601	161	66	1187	423	13	Cyclophosphamide+Epirubicin+Fluorouracil
+GSE82172	A_ssGSEA_Hallmark	0.3973	152	21	1196	468	48	Tamoxifen
+GSE82172	B_PROGENy_only	0.5496	152	21	1196	468	13	Tamoxifen
+GSE82172	C_ssGSEA_plus_PROGENy	0.4046	152	21	1196	468	61	Tamoxifen
+GSE82172	D_PROGENy_drug_specific	0.5496	152	21	1196	468	13	Tamoxifen
