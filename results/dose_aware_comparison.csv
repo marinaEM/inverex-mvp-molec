@@ -1,0 +1,97 @@
+dataset,drug_string,approach,auc,n_train,n_test,n_features,matched_drugs
+GSE104645,Fluorouracil+Leucovorin+Oxaliplatin,dose_averaged,0.5701530612244898,3584,126,2,"fluorouracil, leucovorin"
+GSE104645,Fluorouracil+Leucovorin+Oxaliplatin,dose_stratified,0.5784438775510204,3584,126,3,"fluorouracil, leucovorin"
+GSE104645,Fluorouracil+Leucovorin+Oxaliplatin,dose_stratified_slope,0.6071428571428571,3584,126,6,"fluorouracil, leucovorin"
+GSE104958,Cisplatin+Docetaxel+Fluorouracil,dose_averaged,0.5441176470588236,3664,46,3,"cisplatin, docetaxel, fluorouracil"
+GSE104958,Cisplatin+Docetaxel+Fluorouracil,dose_stratified,0.4779411764705883,3664,46,5,"cisplatin, docetaxel, fluorouracil"
+GSE104958,Cisplatin+Docetaxel+Fluorouracil,dose_stratified_slope,0.4436274509803922,3664,46,10,"cisplatin, docetaxel, fluorouracil"
+GSE109211,Sorafenib,dose_averaged,0.4273566569484937,3570,140,1,sorafenib
+GSE109211,Sorafenib,dose_stratified,0.586977648202138,3570,140,2,sorafenib
+GSE109211,Sorafenib,dose_stratified_slope,0.652089407191448,3570,140,4,sorafenib
+GSE14615,Doxorubicin+Mercaptopurine+Methotrexate+Prednisone+Vincristine,dose_averaged,0.11904761904761901,3690,20,5,"doxorubicin, mercaptopurine, methotrexate, prednisone, vincristine"
+GSE14615,Doxorubicin+Mercaptopurine+Methotrexate+Prednisone+Vincristine,dose_stratified,0.20238095238095238,3690,20,9,"doxorubicin, mercaptopurine, methotrexate, prednisone, vincristine"
+GSE14615,Doxorubicin+Mercaptopurine+Methotrexate+Prednisone+Vincristine,dose_stratified_slope,0.23809523809523814,3690,20,17,"doxorubicin, mercaptopurine, methotrexate, prednisone, vincristine"
+GSE14671,Imatinib,dose_averaged,0.4769647696476965,3651,59,1,imatinib
+GSE14671,Imatinib,dose_stratified,0.483739837398374,3651,59,2,imatinib
+GSE14671,Imatinib,dose_stratified_slope,0.483739837398374,3651,59,4,imatinib
+GSE173263,Cyclophosphamide+Doxorubicin+Prednisolone+Rituximab+Vincristine,dose_averaged,0.3275862068965517,3671,39,4,"cyclophosphamide, doxorubicin, prednisolone, vincristine"
+GSE173263,Cyclophosphamide+Doxorubicin+Prednisolone+Rituximab+Vincristine,dose_stratified,0.3448275862068965,3671,39,7,"cyclophosphamide, doxorubicin, prednisolone, vincristine"
+GSE173263,Cyclophosphamide+Doxorubicin+Prednisolone+Rituximab+Vincristine,dose_stratified_slope,0.37586206896551727,3671,39,13,"cyclophosphamide, doxorubicin, prednisolone, vincristine"
+GSE19293,Melphalan,dose_averaged,0.4479166666666667,3658,52,1,melphalan
+GSE19293,Melphalan,dose_stratified,0.4479166666666667,3658,52,1,melphalan
+GSE19293,Melphalan,dose_stratified_slope,0.4479166666666667,3658,52,2,melphalan
+GSE20181,Letrozole,dose_averaged,0.5,3556,154,1,letrozole
+GSE20181,Letrozole,dose_stratified,0.5,3556,154,1,letrozole
+GSE20181,Letrozole,dose_stratified_slope,0.5,3556,154,2,letrozole
+GSE20194,TFAC (Cyclophosphamide+Doxorubicin+Fluorouracil+Paclitaxel),dose_averaged,0.5962033462033461,3432,278,4,"cyclophosphamide, doxorubicin, fluorouracil, paclitaxel"
+GSE20194,TFAC (Cyclophosphamide+Doxorubicin+Fluorouracil+Paclitaxel),dose_stratified,0.6042471042471043,3432,278,8,"cyclophosphamide, doxorubicin, fluorouracil, paclitaxel"
+GSE20194,TFAC (Cyclophosphamide+Doxorubicin+Fluorouracil+Paclitaxel),dose_stratified_slope,0.6303088803088803,3432,278,15,"cyclophosphamide, doxorubicin, fluorouracil, paclitaxel"
+GSE20271,FAC (Cyclophosphamide+Doxorubicin+Fluorouracil),dose_averaged,0.6052631578947368,3532,178,3,"cyclophosphamide, doxorubicin, fluorouracil"
+GSE20271,FAC (Cyclophosphamide+Doxorubicin+Fluorouracil),dose_stratified,0.6007085020242915,3532,178,6,"cyclophosphamide, doxorubicin, fluorouracil"
+GSE20271,FAC (Cyclophosphamide+Doxorubicin+Fluorouracil),dose_stratified_slope,0.5928643724696356,3532,178,11,"cyclophosphamide, doxorubicin, fluorouracil"
+GSE21974,Cyclophosphamide+Docetaxel+Epirubicin,dose_averaged,0.641025641025641,3653,57,3,"cyclophosphamide, docetaxel, epirubicin"
+GSE21974,Cyclophosphamide+Docetaxel+Epirubicin,dose_stratified,0.641025641025641,3653,57,3,"cyclophosphamide, docetaxel, epirubicin"
+GSE21974,Cyclophosphamide+Docetaxel+Epirubicin,dose_stratified_slope,0.641025641025641,3653,57,6,"cyclophosphamide, docetaxel, epirubicin"
+GSE22093,FEC (Cyclophosphamide+Epirubicin+Fluorouracil),dose_averaged,0.6521739130434783,3613,97,3,"cyclophosphamide, epirubicin, fluorouracil"
+GSE22093,FEC (Cyclophosphamide+Epirubicin+Fluorouracil),dose_stratified,0.6754658385093169,3613,97,4,"cyclophosphamide, epirubicin, fluorouracil"
+GSE22093,FEC (Cyclophosphamide+Epirubicin+Fluorouracil),dose_stratified_slope,0.6770186335403726,3613,97,8,"cyclophosphamide, epirubicin, fluorouracil"
+GSE23988,FEC (Cyclophosphamide+Epirubicin+Fluorouracil)+Capecitabine+Docetaxel,dose_averaged,0.7353658536585366,3649,61,5,"cyclophosphamide, epirubicin, fluorouracil, capecitabine, docetaxel"
+GSE23988,FEC (Cyclophosphamide+Epirubicin+Fluorouracil)+Capecitabine+Docetaxel,dose_stratified,0.7951219512195122,3649,61,6,"cyclophosphamide, epirubicin, fluorouracil, capecitabine, docetaxel"
+GSE23988,FEC (Cyclophosphamide+Epirubicin+Fluorouracil)+Capecitabine+Docetaxel,dose_stratified_slope,0.7853658536585366,3649,61,12,"cyclophosphamide, epirubicin, fluorouracil, capecitabine, docetaxel"
+GSE25066,Anthracycline+Taxane,dose_averaged,0.35369115317701433,3222,488,5,"doxorubicin, epirubicin, daunorubicin, paclitaxel, docetaxel"
+GSE25066,Anthracycline+Taxane,dose_stratified,0.41904910285373015,3222,488,9,"doxorubicin, epirubicin, daunorubicin, paclitaxel, docetaxel"
+GSE25066,Anthracycline+Taxane,dose_stratified_slope,0.6329100776401547,3222,488,17,"doxorubicin, epirubicin, daunorubicin, paclitaxel, docetaxel"
+GSE28702,FOLFOX (Fluorouracil+Leucovorin+Oxaliplatin),dose_averaged,0.6707317073170731,3627,83,2,"fluorouracil, leucovorin"
+GSE28702,FOLFOX (Fluorouracil+Leucovorin+Oxaliplatin),dose_stratified,0.6626016260162602,3627,83,3,"fluorouracil, leucovorin"
+GSE28702,FOLFOX (Fluorouracil+Leucovorin+Oxaliplatin),dose_stratified_slope,0.673054587688734,3627,83,6,"fluorouracil, leucovorin"
+GSE32646,TFEC (Cyclophosphamide+Epirubicin+Fluorouracil+Paclitaxel),dose_averaged,0.6123737373737373,3595,115,4,"cyclophosphamide, epirubicin, fluorouracil, paclitaxel"
+GSE32646,TFEC (Cyclophosphamide+Epirubicin+Fluorouracil+Paclitaxel),dose_stratified,0.6523569023569024,3595,115,6,"cyclophosphamide, epirubicin, fluorouracil, paclitaxel"
+GSE32646,TFEC (Cyclophosphamide+Epirubicin+Fluorouracil+Paclitaxel),dose_stratified_slope,0.630050505050505,3595,115,12,"cyclophosphamide, epirubicin, fluorouracil, paclitaxel"
+GSE41998,AC (Cyclophosphamide+Doxorubicin)+Ixabepilone,dose_averaged,0.145273631840796,3504,206,2,"cyclophosphamide, doxorubicin"
+GSE41998,AC (Cyclophosphamide+Doxorubicin)+Ixabepilone,dose_stratified,0.1850746268656716,3504,206,4,"cyclophosphamide, doxorubicin"
+GSE41998,AC (Cyclophosphamide+Doxorubicin)+Ixabepilone,dose_stratified_slope,0.136318407960199,3504,206,7,"cyclophosphamide, doxorubicin"
+GSE4779,Cyclophosphamide+Epirubicin+Fluorouracil,dose_averaged,0.544973544973545,3608,102,3,"cyclophosphamide, epirubicin, fluorouracil"
+GSE4779,Cyclophosphamide+Epirubicin+Fluorouracil,dose_stratified,0.5730565730565731,3608,102,4,"cyclophosphamide, epirubicin, fluorouracil"
+GSE4779,Cyclophosphamide+Epirubicin+Fluorouracil,dose_stratified_slope,0.5685795685795686,3608,102,8,"cyclophosphamide, epirubicin, fluorouracil"
+GSE48905,Fulvestrant,dose_averaged,0.6222222222222223,3671,39,1,fulvestrant
+GSE48905,Fulvestrant,dose_stratified,0.6138888888888888,3671,39,3,fulvestrant
+GSE48905,Fulvestrant,dose_stratified_slope,0.5555555555555556,3671,39,5,fulvestrant
+GSE50948,AT (Doxorubicin+Paclitaxel)+CMF (Cyclophosphamide+Fluorouracil+Methotrexate)+Trastuzumab,dose_averaged,0.5477193625206082,3554,156,5,"doxorubicin, paclitaxel, cyclophosphamide, fluorouracil, methotrexate"
+GSE50948,AT (Doxorubicin+Paclitaxel)+CMF (Cyclophosphamide+Fluorouracil+Methotrexate)+Trastuzumab,dose_stratified,0.5563289979849789,3554,156,10,"doxorubicin, paclitaxel, cyclophosphamide, fluorouracil, methotrexate"
+GSE50948,AT (Doxorubicin+Paclitaxel)+CMF (Cyclophosphamide+Fluorouracil+Methotrexate)+Trastuzumab,dose_stratified_slope,0.5572449166514014,3554,156,19,"doxorubicin, paclitaxel, cyclophosphamide, fluorouracil, methotrexate"
+GSE5122,Tipifarnib,dose_averaged,0.4669811320754717,3653,57,1,tipifarnib
+GSE5122,Tipifarnib,dose_stratified,0.4669811320754717,3653,57,1,tipifarnib
+GSE5122,Tipifarnib,dose_stratified_slope,0.4669811320754717,3653,57,2,tipifarnib
+GSE61676,Bevacizumab+Erlotinib,dose_averaged,,0,0,0,erlotinib
+GSE61676,Bevacizumab+Erlotinib,dose_stratified,,0,0,0,erlotinib
+GSE61676,Bevacizumab+Erlotinib,dose_stratified_slope,,0,0,0,erlotinib
+GSE62321,Fluorouracil+Irinotecan+Leucovorin,dose_averaged,0.4950372208436724,3653,57,3,"fluorouracil, irinotecan, leucovorin"
+GSE62321,Fluorouracil+Irinotecan+Leucovorin,dose_stratified,0.47766749379652607,3653,57,4,"fluorouracil, irinotecan, leucovorin"
+GSE62321,Fluorouracil+Irinotecan+Leucovorin,dose_stratified_slope,0.45905707196029777,3653,57,8,"fluorouracil, irinotecan, leucovorin"
+GSE63885,Platinum+Taxane,dose_averaged,0.4615384615384615,3642,68,3,"cisplatin, paclitaxel, docetaxel"
+GSE63885,Platinum+Taxane,dose_stratified,0.2923076923076923,3642,68,5,"cisplatin, paclitaxel, docetaxel"
+GSE63885,Platinum+Taxane,dose_stratified_slope,0.35384615384615387,3642,68,10,"cisplatin, paclitaxel, docetaxel"
+GSE66999,Docetaxel+Epirubicin+Pegfilgrastim,dose_averaged,0.4571428571428572,3634,76,2,"docetaxel, epirubicin"
+GSE66999,Docetaxel+Epirubicin+Pegfilgrastim,dose_stratified,0.4571428571428572,3634,76,2,"docetaxel, epirubicin"
+GSE66999,Docetaxel+Epirubicin+Pegfilgrastim,dose_stratified_slope,0.4571428571428572,3634,76,4,"docetaxel, epirubicin"
+GSE6861,Cyclophosphamide+Epirubicin+Fluorouracil,dose_averaged,0.5140350877192983,3549,161,3,"cyclophosphamide, epirubicin, fluorouracil"
+GSE6861,Cyclophosphamide+Epirubicin+Fluorouracil,dose_stratified,0.5339712918660288,3549,161,4,"cyclophosphamide, epirubicin, fluorouracil"
+GSE6861,Cyclophosphamide+Epirubicin+Fluorouracil,dose_stratified_slope,0.5271132376395534,3549,161,8,"cyclophosphamide, epirubicin, fluorouracil"
+GSE68871,VTD (Bortezomib+Thalidomide),dose_averaged,0.4909180166912126,3592,118,2,"bortezomib, thalidomide"
+GSE68871,VTD (Bortezomib+Thalidomide),dose_stratified,0.5537555228276878,3592,118,3,"bortezomib, thalidomide"
+GSE68871,VTD (Bortezomib+Thalidomide),dose_stratified_slope,0.478154148257241,3592,118,6,"bortezomib, thalidomide"
+GSE72970,FOLFIRI (Fluorouracil+Irinotecan+Leucovorin),dose_averaged,0.4358574030705178,3586,124,3,"fluorouracil, irinotecan, leucovorin"
+GSE72970,FOLFIRI (Fluorouracil+Irinotecan+Leucovorin),dose_stratified,0.4207650273224044,3586,124,4,"fluorouracil, irinotecan, leucovorin"
+GSE72970,FOLFIRI (Fluorouracil+Irinotecan+Leucovorin),dose_stratified_slope,0.42206609419724167,3586,124,8,"fluorouracil, irinotecan, leucovorin"
+GSE73578,Prednisone,dose_averaged,0.5739130434782609,3647,63,1,prednisone
+GSE73578,Prednisone,dose_stratified,0.5739130434782609,3647,63,1,prednisone
+GSE73578,Prednisone,dose_stratified_slope,0.5739130434782609,3647,63,2,prednisone
+GSE82172,Tamoxifen,dose_averaged,0.4318429661941112,3558,152,1,tamoxifen
+GSE82172,Tamoxifen,dose_stratified,0.4154852780806979,3558,152,3,tamoxifen
+GSE82172,Tamoxifen,dose_stratified_slope,0.4216648491457652,3558,152,5,tamoxifen
+GSE8970,Tipifarnib,dose_averaged,0.5621301775147929,3684,26,1,tipifarnib
+GSE8970,Tipifarnib,dose_stratified,0.5621301775147929,3684,26,1,tipifarnib
+GSE8970,Tipifarnib,dose_stratified_slope,0.5621301775147929,3684,26,2,tipifarnib
+GSE9782,Bortezomib,dose_averaged,0.5066077441077441,3398,312,1,bortezomib
+GSE9782,Bortezomib,dose_stratified,0.5091750841750842,3398,312,2,bortezomib
+GSE9782,Bortezomib,dose_stratified_slope,0.5056397306397307,3398,312,4,bortezomib
