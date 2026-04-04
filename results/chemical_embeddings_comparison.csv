@@ -1,0 +1,4 @@
+feature_set,n_features,cv_rmse_mean,cv_rmse_std
+ECFP only,2003,21.2041,1.3951
+ChemBERTa only,1363,17.6331,1.7481
+ECFP + ChemBERTa,2387,18.0485,1.6973
