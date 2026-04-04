@@ -1,0 +1,4 @@
+model,rmse_mean,rmse_std,r2_mean,r2_std
+LightGBM,18.87,0.7868,0.7229,0.0167
+ShallowNN,16.3421,0.7071,0.792,0.0161
+Ensemble,16.1745,0.6867,0.7966,0.0091
