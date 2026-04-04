@@ -1,0 +1,11 @@
+fold	model	rmse	r2	n_train	n_val
+0	single_task_nn	15.2727	0.8152	575	144
+1	single_task_nn	14.0762	0.8387	575	144
+2	single_task_nn	15.4	0.8325	575	144
+3	single_task_nn	14.1287	0.8454	575	144
+4	single_task_nn	13.5442	0.8517	576	143
+0	multi_task_nn	15.8027	0.8022	575	144
+1	multi_task_nn	14.2408	0.8349	575	144
+2	multi_task_nn	16.0946	0.8171	575	144
+3	multi_task_nn	15.6524	0.8102	575	144
+4	multi_task_nn	14.4701	0.8308	576	143

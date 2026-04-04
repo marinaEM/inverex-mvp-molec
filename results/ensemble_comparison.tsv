@@ -1,0 +1,10 @@
+dataset_id	drug	n_test	n_pos	auc_reversal_uniform	auc_reversal_plus_dt	auc_lgbm_reversal	auc_ssgsea_pathway	auc_ensemble
+GSE20194	TFAC (Cyclophosphamide+Doxorubicin+Fluorouracil+Paclitaxel)	278	56	0.5818	0.5184	0.5177	0.5931	0.4808
+GSE20271	FAC (Cyclophosphamide+Doxorubicin+Fluorouracil)	178	26	0.5139	0.5385	0.5385	0.4669	0.4168
+GSE32646	TFEC (Cyclophosphamide+Epirubicin+Fluorouracil+Paclitaxel)	115	27	0.5412	0.5067	0.5059	0.4726	0.4714
+GSE41998	AC (Cyclophosphamide+Doxorubicin)+Ixabepilone	206	201	0.3284	0.1851	0.1891	0.2318	0.1632
+GSE4779	Cyclophosphamide+Epirubicin+Fluorouracil	102	39	0.4628	0.4681	0.4689	0.4587	0.479
+GSE50948	AT (Doxorubicin+Paclitaxel)+CMF (Cyclophosphamide+Fluorouracil+Methotrexate)+Trastuzumab	156	53	0.4909	0.4682	0.4682	0.5563	0.5239
+GSE66999	Docetaxel+Epirubicin+Pegfilgrastim	76	70	0.2857	0.3048	0.3048	0.3	0.581
+GSE6861	Cyclophosphamide+Epirubicin+Fluorouracil	161	66	0.4478	0.4514	0.451	0.4566	0.4424
+GSE82172	Tamoxifen	152	21	0.4431	0.6125	0.6125	0.5471	0.5991
