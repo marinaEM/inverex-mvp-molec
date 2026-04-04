@@ -1,0 +1,27 @@
+metric,value,note
+Phase 1 total signatures,473647,GSE92742
+Phase 2 total signatures,118050,GSE70138
+Phase 1 compound signatures,205034,trt_cp only
+Phase 2 compound signatures,107404,trt_cp only
+Phase 1 compounds (global),19811,unique pert_iname
+Phase 2 compounds (global),1768,unique pert_iname
+Shared compounds,1032,in both phases
+New compounds (Phase 2 only),736,global
+Phase 1 cell lines (global),71,
+Phase 2 cell lines (global),30,
+New cell lines (Phase 2),12,"['ASC.C', 'HELA', 'HME1', 'HUES3', 'HUVEC', 'LNCAP', 'MNEU.E', 'NPC.CAS9', 'NPC.TAK', 'SKL', 'SKL.C'"
+Phase 1 breast sigs,33510,"HS578T, MCF7, MDAMB231, SKBR3"
+Phase 2 breast sigs,16970,"HS578T, MCF7, MDAMB231, SKBR3"
+Phase 2 breast 24h sigs,13963,24h timepoint
+Phase 1 breast compounds,10753,normalised unique
+Phase 2 breast compounds,1760,normalised unique
+New breast compounds (Phase 2),744,not in Phase 1 breast
+GDSC2 breast drugs,286,from breast_dose_response_ref
+GDSC2 matched (Phase 1 only),114,with alias table
+GDSC2 matched (P1 + P2),145,with alias table
+New GDSC2 matches from Phase 2,31,incremental
+New matching breast 24h sigs,227,from Phase 2
+Current training samples,719,lincs_pharmacodb_matched
+Current training drugs,103,
+Estimated new training samples,946,after Phase 2 merge
+Estimated new training drugs,134,after Phase 2 merge
