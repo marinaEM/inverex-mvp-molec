@@ -1,0 +1,386 @@
+{
+  "patient_id": "TCGA-A2-A04W-01",
+  "timestamp": "2026-04-04T18:57:54.933768",
+  "disclaimer": "RESEARCH DEMO ONLY. Not a clinical treatment recommendation. This system is for exploratory analysis and must not be used for medical decision-making.",
+  "n_drugs_evaluated": 4,
+  "scenario_counts": {
+    "known": 3,
+    "new": 1
+  },
+  "drugs": [
+    {
+      "rank": 1,
+      "drug_name": "lapatinib",
+      "scenario": "known",
+      "score": 0.5341,
+      "confidence": "high",
+      "confidence_interval": [
+        0.4541,
+        0.6141
+      ],
+      "evidence_tier": "Tier 1",
+      "rationale": "Top LINCS reversal came from MCF7 signatures (best reversal 0.24). Reversed genes: CENPE, JUN, HIF1A, FOS, EZH2. Reversed programs: er_luminal, dna_damage. ERBB2/HER2-active disease aligns with HER2-pathway relevance. HER2 subtype favors HER2-pathway-directed agents. Clinical status: approved_breast. Standard breast-cancer class. Pan-cancer response probability 63.6% (moderate) -- based on expression patterns from 3,730 patients across 11 cancer types. 2/2 drug targets found in expression profile.",
+      "trial_matches": [
+        {
+          "nct_id": "NCT06828588",
+          "title": "Pilot Study of [68Ga]Ga-ABY-025 Imaging in Patients Undergoing Treatment With HER2-targeted Therapy",
+          "phase": "EARLY_PHASE1",
+          "status": "NOT_YET_RECRUITING",
+          "interventions": [
+            "[68Ga]Ga-ABY-025"
+          ],
+          "eligibility_snippet": "Inclusion Criteria:\n\n1. Age \u2265 18 years.\n2. Patients with unresectable locally advanced or metastatic cancer who are eligible for standard of care treatment with HER2-targeted therapy per the discretion of their treating physician for an FDA-approved indication. Patients who are planning to start HER2-targeted therapy at the time of study enrollment. Patients who have recently begun HER2 treatment and have received no more than 6 cycles will be eligible for enrollment.\n3. Must have a previous bio"
+        },
+        {
+          "nct_id": "NCT06313983",
+          "title": "A Phase \u2162 Study of Hemay022 in Combination With AI In Advanced Breast Cancer",
+          "phase": "PHASE3",
+          "status": "RECRUITING",
+          "interventions": [
+            "Hemay022+AI",
+            "Lapatinib+Capecitabine"
+          ],
+          "eligibility_snippet": "Inclusion Criteria:\n\n1. Age \u226518 years old\uff1b\n2. Subjects must give informed consent to the study before the study entry and voluntarily sign a written informed consent form;\n3. Breast cancer subjects diagnosed by pathology\uff08histology or cytology\uff09;\n4. ER positive and HER2 over-expression (immunohistochemical IHC test 3+ and/or in situ hybridization ISH test positive)\uff1bPrevious test results are acceptable.\n5. Advanced/metastatic breast cancer that has previously received treatment failure with trastuz"
+        },
+        {
+          "nct_id": "NCT01273610",
+          "title": "Tolerability of the Combination of Lapatinib and Trastuzumab in Adults Age 60 or Older With HER2 Positive Locally Advanced or Metastatic Breast Cancer",
+          "phase": "PHASE2",
+          "status": "ACTIVE_NOT_RECRUITING",
+          "interventions": [
+            "Lapatinib",
+            "Trastuzumab",
+            "laboratory biomarker analysis",
+            "pharmacological study"
+          ],
+          "eligibility_snippet": "Inclusion Criteria:\n\n* Locally advanced or metastatic Her2/Neu positive breast cancer (defined as immunohistochemistry \\[IHC\\] 3+ or a fluorescence in situ hybridization \\[FISH\\] ratio of \\>= 2.0); this may be on either a primary tumor or a metastatic site, and there is no time limit from the time the specimen was obtained; locally advanced breast cancer (LABC) includes breast cancers with advanced primary tumors, i.e., large diameter (at least 5 cm) or those with skin and/or chest wall involvem"
+        },
+        {
+          "nct_id": "NCT00999804",
+          "title": "Extension Study of Lapatinib Plus Herceptin With or Without Endocrine Therapy",
+          "phase": "PHASE2",
+          "status": "ACTIVE_NOT_RECRUITING",
+          "interventions": [
+            "Lapatinib",
+            "Letrozole",
+            "Trastuzumab"
+          ],
+          "eligibility_snippet": "Inclusion Criteria:\n\n1. All patients must be female and at least 18 years of age.\n2. Signed informed consent.\n3. Locally advanced breast cancers are eligible. Locally advanced cancers must be of clinical and/or radiologic size \\>3 cm, or \\>2 cm with clinical evidence of axillary nodal involvement\\*. (If tumors are less than 3 cm, we will use the radiologically measured tumor size to determine if the tumor meets the minimal size requirements.)\n4. Patients must have histologically confirmed invasi"
+        },
+        {
+          "nct_id": "NCT07152782",
+          "title": "T-DXd With or Without Neratinib for HER2 Positive Breast Cancer With Brain Metastasis",
+          "phase": "PHASE2",
+          "status": "NOT_YET_RECRUITING",
+          "interventions": [
+            "Neratinib",
+            "Trastuzumab Deruxtecan"
+          ],
+          "eligibility_snippet": "Inclusion Criteria:\n\n\\-\n\nParticipants must meet all of the following inclusion criteria in order to be enrolled in this study:\n\n1. Female, aged 18-70 years old.\n2. ECOG score ranges from 0 to 1.\n3. Expected survival period is greater than 12 weeks.\n4. Histologically confirmed invasive HER2 positive breast cancer (HER2 IHC+++or FISH/CISH positive, all samples need to be verified by the pathology department of the research center).\n5. Tumor staging: recurrent or metastatic breast cancer; Patients "
+        }
+      ]
+    },
+    {
+      "rank": 2,
+      "drug_name": "INVEREX-001",
+      "scenario": "new",
+      "score": 0.3146,
+      "confidence": "low",
+      "confidence_interval": [
+        0.0146,
+        0.6146
+      ],
+      "evidence_tier": "Tier 3 (analog-based)",
+      "rationale": "Nearest analogs (ChemBERTa cosine): MK-1775 (0.86), ZM-447439 (0.86), doramapimod (0.83). 2/2 drug targets found in expression profile. Analog reversal (similarity-weighted): 0.133 from [MK-1775: 0.039, ZM-447439: 0.173, doramapimod: 0.100]. Pan-cancer response probability 63.6% (moderate) -- based on expression patterns from 3,730 patients across 11 cancer types. NOTE: This drug is NOT in our training data. All scores are transferred from structural analogs. Confidence is LOW.",
+      "trial_matches": [
+        {
+          "nct_id": "NCT05536128",
+          "title": "Evaluating the Efficacy and Safety of Fulvestrant Plus DNA Damage Repair Inhibitors After a CDK4/6 Inhibitor",
+          "phase": "PHASE2",
+          "status": "RECRUITING",
+          "interventions": [
+            "Olaparib",
+            "Fulvestrant"
+          ],
+          "eligibility_snippet": "1.1 Inclusion criteria\n\nPatients are eligible to be included in the study only if all of the following inclusion criteria and none of the exclusion criteria apply:\n\nInformed consent\n\n1. Capable of giving signed informed consent which includes compliance with the requirements and restrictions listed in the informed consent form (ICF) and in this protocol.\n2. Provision of signed and dated, written informed consent form prior to any mandatory study specific procedures, sampling, and analyses.\n\n   A"
+        },
+        {
+          "nct_id": "NCT06702618",
+          "title": "Evaluation of TQB3616 Capsules in a Phase II Clinical Trial for Recurrent/Metastatic Breast Cancer",
+          "phase": "PHASE2",
+          "status": "NOT_YET_RECRUITING",
+          "interventions": [
+            "TQB3616 capsule+Fulvestrant Injection"
+          ],
+          "eligibility_snippet": "Inclusion Criteria:\n\n* Subjects voluntarily join the study, sign the informed consent form, and have good compliance\n* Aged 18 to 75 years, with an Eastern Cooperative Oncology Group Performance Status (ECOG PS) score of 0\\~1; expected survival time of more than 3 months.\n* Postmenopausal or premenopausal/perimenopausal female patients\n* Progressed after prior treatment with CDK4/6 inhibitors\n* At least one measurable lesion according to Response Evaluation Criteria in Solid Tumors (RECIST) 1.1 "
+        },
+        {
+          "nct_id": "NCT06001762",
+          "title": "TRADE: Dose Escalation Tolerability of Abemaciclib in HR+ HER2- Early Stage Breast Cancer",
+          "phase": "PHASE2",
+          "status": "ACTIVE_NOT_RECRUITING",
+          "interventions": [
+            "Abemaciclib",
+            "Tamoxifen",
+            "Anastrozole",
+            "Letrozole",
+            "Exemestane",
+            "LHRH Agonist"
+          ],
+          "eligibility_snippet": "Inclusion Criteria:\n\n* Stage II or III node-positive HR+/HER2- breast cancer per local laboratory assessment.\n* Eligible participants must be appropriate candidates for adjuvant abemaciclib, per assessment of their treating physician.\n* Participants must be candidates for adjuvant endocrine therapy, which may have started before or at time of entry onto the trial. Patient may be receiving adjuvant aromatase inhibitor or tamoxifen, +/- ovarian suppression.\n* Participants must have undergone defin"
+        },
+        {
+          "nct_id": "NCT06380751",
+          "title": "Saruparib (AZD5305) Plus Camizestrant Compared With CDK4/6 Inhibitor Plus Endocrine Therapy or Plus Camizestrant in HR-Positive, HER2-Negative (IHC 0, 1+, 2+/ ISH Non-amplified), BRCA1, BRCA2, or PALB2m Advanced Breast Cancer",
+          "phase": "PHASE3",
+          "status": "RECRUITING",
+          "interventions": [
+            "Saruparib (AZD5305)",
+            "Camizestrant",
+            "Abemaciclib",
+            "Ribociclib",
+            "Palbociclib",
+            "Fulvestrant",
+            "Letrozole",
+            "Anastrozole",
+            "Exemestane"
+          ],
+          "eligibility_snippet": "Inclusion Criteria:\n\n* Adult females, pre/peri-menopausal and/or post-menopausal, and adult males\n* Histologically or cytologically documented diagnosis of HR-positive, HER2-negative breast cancer\n* Advanced breast cancer with either locally advanced disease not amenable to curative treatment or metastatic disease\n* ECOG performance status of 0 or 1 with no deterioration over the previous 2 weeks\n* FFPE tumour tissue from each participant\n* Documented germline tumour loss of function mutation in"
+        },
+        {
+          "nct_id": "NCT07195227",
+          "title": "Efficacy and Safety of Camizestrant Plus Ribociclib in Patients With Breast Cancer",
+          "phase": "PHASE2",
+          "status": "NOT_YET_RECRUITING",
+          "interventions": [
+            "Camizestrant",
+            "Ribociclib"
+          ],
+          "eligibility_snippet": "Inclusion Criteria:\n\n1. Patient must be capable of understanding the purpose of the Study and have signed the written informed consent form (ICF) prior to beginning specific protocol procedures.\n2. Female or male patients \u2265 18 years of age at the time of signing ICF.\n3. Pre- or peri-menopausal women or men. are eligible if treated with a Luteinizing hormone-releasing hormone (LHRH) analogue. Treatment with a LHRH is recommended for at least 28 days prior to study treatment; if shorter, post-meno"
+        },
+        {
+          "nct_id": "NCT02763566",
+          "title": "A Study of Abemaciclib (LY2835219) in Participants With Breast Cancer",
+          "phase": "PHASE3",
+          "status": "ACTIVE_NOT_RECRUITING",
+          "interventions": [
+            "Abemaciclib",
+            "Anastrozole",
+            "Letrozole",
+            "Placebo",
+            "Fulvestrant"
+          ],
+          "eligibility_snippet": "Inclusion Criteria:\n\n* Have a diagnosis of HR+, HER2- breast cancer. Although not required as a protocol procedure, metastatic disease should be considered for biopsy whenever possible to reassess hormone receptor (HR) and human epidermal growth factor receptor 2 (HER2) status if clinically indicated.\n\n  * To fulfill the requirement for HR+ disease, a breast cancer must express, by immunohistochemistry (IHC), at least 1 of the HRs (estrogen receptor \\[ER\\], progesterone receptor \\[PgR\\]) as defi"
+        },
+        {
+          "nct_id": "NCT03959891",
+          "title": "AKT Inhibitor, Ipatasertib, With Endocrine and CDK 4/6 Inhibitor for Patients With Metastatic Breast Cancer (TAKTIC)",
+          "phase": "PHASE1",
+          "status": "ACTIVE_NOT_RECRUITING",
+          "interventions": [
+            "Ipatasertib",
+            "Fulvestrant",
+            "Aromatase Inhibitor",
+            "Palbociclib"
+          ],
+          "eligibility_snippet": "Inclusion Criteria:\n\n* Adult women (\u2265 18 years of age) with biopsy proven HR+/HER2 negative breast cancer; HR+ defined as \u22651% positivity for ER, and/or PR (\u22651%), as per local assessment. HER2 as per standard CAP guidelines (local assessment).\n* Postmenopausal women with locally advanced or metastatic BC. Patients must be postmenopausal women as defined by one of the following:\n\n  * Women \\>60 years OR\n  * Women \u226460 years, and any one of following:\n\n    * LH and FSH level in the postmenopausal ra"
+        },
+        {
+          "nct_id": "NCT07112053",
+          "title": "A Vaccine (STEMVAC) With Standard Endocrine-Based Therapy or Chemotherapy for the Treatment of Metastatic Hormone Receptor Positive, HER2 Negative Breast Cancer",
+          "phase": "PHASE2",
+          "status": "RECRUITING",
+          "interventions": [
+            "CD105/Yb-1/SOX2/CDH3/MDM2-polyepitope Plasmid DNA Vaccine",
+            "Capecitabine",
+            "Computed Tomography",
+            "Cyclin-Dependent Kinase 4 Inhibitor",
+            "Cyclin-Dependent Kinase 6 Inhibitor",
+            "F-18 16 Alpha-Fluoroestradiol",
+            "Hormone Therapy",
+            "Positron Emission Tomography",
+            "Ultrasound Imaging",
+            "Biopsy Procedure",
+            "Biospecimen Collection"
+          ],
+          "eligibility_snippet": "Inclusion Criteria:\n\n* Patients must be at least \u2265 18 years of age\n* Histologically confirmed hormone receptor positive metastatic breast cancer: Tumors that are positive for estrogen receptor (ER) and/or progesterone receptor (PR)\n* HER2-negative or HER2-low will be included and defined as:\n\n  * 0-1+ HER2 expression by immunohistochemistry (IHC) OR\n  * Fluorescence in situ hybridization (FISH) negative OR\n  * HER2 2+ and FISH negative\n  * HER2 low per standard of care in breast cancer\n* Patient"
+        },
+        {
+          "nct_id": "NCT06586957",
+          "title": "A Study With NKT3964 for Adults With Advanced/Metastatic Solid Tumors",
+          "phase": "PHASE1",
+          "status": "RECRUITING",
+          "interventions": [
+            "NKT3964"
+          ],
+          "eligibility_snippet": "Inclusion Criteria:\n\n\\- Must have a pathologically confirmed advanced and unresectable or metastatic solid tumor listed below with documented disease progression on last standard treatment. Part 1 only: subjects must be refractory to, or intolerant of existing therapy(ies) known to provide clinical benefit for their condition.\n\nDose Escalation:\n\n1. Ovarian cancer\n2. Endometrial cancer (only endometrioid subtype will require CCNE1 amplification)\n3. Gastric, gastroesophageal junction (GEJ) or esop"
+        }
+      ],
+      "nearest_analogs": [
+        "MK-1775",
+        "ZM-447439",
+        "doramapimod",
+        "gefitinib",
+        "BMS-536924"
+      ],
+      "note": "This drug is not in our training data. Predictions are based on structural similarity to MK-1775 and target pathway activity. Confidence is low."
+    },
+    {
+      "rank": 3,
+      "drug_name": "paclitaxel",
+      "scenario": "known",
+      "score": 0.2554,
+      "confidence": "high",
+      "confidence_interval": [
+        0.1754,
+        0.3354
+      ],
+      "evidence_tier": "Tier 1",
+      "rationale": "Top LINCS reversal came from MCF7 signatures (best reversal 0.18). Reversed genes: FOS, CCNA2, HIF1A, PLK1, EZH2. Reversed programs: dna_damage, er_luminal. Taxane/vinca classes remain clinically plausible in HER2-positive breast cancer. Clinical status: approved_breast. Standard breast-cancer class. Pan-cancer response probability 63.6% (moderate) -- based on expression patterns from 3,730 patients across 11 cancer types.",
+      "trial_matches": [
+        {
+          "nct_id": "NCT03742102",
+          "title": "A Study of Novel Anti-cancer Agents in Patients With Metastatic Triple Negative Breast Cancer",
+          "phase": "PHASE1",
+          "status": "ACTIVE_NOT_RECRUITING",
+          "interventions": [
+            "Durvalumab",
+            "Capivasertib",
+            "Oleclumab",
+            "Paclitaxel",
+            "Trastuzumab deruxtecan",
+            "Datopotamab deruxtecan"
+          ],
+          "eligibility_snippet": "Inclusion criteria\n\n1. Female\n2. At least 18 years of age at the time of screening\n3. Patient must have locally confirmed advanced/unresectable or metastatic TNBC.\n4. No prior treatment for metastatic (Stage IV) TNBC\n5. Patient must have at least 1 lesion, not previously irradiated, that can be accurately measured\n6. WHO/ECOG status at 0 or 1 at enrollment\n\nPatients enrolled to Arm 6 (durvalumab and DS-8201a) Must provide documentation of locally determined advanced/unresectable or metastatic TN"
+        },
+        {
+          "nct_id": "NCT05256745",
+          "title": "RAGE Inhibition to Decrease Cardiotoxicity in Women With Early Breast Cancer",
+          "phase": "PHASE1",
+          "status": "RECRUITING",
+          "interventions": [
+            "TTP488",
+            "ddAC/ddT",
+            "TC",
+            "TCHP",
+            "Chemotherapy regimen that includes ddAC"
+          ],
+          "eligibility_snippet": "Inclusion Criteria:\n\n1. Patients must have clinical or pathologic stage I-III, histologically confirmed breast cancer, with any ER (estrogen-receptor), PR (progesterone receptors), or HER2 (human epidermal growth factor receptor 2) status who are planned to receive chemotherapy in the adjuvant or neoadjuvant setting.\n\n   a. Chemotherapy regimens administered per USPI (United States Prescribing Information) label: i. Dose dense doxorubicin plus cyclophosphamide followed by paclitaxel (ddAC/ddT) f"
+        },
+        {
+          "nct_id": "NCT06052345",
+          "title": "Paclitaxel-induced Polyneuropathy in Breast Cancer: Early Detection, Risk Factors, Quality of Life and Lifestyle Outcomes",
+          "phase": null,
+          "status": "RECRUITING",
+          "interventions": [
+            "Garmin smartwatch",
+            "REBECCA Mobile application",
+            "REBECCA PC plug-in"
+          ],
+          "eligibility_snippet": "Inclusion Criteria:\n\n* Female patients\n* Age of \u2265 18 years\n* Newly operated primary breast cancer without metastatic disease receiving adjuvant chemotherapy containing paclitaxel\n* No prior chemotherapy other than cyclophosphamide and epirubicin\n* Eastern Cooperative Oncology Group (ECOG) performance status of 0-1\n* Written informed consent\n* Able to communicate with investigators, participate in testing and comply with the requirements of the study-protocol\n\nExclusion Criteria:\n\n* Have received"
+        },
+        {
+          "nct_id": "NCT04301375",
+          "title": "Omission of Surgery and Sentinel Lymph Node Dissection in Clinically Low-risk HER2positive Breast Cancer With High HER2 Addiction and a Complete Response Following Standard Anti- HER2-based Neoadjuvant Therapy (ELPIS Trial)",
+          "phase": "PHASE2",
+          "status": "NOT_YET_RECRUITING",
+          "interventions": [
+            "Pertuzumab and trastuzumab FDC subcutaneous",
+            "Paclitaxel",
+            "TDM1",
+            "Endocrine therapy",
+            "Omission surgery"
+          ],
+          "eligibility_snippet": "Inclusion Criteria:\n\n* Female participants who are at least 40 years of age on the day of signing the informed consent form with histologically confirmed diagnosis of breast cancer.\n* A participant is eligible to participate if she is not pregnant, not breastfeeding, and at least one of the following conditions applies:\n\n  1. Not a woman of childbearing potential as defined in protocol OR\n  2. A woman of childbearing potential who agrees to follow the contraceptive guidance in protocol during th"
+        },
+        {
+          "nct_id": "NCT02608216",
+          "title": "[18F]FLT PET/CT in Rb+ Metastatic Breast Cancer",
+          "phase": "PHASE1",
+          "status": "ACTIVE_NOT_RECRUITING",
+          "interventions": [
+            "[18F]FLT",
+            "PET/CT",
+            "ribociclib",
+            "paclitaxel"
+          ],
+          "eligibility_snippet": "Inclusion Criteria:\n\n1. At least 18 years of age\n2. History of histologically or cytologically confirmed breast cancer, any ER, PR or HER2 status is allowed as long as it expresses the Rb protein.\n3. At least one site of metastatic breast cancer that is outside of the liver and bone that is identified by standard imaging (e.g. CT, MRI, FDG PET/CT, ultrasound, x-ray)\n4. Participants must be informed of the investigational nature of this study and provide written informed consent in accordance wit"
+        }
+      ]
+    },
+    {
+      "rank": 4,
+      "drug_name": "tamoxifen",
+      "scenario": "known",
+      "score": 0.1047,
+      "confidence": "high",
+      "confidence_interval": [
+        0.0247,
+        0.1847
+      ],
+      "evidence_tier": "Tier 1",
+      "rationale": "Top LINCS reversal came from MCF7 signatures (best reversal -0.01). Reversed genes: NR3C1, IL1B, EZH2, CCL2, PMAIP1. Reversed programs: immune_inflammation. ER-negative status penalizes endocrine-only logic. Clinical status: approved_breast. Standard breast-cancer class. Pan-cancer response probability 63.6% (moderate) -- based on expression patterns from 3,730 patients across 11 cancer types. 1/1 drug targets found in expression profile.",
+      "trial_matches": [
+        {
+          "nct_id": "NCT05941520",
+          "title": "Acolbifene Versus Low Dose Tamoxifen for the Prevention of Breast Cancer in Premenopausal Women at High Risk for Development of Breast Cancer",
+          "phase": "PHASE2",
+          "status": "RECRUITING",
+          "interventions": [
+            "Acolbifene Hydrochloride",
+            "Biospecimen Collection",
+            "Mammography",
+            "Questionnaire Administration",
+            "Random Periareolar Fine-Needle Aspiration",
+            "Tamoxifen"
+          ],
+          "eligibility_snippet": "Inclusion Criteria:\n\n* Age \\>= 35 years\n* Considered clinically premenopausal\n* Having regular menstrual cycles (between 21 and 35 days) unless a contraceptive device such as progestin containing intrauterine device (IUD) (e.g., Mirena IUD) is being used which suppresses menstrual periods, or premenopausal women who have undergone a hysterectomy, but ovaries are intact\n* Not considering pregnancy for at least 12 months\n* Women of child-bearing potential capacity must be willing to have used effe"
+        },
+        {
+          "nct_id": "NCT06623903",
+          "title": "Early Changes in Metabolic Health in Breast Cancer Patients Initiating Endocrine Therapy",
+          "phase": null,
+          "status": "NOT_YET_RECRUITING",
+          "interventions": [],
+          "eligibility_snippet": "Inclusion Criteria:\n\n* Age \u226518 years\n* Invasive ER+ breast cancer\n* No diabetes treatment\n* Planned for initiation of any adjuvant endocrine therapy.\n\nExclusion Criteria:\n\n* Pregnancy or lactation,\n* Psychological, familial, sociological, or geographical conditions potentially hampering compliance with the study protocol and follow-up schedule; these conditions will be discussed with the patient before registration in the trial."
+        },
+        {
+          "nct_id": "NCT04733118",
+          "title": "Chemotherapy-Free pCR-Guided Strategy With Trastuzumab-pertuzumab and T-DM1 in HER2-positive Early Breast Cancer",
+          "phase": "PHASE2",
+          "status": "ACTIVE_NOT_RECRUITING",
+          "interventions": [
+            "Trastuzumab and Pertuzumab (FDC SC) and T-DM1"
+          ],
+          "eligibility_snippet": "Inclusion criteria\n\nPatients will be included in the study only if they meet ALL of the following criteria:\n\n1. Written informed consent prior to beginning specific protocol procedures.\n2. Female or male patients \u2265 18 years of age.\n3. Eastern Cooperative Oncology Group (ECOG) performance status of 0 or 1.\n4. Histologically proven invasive carcinoma of the breast.\n5. Tumor size must be between \u2265 5mm and \u226430mm in greatest dimension using breast MRI. Note: Although tumors between \u2265 5mm and \u2264 10mm a"
+        },
+        {
+          "nct_id": "NCT06837792",
+          "title": "Trastuzumab Deruxtecan vs Endocrine Therapy in Low-HER2 HR+ Advanced Breast Cancer",
+          "phase": "PHASE2",
+          "status": "RECRUITING",
+          "interventions": [
+            "Experimental treatment arm",
+            "Control treatment arm"
+          ],
+          "eligibility_snippet": "Inclusion Criteria:\n\n1. Histologically or cytologically confirmed hormone receptor-positive advanced breast cancer patients\n\n   1. Have recurrent, metastatic, or unresectable disease\n   2. Have HER2-low expression status, defined as IHC 2+/ISH- or IHC 1+,with a validated assay by ASCO/CAP guidelines\n   3. Have no previous history of HER2-positive breast cancer (IHC 3+ or ISH+) by ASCO/CAP guidelines\n   4. The hormone receptor (HR) status is defined by ER/PR IHC nuclear staining, and ER or PgR \u22651"
+        },
+        {
+          "nct_id": "NCT06001762",
+          "title": "TRADE: Dose Escalation Tolerability of Abemaciclib in HR+ HER2- Early Stage Breast Cancer",
+          "phase": "PHASE2",
+          "status": "ACTIVE_NOT_RECRUITING",
+          "interventions": [
+            "Abemaciclib",
+            "Tamoxifen",
+            "Anastrozole",
+            "Letrozole",
+            "Exemestane",
+            "LHRH Agonist"
+          ],
+          "eligibility_snippet": "Inclusion Criteria:\n\n* Stage II or III node-positive HR+/HER2- breast cancer per local laboratory assessment.\n* Eligible participants must be appropriate candidates for adjuvant abemaciclib, per assessment of their treating physician.\n* Participants must be candidates for adjuvant endocrine therapy, which may have started before or at time of entry onto the trial. Patient may be receiving adjuvant aromatase inhibitor or tamoxifen, +/- ovarian suppression.\n* Participants must have undergone defin"
+        }
+      ]
+    }
+  ]
+}
