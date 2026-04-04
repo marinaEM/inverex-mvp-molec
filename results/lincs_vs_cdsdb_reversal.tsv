@@ -1,0 +1,42 @@
+drug_component	ctrdb_regimen	geo_id	source	n_patients	n_responders	n_nonresponders	n_genes_overlap	auc	mannwhitney_p	mean_rev_responders	mean_rev_nonresponders	delta_rev
+cyclophosphamide	TFAC (Cyclophosphamide+Doxorubicin+Fluorouracil+Paclitaxel)	GSE20194	LINCS	278	56	222	964	0.5174	0.688542	0.0125	0.0027	0.0098
+cyclophosphamide	FAC (Cyclophosphamide+Doxorubicin+Fluorouracil)	GSE20271	LINCS	178	26	152	964	0.4858	0.819191	-0.0203	-0.0096	-0.0108
+cyclophosphamide	TFEC (Cyclophosphamide+Epirubicin+Fluorouracil+Paclitaxel)	GSE32646	LINCS	115	27	88	964	0.4663	0.59988	-0.0104	-0.0015	-0.0088
+cyclophosphamide	AC (Cyclophosphamide+Doxorubicin)+Ixabepilone	GSE41998	LINCS	206	201	5	964	0.4358	0.636715	-0.0033	0.0138	-0.0171
+cyclophosphamide	Cyclophosphamide+Epirubicin+Fluorouracil	GSE4779	LINCS	102	39	63	938	0.4412	0.321398	-0.0161	0.0001	-0.0162
+cyclophosphamide	AT (Doxorubicin+Paclitaxel)+CMF (Cyclophosphamide+Fluorouracil+Methotrexate)+Trastuzumab	GSE50948	LINCS	156	53	103	964	0.4827	0.725039	-0.0013	-0.0007	-0.0006
+cyclophosphamide	Cyclophosphamide+Epirubicin+Fluorouracil	GSE6861	LINCS	161	66	95	938	0.4372	0.176209	-0.0141	0.001	-0.0151
+docetaxel	Anthracycline+Taxane	GSE104645	LINCS	126	112	14	962	0.4796	0.806823	-0.0028	0.002	-0.0049
+docetaxel	Anthracycline+Taxane	GSE25066	LINCS	488	99	389	964	0.6273	9.1e-05	0.0268	-0.0067	0.0335
+docetaxel	Docetaxel+Epirubicin+Pegfilgrastim	GSE66999	LINCS	76	70	6	962	0.1976	0.01201	-0.0105	0.0732	-0.0837
+doxorubicin	Anthracycline+Taxane	GSE104645	LINCS	126	112	14	962	0.4758	0.770972	-0.0071	-0.0008	-0.0063
+doxorubicin	TFAC (Cyclophosphamide+Doxorubicin+Fluorouracil+Paclitaxel)	GSE20194	LINCS	278	56	222	964	0.6479	0.000627	0.0491	-0.0135	0.0626
+doxorubicin	FAC (Cyclophosphamide+Doxorubicin+Fluorouracil)	GSE20271	LINCS	178	26	152	964	0.5453	0.46223	0.0056	-0.0145	0.0202
+doxorubicin	Anthracycline+Taxane	GSE25066	LINCS	488	99	389	964	0.6938	0.0	0.059	-0.0169	0.0759
+doxorubicin	AC (Cyclophosphamide+Doxorubicin)+Ixabepilone	GSE41998	LINCS	206	201	5	964	0.2129	0.025415	-0.0124	0.1273	-0.1397
+doxorubicin	AT (Doxorubicin+Paclitaxel)+CMF (Cyclophosphamide+Fluorouracil+Methotrexate)+Trastuzumab	GSE50948	LINCS	156	53	103	964	0.5089	0.85746	0.0022	-0.0043	0.0065
+epirubicin	Anthracycline+Taxane	GSE104645	LINCS	126	112	14	962	0.5497	0.547432	-0.0006	-0.0123	0.0117
+epirubicin	Anthracycline+Taxane	GSE25066	LINCS	488	99	389	964	0.6308	5.8e-05	0.025	-0.0088	0.0338
+epirubicin	TFEC (Cyclophosphamide+Epirubicin+Fluorouracil+Paclitaxel)	GSE32646	LINCS	115	27	88	964	0.5711	0.266211	0.0081	-0.0098	0.0178
+epirubicin	Cyclophosphamide+Epirubicin+Fluorouracil	GSE4779	LINCS	102	39	63	938	0.4481	0.381831	-0.0171	-0.0027	-0.0144
+epirubicin	Docetaxel+Epirubicin+Pegfilgrastim	GSE66999	LINCS	76	70	6	962	0.2738	0.067945	-0.0108	0.0563	-0.0671
+epirubicin	Cyclophosphamide+Epirubicin+Fluorouracil	GSE6861	LINCS	161	66	95	938	0.4343	0.157247	-0.0166	-0.0001	-0.0165
+fluorouracil	TFAC (Cyclophosphamide+Doxorubicin+Fluorouracil+Paclitaxel)	GSE20194	LINCS	278	56	222	964	0.6187	0.006061	0.032	-0.0068	0.0388
+fluorouracil	FAC (Cyclophosphamide+Doxorubicin+Fluorouracil)	GSE20271	LINCS	178	26	152	964	0.5425	0.490273	0.0035	-0.0108	0.0142
+fluorouracil	TFEC (Cyclophosphamide+Epirubicin+Fluorouracil+Paclitaxel)	GSE32646	LINCS	115	27	88	964	0.6221	0.056103	0.0207	-0.0126	0.0334
+fluorouracil	Cyclophosphamide+Epirubicin+Fluorouracil	GSE4779	LINCS	102	39	63	938	0.5275	0.644537	-0.0037	-0.0115	0.0077
+fluorouracil	AT (Doxorubicin+Paclitaxel)+CMF (Cyclophosphamide+Fluorouracil+Methotrexate)+Trastuzumab	GSE50948	LINCS	156	53	103	964	0.5561	0.252209	0.0063	-0.0068	0.0131
+fluorouracil	Cyclophosphamide+Epirubicin+Fluorouracil	GSE6861	LINCS	161	66	95	938	0.5011	0.982176	-0.0073	-0.0064	-0.0009
+letrozole	Letrozole	GSE19293	CDS-DB	52	24	28	18057	0.5089	0.919586	0.001	0.0004	0.0006
+letrozole	Letrozole	GSE19293	LINCS	52	24	28	964	0.3527	0.070603	-0.0171	0.0091	-0.0262
+letrozole	Letrozole	GSE20181	CDS-DB	154	110	44	13237	0.3888	0.031578	-0.0118	0.0231	-0.0349
+letrozole	Letrozole	GSE20181	LINCS	154	110	44	964	0.5169	0.744457	0.0011	-0.0062	0.0073
+letrozole	Letrozole	GSE37946	CDS-DB	50	27	23	13237	0.4831	0.845665	-0.0105	0.0036	-0.0141
+letrozole	Letrozole	GSE37946	LINCS	50	27	23	964	0.4493	0.546228	-0.0145	0.0004	-0.0149
+methotrexate	AT (Doxorubicin+Paclitaxel)+CMF (Cyclophosphamide+Fluorouracil+Methotrexate)+Trastuzumab	GSE50948	LINCS	156	53	103	964	0.5144	0.770391	0.0042	-0.006	0.0103
+paclitaxel	Anthracycline+Taxane	GSE104645	LINCS	126	112	14	962	0.5599	0.467951	0.0026	-0.0082	0.0107
+paclitaxel	TFAC (Cyclophosphamide+Doxorubicin+Fluorouracil+Paclitaxel)	GSE20194	LINCS	278	56	222	964	0.5808	0.061967	0.0258	-0.0012	0.027
+paclitaxel	Anthracycline+Taxane	GSE25066	LINCS	488	99	389	964	0.6467	7e-06	0.0226	-0.0059	0.0285
+paclitaxel	TFEC (Cyclophosphamide+Epirubicin+Fluorouracil+Paclitaxel)	GSE32646	LINCS	115	27	88	964	0.532	0.618358	0.0027	-0.0049	0.0076
+paclitaxel	AT (Doxorubicin+Paclitaxel)+CMF (Cyclophosphamide+Fluorouracil+Methotrexate)+Trastuzumab	GSE50948	LINCS	156	53	103	964	0.4766	0.634635	-0.0023	0.0002	-0.0026
+tamoxifen	Tamoxifen	GSE82172	LINCS	152	21	131	955	0.4318	0.318045	-0.0225	-0.002	-0.0205
