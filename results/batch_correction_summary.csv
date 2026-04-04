@@ -1,0 +1,5 @@
+method,mean_auc,median_auc,std_auc,n_datasets,n_improved,n_worsened
+combat,0.5319,0.5342,0.1252,30,15,12
+per_dataset_zscore,0.5149,0.5246,0.1426,30,0,0
+rank_norm,0.5114,0.5114,0.1148,30,12,17
+quantile_norm,0.5046,0.5296,0.1343,30,10,18
