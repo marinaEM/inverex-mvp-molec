@@ -1,0 +1,4 @@
+model,n_samples,n_features,cv_rmse,cancer_types
+GDSC2-only (breast),719,2003,18.87,1 (breast)
+PRISM (pan-cancer),150000,979,8.2314,23 (pan-cancer)
+GDSC2+PRISM (combined),150719,979,8.3897,23+ (pan-cancer)

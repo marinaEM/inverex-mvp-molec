@@ -1,0 +1,12 @@
+Category,GDSC2_only,GDSC2_PRISM,PRISM_added
+Chemotherapy,18,43,25
+Kinase inhibitors,19,52,33
+Endocrine therapy,3,16,13
+HDAC inhibitors,3,10,7
+mTOR/PI3K/AKT,5,12,7
+PARP inhibitors,5,10,5
+BCL-2 family,3,6,3
+Other targeted,230,4611,4381
+Total drugs,286,4760,4474
+Cancer types,42,63,21
+Total training rows,719,150719,150000
