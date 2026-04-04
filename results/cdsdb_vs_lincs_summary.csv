@@ -1,0 +1,20 @@
+metric,value
+LINCS: datasets with AUC,10.0
+LINCS: mean AUC,0.536
+LINCS: median AUC,0.562
+LINCS: AUC > 0.5 (better than random),7.0
+CDS-DB: datasets with AUC,1.0
+CDS-DB: mean AUC,0.404
+CDS-DB: median AUC,0.404
+CDS-DB: AUC > 0.5 (better than random),0.0
+Both available: dataset count,1.0
+Both: LINCS mean AUC,0.551
+Both: CDS-DB mean AUC,0.404
+Both: LINCS wins,1.0
+Both: CDS-DB wins,0.0
+Both: ties,0.0
+Both: mean AUC difference (CDS-DB - LINCS),-0.148
+Total CTR-DB datasets evaluated,11.0
+CTR-DB datasets with drug match,10.0
+Signature correlation (anastrozole): LINCS vs CDS-DB,0.2646
+Signature correlation (letrozole): LINCS vs CDS-DB,0.1801

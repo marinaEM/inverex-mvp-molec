@@ -1,0 +1,12 @@
+dataset_id,geo_id,ctrdb_drug,matched_drugs,n_patients,n_responders,n_nonresponders,auc_lincs,auc_cdsdb,lincs_available,cdsdb_available,n_common_genes_lincs,n_common_genes_cdsdb
+CTR_Microarray_48-I,GSE20194,TFAC (Cyclophosphamide+Doxorubicin+Fluorouracil+Paclitaxel),fluorouracil+cyclophosphamide+paclitaxel+doxorubicin,278,56,222,0.634572072072072,,True,False,74,0
+CTR_Microarray_13-I,GSE25066,Anthracycline+Taxane,,488,99,389,,,False,False,0,0
+CTR_Microarray_185-I,GSE82172,Tamoxifen,tamoxifen,152,21,131,0.4892766266812068,,True,False,74,0
+CTR_Microarray_92-I,GSE41998,AC (Cyclophosphamide+Doxorubicin)+Ixabepilone,cyclophosphamide+doxorubicin,206,201,5,0.3024875621890547,,True,False,74,0
+CTR_Microarray_150-I,GSE6861,Cyclophosphamide+Epirubicin+Fluorouracil,epirubicin+cyclophosphamide+fluorouracil,161,66,95,0.5526315789473684,,True,False,72,0
+CTR_Microarray_120-I,GSE4779,Cyclophosphamide+Epirubicin+Fluorouracil,epirubicin+cyclophosphamide+fluorouracil,102,39,63,0.5722425722425721,,True,False,72,0
+CTR_Microarray_89-I,GSE20271,FAC (Cyclophosphamide+Doxorubicin+Fluorouracil),fluorouracil+cyclophosphamide+doxorubicin,178,26,152,0.6229757085020243,,True,False,74,0
+CTR_Microarray_168-I,GSE66999,Docetaxel+Epirubicin+Pegfilgrastim,epirubicin+docetaxel,76,70,6,0.36190476190476195,,True,False,74,0
+CTR_Microarray_104-I,GSE32646,TFEC (Cyclophosphamide+Epirubicin+Fluorouracil+Paclitaxel),epirubicin+cyclophosphamide+paclitaxel+fluorouracil,115,27,88,0.6725589225589226,,True,False,74,0
+CTR_Microarray_28-I,GSE50948,AT (Doxorubicin+Paclitaxel)+CMF (Cyclophosphamide+Fluorouracil+Methotrexate)+Trastuzumab,methotrexate+cyclophosphamide+paclitaxel+doxorubicin+fluorouracil,156,53,103,0.5977285217072724,,True,False,74,0
+CDSDB_GSE20181_LOO,GSE20181,Letrozole,letrozole,52,37,15,0.5513513513513513,0.4036036036036036,True,True,74,210
