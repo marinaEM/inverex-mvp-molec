@@ -1,0 +1,6 @@
+Category,GDSC2_only,PRISM_only,GDSC2_PRISM_combined
+Chemotherapy,66,101,166
+Targeted Therapy,129,3214,3314
+Endocrine Therapy,2,133,135
+Other,89,1070,1158
+Total training samples,719,15004,15723

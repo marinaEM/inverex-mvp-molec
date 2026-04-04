@@ -1,0 +1,4 @@
+model,n_samples,n_features,cv_rmse_mean,cv_rmse_std
+GDSC2-only,719,2003,18.87,0.7037
+GDSC2+PRISM,15723,2003,9.1636,0.1676
+PRISM-only,15004,2003,8.055,0.2027

@@ -1,0 +1,14 @@
+metric,value
+Total drugs in PRISM,4517
+Total drugs in GDSC2,286
+Total drugs in LINCS,10741
+PRISM-GDSC2 overlap,140
+NEW drugs in PRISM (not in GDSC2),4375
+NEW PRISM drugs also in LINCS,1883
+PRISM-LINCS total overlap,1972
+NEW PRISM drugs - chemotherapy,97
+NEW PRISM drugs - targeted_therapy,3335
+NEW PRISM drugs - endocrine_therapy,132
+NEW PRISM drugs - immunotherapy,10
+NEW PRISM drugs - epigenetic,140
+NEW PRISM drugs - other,1011
