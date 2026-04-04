@@ -1,0 +1,39 @@
+dataset_id	cancer_type	drug	original_endpoint	endpoint_type	endpoint_family	responder_definition	nonresponder_definition	n_responders	n_nonresponders	clean_binary_conversion
+GSE104645	Colorectal cancer	Oxaliplatin+Tegafur	RECIST	binary	radiographic	CR and PR	SD and PD	112	14	cautious
+GSE104958	Esophageal cancer	Cisplatin+Docetaxel+Fluorouracil	pCR_vs_RD	binary	pathologic_response	pCR	non-pCR	12	34	yes
+GSE109211	Liver cancer	Sorafenib	responder_vs_nonresponder	binary	pharmacodynamic	Responder	Non-Responder	42	98	yes
+GSE131978	Ovarian cancer	Carboplatin	sensitivity	binary	pharmacodynamic	Platinum sensitive and Platinum partially sensitive	Platinum resistant	18	19	yes
+GSE14615	Leukemia	Doxorubicin+Mercaptopurine+Methotrexate+Prednisone+Vincristine	relapse_free	binary	survival	no response (induction failure)	no response (induction failure)	6	14	cautious
+GSE14671	Leukemia	Imatinib	responder_vs_nonresponder	binary	pharmacodynamic	NonResponder	NonResponder	41	18	yes
+GSE173263	Lymphoma	Cyclophosphamide+Doxorubicin+Prednisolone+Rituximab+Vincristine	unknown	binary	unknown	Remission	Early failure	29	10	yes
+GSE19293	Melanoma	Melphalan	RECIST	binary	radiographic	CR and PR	SD and PD	24	28	cautious
+GSE20181	Breast cancer	Letrozole	responder_vs_nonresponder	binary	pharmacodynamic	nonresponder	responder	110	44	yes
+GSE20194	Breast cancer	FEC (Cyclophosphamide+Epirubicin+Fluorouracil)	pCR_vs_RD	binary	pathologic_response	pCR	RD	56	222	yes
+GSE20271	Breast cancer	TFAC (Cyclophosphamide+Doxorubicin+Fluorouracil+Paclitaxel)	pCR_vs_RD	binary	pathologic_response	RD. Annotation: Patients with clinical or radiological disease progression were considered as having residual disease (RD) in the final analysis. After completion of neoadjuvant chemotherapy, all patients underwent modified radical mastectomy or lumpectomy and sentinel lymph node biopsy or axillary node dissection as determined by the surgeon	RD	26	152	yes
+GSE21974	Breast cancer	Cyclophosphamide+Docetaxel+Epirubicin	pCR_vs_RD	binary	pathologic_response	R	NR	18	39	yes
+GSE22093	Breast cancer	FEC (Cyclophosphamide+Epirubicin+Fluorouracil)	pCR_vs_RD	binary	pathologic_response	pCR	RD	28	69	yes
+GSE23988	Breast cancer	FEC (Cyclophosphamide+Epirubicin+Fluorouracil)+Capecitabine+Docetaxel	pCR_vs_RD	binary	pathologic_response	pCR	RD	20	41	yes
+GSE25066	Breast cancer	Anthracycline+Taxane	RCB	binary	pathologic_response	pCR (RCB-I)	RD (RCB-II/III)	99	389	yes
+GSE28702	Colorectal cancer	FOLFOX (Fluorouracil+Leucovorin+Oxaliplatin)	RECIST	binary	radiographic	CR and PR	SD and PD	42	41	cautious
+GSE32646	Breast cancer	TFEC (Cyclophosphamide+Epirubicin+Fluorouracil+Paclitaxel)	pCR_vs_RD	binary	pathologic_response	pCR	nCR	27	88	yes
+GSE35640	Melanoma	AS02B/AS15+recMAGE-A3	responder_vs_nonresponder	binary	pharmacodynamic	responder (including CR, PR and SD)	noresponder	22	34	yes
+GSE37946	Breast cancer	Trastuzumab	pCR_vs_RD	binary	pathologic_response	pCR	RD	27	23	yes
+GSE41998	Breast cancer	AC (Cyclophosphamide+Doxorubicin)+Paclitaxel	RECIST	binary	radiographic	CR and PR	SD and PD	201	5	cautious
+GSE44272	Breast cancer	Trastuzumab	sensitivity	binary	pharmacodynamic	Long-HER (long-term responder)	Control	35	18	yes
+GSE4779	Breast cancer	Cyclophosphamide+Epirubicin+Fluorouracil	pCR_vs_RD	binary	pathologic_response	pCR	npCR	39	63	yes
+GSE48905	Breast cancer	Fulvestrant	RECIST	binary	radiographic	PR	SD and PD	15	24	cautious
+GSE50948	Breast cancer	AT (Doxorubicin+Paclitaxel)+CMF (Cyclophosphamide+Fluorouracil+Methotrexate)	pCR_vs_RD	binary	pathologic_response	pCR	RD	53	103	yes
+GSE5122	Leukemia	Tipifarnib	RECIST	binary	radiographic	Complete response, PR and Hematologic improvement	No response and Stable disease	4	53	cautious
+GSE61676	Lung cancer	Bevacizumab+Erlotinib	responder_vs_nonresponder	binary	pharmacodynamic	Responder	Non-responder	46	40	yes
+GSE62321	Colorectal cancer	Fluorouracil+Irinotecan+Leucovorin	responder_vs_nonresponder	binary	pharmacodynamic	R	NR	26	31	yes
+GSE63885	Ovarian cancer	Platinum+Taxane	RECIST	binary	radiographic	CR and PR	P and SD	65	3	cautious
+GSE65021	Head and neck cancer	Cetuximab	unknown	binary	unknown	PFS: LONG	PFS: SHORT	31	9	yes
+GSE66999	Breast cancer	Docetaxel+Epirubicin+Pegfilgrastim	RECIST	binary	radiographic	CR and PR	SD and PD	70	6	cautious
+GSE6861	Breast cancer	Docetaxel+Epirubicin	pCR_vs_RD	binary	pathologic_response	pCR	npCR	66	95	yes
+GSE68871	Myeloma	VTD (Bortezomib+Thalidomide)	RECIST	binary	radiographic	nCR/CR/PR/VGPR	SD	97	21	cautious
+GSE72970	Colorectal cancer	FOLFIRINOX (Fluorouracil+Irinotecan+Leucovorin+Oxaliplatin)+Bevacizumab	RECIST	binary	radiographic	CR and PR	SD and PD	63	61	cautious
+GSE73578	Leukemia	Prednisone	responder_vs_nonresponder	binary	pharmacodynamic	Prednisone poor responder: FALSE	Prednisone poor responder: TRUE	40	23	yes
+GSE76360	Breast cancer	Trastuzumab	pCR_vs_RD	binary	pathologic_response	pCR and OBJR	NOR	66	30	yes
+GSE82172	Breast cancer	Tamoxifen	RECIST	binary	radiographic	CR and PR	SD and PD	21	131	cautious
+GSE8970	Leukemia	Tipifarnib	relapse_free	binary	survival	Complete Response and Hematological Improvement	Stable Disease and Progressive Disease	13	13	cautious
+GSE9782	Myeloma	Dexamethasone	RECIST	binary	radiographic	CR and PR and MR	PD and NC	180	132	cautious

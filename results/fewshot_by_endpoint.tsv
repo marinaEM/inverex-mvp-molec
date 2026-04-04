@@ -1,0 +1,49 @@
+method	k	endpoint_family	mean_auroc	std_auroc	n_datasets
+feature_calibration	0	pathologic_response	0.6275	0.092	10
+feature_calibration	5	pathologic_response	0.5846	0.0646	10
+feature_calibration	10	pathologic_response	0.5836	0.0726	10
+feature_calibration	20	pathologic_response	0.6018	0.0704	10
+l1_logistic	0	pathologic_response	0.6275	0.092	10
+l1_logistic	5	pathologic_response	0.6245	0.0912	10
+l1_logistic	10	pathologic_response	0.6223	0.0933	10
+l1_logistic	20	pathologic_response	0.6305	0.0823	10
+nn_finetune	0	pathologic_response	0.6464	0.1702	10
+nn_finetune	5	pathologic_response	0.6467	0.1699	10
+nn_finetune	10	pathologic_response	0.6566	0.1665	10
+nn_finetune	20	pathologic_response	0.656	0.1674	10
+feature_calibration	0	pharmacodynamic	0.4196	0.1493	5
+feature_calibration	5	pharmacodynamic	0.4027	0.1905	5
+feature_calibration	10	pharmacodynamic	0.4172	0.1843	5
+feature_calibration	20	pharmacodynamic	0.4003	0.1918	5
+l1_logistic	0	pharmacodynamic	0.4196	0.1493	5
+l1_logistic	5	pharmacodynamic	0.5096	0.2247	5
+l1_logistic	10	pharmacodynamic	0.5273	0.2472	5
+l1_logistic	20	pharmacodynamic	0.5241	0.2553	5
+nn_finetune	0	pharmacodynamic	0.4778	0.0432	5
+nn_finetune	5	pharmacodynamic	0.4891	0.0378	5
+nn_finetune	10	pharmacodynamic	0.4941	0.0329	5
+nn_finetune	20	pharmacodynamic	0.4875	0.0538	5
+feature_calibration	0	radiographic	0.4356	0.1359	10
+feature_calibration	5	radiographic	0.4595	0.0799	10
+feature_calibration	10	radiographic	0.446	0.0965	10
+feature_calibration	20	radiographic	0.4395	0.0802	10
+l1_logistic	0	radiographic	0.4356	0.1359	10
+l1_logistic	5	radiographic	0.4431	0.1427	10
+l1_logistic	10	radiographic	0.4469	0.1383	10
+l1_logistic	20	radiographic	0.4303	0.1331	10
+nn_finetune	0	radiographic	0.4938	0.1339	10
+nn_finetune	5	radiographic	0.4924	0.1331	10
+nn_finetune	10	radiographic	0.4963	0.1247	10
+nn_finetune	20	radiographic	0.5028	0.1198	10
+feature_calibration	0	unknown	0.5138		1
+feature_calibration	5	unknown	0.6133		1
+feature_calibration	10	unknown	0.5909		1
+feature_calibration	20	unknown	0.6486		1
+l1_logistic	0	unknown	0.5138		1
+l1_logistic	5	unknown	0.5289		1
+l1_logistic	10	unknown	0.5338		1
+l1_logistic	20	unknown	0.6143		1
+nn_finetune	0	unknown	0.4069		1
+nn_finetune	5	unknown	0.416		1
+nn_finetune	10	unknown	0.4467		1
+nn_finetune	20	unknown	0.54		1

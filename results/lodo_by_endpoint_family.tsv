@@ -1,0 +1,6 @@
+endpoint_family	n_datasets	mean_auroc	std_auroc	median_auroc	mean_auprc	std_auprc	total_patients
+pathologic_response	10	0.62	0.0917	0.6355	0.4318	0.0813	1251
+pharmacodynamic	5	0.4224	0.1486	0.4378	0.5418	0.1919	473
+radiographic	10	0.4411	0.1282	0.4584	0.5723	0.3177	1033
+survival	2	0.178	0.0664	0.178	0.2954	0.1179	46
+unknown	1	0.5138		0.5138	0.7774		39

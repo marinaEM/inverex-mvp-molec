@@ -1,0 +1,13 @@
+method	k	mean_auroc	std_auroc	median_auroc	n_datasets	mean_auprc
+feature_calibration	0	0.5093	0.1505	0.496	26	0.5235
+feature_calibration	5	0.5026	0.1246	0.5153	26	0.5124
+feature_calibration	10	0.499	0.1278	0.516	26	0.513
+feature_calibration	20	0.5024	0.1359	0.5236	26	0.5236
+l1_logistic	0	0.5093	0.1505	0.496	26	0.5235
+l1_logistic	5	0.529	0.1583	0.5156	26	0.5399
+l1_logistic	10	0.5332	0.1611	0.5189	26	0.5459
+l1_logistic	20	0.5324	0.166	0.5416	26	0.5505
+nn_finetune	0	0.5461	0.1549	0.5059	26	0.5574
+nn_finetune	5	0.5482	0.1534	0.5172	26	0.5617
+nn_finetune	10	0.5556	0.1499	0.5152	26	0.5687
+nn_finetune	20	0.5602	0.1476	0.5278	26	0.5713
