@@ -1,0 +1,4 @@
+feature_set,mean_auc,std_auc,median_auc,n_datasets
+gene_only,0.5279,0.0957,0.5348,9
+gene_plus_pathway,0.6189,0.1257,0.6396,9
+pathway_only,0.5932,0.1107,0.5913,9

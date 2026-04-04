@@ -1,0 +1,28 @@
+held_out_dataset,feature_set,auc,n_test,n_test_pos,n_train,n_train_pos,n_features,drug
+GSE20194,gene_only,0.6052,278,56,1146,503,972,TFAC (Cyclophosphamide+Doxorubicin+Fluorouracil+Paclitaxel)
+GSE20194,pathway_only,0.5784,278,56,1146,503,48,TFAC (Cyclophosphamide+Doxorubicin+Fluorouracil+Paclitaxel)
+GSE20194,gene_plus_pathway,0.6396,278,56,1146,503,1020,TFAC (Cyclophosphamide+Doxorubicin+Fluorouracil+Paclitaxel)
+GSE20271,gene_only,0.5263,178,26,1246,533,972,FAC (Cyclophosphamide+Doxorubicin+Fluorouracil)
+GSE20271,pathway_only,0.7151,178,26,1246,533,48,FAC (Cyclophosphamide+Doxorubicin+Fluorouracil)
+GSE20271,gene_plus_pathway,0.6847,178,26,1246,533,1020,FAC (Cyclophosphamide+Doxorubicin+Fluorouracil)
+GSE32646,gene_only,0.5875,115,27,1309,532,972,TFEC (Cyclophosphamide+Epirubicin+Fluorouracil+Paclitaxel)
+GSE32646,pathway_only,0.7323,115,27,1309,532,48,TFEC (Cyclophosphamide+Epirubicin+Fluorouracil+Paclitaxel)
+GSE32646,gene_plus_pathway,0.7327,115,27,1309,532,1020,TFEC (Cyclophosphamide+Epirubicin+Fluorouracil+Paclitaxel)
+GSE41998,gene_only,0.4318,206,201,1218,358,972,AC (Cyclophosphamide+Doxorubicin)+Ixabepilone
+GSE41998,pathway_only,0.5234,206,201,1218,358,48,AC (Cyclophosphamide+Doxorubicin)+Ixabepilone
+GSE41998,gene_plus_pathway,0.7403,206,201,1218,358,1020,AC (Cyclophosphamide+Doxorubicin)+Ixabepilone
+GSE4779,gene_only,0.5348,102,39,1322,520,972,Cyclophosphamide+Epirubicin+Fluorouracil
+GSE4779,pathway_only,0.6834,102,39,1322,520,48,Cyclophosphamide+Epirubicin+Fluorouracil
+GSE4779,gene_plus_pathway,0.6699,102,39,1322,520,1020,Cyclophosphamide+Epirubicin+Fluorouracil
+GSE50948,gene_only,0.5497,156,53,1268,506,972,AT (Doxorubicin+Paclitaxel)+CMF (Cyclophosphamide+Fluorouracil+Methotrexate)+Trastuzumab
+GSE50948,pathway_only,0.5913,156,53,1268,506,48,AT (Doxorubicin+Paclitaxel)+CMF (Cyclophosphamide+Fluorouracil+Methotrexate)+Trastuzumab
+GSE50948,gene_plus_pathway,0.5783,156,53,1268,506,1020,AT (Doxorubicin+Paclitaxel)+CMF (Cyclophosphamide+Fluorouracil+Methotrexate)+Trastuzumab
+GSE66999,gene_only,0.6714,76,70,1348,489,972,Docetaxel+Epirubicin+Pegfilgrastim
+GSE66999,pathway_only,0.4238,76,70,1348,489,48,Docetaxel+Epirubicin+Pegfilgrastim
+GSE66999,gene_plus_pathway,0.5619,76,70,1348,489,1020,Docetaxel+Epirubicin+Pegfilgrastim
+GSE6861,gene_only,0.4968,161,66,1263,493,972,Cyclophosphamide+Epirubicin+Fluorouracil
+GSE6861,pathway_only,0.6386,161,66,1263,493,48,Cyclophosphamide+Epirubicin+Fluorouracil
+GSE6861,gene_plus_pathway,0.637,161,66,1263,493,1020,Cyclophosphamide+Epirubicin+Fluorouracil
+GSE82172,gene_only,0.3479,152,21,1272,538,972,Tamoxifen
+GSE82172,pathway_only,0.4526,152,21,1272,538,48,Tamoxifen
+GSE82172,gene_plus_pathway,0.3253,152,21,1272,538,1020,Tamoxifen
