@@ -1,0 +1,14 @@
+model,features,metric_type,metric_value,metric_type_2,metric_value_2,source
+Original cell-line LightGBM,genes (978) + ECFP (1024) + dose,CV RMSE,21.2,Patient AUC,0.467,baseline
+Cell-line LightGBM (genes_ecfp_dose),genes (978) + ECFP (1024) + dose,CV RMSE,18.87,,,step6
+Cell-line NN (genes_ecfp_dose),genes (978) + ECFP (1024) + dose,CV RMSE,15.92,,,step6
+Cell-line LightGBM (genes_chemberta_dose),genes (978) + ChemBERTa (384) + dose,CV RMSE,14.44,,,step6
+Cell-line NN (genes_chemberta_dose),genes (978) + ChemBERTa (384) + dose,CV RMSE,17.1,,,step6
+"Reversal (ComBat, genes only)",gene reversal (208),LODO AUC,0.5319,n_datasets=30,,step5
+Reversal (ComBat + pathways + dose),gene + pathway + dose reversal (261),LODO AUC,0.5229,n_datasets=30,,step5
+"Reversal (uniform, genes only)",978 gene reversal,LODO AUC,0.46,,,reference (ctrdb_validation)
+Pan-cancer recalibrated reversal,LODO gene weights,LODO AUC,0.6,,,reference (recalibration_validation_pancancer)
+Direct patient model (breast LODO),genes,AUC,0.69,,,reference
+Direct patient model (pan-cancer LODO),genes,AUC,0.73,,,reference
+Cell-line NN + ChemBERTa -> patients,genes + ChemBERTa + dose,Patient AUC,0.4952,n_datasets=28,,step7
+Cell-line LightGBM + ChemBERTa -> patients,genes + ChemBERTa + dose,Patient AUC,0.5182,n_datasets=28,,step7

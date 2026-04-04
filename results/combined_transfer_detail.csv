@@ -1,0 +1,66 @@
+geo_id,drug,matched_drug,n_patients,n_responders,auc_nn,auc_lgbm
+GSE104645,Fluorouracil+Leucovorin+Oxaliplatin,fluorouracil,126,112,0.5835,0.456
+GSE104645,Fluorouracil+Leucovorin+Oxaliplatin,leucovorin,126,112,0.5249,0.4707
+GSE104958,Cisplatin+Docetaxel+Fluorouracil,cisplatin,46,12,0.4632,0.6667
+GSE104958,Cisplatin+Docetaxel+Fluorouracil,docetaxel,46,12,0.4363,0.6103
+GSE104958,Cisplatin+Docetaxel+Fluorouracil,fluorouracil,46,12,0.4681,0.6667
+GSE109211,Sorafenib,sorafenib,140,42,0.5085,0.7889
+GSE14615,Doxorubicin+Mercaptopurine+Methotrexate+Prednisone+Vincristine,doxorubicin,20,6,0.6429,0.7381
+GSE14615,Doxorubicin+Mercaptopurine+Methotrexate+Prednisone+Vincristine,mercaptopurine,20,6,0.6429,0.7381
+GSE14615,Doxorubicin+Mercaptopurine+Methotrexate+Prednisone+Vincristine,methotrexate,20,6,0.6429,0.6667
+GSE14615,Doxorubicin+Mercaptopurine+Methotrexate+Prednisone+Vincristine,prednisone,20,6,0.6429,0.7381
+GSE14615,Doxorubicin+Mercaptopurine+Methotrexate+Prednisone+Vincristine,vincristine,20,6,0.6429,0.7381
+GSE14671,Imatinib,imatinib,59,41,0.4417,0.5041
+GSE173263,Cyclophosphamide+Doxorubicin+Prednisolone+Rituximab+Vincristine,cyclophosphamide,39,29,0.6655,0.4138
+GSE173263,Cyclophosphamide+Doxorubicin+Prednisolone+Rituximab+Vincristine,doxorubicin,39,29,0.6,0.3655
+GSE173263,Cyclophosphamide+Doxorubicin+Prednisolone+Rituximab+Vincristine,prednisolone,39,29,0.6,0.3655
+GSE173263,Cyclophosphamide+Doxorubicin+Prednisolone+Rituximab+Vincristine,vincristine,39,29,0.6,0.3655
+GSE19293,Melphalan,melphalan,52,24,0.5938,0.5878
+GSE20181,Letrozole,letrozole,154,110,0.5374,0.5072
+GSE20194,TFAC (Cyclophosphamide+Doxorubicin+Fluorouracil+Paclitaxel),cyclophosphamide,278,56,0.492,0.481
+GSE20194,TFAC (Cyclophosphamide+Doxorubicin+Fluorouracil+Paclitaxel),doxorubicin,278,56,0.5413,0.4722
+GSE20194,TFAC (Cyclophosphamide+Doxorubicin+Fluorouracil+Paclitaxel),fluorouracil,278,56,0.4865,0.4855
+GSE20194,TFAC (Cyclophosphamide+Doxorubicin+Fluorouracil+Paclitaxel),paclitaxel,278,56,0.4921,0.5227
+GSE20271,FAC (Cyclophosphamide+Doxorubicin+Fluorouracil),cyclophosphamide,178,26,0.4686,0.4519
+GSE20271,FAC (Cyclophosphamide+Doxorubicin+Fluorouracil),doxorubicin,178,26,0.4894,0.4694
+GSE20271,FAC (Cyclophosphamide+Doxorubicin+Fluorouracil),fluorouracil,178,26,0.5038,0.4504
+GSE21974,Cyclophosphamide+Docetaxel+Epirubicin,cyclophosphamide,57,18,0.4744,0.5
+GSE21974,Cyclophosphamide+Docetaxel+Epirubicin,docetaxel,57,18,0.4473,0.4915
+GSE21974,Cyclophosphamide+Docetaxel+Epirubicin,epirubicin,57,18,0.4587,0.5527
+GSE22093,FEC (Cyclophosphamide+Epirubicin+Fluorouracil),cyclophosphamide,97,28,0.309,0.4234
+GSE22093,FEC (Cyclophosphamide+Epirubicin+Fluorouracil),epirubicin,97,28,0.3282,0.4777
+GSE22093,FEC (Cyclophosphamide+Epirubicin+Fluorouracil),fluorouracil,97,28,0.3276,0.4322
+GSE23988,FEC (Cyclophosphamide+Epirubicin+Fluorouracil)+Capecitabine+Docetaxel,cyclophosphamide,61,20,0.4049,0.4024
+GSE23988,FEC (Cyclophosphamide+Epirubicin+Fluorouracil)+Capecitabine+Docetaxel,epirubicin,61,20,0.5256,0.4122
+GSE23988,FEC (Cyclophosphamide+Epirubicin+Fluorouracil)+Capecitabine+Docetaxel,fluorouracil,61,20,0.3927,0.4
+GSE28702,FOLFOX (Fluorouracil+Leucovorin+Oxaliplatin),fluorouracil,83,42,0.4315,0.4472
+GSE28702,FOLFOX (Fluorouracil+Leucovorin+Oxaliplatin),leucovorin,83,42,0.4152,0.4605
+GSE32646,TFEC (Cyclophosphamide+Epirubicin+Fluorouracil+Paclitaxel),cyclophosphamide,115,27,0.4318,0.4912
+GSE32646,TFEC (Cyclophosphamide+Epirubicin+Fluorouracil+Paclitaxel),epirubicin,115,27,0.4293,0.5038
+GSE32646,TFEC (Cyclophosphamide+Epirubicin+Fluorouracil+Paclitaxel),fluorouracil,115,27,0.4209,0.4903
+GSE32646,TFEC (Cyclophosphamide+Epirubicin+Fluorouracil+Paclitaxel),paclitaxel,115,27,0.5013,0.4087
+GSE41998,AC (Cyclophosphamide+Doxorubicin)+Ixabepilone,cyclophosphamide,206,201,0.3861,0.4249
+GSE41998,AC (Cyclophosphamide+Doxorubicin)+Ixabepilone,doxorubicin,206,201,0.3463,0.391
+GSE4779,Cyclophosphamide+Epirubicin+Fluorouracil,cyclophosphamide,102,39,0.3895,0.444
+GSE4779,Cyclophosphamide+Epirubicin+Fluorouracil,epirubicin,102,39,0.3854,0.51
+GSE4779,Cyclophosphamide+Epirubicin+Fluorouracil,fluorouracil,102,39,0.4086,0.4245
+GSE48905,Fulvestrant,fulvestrant,39,15,0.675,0.5583
+GSE50948,AT (Doxorubicin+Paclitaxel)+CMF (Cyclophosphamide+Fluorouracil+Methotrexate)+Trastuzumab,doxorubicin,156,53,0.469,0.5305
+GSE50948,AT (Doxorubicin+Paclitaxel)+CMF (Cyclophosphamide+Fluorouracil+Methotrexate)+Trastuzumab,paclitaxel,156,53,0.4642,0.4673
+GSE5122,Tipifarnib,tipifarnib,57,4,0.8396,0.7358
+GSE62321,Fluorouracil+Irinotecan+Leucovorin,fluorouracil,57,26,0.5112,0.7444
+GSE62321,Fluorouracil+Irinotecan+Leucovorin,irinotecan,57,26,0.4702,0.6824
+GSE62321,Fluorouracil+Irinotecan+Leucovorin,leucovorin,57,26,0.4392,0.763
+GSE66999,Docetaxel+Epirubicin+Pegfilgrastim,docetaxel,76,70,0.3929,0.25
+GSE66999,Docetaxel+Epirubicin+Pegfilgrastim,epirubicin,76,70,0.4071,0.5262
+GSE6861,Cyclophosphamide+Epirubicin+Fluorouracil,cyclophosphamide,161,66,0.3812,0.4799
+GSE6861,Cyclophosphamide+Epirubicin+Fluorouracil,epirubicin,161,66,0.377,0.5019
+GSE6861,Cyclophosphamide+Epirubicin+Fluorouracil,fluorouracil,161,66,0.4065,0.46
+GSE68871,VTD (Bortezomib+Thalidomide),bortezomib,118,97,0.5474,0.6009
+GSE68871,VTD (Bortezomib+Thalidomide),thalidomide,118,97,0.5007,0.5601
+GSE72970,FOLFIRI (Fluorouracil+Irinotecan+Leucovorin),fluorouracil,124,63,0.4712,0.4921
+GSE72970,FOLFIRI (Fluorouracil+Irinotecan+Leucovorin),irinotecan,124,63,0.4369,0.503
+GSE72970,FOLFIRI (Fluorouracil+Irinotecan+Leucovorin),leucovorin,124,63,0.4749,0.4775
+GSE73578,Prednisone,prednisone,63,40,0.6359,0.4087
+GSE82172,Tamoxifen,tamoxifen,152,21,0.6852,0.6172
+GSE8970,Tipifarnib,tipifarnib,26,13,0.6805,0.5148

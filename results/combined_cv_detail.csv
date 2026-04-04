@@ -1,0 +1,11 @@
+config,fold,lgbm_rmse,nn_rmse
+genes_ecfp_dose,1,18.8633,15.5209
+genes_ecfp_dose,2,18.8737,15.3232
+genes_ecfp_dose,3,20.079,16.4368
+genes_ecfp_dose,4,17.888,16.8275
+genes_ecfp_dose,5,18.6462,15.5144
+genes_chemberta_dose,1,14.3436,16.5682
+genes_chemberta_dose,2,14.2832,16.9034
+genes_chemberta_dose,3,15.5183,18.424
+genes_chemberta_dose,4,13.7341,16.9777
+genes_chemberta_dose,5,14.2962,16.6036
