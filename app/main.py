@@ -1076,6 +1076,143 @@ else:
     st.info("Validation results not yet generated. Run the CTR-DB validation pipeline.")
 
 
+# == 7. Drug recommendation engine =========================================
+st.markdown("""
+<h2><span class="section-number">7</span> Drug recommendation engine</h2>
+""", unsafe_allow_html=True)
+
+st.caption(
+    "Evaluate any drug — known or new — against the selected patient. "
+    "For new drugs, provide a SMILES structure and known targets."
+)
+
+_rec_tab_known, _rec_tab_new = st.tabs(["Known drug", "New drug"])
+
+with _rec_tab_known:
+    _known_drug = st.selectbox(
+        "Select a drug from the training set:",
+        options=[""] + sorted(rankings["drug_name"].tolist()) if rankings_path.exists() else [""],
+        key="known_drug_select",
+    )
+    if _known_drug:
+        # Show existing ranking info for this drug
+        _drug_row = rankings[rankings["drug_name"] == _known_drug]
+        if not _drug_row.empty:
+            _dr = _drug_row.iloc[0]
+            _score_col = "final_score" if "final_score" in _dr.index else "predicted_inhibition"
+            col_a, col_b, col_c = st.columns(3)
+            with col_a:
+                st.metric("Score", f"{_dr[_score_col]:.3f}")
+            with col_b:
+                st.metric("Evidence tier", _dr.get("evidence_tier", "N/A"))
+            with col_c:
+                st.metric("Confidence", _dr.get("confidence", "N/A"))
+            if "rationale_short" in _dr.index:
+                st.markdown(f"**Rationale:** {_dr['rationale_short']}")
+            # Trial matches
+            _drug_trials = _fetch_trials_for_drug(_known_drug)
+            if _drug_trials:
+                with st.expander(f"Active trials for {_known_drug} ({len(_drug_trials)})"):
+                    for t in _drug_trials:
+                        nct = t.get("nct_id", "")
+                        st.markdown(
+                            f"[**{nct}**](https://clinicaltrials.gov/study/{nct})  \n"
+                            f"{t.get('title', '')}  \n"
+                            f"*Phase:* {t.get('phase', 'N/A')} | *Status:* {t.get('status', 'N/A')}"
+                        )
+                        st.divider()
+
+with _rec_tab_new:
+    st.markdown(
+        f'<p style="color:{COLORS["muted"]};font-size:0.85rem;">'
+        f'Enter a SMILES structure and known gene targets to evaluate a new drug '
+        f'against this patient. The engine finds structurally similar drugs in our '
+        f'training set and transfers their predictions.</p>',
+        unsafe_allow_html=True,
+    )
+    _new_name = st.text_input("Drug name", value="", placeholder="e.g. INVEREX-001", key="new_drug_name")
+    _new_smiles = st.text_input("SMILES", value="", placeholder="e.g. CC1=C(C=C(C=C1)NC(=O)...)F", key="new_drug_smiles")
+    _new_targets = st.text_input("Gene targets (comma-separated)", value="", placeholder="e.g. CDK4, CDK6", key="new_drug_targets")
+
+    if _new_smiles and _new_name:
+        _targets_list = [t.strip().upper() for t in _new_targets.split(",") if t.strip()] if _new_targets else []
+
+        try:
+            from src.recommendation.trial_recommender import TrialRecommender
+            _recommender = TrialRecommender.from_project_artifacts()
+            _rec_results = _recommender.recommend_for_patient(
+                selected_sid,
+                candidate_drugs=[{"name": _new_name, "smiles": _new_smiles, "targets": _targets_list}],
+                expression=None, cohort=None, top_k=1,
+            )
+            if not _rec_results.empty:
+                _r = _rec_results.iloc[0]
+                st.markdown("---")
+                col_n1, col_n2, col_n3 = st.columns(3)
+                with col_n1:
+                    st.metric("Score", f"{_r.get('score', 0):.3f}")
+                with col_n2:
+                    _conf = _r.get("confidence", "low")
+                    _conf_color = {"very_high": COLORS["success"], "high": COLORS["success"],
+                                   "moderate": COLORS["accent"], "low": COLORS["warning"],
+                                   "very_low": COLORS["warning"]}.get(_conf, COLORS["muted"])
+                    st.metric("Confidence", _conf)
+                with col_n3:
+                    st.metric("Scenario", _r.get("scenario", "new"))
+
+                # Nearest analogs
+                _analogs = _r.get("nearest_analogs", [])
+                if _analogs:
+                    st.markdown("**Nearest known analogs:**")
+                    for _a in _analogs[:5]:
+                        if isinstance(_a, dict):
+                            st.markdown(f"- {_a.get('drug', '?')} (similarity: {_a.get('similarity', 0):.2f})")
+                        elif isinstance(_a, (list, tuple)) and len(_a) >= 2:
+                            st.markdown(f"- {_a[0]} (similarity: {_a[1]:.2f})")
+                        else:
+                            st.markdown(f"- {_a}")
+
+                # Rationale
+                _rationale = _r.get("rationale", "")
+                if _rationale:
+                    st.markdown(f"**Rationale:** {_rationale}")
+
+                # Target vulnerability
+                if _targets_list:
+                    _vuln = _r.get("target_vulnerability", {})
+                    if isinstance(_vuln, dict) and _vuln:
+                        _vs = _vuln.get("vulnerability_score", 0)
+                        _nd = _vuln.get("n_targets_dysregulated", 0)
+                        st.markdown(
+                            f"**Target vulnerability:** {_vs:.2f} "
+                            f"({_nd}/{len(_targets_list)} targets dysregulated in this patient)"
+                        )
+
+                # Trial matches for new drug (by name + by target)
+                _new_trials = _r.get("trial_matches", [])
+                if not _new_trials:
+                    _new_trials = _fetch_trials_for_drug(_new_name)
+                    if not _new_trials and _targets_list:
+                        for _tgt in _targets_list[:2]:
+                            _new_trials.extend(_fetch_trials_for_drug(f"{_tgt} inhibitor breast cancer"))
+                if _new_trials:
+                    with st.expander(f"Related trials ({len(_new_trials)})"):
+                        for t in _new_trials[:5]:
+                            nct = t.get("nct_id", "")
+                            st.markdown(
+                                f"[**{nct}**](https://clinicaltrials.gov/study/{nct})  \n"
+                                f"{t.get('title', '')}  \n"
+                                f"*Phase:* {t.get('phase', 'N/A')} | *Status:* {t.get('status', 'N/A')}"
+                            )
+                            st.divider()
+            else:
+                st.warning("Could not generate recommendation. Check SMILES validity.")
+        except Exception as _exc:
+            st.error(f"Recommendation engine error: {_exc}")
+    elif _new_name and not _new_smiles:
+        st.info("Enter a SMILES structure to evaluate this drug.")
+
+
 # -- Footer / Disclaimer ---------------------------------------------------
 st.markdown("---")
 st.markdown(f"""
