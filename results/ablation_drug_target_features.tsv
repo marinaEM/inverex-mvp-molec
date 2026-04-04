@@ -1,0 +1,121 @@
+held_out_dataset	feature_set	auc	n_test	n_test_pos	n_train	n_train_pos	n_features	drug	n_targets
+GSE104645	A_reversal_only	0.5255	126	112	3272	1353	5	Fluorouracil+Leucovorin+Oxaliplatin	0
+GSE104645	B_reversal_plus_target_expr	0.5223	126	112	3272	1353	8	Fluorouracil+Leucovorin+Oxaliplatin	0
+GSE104645	C_reversal_plus_target_expr_pw	0.5204	126	112	3272	1353	9	Fluorouracil+Leucovorin+Oxaliplatin	0
+GSE104645	D_reversal_plus_all_dt	0.521	126	112	3272	1353	10	Fluorouracil+Leucovorin+Oxaliplatin	0
+GSE104958	A_reversal_only	0.4632	46	12	3352	1453	5	Cisplatin+Docetaxel+Fluorouracil	0
+GSE104958	B_reversal_plus_target_expr	0.4485	46	12	3352	1453	8	Cisplatin+Docetaxel+Fluorouracil	0
+GSE104958	C_reversal_plus_target_expr_pw	0.4436	46	12	3352	1453	9	Cisplatin+Docetaxel+Fluorouracil	0
+GSE104958	D_reversal_plus_all_dt	0.4436	46	12	3352	1453	10	Cisplatin+Docetaxel+Fluorouracil	0
+GSE109211	A_reversal_only	0.3375	140	42	3258	1423	5	Sorafenib	4
+GSE109211	B_reversal_plus_target_expr	0.3375	140	42	3258	1423	8	Sorafenib	4
+GSE109211	C_reversal_plus_target_expr_pw	0.7738	140	42	3258	1423	9	Sorafenib	4
+GSE109211	D_reversal_plus_all_dt	0.7738	140	42	3258	1423	10	Sorafenib	4
+GSE14615	A_reversal_only	0.119	20	6	3378	1459	5	Doxorubicin+Mercaptopurine+Methotrexate+Prednisone+Vincristine	0
+GSE14615	B_reversal_plus_target_expr	0.131	20	6	3378	1459	8	Doxorubicin+Mercaptopurine+Methotrexate+Prednisone+Vincristine	0
+GSE14615	C_reversal_plus_target_expr_pw	0.131	20	6	3378	1459	9	Doxorubicin+Mercaptopurine+Methotrexate+Prednisone+Vincristine	0
+GSE14615	D_reversal_plus_all_dt	0.131	20	6	3378	1459	10	Doxorubicin+Mercaptopurine+Methotrexate+Prednisone+Vincristine	0
+GSE14671	A_reversal_only	0.5379	59	41	3339	1424	5	Imatinib	0
+GSE14671	B_reversal_plus_target_expr	0.5379	59	41	3339	1424	8	Imatinib	0
+GSE14671	C_reversal_plus_target_expr_pw	0.5379	59	41	3339	1424	9	Imatinib	0
+GSE14671	D_reversal_plus_all_dt	0.5379	59	41	3339	1424	10	Imatinib	0
+GSE173263	A_reversal_only	0.6414	39	29	3359	1436	5	Cyclophosphamide+Doxorubicin+Prednisolone+Rituximab+Vincristine	0
+GSE173263	B_reversal_plus_target_expr	0.6517	39	29	3359	1436	8	Cyclophosphamide+Doxorubicin+Prednisolone+Rituximab+Vincristine	0
+GSE173263	C_reversal_plus_target_expr_pw	0.6517	39	29	3359	1436	9	Cyclophosphamide+Doxorubicin+Prednisolone+Rituximab+Vincristine	0
+GSE173263	D_reversal_plus_all_dt	0.6517	39	29	3359	1436	10	Cyclophosphamide+Doxorubicin+Prednisolone+Rituximab+Vincristine	0
+GSE19293	A_reversal_only	0.4673	52	24	3346	1441	5	Melphalan	0
+GSE19293	B_reversal_plus_target_expr	0.4926	52	24	3346	1441	8	Melphalan	0
+GSE19293	C_reversal_plus_target_expr_pw	0.4821	52	24	3346	1441	9	Melphalan	0
+GSE19293	D_reversal_plus_all_dt	0.4821	52	24	3346	1441	10	Melphalan	0
+GSE20181	A_reversal_only	0.5171	154	110	3244	1355	5	Letrozole	0
+GSE20181	B_reversal_plus_target_expr	0.5186	154	110	3244	1355	8	Letrozole	0
+GSE20181	C_reversal_plus_target_expr_pw	0.5186	154	110	3244	1355	9	Letrozole	0
+GSE20181	D_reversal_plus_all_dt	0.5186	154	110	3244	1355	10	Letrozole	0
+GSE20194	A_reversal_only	0.557	278	56	3120	1409	5	TFAC (Cyclophosphamide+Doxorubicin+Fluorouracil+Paclitaxel)	0
+GSE20194	B_reversal_plus_target_expr	0.5491	278	56	3120	1409	8	TFAC (Cyclophosphamide+Doxorubicin+Fluorouracil+Paclitaxel)	0
+GSE20194	C_reversal_plus_target_expr_pw	0.5728	278	56	3120	1409	9	TFAC (Cyclophosphamide+Doxorubicin+Fluorouracil+Paclitaxel)	0
+GSE20194	D_reversal_plus_all_dt	0.5728	278	56	3120	1409	10	TFAC (Cyclophosphamide+Doxorubicin+Fluorouracil+Paclitaxel)	0
+GSE20271	A_reversal_only	0.5407	178	26	3220	1439	5	FAC (Cyclophosphamide+Doxorubicin+Fluorouracil)	0
+GSE20271	B_reversal_plus_target_expr	0.5445	178	26	3220	1439	8	FAC (Cyclophosphamide+Doxorubicin+Fluorouracil)	0
+GSE20271	C_reversal_plus_target_expr_pw	0.544	178	26	3220	1439	9	FAC (Cyclophosphamide+Doxorubicin+Fluorouracil)	0
+GSE20271	D_reversal_plus_all_dt	0.544	178	26	3220	1439	10	FAC (Cyclophosphamide+Doxorubicin+Fluorouracil)	0
+GSE21974	A_reversal_only	0.3832	57	18	3341	1447	5	Cyclophosphamide+Docetaxel+Epirubicin	0
+GSE21974	B_reversal_plus_target_expr	0.3775	57	18	3341	1447	8	Cyclophosphamide+Docetaxel+Epirubicin	0
+GSE21974	C_reversal_plus_target_expr_pw	0.3789	57	18	3341	1447	9	Cyclophosphamide+Docetaxel+Epirubicin	0
+GSE21974	D_reversal_plus_all_dt	0.3789	57	18	3341	1447	10	Cyclophosphamide+Docetaxel+Epirubicin	0
+GSE22093	A_reversal_only	0.5813	97	28	3301	1437	5	FEC (Cyclophosphamide+Epirubicin+Fluorouracil)	0
+GSE22093	B_reversal_plus_target_expr	0.602	97	28	3301	1437	8	FEC (Cyclophosphamide+Epirubicin+Fluorouracil)	0
+GSE22093	C_reversal_plus_target_expr_pw	0.5999	97	28	3301	1437	9	FEC (Cyclophosphamide+Epirubicin+Fluorouracil)	0
+GSE22093	D_reversal_plus_all_dt	0.5999	97	28	3301	1437	10	FEC (Cyclophosphamide+Epirubicin+Fluorouracil)	0
+GSE23988	A_reversal_only	0.5988	61	20	3337	1445	5	FEC (Cyclophosphamide+Epirubicin+Fluorouracil)+Capecitabine+Docetaxel	0
+GSE23988	B_reversal_plus_target_expr	0.6159	61	20	3337	1445	8	FEC (Cyclophosphamide+Epirubicin+Fluorouracil)+Capecitabine+Docetaxel	0
+GSE23988	C_reversal_plus_target_expr_pw	0.6122	61	20	3337	1445	9	FEC (Cyclophosphamide+Epirubicin+Fluorouracil)+Capecitabine+Docetaxel	0
+GSE23988	D_reversal_plus_all_dt	0.6122	61	20	3337	1445	10	FEC (Cyclophosphamide+Epirubicin+Fluorouracil)+Capecitabine+Docetaxel	0
+GSE25066	A_reversal_only	0.4752	488	99	2910	1366	5	Anthracycline+Taxane	0
+GSE25066	B_reversal_plus_target_expr	0.4784	488	99	2910	1366	8	Anthracycline+Taxane	0
+GSE25066	C_reversal_plus_target_expr_pw	0.4828	488	99	2910	1366	9	Anthracycline+Taxane	0
+GSE25066	D_reversal_plus_all_dt	0.4829	488	99	2910	1366	10	Anthracycline+Taxane	0
+GSE28702	A_reversal_only	0.4315	83	42	3315	1423	5	FOLFOX (Fluorouracil+Leucovorin+Oxaliplatin)	0
+GSE28702	B_reversal_plus_target_expr	0.4355	83	42	3315	1423	8	FOLFOX (Fluorouracil+Leucovorin+Oxaliplatin)	0
+GSE28702	C_reversal_plus_target_expr_pw	0.435	83	42	3315	1423	9	FOLFOX (Fluorouracil+Leucovorin+Oxaliplatin)	0
+GSE28702	D_reversal_plus_all_dt	0.435	83	42	3315	1423	10	FOLFOX (Fluorouracil+Leucovorin+Oxaliplatin)	0
+GSE32646	A_reversal_only	0.5732	115	27	3283	1438	5	TFEC (Cyclophosphamide+Epirubicin+Fluorouracil+Paclitaxel)	0
+GSE32646	B_reversal_plus_target_expr	0.5585	115	27	3283	1438	8	TFEC (Cyclophosphamide+Epirubicin+Fluorouracil+Paclitaxel)	0
+GSE32646	C_reversal_plus_target_expr_pw	0.5623	115	27	3283	1438	9	TFEC (Cyclophosphamide+Epirubicin+Fluorouracil+Paclitaxel)	0
+GSE32646	D_reversal_plus_all_dt	0.5623	115	27	3283	1438	10	TFEC (Cyclophosphamide+Epirubicin+Fluorouracil+Paclitaxel)	0
+GSE41998	A_reversal_only	0.4856	206	201	3192	1264	5	AC (Cyclophosphamide+Doxorubicin)+Ixabepilone	0
+GSE41998	B_reversal_plus_target_expr	0.5174	206	201	3192	1264	8	AC (Cyclophosphamide+Doxorubicin)+Ixabepilone	0
+GSE41998	C_reversal_plus_target_expr_pw	0.4736	206	201	3192	1264	9	AC (Cyclophosphamide+Doxorubicin)+Ixabepilone	0
+GSE41998	D_reversal_plus_all_dt	0.4736	206	201	3192	1264	10	AC (Cyclophosphamide+Doxorubicin)+Ixabepilone	0
+GSE4779	A_reversal_only	0.4575	102	39	3296	1426	5	Cyclophosphamide+Epirubicin+Fluorouracil	0
+GSE4779	B_reversal_plus_target_expr	0.4628	102	39	3296	1426	8	Cyclophosphamide+Epirubicin+Fluorouracil	0
+GSE4779	C_reversal_plus_target_expr_pw	0.4628	102	39	3296	1426	9	Cyclophosphamide+Epirubicin+Fluorouracil	0
+GSE4779	D_reversal_plus_all_dt	0.4628	102	39	3296	1426	10	Cyclophosphamide+Epirubicin+Fluorouracil	0
+GSE48905	A_reversal_only	0.6444	39	15	3359	1450	5	Fulvestrant	1
+GSE48905	B_reversal_plus_target_expr	0.6306	39	15	3359	1450	8	Fulvestrant	1
+GSE48905	C_reversal_plus_target_expr_pw	0.6278	39	15	3359	1450	9	Fulvestrant	1
+GSE48905	D_reversal_plus_all_dt	0.6278	39	15	3359	1450	10	Fulvestrant	1
+GSE50948	A_reversal_only	0.5078	156	53	3242	1412	5	AT (Doxorubicin+Paclitaxel)+CMF (Cyclophosphamide+Fluorouracil+Methotrexate)+Trastuzumab	0
+GSE50948	B_reversal_plus_target_expr	0.5146	156	53	3242	1412	8	AT (Doxorubicin+Paclitaxel)+CMF (Cyclophosphamide+Fluorouracil+Methotrexate)+Trastuzumab	0
+GSE50948	C_reversal_plus_target_expr_pw	0.5144	156	53	3242	1412	9	AT (Doxorubicin+Paclitaxel)+CMF (Cyclophosphamide+Fluorouracil+Methotrexate)+Trastuzumab	0
+GSE50948	D_reversal_plus_all_dt	0.5144	156	53	3242	1412	10	AT (Doxorubicin+Paclitaxel)+CMF (Cyclophosphamide+Fluorouracil+Methotrexate)+Trastuzumab	0
+GSE5122	A_reversal_only	0.184	57	4	3341	1461	5	Tipifarnib	0
+GSE5122	B_reversal_plus_target_expr	0.1604	57	4	3341	1461	8	Tipifarnib	0
+GSE5122	C_reversal_plus_target_expr_pw	0.1604	57	4	3341	1461	9	Tipifarnib	0
+GSE5122	D_reversal_plus_all_dt	0.1604	57	4	3341	1461	10	Tipifarnib	0
+GSE62321	A_reversal_only	0.4777	57	26	3341	1439	5	Fluorouracil+Irinotecan+Leucovorin	1
+GSE62321	B_reversal_plus_target_expr	0.4454	57	26	3341	1439	8	Fluorouracil+Irinotecan+Leucovorin	1
+GSE62321	C_reversal_plus_target_expr_pw	0.4727	57	26	3341	1439	9	Fluorouracil+Irinotecan+Leucovorin	1
+GSE62321	D_reversal_plus_all_dt	0.4727	57	26	3341	1439	10	Fluorouracil+Irinotecan+Leucovorin	1
+GSE63885	A_reversal_only	0.6359	68	65	3330	1400	5	Platinum+Taxane	0
+GSE63885	B_reversal_plus_target_expr	0.6359	68	65	3330	1400	8	Platinum+Taxane	0
+GSE63885	C_reversal_plus_target_expr_pw	0.6359	68	65	3330	1400	9	Platinum+Taxane	0
+GSE63885	D_reversal_plus_all_dt	0.6359	68	65	3330	1400	10	Platinum+Taxane	0
+GSE66999	A_reversal_only	0.4	76	70	3322	1395	5	Docetaxel+Epirubicin+Pegfilgrastim	0
+GSE66999	B_reversal_plus_target_expr	0.4405	76	70	3322	1395	8	Docetaxel+Epirubicin+Pegfilgrastim	0
+GSE66999	C_reversal_plus_target_expr_pw	0.4024	76	70	3322	1395	9	Docetaxel+Epirubicin+Pegfilgrastim	0
+GSE66999	D_reversal_plus_all_dt	0.4024	76	70	3322	1395	10	Docetaxel+Epirubicin+Pegfilgrastim	0
+GSE6861	A_reversal_only	0.4402	161	66	3237	1399	5	Cyclophosphamide+Epirubicin+Fluorouracil	0
+GSE6861	B_reversal_plus_target_expr	0.441	161	66	3237	1399	8	Cyclophosphamide+Epirubicin+Fluorouracil	0
+GSE6861	C_reversal_plus_target_expr_pw	0.4411	161	66	3237	1399	9	Cyclophosphamide+Epirubicin+Fluorouracil	0
+GSE6861	D_reversal_plus_all_dt	0.4411	161	66	3237	1399	10	Cyclophosphamide+Epirubicin+Fluorouracil	0
+GSE68871	A_reversal_only	0.376	118	97	3280	1368	5	VTD (Bortezomib+Thalidomide)	0
+GSE68871	B_reversal_plus_target_expr	0.376	118	97	3280	1368	8	VTD (Bortezomib+Thalidomide)	0
+GSE68871	C_reversal_plus_target_expr_pw	0.376	118	97	3280	1368	9	VTD (Bortezomib+Thalidomide)	0
+GSE68871	D_reversal_plus_all_dt	0.376	118	97	3280	1368	10	VTD (Bortezomib+Thalidomide)	0
+GSE72970	A_reversal_only	0.4369	124	63	3274	1402	5	FOLFIRI (Fluorouracil+Irinotecan+Leucovorin)	1
+GSE72970	B_reversal_plus_target_expr	0.434	124	63	3274	1402	8	FOLFIRI (Fluorouracil+Irinotecan+Leucovorin)	1
+GSE72970	C_reversal_plus_target_expr_pw	0.6019	124	63	3274	1402	9	FOLFIRI (Fluorouracil+Irinotecan+Leucovorin)	1
+GSE72970	D_reversal_plus_all_dt	0.6019	124	63	3274	1402	10	FOLFIRI (Fluorouracil+Irinotecan+Leucovorin)	1
+GSE73578	A_reversal_only	0.3935	63	40	3335	1425	5	Prednisone	0
+GSE73578	B_reversal_plus_target_expr	0.2957	63	40	3335	1425	8	Prednisone	0
+GSE73578	C_reversal_plus_target_expr_pw	0.2978	63	40	3335	1425	9	Prednisone	0
+GSE73578	D_reversal_plus_all_dt	0.2978	63	40	3335	1425	10	Prednisone	0
+GSE82172	A_reversal_only	0.3722	152	21	3246	1444	5	Tamoxifen	1
+GSE82172	B_reversal_plus_target_expr	0.3806	152	21	3246	1444	8	Tamoxifen	1
+GSE82172	C_reversal_plus_target_expr_pw	0.5958	152	21	3246	1444	9	Tamoxifen	1
+GSE82172	D_reversal_plus_all_dt	0.5958	152	21	3246	1444	10	Tamoxifen	1
+GSE8970	A_reversal_only	0.574	26	13	3372	1452	5	Tipifarnib	0
+GSE8970	B_reversal_plus_target_expr	0.6154	26	13	3372	1452	8	Tipifarnib	0
+GSE8970	C_reversal_plus_target_expr_pw	0.6036	26	13	3372	1452	9	Tipifarnib	0
+GSE8970	D_reversal_plus_all_dt	0.6036	26	13	3372	1452	10	Tipifarnib	0
