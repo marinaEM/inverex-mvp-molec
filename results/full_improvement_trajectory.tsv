@@ -1,0 +1,11 @@
+Config	Pan-cancer_AUC	pCR_AUC	Retrained
+A. Baseline (gene reversal)	0.4671	0.482	Yes
+B. + drug-target features	0.493	0.4887	Yes
+C. + DepMap features	0.4835	0.4875	Yes
+D. + PROGENy features	0.5624	0.5874	Yes
+E. + drug-target + DepMap	0.5105	0.4916	Yes
+F. + drug-target + DepMap + PROGENy	0.5799	0.5985	Yes
+G. + all + ssGSEA	0.5526	0.6486	Yes
+CDS-DB reversal (existing baseline)	0.4855	0.62	No
+Stacking ensemble	0.462	N/A	Meta-learner
+Pan-cancer patient model	0.6097	0.6834	Ref

@@ -1,0 +1,211 @@
+held_out_dataset	config	auc	n_test	n_test_pos	n_train	n_train_pos	n_features	drug
+GSE104645	A_baseline_reversal	0.5096	126	112	3272	1353	5	Fluorouracil+Leucovorin+Oxaliplatin
+GSE104645	B_plus_drug_target	0.5236	126	112	3272	1353	10	Fluorouracil+Leucovorin+Oxaliplatin
+GSE104645	C_plus_depmap	0.5383	126	112	3272	1353	9	Fluorouracil+Leucovorin+Oxaliplatin
+GSE104645	D_plus_progeny	0.5013	126	112	3272	1353	18	Fluorouracil+Leucovorin+Oxaliplatin
+GSE104645	E_dt_plus_depmap	0.5491	126	112	3272	1353	14	Fluorouracil+Leucovorin+Oxaliplatin
+GSE104645	F_dt_depmap_progeny	0.4923	126	112	3272	1353	27	Fluorouracil+Leucovorin+Oxaliplatin
+GSE104645	G_all_plus_ssgsea	0.5816	126	112	3272	1353	75	Fluorouracil+Leucovorin+Oxaliplatin
+GSE104958	A_baseline_reversal	0.4755	46	12	3352	1453	5	Cisplatin+Docetaxel+Fluorouracil
+GSE104958	B_plus_drug_target	0.4632	46	12	3352	1453	10	Cisplatin+Docetaxel+Fluorouracil
+GSE104958	C_plus_depmap	0.4755	46	12	3352	1453	9	Cisplatin+Docetaxel+Fluorouracil
+GSE104958	D_plus_progeny	0.5025	46	12	3352	1453	18	Cisplatin+Docetaxel+Fluorouracil
+GSE104958	E_dt_plus_depmap	0.473	46	12	3352	1453	14	Cisplatin+Docetaxel+Fluorouracil
+GSE104958	F_dt_depmap_progeny	0.5098	46	12	3352	1453	27	Cisplatin+Docetaxel+Fluorouracil
+GSE104958	G_all_plus_ssgsea	0.5882	46	12	3352	1453	75	Cisplatin+Docetaxel+Fluorouracil
+GSE109211	A_baseline_reversal	0.4835	140	42	3258	1423	5	Sorafenib
+GSE109211	B_plus_drug_target	0.7784	140	42	3258	1423	10	Sorafenib
+GSE109211	C_plus_depmap	0.3853	140	42	3258	1423	9	Sorafenib
+GSE109211	D_plus_progeny	0.3277	140	42	3258	1423	18	Sorafenib
+GSE109211	E_dt_plus_depmap	0.7583	140	42	3258	1423	14	Sorafenib
+GSE109211	F_dt_depmap_progeny	0.7753	140	42	3258	1423	27	Sorafenib
+GSE109211	G_all_plus_ssgsea	0.6873	140	42	3258	1423	75	Sorafenib
+GSE14615	A_baseline_reversal	0.2143	20	6	3378	1459	5	Doxorubicin+Mercaptopurine+Methotrexate+Prednisone+Vincristine
+GSE14615	B_plus_drug_target	0.1905	20	6	3378	1459	10	Doxorubicin+Mercaptopurine+Methotrexate+Prednisone+Vincristine
+GSE14615	C_plus_depmap	0.2381	20	6	3378	1459	9	Doxorubicin+Mercaptopurine+Methotrexate+Prednisone+Vincristine
+GSE14615	D_plus_progeny	0.75	20	6	3378	1459	18	Doxorubicin+Mercaptopurine+Methotrexate+Prednisone+Vincristine
+GSE14615	E_dt_plus_depmap	0.2262	20	6	3378	1459	14	Doxorubicin+Mercaptopurine+Methotrexate+Prednisone+Vincristine
+GSE14615	F_dt_depmap_progeny	0.6905	20	6	3378	1459	27	Doxorubicin+Mercaptopurine+Methotrexate+Prednisone+Vincristine
+GSE14615	G_all_plus_ssgsea	0.3452	20	6	3378	1459	75	Doxorubicin+Mercaptopurine+Methotrexate+Prednisone+Vincristine
+GSE14671	A_baseline_reversal	0.5434	59	41	3339	1424	5	Imatinib
+GSE14671	B_plus_drug_target	0.5339	59	41	3339	1424	10	Imatinib
+GSE14671	C_plus_depmap	0.5108	59	41	3339	1424	9	Imatinib
+GSE14671	D_plus_progeny	0.5014	59	41	3339	1424	18	Imatinib
+GSE14671	E_dt_plus_depmap	0.4973	59	41	3339	1424	14	Imatinib
+GSE14671	F_dt_depmap_progeny	0.4959	59	41	3339	1424	27	Imatinib
+GSE14671	G_all_plus_ssgsea	0.5569	59	41	3339	1424	75	Imatinib
+GSE173263	A_baseline_reversal	0.5172	39	29	3359	1436	5	Cyclophosphamide+Doxorubicin+Prednisolone+Rituximab+Vincristine
+GSE173263	B_plus_drug_target	0.5655	39	29	3359	1436	10	Cyclophosphamide+Doxorubicin+Prednisolone+Rituximab+Vincristine
+GSE173263	C_plus_depmap	0.5379	39	29	3359	1436	9	Cyclophosphamide+Doxorubicin+Prednisolone+Rituximab+Vincristine
+GSE173263	D_plus_progeny	0.5828	39	29	3359	1436	18	Cyclophosphamide+Doxorubicin+Prednisolone+Rituximab+Vincristine
+GSE173263	E_dt_plus_depmap	0.5828	39	29	3359	1436	14	Cyclophosphamide+Doxorubicin+Prednisolone+Rituximab+Vincristine
+GSE173263	F_dt_depmap_progeny	0.6069	39	29	3359	1436	27	Cyclophosphamide+Doxorubicin+Prednisolone+Rituximab+Vincristine
+GSE173263	G_all_plus_ssgsea	0.6793	39	29	3359	1436	75	Cyclophosphamide+Doxorubicin+Prednisolone+Rituximab+Vincristine
+GSE19293	A_baseline_reversal	0.6057	52	24	3346	1441	5	Melphalan
+GSE19293	B_plus_drug_target	0.5938	52	24	3346	1441	10	Melphalan
+GSE19293	C_plus_depmap	0.5908	52	24	3346	1441	9	Melphalan
+GSE19293	D_plus_progeny	0.6101	52	24	3346	1441	18	Melphalan
+GSE19293	E_dt_plus_depmap	0.5685	52	24	3346	1441	14	Melphalan
+GSE19293	F_dt_depmap_progeny	0.622	52	24	3346	1441	27	Melphalan
+GSE19293	G_all_plus_ssgsea	0.4435	52	24	3346	1441	75	Melphalan
+GSE20181	A_baseline_reversal	0.4118	154	110	3244	1355	5	Letrozole
+GSE20181	B_plus_drug_target	0.414	154	110	3244	1355	10	Letrozole
+GSE20181	C_plus_depmap	0.4498	154	110	3244	1355	9	Letrozole
+GSE20181	D_plus_progeny	0.5273	154	110	3244	1355	18	Letrozole
+GSE20181	E_dt_plus_depmap	0.4558	154	110	3244	1355	14	Letrozole
+GSE20181	F_dt_depmap_progeny	0.5198	154	110	3244	1355	27	Letrozole
+GSE20181	G_all_plus_ssgsea	0.4568	154	110	3244	1355	75	Letrozole
+GSE20194	A_baseline_reversal	0.4649	278	56	3120	1409	5	TFAC (Cyclophosphamide+Doxorubicin+Fluorouracil+Paclitaxel)
+GSE20194	B_plus_drug_target	0.4752	278	56	3120	1409	10	TFAC (Cyclophosphamide+Doxorubicin+Fluorouracil+Paclitaxel)
+GSE20194	C_plus_depmap	0.4435	278	56	3120	1409	9	TFAC (Cyclophosphamide+Doxorubicin+Fluorouracil+Paclitaxel)
+GSE20194	D_plus_progeny	0.5449	278	56	3120	1409	18	TFAC (Cyclophosphamide+Doxorubicin+Fluorouracil+Paclitaxel)
+GSE20194	E_dt_plus_depmap	0.4468	278	56	3120	1409	14	TFAC (Cyclophosphamide+Doxorubicin+Fluorouracil+Paclitaxel)
+GSE20194	F_dt_depmap_progeny	0.5722	278	56	3120	1409	27	TFAC (Cyclophosphamide+Doxorubicin+Fluorouracil+Paclitaxel)
+GSE20194	G_all_plus_ssgsea	0.7137	278	56	3120	1409	75	TFAC (Cyclophosphamide+Doxorubicin+Fluorouracil+Paclitaxel)
+GSE20271	A_baseline_reversal	0.5377	178	26	3220	1439	5	FAC (Cyclophosphamide+Doxorubicin+Fluorouracil)
+GSE20271	B_plus_drug_target	0.5554	178	26	3220	1439	10	FAC (Cyclophosphamide+Doxorubicin+Fluorouracil)
+GSE20271	C_plus_depmap	0.5248	178	26	3220	1439	9	FAC (Cyclophosphamide+Doxorubicin+Fluorouracil)
+GSE20271	D_plus_progeny	0.5124	178	26	3220	1439	18	FAC (Cyclophosphamide+Doxorubicin+Fluorouracil)
+GSE20271	E_dt_plus_depmap	0.5461	178	26	3220	1439	14	FAC (Cyclophosphamide+Doxorubicin+Fluorouracil)
+GSE20271	F_dt_depmap_progeny	0.5347	178	26	3220	1439	27	FAC (Cyclophosphamide+Doxorubicin+Fluorouracil)
+GSE20271	G_all_plus_ssgsea	0.6361	178	26	3220	1439	75	FAC (Cyclophosphamide+Doxorubicin+Fluorouracil)
+GSE21974	A_baseline_reversal	0.3718	57	18	3341	1447	5	Cyclophosphamide+Docetaxel+Epirubicin
+GSE21974	B_plus_drug_target	0.3604	57	18	3341	1447	10	Cyclophosphamide+Docetaxel+Epirubicin
+GSE21974	C_plus_depmap	0.4031	57	18	3341	1447	9	Cyclophosphamide+Docetaxel+Epirubicin
+GSE21974	D_plus_progeny	0.5057	57	18	3341	1447	18	Cyclophosphamide+Docetaxel+Epirubicin
+GSE21974	E_dt_plus_depmap	0.396	57	18	3341	1447	14	Cyclophosphamide+Docetaxel+Epirubicin
+GSE21974	F_dt_depmap_progeny	0.5199	57	18	3341	1447	27	Cyclophosphamide+Docetaxel+Epirubicin
+GSE21974	G_all_plus_ssgsea	0.6311	57	18	3341	1447	75	Cyclophosphamide+Docetaxel+Epirubicin
+GSE22093	A_baseline_reversal	0.5916	97	28	3301	1437	5	FEC (Cyclophosphamide+Epirubicin+Fluorouracil)
+GSE22093	B_plus_drug_target	0.6149	97	28	3301	1437	10	FEC (Cyclophosphamide+Epirubicin+Fluorouracil)
+GSE22093	C_plus_depmap	0.6439	97	28	3301	1437	9	FEC (Cyclophosphamide+Epirubicin+Fluorouracil)
+GSE22093	D_plus_progeny	0.573	97	28	3301	1437	18	FEC (Cyclophosphamide+Epirubicin+Fluorouracil)
+GSE22093	E_dt_plus_depmap	0.663	97	28	3301	1437	14	FEC (Cyclophosphamide+Epirubicin+Fluorouracil)
+GSE22093	F_dt_depmap_progeny	0.5802	97	28	3301	1437	27	FEC (Cyclophosphamide+Epirubicin+Fluorouracil)
+GSE22093	G_all_plus_ssgsea	0.7635	97	28	3301	1437	75	FEC (Cyclophosphamide+Epirubicin+Fluorouracil)
+GSE23988	A_baseline_reversal	0.572	61	20	3337	1445	5	FEC (Cyclophosphamide+Epirubicin+Fluorouracil)+Capecitabine+Docetaxel
+GSE23988	B_plus_drug_target	0.5951	61	20	3337	1445	10	FEC (Cyclophosphamide+Epirubicin+Fluorouracil)+Capecitabine+Docetaxel
+GSE23988	C_plus_depmap	0.5988	61	20	3337	1445	9	FEC (Cyclophosphamide+Epirubicin+Fluorouracil)+Capecitabine+Docetaxel
+GSE23988	D_plus_progeny	0.4561	61	20	3337	1445	18	FEC (Cyclophosphamide+Epirubicin+Fluorouracil)+Capecitabine+Docetaxel
+GSE23988	E_dt_plus_depmap	0.6183	61	20	3337	1445	14	FEC (Cyclophosphamide+Epirubicin+Fluorouracil)+Capecitabine+Docetaxel
+GSE23988	F_dt_depmap_progeny	0.4634	61	20	3337	1445	27	FEC (Cyclophosphamide+Epirubicin+Fluorouracil)+Capecitabine+Docetaxel
+GSE23988	G_all_plus_ssgsea	0.6634	61	20	3337	1445	75	FEC (Cyclophosphamide+Epirubicin+Fluorouracil)+Capecitabine+Docetaxel
+GSE25066	A_baseline_reversal	0.4391	488	99	2910	1366	5	Anthracycline+Taxane
+GSE25066	B_plus_drug_target	0.4463	488	99	2910	1366	10	Anthracycline+Taxane
+GSE25066	C_plus_depmap	0.4281	488	99	2910	1366	9	Anthracycline+Taxane
+GSE25066	D_plus_progeny	0.5975	488	99	2910	1366	18	Anthracycline+Taxane
+GSE25066	E_dt_plus_depmap	0.4416	488	99	2910	1366	14	Anthracycline+Taxane
+GSE25066	F_dt_depmap_progeny	0.6078	488	99	2910	1366	27	Anthracycline+Taxane
+GSE25066	G_all_plus_ssgsea	0.6401	488	99	2910	1366	75	Anthracycline+Taxane
+GSE28702	A_baseline_reversal	0.4199	83	42	3315	1423	5	FOLFOX (Fluorouracil+Leucovorin+Oxaliplatin)
+GSE28702	B_plus_drug_target	0.4181	83	42	3315	1423	10	FOLFOX (Fluorouracil+Leucovorin+Oxaliplatin)
+GSE28702	C_plus_depmap	0.4425	83	42	3315	1423	9	FOLFOX (Fluorouracil+Leucovorin+Oxaliplatin)
+GSE28702	D_plus_progeny	0.511	83	42	3315	1423	18	FOLFOX (Fluorouracil+Leucovorin+Oxaliplatin)
+GSE28702	E_dt_plus_depmap	0.4431	83	42	3315	1423	14	FOLFOX (Fluorouracil+Leucovorin+Oxaliplatin)
+GSE28702	F_dt_depmap_progeny	0.5099	83	42	3315	1423	27	FOLFOX (Fluorouracil+Leucovorin+Oxaliplatin)
+GSE28702	G_all_plus_ssgsea	0.5952	83	42	3315	1423	75	FOLFOX (Fluorouracil+Leucovorin+Oxaliplatin)
+GSE32646	A_baseline_reversal	0.5034	115	27	3283	1438	5	TFEC (Cyclophosphamide+Epirubicin+Fluorouracil+Paclitaxel)
+GSE32646	B_plus_drug_target	0.5046	115	27	3283	1438	10	TFEC (Cyclophosphamide+Epirubicin+Fluorouracil+Paclitaxel)
+GSE32646	C_plus_depmap	0.4874	115	27	3283	1438	9	TFEC (Cyclophosphamide+Epirubicin+Fluorouracil+Paclitaxel)
+GSE32646	D_plus_progeny	0.6705	115	27	3283	1438	18	TFEC (Cyclophosphamide+Epirubicin+Fluorouracil+Paclitaxel)
+GSE32646	E_dt_plus_depmap	0.4933	115	27	3283	1438	14	TFEC (Cyclophosphamide+Epirubicin+Fluorouracil+Paclitaxel)
+GSE32646	F_dt_depmap_progeny	0.6709	115	27	3283	1438	27	TFEC (Cyclophosphamide+Epirubicin+Fluorouracil+Paclitaxel)
+GSE32646	G_all_plus_ssgsea	0.6991	115	27	3283	1438	75	TFEC (Cyclophosphamide+Epirubicin+Fluorouracil+Paclitaxel)
+GSE41998	A_baseline_reversal	0.3781	206	201	3192	1264	5	AC (Cyclophosphamide+Doxorubicin)+Ixabepilone
+GSE41998	B_plus_drug_target	0.407	206	201	3192	1264	10	AC (Cyclophosphamide+Doxorubicin)+Ixabepilone
+GSE41998	C_plus_depmap	0.5483	206	201	3192	1264	9	AC (Cyclophosphamide+Doxorubicin)+Ixabepilone
+GSE41998	D_plus_progeny	0.3821	206	201	3192	1264	18	AC (Cyclophosphamide+Doxorubicin)+Ixabepilone
+GSE41998	E_dt_plus_depmap	0.5363	206	201	3192	1264	14	AC (Cyclophosphamide+Doxorubicin)+Ixabepilone
+GSE41998	F_dt_depmap_progeny	0.3891	206	201	3192	1264	27	AC (Cyclophosphamide+Doxorubicin)+Ixabepilone
+GSE41998	G_all_plus_ssgsea	0.2488	206	201	3192	1264	75	AC (Cyclophosphamide+Doxorubicin)+Ixabepilone
+GSE4779	A_baseline_reversal	0.4851	102	39	3296	1426	5	Cyclophosphamide+Epirubicin+Fluorouracil
+GSE4779	B_plus_drug_target	0.488	102	39	3296	1426	10	Cyclophosphamide+Epirubicin+Fluorouracil
+GSE4779	C_plus_depmap	0.5177	102	39	3296	1426	9	Cyclophosphamide+Epirubicin+Fluorouracil
+GSE4779	D_plus_progeny	0.6146	102	39	3296	1426	18	Cyclophosphamide+Epirubicin+Fluorouracil
+GSE4779	E_dt_plus_depmap	0.5035	102	39	3296	1426	14	Cyclophosphamide+Epirubicin+Fluorouracil
+GSE4779	F_dt_depmap_progeny	0.6146	102	39	3296	1426	27	Cyclophosphamide+Epirubicin+Fluorouracil
+GSE4779	G_all_plus_ssgsea	0.6166	102	39	3296	1426	75	Cyclophosphamide+Epirubicin+Fluorouracil
+GSE48905	A_baseline_reversal	0.4361	39	15	3359	1450	5	Fulvestrant
+GSE48905	B_plus_drug_target	0.4444	39	15	3359	1450	10	Fulvestrant
+GSE48905	C_plus_depmap	0.425	39	15	3359	1450	9	Fulvestrant
+GSE48905	D_plus_progeny	0.6667	39	15	3359	1450	18	Fulvestrant
+GSE48905	E_dt_plus_depmap	0.4278	39	15	3359	1450	14	Fulvestrant
+GSE48905	F_dt_depmap_progeny	0.6694	39	15	3359	1450	27	Fulvestrant
+GSE48905	G_all_plus_ssgsea	0.5833	39	15	3359	1450	75	Fulvestrant
+GSE50948	A_baseline_reversal	0.4898	156	53	3242	1412	5	AT (Doxorubicin+Paclitaxel)+CMF (Cyclophosphamide+Fluorouracil+Methotrexate)+Trastuzumab
+GSE50948	B_plus_drug_target	0.4924	156	53	3242	1412	10	AT (Doxorubicin+Paclitaxel)+CMF (Cyclophosphamide+Fluorouracil+Methotrexate)+Trastuzumab
+GSE50948	C_plus_depmap	0.518	156	53	3242	1412	9	AT (Doxorubicin+Paclitaxel)+CMF (Cyclophosphamide+Fluorouracil+Methotrexate)+Trastuzumab
+GSE50948	D_plus_progeny	0.5975	156	53	3242	1412	18	AT (Doxorubicin+Paclitaxel)+CMF (Cyclophosphamide+Fluorouracil+Methotrexate)+Trastuzumab
+GSE50948	E_dt_plus_depmap	0.5223	156	53	3242	1412	14	AT (Doxorubicin+Paclitaxel)+CMF (Cyclophosphamide+Fluorouracil+Methotrexate)+Trastuzumab
+GSE50948	F_dt_depmap_progeny	0.6102	156	53	3242	1412	27	AT (Doxorubicin+Paclitaxel)+CMF (Cyclophosphamide+Fluorouracil+Methotrexate)+Trastuzumab
+GSE50948	G_all_plus_ssgsea	0.6307	156	53	3242	1412	75	AT (Doxorubicin+Paclitaxel)+CMF (Cyclophosphamide+Fluorouracil+Methotrexate)+Trastuzumab
+GSE5122	A_baseline_reversal	0.4434	57	4	3341	1461	5	Tipifarnib
+GSE5122	B_plus_drug_target	0.4198	57	4	3341	1461	10	Tipifarnib
+GSE5122	C_plus_depmap	0.4057	57	4	3341	1461	9	Tipifarnib
+GSE5122	D_plus_progeny	0.6274	57	4	3341	1461	18	Tipifarnib
+GSE5122	E_dt_plus_depmap	0.3774	57	4	3341	1461	14	Tipifarnib
+GSE5122	F_dt_depmap_progeny	0.6085	57	4	3341	1461	27	Tipifarnib
+GSE5122	G_all_plus_ssgsea	0.4575	57	4	3341	1461	75	Tipifarnib
+GSE62321	A_baseline_reversal	0.4069	57	26	3341	1439	5	Fluorouracil+Irinotecan+Leucovorin
+GSE62321	B_plus_drug_target	0.4615	57	26	3341	1439	10	Fluorouracil+Irinotecan+Leucovorin
+GSE62321	C_plus_depmap	0.3672	57	26	3341	1439	9	Fluorouracil+Irinotecan+Leucovorin
+GSE62321	D_plus_progeny	0.5682	57	26	3341	1439	18	Fluorouracil+Irinotecan+Leucovorin
+GSE62321	E_dt_plus_depmap	0.4653	57	26	3341	1439	14	Fluorouracil+Irinotecan+Leucovorin
+GSE62321	F_dt_depmap_progeny	0.5025	57	26	3341	1439	27	Fluorouracil+Irinotecan+Leucovorin
+GSE62321	G_all_plus_ssgsea	0.5844	57	26	3341	1439	75	Fluorouracil+Irinotecan+Leucovorin
+GSE63885	A_baseline_reversal	0.3897	68	65	3330	1400	5	Platinum+Taxane
+GSE63885	B_plus_drug_target	0.4513	68	65	3330	1400	10	Platinum+Taxane
+GSE63885	C_plus_depmap	0.5333	68	65	3330	1400	9	Platinum+Taxane
+GSE63885	D_plus_progeny	0.559	68	65	3330	1400	18	Platinum+Taxane
+GSE63885	E_dt_plus_depmap	0.5744	68	65	3330	1400	14	Platinum+Taxane
+GSE63885	F_dt_depmap_progeny	0.5538	68	65	3330	1400	27	Platinum+Taxane
+GSE63885	G_all_plus_ssgsea	0.2974	68	65	3330	1400	75	Platinum+Taxane
+GSE66999	A_baseline_reversal	0.3714	76	70	3322	1395	5	Docetaxel+Epirubicin+Pegfilgrastim
+GSE66999	B_plus_drug_target	0.3929	76	70	3322	1395	10	Docetaxel+Epirubicin+Pegfilgrastim
+GSE66999	C_plus_depmap	0.5143	76	70	3322	1395	9	Docetaxel+Epirubicin+Pegfilgrastim
+GSE66999	D_plus_progeny	0.7095	76	70	3322	1395	18	Docetaxel+Epirubicin+Pegfilgrastim
+GSE66999	E_dt_plus_depmap	0.5095	76	70	3322	1395	14	Docetaxel+Epirubicin+Pegfilgrastim
+GSE66999	F_dt_depmap_progeny	0.7119	76	70	3322	1395	27	Docetaxel+Epirubicin+Pegfilgrastim
+GSE66999	G_all_plus_ssgsea	0.3429	76	70	3322	1395	75	Docetaxel+Epirubicin+Pegfilgrastim
+GSE6861	A_baseline_reversal	0.4539	161	66	3237	1399	5	Cyclophosphamide+Epirubicin+Fluorouracil
+GSE6861	B_plus_drug_target	0.459	161	66	3237	1399	10	Cyclophosphamide+Epirubicin+Fluorouracil
+GSE6861	C_plus_depmap	0.4928	161	66	3237	1399	9	Cyclophosphamide+Epirubicin+Fluorouracil
+GSE6861	D_plus_progeny	0.5742	161	66	3237	1399	18	Cyclophosphamide+Epirubicin+Fluorouracil
+GSE6861	E_dt_plus_depmap	0.4876	161	66	3237	1399	14	Cyclophosphamide+Epirubicin+Fluorouracil
+GSE6861	F_dt_depmap_progeny	0.5794	161	66	3237	1399	27	Cyclophosphamide+Epirubicin+Fluorouracil
+GSE6861	G_all_plus_ssgsea	0.6041	161	66	3237	1399	75	Cyclophosphamide+Epirubicin+Fluorouracil
+GSE68871	A_baseline_reversal	0.4786	118	97	3280	1368	5	VTD (Bortezomib+Thalidomide)
+GSE68871	B_plus_drug_target	0.4482	118	97	3280	1368	10	VTD (Bortezomib+Thalidomide)
+GSE68871	C_plus_depmap	0.5243	118	97	3280	1368	9	VTD (Bortezomib+Thalidomide)
+GSE68871	D_plus_progeny	0.6038	118	97	3280	1368	18	VTD (Bortezomib+Thalidomide)
+GSE68871	E_dt_plus_depmap	0.4953	118	97	3280	1368	14	VTD (Bortezomib+Thalidomide)
+GSE68871	F_dt_depmap_progeny	0.6082	118	97	3280	1368	27	VTD (Bortezomib+Thalidomide)
+GSE68871	G_all_plus_ssgsea	0.5704	118	97	3280	1368	75	VTD (Bortezomib+Thalidomide)
+GSE72970	A_baseline_reversal	0.4429	124	63	3274	1402	5	FOLFIRI (Fluorouracil+Irinotecan+Leucovorin)
+GSE72970	B_plus_drug_target	0.606	124	63	3274	1402	10	FOLFIRI (Fluorouracil+Irinotecan+Leucovorin)
+GSE72970	C_plus_depmap	0.4593	124	63	3274	1402	9	FOLFIRI (Fluorouracil+Irinotecan+Leucovorin)
+GSE72970	D_plus_progeny	0.5262	124	63	3274	1402	18	FOLFIRI (Fluorouracil+Irinotecan+Leucovorin)
+GSE72970	E_dt_plus_depmap	0.6097	124	63	3274	1402	14	FOLFIRI (Fluorouracil+Irinotecan+Leucovorin)
+GSE72970	F_dt_depmap_progeny	0.5787	124	63	3274	1402	27	FOLFIRI (Fluorouracil+Irinotecan+Leucovorin)
+GSE72970	G_all_plus_ssgsea	0.587	124	63	3274	1402	75	FOLFIRI (Fluorouracil+Irinotecan+Leucovorin)
+GSE73578	A_baseline_reversal	0.4826	63	40	3335	1425	5	Prednisone
+GSE73578	B_plus_drug_target	0.4565	63	40	3335	1425	10	Prednisone
+GSE73578	C_plus_depmap	0.3804	63	40	3335	1425	9	Prednisone
+GSE73578	D_plus_progeny	0.7457	63	40	3335	1425	18	Prednisone
+GSE73578	E_dt_plus_depmap	0.3587	63	40	3335	1425	14	Prednisone
+GSE73578	F_dt_depmap_progeny	0.7391	63	40	3335	1425	27	Prednisone
+GSE73578	G_all_plus_ssgsea	0.6348	63	40	3335	1425	75	Prednisone
+GSE82172	A_baseline_reversal	0.4417	152	21	3246	1444	5	Tamoxifen
+GSE82172	B_plus_drug_target	0.5969	152	21	3246	1444	10	Tamoxifen
+GSE82172	C_plus_depmap	0.4289	152	21	3246	1444	9	Tamoxifen
+GSE82172	D_plus_progeny	0.5507	152	21	3246	1444	18	Tamoxifen
+GSE82172	E_dt_plus_depmap	0.5965	152	21	3246	1444	14	Tamoxifen
+GSE82172	F_dt_depmap_progeny	0.5703	152	21	3246	1444	27	Tamoxifen
+GSE82172	G_all_plus_ssgsea	0.538	152	21	3246	1444	75	Tamoxifen
+GSE8970	A_baseline_reversal	0.6509	26	13	3372	1452	5	Tipifarnib
+GSE8970	B_plus_drug_target	0.6331	26	13	3372	1452	10	Tipifarnib
+GSE8970	C_plus_depmap	0.6923	26	13	3372	1452	9	Tipifarnib
+GSE8970	D_plus_progeny	0.4734	26	13	3372	1452	18	Tipifarnib
+GSE8970	E_dt_plus_depmap	0.6923	26	13	3372	1452	14	Tipifarnib
+GSE8970	F_dt_depmap_progeny	0.4911	26	13	3372	1452	27	Tipifarnib
+GSE8970	G_all_plus_ssgsea	0.2012	26	13	3372	1452	75	Tipifarnib
