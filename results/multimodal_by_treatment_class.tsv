@@ -1,0 +1,29 @@
+config	treatment_class	n_datasets	n_patients	mean_auc	median_auc	std_auc
+A_expr_only	chemo	13	2154	0.7425	0.7284	0.166
+A_expr_only	dna_damage	2	553	0.4884	0.4884	0.1491
+A_expr_only	endocrine	3	345	0.4331	0.4139	0.043
+A_expr_only	her2_targeted	7	440	0.5351	0.5318	0.1246
+A_expr_only	immunotherapy	1	69	0.4338	0.4338	
+A_expr_only	other_targeted	4	333	0.4484	0.4574	0.0995
+A_expr_only	targeted	2	94	0.6023	0.6023	0.0437
+B_expr_mut	chemo	13	2154	0.7379	0.7151	0.1772
+B_expr_mut	dna_damage	2	553	0.4726	0.4726	0.1493
+B_expr_mut	endocrine	3	345	0.4342	0.4431	0.0486
+B_expr_mut	her2_targeted	7	440	0.5143	0.5089	0.1285
+B_expr_mut	immunotherapy	1	69	0.4312	0.4312	
+B_expr_mut	other_targeted	4	333	0.4616	0.5002	0.1137
+B_expr_mut	targeted	2	94	0.6387	0.6387	0.0803
+C_expr_mut_cnv	chemo	13	2154	0.7222	0.6866	0.1602
+C_expr_mut_cnv	dna_damage	2	553	0.4996	0.4996	0.1244
+C_expr_mut_cnv	endocrine	3	345	0.4413	0.4587	0.0476
+C_expr_mut_cnv	her2_targeted	7	440	0.5513	0.5621	0.1683
+C_expr_mut_cnv	immunotherapy	1	69	0.3913	0.3913	
+C_expr_mut_cnv	other_targeted	4	333	0.4742	0.4684	0.1113
+C_expr_mut_cnv	targeted	2	94	0.5989	0.5989	0.0632
+D_expr_mut_cnv_clin	chemo	13	2154	0.7059	0.6913	0.1845
+D_expr_mut_cnv_clin	dna_damage	2	553	0.5839	0.5839	0.0484
+D_expr_mut_cnv_clin	endocrine	3	345	0.4568	0.4766	0.0353
+D_expr_mut_cnv_clin	her2_targeted	7	440	0.5483	0.5742	0.1107
+D_expr_mut_cnv_clin	immunotherapy	1	69	0.573	0.573	
+D_expr_mut_cnv_clin	other_targeted	4	333	0.5969	0.6031	0.0744
+D_expr_mut_cnv_clin	targeted	2	94	0.7258	0.7258	0.05
