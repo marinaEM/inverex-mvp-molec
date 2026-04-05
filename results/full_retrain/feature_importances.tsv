@@ -1,0 +1,257 @@
+feature	importance
+gene_UGT1A1	583
+gene_DLL1	528
+gene_PKM	349
+gene_CD274	317
+gene_CXCL8	153
+gene_KDM1A	102
+gene_MTOR	66
+ssgsea_TGF-beta Signaling	64
+gene_GZMB	62
+gene_CDK1	59
+gene_IL6	49
+gene_GUSB	47
+gene_XIAP	46
+gene_FOXA1	45
+gene_PMS2	44
+gene_ALK	44
+ssgsea_Pperoxisome	43
+gene_CCND1	42
+ssgsea_Apoptosis	41
+gene_BAX	40
+gene_TLR4	40
+gene_ERBB2	39
+gene_SLCO1B1	38
+gene_IFNG	38
+gene_FOS	37
+gene_EZH2	36
+gene_ATM	36
+gene_BID	36
+ssgsea_Complement	35
+gene_TNF	35
+gene_CTLA4	35
+gene_FOXP3	35
+gene_ABL1	34
+gene_BRCA2	34
+ssgsea_Hypoxia	34
+gene_SMAD3	34
+gene_RB1	34
+gene_HDAC6	33
+gene_RARA	33
+gene_PARP2	33
+gene_APC	33
+gene_TGFBR1	32
+gene_CYP1A2	32
+gene_ESR1	32
+gene_IL1B	32
+gene_AXIN1	32
+ssgsea_UV Response Dn	32
+gene_TUBA1A	31
+gene_CD4	31
+gene_HSP90AA1	31
+ssgsea_Androgen Response	31
+gene_B2M	30
+progeny_VEGF	30
+gene_SLC22A1	29
+gene_BIRC5	29
+gene_AR	29
+gene_SMAD2	29
+gene_HDAC3	28
+gene_PSMB5	28
+gene_ABCB1	28
+ssgsea_TNF-alpha Signaling via NF-kB	28
+gene_NTRK1	28
+gene_KLF4	28
+gene_KDR	28
+gene_JAK2	28
+gene_HSPA1A	28
+gene_PIK3CA	28
+gene_WNT1	28
+gene_VEGFA	28
+gene_CDC20	27
+ssgsea_Myogenesis	27
+gene_NANOG	27
+ssgsea_Wnt-beta Catenin Signaling	27
+progeny_Androgen	27
+gene_ERCC1	26
+gene_PPARA	25
+gene_MYC	25
+gene_RRM2	25
+gene_HK2	25
+gene_STAT3	25
+gene_EPAS1	25
+gene_ATR	25
+gene_E2F1	25
+ssgsea_Mitotic Spindle	25
+gene_HSPB1	24
+ssgsea_Apical Junction	24
+gene_CCL2	24
+gene_EGFR	24
+gene_CDK6	24
+gene_CDKN2A	24
+gene_CTNNB1	23
+gene_CDK2	23
+gene_PLK4	23
+gene_SCD	23
+ssgsea_Notch Signaling	23
+gene_CCR5	23
+gene_BCL2L11	23
+ssgsea_UV Response Up	23
+gene_PPARG	23
+progeny_Hypoxia	23
+gene_MDM2	23
+gene_JUN	23
+gene_BRCA1	22
+gene_HSP90AB1	22
+gene_PDGFRA	22
+gene_SIRT1	22
+gene_MAP3K1	22
+gene_SREBF1	22
+gene_SMO	22
+gene_HDAC1	22
+gene_BBC3	21
+gene_RELA	21
+progeny_Estrogen	21
+gene_PTEN	21
+gene_LDHA	21
+gene_BMP2	21
+gene_TBP	21
+gene_CDH1	21
+gene_ROS1	20
+gene_NR3C1	20
+gene_NOTCH2	20
+gene_MDM4	20
+gene_CYP2D6	20
+ssgsea_Myc Targets V2	19
+gene_HES1	19
+gene_NOTCH1	19
+progeny_TGFb	19
+progeny_NFkB	19
+ssgsea_Cholesterol Homeostasis	19
+gene_SRC	19
+gene_MYB	19
+gene_MSH2	19
+gene_MLH1	19
+gene_FGFR1	19
+gene_MET	19
+gene_SQLE	19
+progeny_MAPK	19
+gene_SOX2	19
+gene_PGR	19
+gene_HPRT1	19
+gene_XPC	18
+gene_IKBKB	18
+gene_CCNE1	18
+ssgsea_p53 Pathway	18
+gene_GATA3	18
+gene_GAPDH	18
+ssgsea_Glycolysis	18
+gene_AKT1	18
+gene_GZMA	17
+gene_PRF1	17
+gene_SMAD4	17
+gene_CHEK1	17
+gene_PDCD1	17
+gene_VDR	17
+gene_YES1	17
+gene_NFKB1	17
+ssgsea_mTORC1 Signaling	17
+gene_KIT	17
+gene_MAPK3	17
+gene_EGR1	16
+gene_TGFBR2	16
+gene_CASP8	16
+gene_CD8A	16
+gene_GSK3B	16
+ssgsea_Estrogen Response Early	16
+ssgsea_Inflammatory Response	15
+gene_DHFR	15
+gene_TP53	15
+ssgsea_DNA Repair	15
+gene_CCNB1	15
+gene_CXCR4	15
+gene_CYP3A4	15
+gene_MAP2K1	15
+gene_DNMT3A	15
+gene_PSMA1	15
+gene_POU5F1	15
+gene_MKI67	15
+gene_MAPK1	15
+gene_FYN	14
+gene_CDKN1B	14
+gene_HMGCR	14
+gene_XRCC1	14
+gene_TTK	14
+gene_KAT2A	14
+gene_FASN	14
+ssgsea_Epithelial Mesenchymal Transition	14
+gene_KDM5A	14
+gene_BRD4	14
+gene_BCL2	13
+gene_SHH	13
+gene_BAK1	13
+ssgsea_KRAS Signaling Up	13
+ssgsea_PI3K/AKT/mTOR  Signaling	13
+gene_NR1I2	13
+gene_CDKN1A	13
+gene_PMAIP1	13
+gene_CASP3	13
+gene_RAD51	13
+gene_CDK4	13
+gene_CDC25A	12
+gene_CCNA2	12
+ssgsea_IL-2/STAT5 Signaling	12
+gene_MCL1	12
+gene_CDC25C	12
+ssgsea_Estrogen Response Late	12
+gene_RXRA	12
+gene_GLI1	12
+gene_UBB	12
+gene_RET	12
+gene_PLK1	12
+gene_HIF1A	12
+gene_LRP5	12
+gene_CHEK2	11
+gene_RRM1	11
+gene_ACACA	11
+gene_TGFB1	11
+gene_AURKA	11
+gene_CENPE	11
+gene_TYMS	11
+gene_JAG1	11
+gene_MYD88	11
+gene_G6PD	10
+gene_BUB1	10
+gene_EP300	10
+gene_DNMT1	10
+gene_RPL13A	10
+gene_WEE1	10
+gene_KRAS	10
+ssgsea_Spermatogenesis	10
+gene_HDAC2	10
+gene_VHL	10
+gene_BRAF	10
+gene_HSPA8	10
+progeny_TNFa	9
+gene_CREBBP	9
+gene_ABCG2	9
+gene_NEK2	9
+gene_HSPA5	9
+gene_USP7	9
+ssgsea_Interferon Gamma Response	9
+gene_TUBB	8
+ssgsea_E2F Targets	8
+gene_UBE2C	7
+gene_TOP2A	7
+gene_ACTB	6
+gene_KIF11	6
+progeny_JAK-STAT	6
+progeny_p53	6
+ssgsea_IL-6/JAK/STAT3 Signaling	6
+gene_FZD1	5
+gene_PARP1	5
+gene_BCL2L1	5
+gene_AURKB	4
+ssgsea_Allograft Rejection	4
+ssgsea_Myc Targets V1	4
+ssgsea_G2-M Checkpoint	1

@@ -1,0 +1,402 @@
+2026-04-05 15:40:31,851 [INFO] ======================================================================
+2026-04-05 15:40:31,851 [INFO] STEP 1: Loading all datasets
+2026-04-05 15:40:31,851 [INFO] ======================================================================
+2026-04-05 15:40:53,841 [INFO]   ISPY2: 988 patients
+2026-04-05 15:40:54,352 [INFO]   BrighTNess: 482 patients
+2026-04-05 15:40:54,352 [INFO] Loaded 40 datasets, 5598 total patients
+2026-04-05 15:40:54,353 [INFO]   BrighTNess: 482 pts, 236 resp, 246 non-resp, 24613 genes
+2026-04-05 15:40:54,353 [INFO]   GSE104645: 126 pts, 112 resp, 14 non-resp, 19595 genes
+2026-04-05 15:40:54,353 [INFO]   GSE104958: 46 pts, 12 resp, 34 non-resp, 34729 genes
+2026-04-05 15:40:54,353 [INFO]   GSE109211: 140 pts, 42 resp, 98 non-resp, 20727 genes
+2026-04-05 15:40:54,353 [INFO]   GSE131978: 37 pts, 18 resp, 19 non-resp, 13237 genes
+2026-04-05 15:40:54,353 [INFO]   GSE14615: 20 pts, 6 resp, 14 non-resp, 22880 genes
+2026-04-05 15:40:54,353 [INFO]   GSE14671: 59 pts, 41 resp, 18 non-resp, 22880 genes
+2026-04-05 15:40:54,353 [INFO]   GSE173263: 39 pts, 29 resp, 10 non-resp, 19468 genes
+2026-04-05 15:40:54,353 [INFO]   GSE19293: 52 pts, 24 resp, 28 non-resp, 22880 genes
+2026-04-05 15:40:54,353 [INFO]   GSE20181: 154 pts, 110 resp, 44 non-resp, 13237 genes
+2026-04-05 15:40:54,353 [INFO]   GSE20194: 278 pts, 56 resp, 222 non-resp, 13237 genes
+2026-04-05 15:40:54,353 [INFO]   GSE20271: 178 pts, 26 resp, 152 non-resp, 13237 genes
+2026-04-05 15:40:54,353 [INFO]   GSE21974: 57 pts, 18 resp, 39 non-resp, 19595 genes
+2026-04-05 15:40:54,353 [INFO]   GSE22093: 97 pts, 28 resp, 69 non-resp, 13237 genes
+2026-04-05 15:40:54,353 [INFO]   GSE23988: 61 pts, 20 resp, 41 non-resp, 13237 genes
+2026-04-05 15:40:54,353 [INFO]   GSE25066: 488 pts, 99 resp, 389 non-resp, 13237 genes
+2026-04-05 15:40:54,353 [INFO]   GSE28702: 83 pts, 42 resp, 41 non-resp, 22880 genes
+2026-04-05 15:40:54,353 [INFO]   GSE32646: 115 pts, 27 resp, 88 non-resp, 22880 genes
+2026-04-05 15:40:54,353 [INFO]   GSE35640: 56 pts, 22 resp, 34 non-resp, 22880 genes
+2026-04-05 15:40:54,353 [INFO]   GSE37946: 50 pts, 27 resp, 23 non-resp, 13237 genes
+2026-04-05 15:40:54,353 [INFO]   GSE41998: 206 pts, 201 resp, 5 non-resp, 13237 genes
+2026-04-05 15:40:54,353 [INFO]   GSE44272: 53 pts, 35 resp, 18 non-resp, 19468 genes
+2026-04-05 15:40:54,353 [INFO]   GSE4779: 102 pts, 39 resp, 63 non-resp, 20295 genes
+2026-04-05 15:40:54,353 [INFO]   GSE48905: 39 pts, 15 resp, 24 non-resp, 22880 genes
+2026-04-05 15:40:54,353 [INFO]   GSE50948: 156 pts, 53 resp, 103 non-resp, 22880 genes
+2026-04-05 15:40:54,353 [INFO]   GSE5122: 57 pts, 4 resp, 53 non-resp, 13237 genes
+2026-04-05 15:40:54,353 [INFO]   GSE61676: 86 pts, 46 resp, 40 non-resp, 47254 genes
+2026-04-05 15:40:54,353 [INFO]   GSE62321: 57 pts, 26 resp, 31 non-resp, 11198 genes
+2026-04-05 15:40:54,353 [INFO]   GSE63885: 68 pts, 65 resp, 3 non-resp, 22880 genes
+2026-04-05 15:40:54,353 [INFO]   GSE65021: 40 pts, 31 resp, 9 non-resp, 20819 genes
+2026-04-05 15:40:54,353 [INFO]   GSE66999: 76 pts, 70 resp, 6 non-resp, 19595 genes
+2026-04-05 15:40:54,353 [INFO]   GSE6861: 161 pts, 66 resp, 95 non-resp, 20295 genes
+2026-04-05 15:40:54,353 [INFO]   GSE68871: 118 pts, 97 resp, 21 non-resp, 22880 genes
+2026-04-05 15:40:54,353 [INFO]   GSE72970: 124 pts, 63 resp, 61 non-resp, 22880 genes
+2026-04-05 15:40:54,353 [INFO]   GSE73578: 63 pts, 40 resp, 23 non-resp, 22880 genes
+2026-04-05 15:40:54,354 [INFO]   GSE76360: 96 pts, 66 resp, 30 non-resp, 23684 genes
+2026-04-05 15:40:54,354 [INFO]   GSE82172: 152 pts, 21 resp, 131 non-resp, 20277 genes
+2026-04-05 15:40:54,354 [INFO]   GSE8970: 26 pts, 13 resp, 13 non-resp, 13237 genes
+2026-04-05 15:40:54,354 [INFO]   GSE9782: 312 pts, 180 resp, 132 non-resp, 102 genes
+2026-04-05 15:40:54,354 [INFO]   ISPY2: 988 pts, 319 resp, 669 non-resp, 19134 genes
+2026-04-05 15:40:54,354 [INFO] ======================================================================
+2026-04-05 15:40:54,354 [INFO] STEP 2: Restricting to L1000 landmark genes
+2026-04-05 15:40:54,354 [INFO] ======================================================================
+2026-04-05 15:40:54,355 [INFO] L1000 gene list: 212 genes
+2026-04-05 15:40:54,461 [INFO] L1000 genes in >= 60% of datasets (24/40): 212
+2026-04-05 15:40:54,552 [INFO] Gene matrix: 212 features per patient
+2026-04-05 15:40:54,553 [INFO] ======================================================================
+2026-04-05 15:40:54,553 [INFO] STEP 3: Z-score normalization per dataset
+2026-04-05 15:40:54,553 [INFO] ======================================================================
+2026-04-05 15:40:54,562 [INFO]   GSE104645: z-scored ((126, 212))
+2026-04-05 15:40:54,588 [INFO]   GSE104958: z-scored ((46, 212))
+2026-04-05 15:40:54,598 [INFO]   GSE109211: z-scored ((140, 212))
+2026-04-05 15:40:54,607 [INFO]   GSE131978: z-scored ((37, 212))
+2026-04-05 15:40:54,607 [INFO]   GSE14615: z-scored ((20, 212))
+2026-04-05 15:40:54,608 [INFO]   GSE14671: z-scored ((59, 212))
+2026-04-05 15:40:54,617 [INFO]   GSE173263: z-scored ((39, 212))
+2026-04-05 15:40:54,617 [INFO]   GSE19293: z-scored ((52, 212))
+2026-04-05 15:40:54,627 [INFO]   GSE20181: z-scored ((154, 212))
+2026-04-05 15:40:54,636 [INFO]   GSE20194: z-scored ((278, 212))
+2026-04-05 15:40:54,645 [INFO]   GSE20271: z-scored ((178, 212))
+2026-04-05 15:40:54,655 [INFO]   GSE21974: z-scored ((57, 212))
+2026-04-05 15:40:54,664 [INFO]   GSE22093: z-scored ((97, 212))
+2026-04-05 15:40:54,673 [INFO]   GSE23988: z-scored ((61, 212))
+2026-04-05 15:40:54,683 [INFO]   GSE25066: z-scored ((488, 212))
+2026-04-05 15:40:54,684 [INFO]   GSE28702: z-scored ((83, 212))
+2026-04-05 15:40:54,684 [INFO]   GSE32646: z-scored ((115, 212))
+2026-04-05 15:40:54,684 [INFO]   GSE35640: z-scored ((56, 212))
+2026-04-05 15:40:54,694 [INFO]   GSE37946: z-scored ((50, 212))
+2026-04-05 15:40:54,703 [INFO]   GSE41998: z-scored ((206, 212))
+2026-04-05 15:40:54,712 [INFO]   GSE44272: z-scored ((53, 212))
+2026-04-05 15:40:54,721 [INFO]   GSE4779: z-scored ((102, 212))
+2026-04-05 15:40:54,722 [INFO]   GSE48905: z-scored ((39, 212))
+2026-04-05 15:40:54,722 [INFO]   GSE50948: z-scored ((156, 212))
+2026-04-05 15:40:54,731 [INFO]   GSE5122: z-scored ((57, 212))
+2026-04-05 15:40:54,746 [INFO]   GSE61676: z-scored ((86, 212))
+2026-04-05 15:40:54,759 [INFO]   GSE62321: z-scored ((57, 212))
+2026-04-05 15:40:54,759 [INFO]   GSE63885: z-scored ((68, 212))
+2026-04-05 15:40:54,768 [INFO]   GSE65021: z-scored ((40, 212))
+2026-04-05 15:40:54,779 [INFO]   GSE66999: z-scored ((76, 212))
+2026-04-05 15:40:54,788 [INFO]   GSE6861: z-scored ((161, 212))
+2026-04-05 15:40:54,789 [INFO]   GSE68871: z-scored ((118, 212))
+2026-04-05 15:40:54,789 [INFO]   GSE72970: z-scored ((124, 212))
+2026-04-05 15:40:54,790 [INFO]   GSE73578: z-scored ((63, 212))
+2026-04-05 15:40:54,799 [INFO]   GSE76360: z-scored ((96, 212))
+2026-04-05 15:40:54,809 [INFO]   GSE82172: z-scored ((152, 212))
+2026-04-05 15:40:54,818 [INFO]   GSE8970: z-scored ((26, 212))
+2026-04-05 15:40:54,847 [INFO]   GSE9782: z-scored ((312, 212))
+2026-04-05 15:40:54,859 [INFO]   ISPY2: z-scored ((988, 212))
+2026-04-05 15:40:54,860 [INFO]   BrighTNess: z-scored ((482, 212))
+2026-04-05 15:40:54,860 [INFO] ======================================================================
+2026-04-05 15:40:54,860 [INFO] STEP 4: Pooling all datasets
+2026-04-05 15:40:54,860 [INFO] ======================================================================
+2026-04-05 15:40:54,865 [INFO] Pooled: 5598 samples x 212 genes
+2026-04-05 15:40:54,865 [INFO] Labels: {0: 3153, 1: 2445}
+2026-04-05 15:40:54,865 [INFO] ======================================================================
+2026-04-05 15:40:54,865 [INFO] STEP 5: ComBat batch correction
+2026-04-05 15:40:54,865 [INFO] ======================================================================
+2026-04-05 15:40:54,867 [INFO] Running neuroCombat (response as continuous covariate)...
+2026-04-05 15:40:55,153 [INFO]   ComBat output: NaN=0, Inf=0, zero-var genes=0
+2026-04-05 15:40:55,155 [INFO] ComBat completed in 0.3s, shape=(5598, 212)
+2026-04-05 15:40:55,155 [INFO] ======================================================================
+2026-04-05 15:40:55,156 [INFO] STEP 6: ssGSEA Hallmark pathway scores
+2026-04-05 15:40:55,156 [INFO] ======================================================================
+2026-04-05 15:40:55,156 [INFO] ssGSEA on ComBat-corrected data...
+2026-04-05 15:40:55,348 [INFO]   ssGSEA (combat) chunk 0-500 / 5598
+2026-04-05 15:40:56,244 [INFO]   ssGSEA (combat) chunk 500-1000 / 5598
+2026-04-05 15:40:57,170 [INFO]   ssGSEA (combat) chunk 1000-1500 / 5598
+2026-04-05 15:40:58,016 [INFO]   ssGSEA (combat) chunk 1500-2000 / 5598
+2026-04-05 15:40:58,883 [INFO]   ssGSEA (combat) chunk 2000-2500 / 5598
+2026-04-05 15:40:59,759 [INFO]   ssGSEA (combat) chunk 2500-3000 / 5598
+2026-04-05 15:41:00,640 [INFO]   ssGSEA (combat) chunk 3000-3500 / 5598
+2026-04-05 15:41:01,488 [INFO]   ssGSEA (combat) chunk 3500-4000 / 5598
+2026-04-05 15:41:02,366 [INFO]   ssGSEA (combat) chunk 4000-4500 / 5598
+2026-04-05 15:41:03,245 [INFO]   ssGSEA (combat) chunk 4500-5000 / 5598
+2026-04-05 15:41:04,125 [INFO]   ssGSEA (combat) chunk 5000-5500 / 5598
+2026-04-05 15:41:04,972 [INFO]   ssGSEA (combat) chunk 5500-5598 / 5598
+2026-04-05 15:41:05,157 [INFO] ssGSEA (combat) done in 10.0s -- 34 pathways
+2026-04-05 15:41:05,157 [INFO] ssGSEA on uncorrected z-scored data...
+2026-04-05 15:41:05,160 [INFO]   ssGSEA (nocombat) chunk 0-500 / 5598
+2026-04-05 15:41:06,020 [INFO]   ssGSEA (nocombat) chunk 500-1000 / 5598
+2026-04-05 15:41:06,894 [INFO]   ssGSEA (nocombat) chunk 1000-1500 / 5598
+2026-04-05 15:41:07,771 [INFO]   ssGSEA (nocombat) chunk 1500-2000 / 5598
+2026-04-05 15:41:08,656 [INFO]   ssGSEA (nocombat) chunk 2000-2500 / 5598
+2026-04-05 15:41:09,533 [INFO]   ssGSEA (nocombat) chunk 2500-3000 / 5598
+2026-04-05 15:41:10,413 [INFO]   ssGSEA (nocombat) chunk 3000-3500 / 5598
+2026-04-05 15:41:11,294 [INFO]   ssGSEA (nocombat) chunk 3500-4000 / 5598
+2026-04-05 15:41:12,193 [INFO]   ssGSEA (nocombat) chunk 4000-4500 / 5598
+2026-04-05 15:41:13,072 [INFO]   ssGSEA (nocombat) chunk 4500-5000 / 5598
+2026-04-05 15:41:13,951 [INFO]   ssGSEA (nocombat) chunk 5000-5500 / 5598
+2026-04-05 15:41:14,834 [INFO]   ssGSEA (nocombat) chunk 5500-5598 / 5598
+2026-04-05 15:41:15,016 [INFO] ssGSEA (nocombat) done in 9.9s -- 34 pathways
+2026-04-05 15:41:15,017 [INFO] ======================================================================
+2026-04-05 15:41:15,017 [INFO] STEP 7: PROGENy pathway activities
+2026-04-05 15:41:15,017 [INFO] ======================================================================
+2026-04-05 15:41:15,017 [INFO] PROGENy on ComBat-corrected data...
+2026-04-05 15:41:15,591 [INFO]   Getting PROGENy model... (combat)
+2026-04-05 15:41:18,351 [INFO]   PROGENy model: 6463 gene-pathway pairs
+2026-04-05 15:41:18,351 [INFO]   Running PROGENy MLM... (combat)
+2026-04-05 15:41:18,501 [INFO] PROGENy (combat) done in 3.5s -- 10 pathways
+2026-04-05 15:41:18,502 [INFO] PROGENy on uncorrected z-scored data...
+2026-04-05 15:41:18,504 [INFO]   Getting PROGENy model... (nocombat)
+2026-04-05 15:41:21,316 [INFO]   PROGENy model: 6463 gene-pathway pairs
+2026-04-05 15:41:21,316 [INFO]   Running PROGENy MLM... (nocombat)
+2026-04-05 15:41:21,343 [WARNING] PROGENy (nocombat) FAILED: "['GSE61676__0', 'GSE61676__1', 'GSE61676__2', 'GSE61676__3', 'GSE61676__4', 'GSE61676__5', 'GSE61676__6', 'GSE61676__7', 'GSE61676__8', 'GSE61676__9', 'GSE61676__10', 'GSE61676__11', 'GSE61676__12', 'GSE61676__13', 'GSE61676__14', 'GSE61676__15', 'GSE61676__16', 'GSE61676__17', 'GSE61676__18', 'GSE61676__19', 'GSE61676__20', 'GSE61676__21', 'GSE61676__22', 'GSE61676__23', 'GSE61676__24', 'GSE61676__25', 'GSE61676__26', 'GSE61676__27', 'GSE61676__28', 'GSE61676__29', 'GSE61676__30', 'GSE61676__31', 'GSE61676__32', 'GSE61676__33', 'GSE61676__34', 'GSE61676__35', 'GSE61676__36', 'GSE61676__37', 'GSE61676__38', 'GSE61676__39', 'GSE61676__40', 'GSE61676__41', 'GSE61676__42', 'GSE61676__43', 'GSE61676__44', 'GSE61676__45', 'GSE61676__46', 'GSE61676__47', 'GSE61676__48', 'GSE61676__49', 'GSE61676__50', 'GSE61676__51', 'GSE61676__52', 'GSE61676__53', 'GSE61676__54', 'GSE61676__55', 'GSE61676__56', 'GSE61676__57', 'GSE61676__58', 'GSE61676__59', 'GSE61676__60', 'GSE61676__61', 'GSE61676__62', 'GSE61676__63', 'GSE61676__64', 'GSE61676__65', 'GSE61676__66', 'GSE61676__67', 'GSE61676__68', 'GSE61676__69', 'GSE61676__70', 'GSE61676__71', 'GSE61676__72', 'GSE61676__73', 'GSE61676__74', 'GSE61676__75', 'GSE61676__76', 'GSE61676__77', 'GSE61676__78', 'GSE61676__79', 'GSE61676__80', 'GSE61676__81', 'GSE61676__82', 'GSE61676__83', 'GSE61676__84', 'GSE61676__85'] not in index"
+2026-04-05 15:41:21,343 [INFO] ======================================================================
+2026-04-05 15:41:21,344 [INFO] STEP 8: Assembling feature configs
+2026-04-05 15:41:21,344 [INFO] ======================================================================
+2026-04-05 15:41:21,345 [INFO]   A: 212 features
+2026-04-05 15:41:21,345 [INFO]   B: 246 features
+2026-04-05 15:41:21,345 [WARNING]   C skipped
+2026-04-05 15:41:21,349 [INFO]   D (fallback=B): 246 features
+2026-04-05 15:41:21,350 [INFO]   E: 256 features (ComBat)
+2026-04-05 15:41:21,350 [INFO]   Final A_genes_only: 212 feat, 5598 samples
+2026-04-05 15:41:21,350 [INFO]   Final B_genes_ssgsea: 246 feat, 5598 samples
+2026-04-05 15:41:21,350 [INFO]   Final D_genes_ssgsea_progeny: 246 feat, 5598 samples
+2026-04-05 15:41:21,350 [INFO]   Final E_full_combat: 256 feat, 5598 samples
+2026-04-05 15:41:21,350 [INFO] ======================================================================
+2026-04-05 15:41:21,350 [INFO] STEP 9-10: LODO cross-validation
+2026-04-05 15:41:21,350 [INFO] ======================================================================
+2026-04-05 15:41:21,351 [INFO] 
+--- LODO A_genes_only (212 features) ---
+2026-04-05 15:41:22,366 [INFO]     A_genes_only/BrighTNess: AUC=0.6444 (n=482, pos=236)
+2026-04-05 15:41:23,327 [INFO]     A_genes_only/GSE104645: AUC=0.5281 (n=126, pos=112)
+2026-04-05 15:41:24,281 [INFO]     A_genes_only/GSE104958: AUC=0.5637 (n=46, pos=12)
+2026-04-05 15:41:25,226 [INFO]     A_genes_only/GSE109211: AUC=0.6645 (n=140, pos=42)
+2026-04-05 15:41:26,205 [INFO]     A_genes_only/GSE131978: AUC=0.5292 (n=37, pos=18)
+2026-04-05 15:41:27,158 [INFO]     A_genes_only/GSE14615: AUC=0.4643 (n=20, pos=6)
+2026-04-05 15:41:28,123 [INFO]     A_genes_only/GSE14671: AUC=0.5691 (n=59, pos=41)
+2026-04-05 15:41:29,102 [INFO]     A_genes_only/GSE173263: AUC=0.6138 (n=39, pos=29)
+2026-04-05 15:41:30,074 [INFO]     A_genes_only/GSE19293: AUC=0.6012 (n=52, pos=24)
+2026-04-05 15:41:31,043 [INFO]     A_genes_only/GSE20181: AUC=0.4145 (n=154, pos=110)
+2026-04-05 15:41:32,015 [INFO]     A_genes_only/GSE20194: AUC=0.8830 (n=278, pos=56)
+2026-04-05 15:41:32,956 [INFO]     A_genes_only/GSE20271: AUC=0.7196 (n=178, pos=26)
+2026-04-05 15:41:33,926 [INFO]     A_genes_only/GSE21974: AUC=0.6994 (n=57, pos=18)
+2026-04-05 15:41:34,897 [INFO]     A_genes_only/GSE22093: AUC=0.6713 (n=97, pos=28)
+2026-04-05 15:41:35,862 [INFO]     A_genes_only/GSE23988: AUC=0.9305 (n=61, pos=20)
+2026-04-05 15:41:36,854 [INFO]     A_genes_only/GSE25066: AUC=0.8495 (n=488, pos=99)
+2026-04-05 15:41:37,822 [INFO]     A_genes_only/GSE28702: AUC=0.4861 (n=83, pos=42)
+2026-04-05 15:41:38,780 [INFO]     A_genes_only/GSE32646: AUC=0.7205 (n=115, pos=27)
+2026-04-05 15:41:39,753 [INFO]     A_genes_only/GSE35640: AUC=0.5842 (n=56, pos=22)
+2026-04-05 15:41:40,724 [INFO]     A_genes_only/GSE37946: AUC=0.7424 (n=50, pos=27)
+2026-04-05 15:41:41,729 [INFO]     A_genes_only/GSE41998: AUC=0.7015 (n=206, pos=201)
+2026-04-05 15:41:42,693 [INFO]     A_genes_only/GSE44272: AUC=0.4667 (n=53, pos=35)
+2026-04-05 15:41:43,650 [INFO]     A_genes_only/GSE4779: AUC=0.9915 (n=102, pos=39)
+2026-04-05 15:41:44,621 [INFO]     A_genes_only/GSE48905: AUC=0.3750 (n=39, pos=15)
+2026-04-05 15:41:45,575 [INFO]     A_genes_only/GSE50948: AUC=0.4994 (n=156, pos=53)
+2026-04-05 15:41:46,549 [INFO]     A_genes_only/GSE5122: AUC=0.6462 (n=57, pos=4)
+2026-04-05 15:41:47,512 [INFO]     A_genes_only/GSE61676: AUC=0.5000 (n=86, pos=46)
+2026-04-05 15:41:48,459 [INFO]     A_genes_only/GSE62321: AUC=0.5434 (n=57, pos=26)
+2026-04-05 15:41:49,424 [INFO]     A_genes_only/GSE63885: AUC=0.3385 (n=68, pos=65)
+2026-04-05 15:41:50,411 [INFO]     A_genes_only/GSE65021: AUC=0.5376 (n=40, pos=31)
+2026-04-05 15:41:51,373 [INFO]     A_genes_only/GSE66999: AUC=0.4190 (n=76, pos=70)
+2026-04-05 15:41:52,341 [INFO]     A_genes_only/GSE6861: AUC=0.8780 (n=161, pos=66)
+2026-04-05 15:41:53,292 [INFO]     A_genes_only/GSE68871: AUC=0.4723 (n=118, pos=97)
+2026-04-05 15:41:54,257 [INFO]     A_genes_only/GSE72970: AUC=0.5277 (n=124, pos=63)
+2026-04-05 15:41:55,222 [INFO]     A_genes_only/GSE73578: AUC=0.7087 (n=63, pos=40)
+2026-04-05 15:41:56,168 [INFO]     A_genes_only/GSE76360: AUC=0.5687 (n=96, pos=66)
+2026-04-05 15:41:57,140 [INFO]     A_genes_only/GSE82172: AUC=0.5209 (n=152, pos=21)
+2026-04-05 15:41:58,122 [INFO]     A_genes_only/GSE8970: AUC=0.7456 (n=26, pos=13)
+2026-04-05 15:41:59,085 [INFO]     A_genes_only/GSE9782: AUC=0.5451 (n=312, pos=180)
+2026-04-05 15:42:00,031 [INFO]     A_genes_only/ISPY2: AUC=0.5375 (n=988, pos=319)
+2026-04-05 15:42:00,031 [INFO] 
+--- LODO B_genes_ssgsea (246 features) ---
+2026-04-05 15:42:01,055 [INFO]     B_genes_ssgsea/BrighTNess: AUC=0.6022 (n=482, pos=236)
+2026-04-05 15:42:02,060 [INFO]     B_genes_ssgsea/GSE104645: AUC=0.4337 (n=126, pos=112)
+2026-04-05 15:42:03,102 [INFO]     B_genes_ssgsea/GSE104958: AUC=0.5588 (n=46, pos=12)
+2026-04-05 15:42:04,097 [INFO]     B_genes_ssgsea/GSE109211: AUC=0.7009 (n=140, pos=42)
+2026-04-05 15:42:05,120 [INFO]     B_genes_ssgsea/GSE131978: AUC=0.5322 (n=37, pos=18)
+2026-04-05 15:42:06,128 [INFO]     B_genes_ssgsea/GSE14615: AUC=0.4881 (n=20, pos=6)
+2026-04-05 15:42:07,158 [INFO]     B_genes_ssgsea/GSE14671: AUC=0.5908 (n=59, pos=41)
+2026-04-05 15:42:08,199 [INFO]     B_genes_ssgsea/GSE173263: AUC=0.4310 (n=39, pos=29)
+2026-04-05 15:42:09,221 [INFO]     B_genes_ssgsea/GSE19293: AUC=0.6101 (n=52, pos=24)
+2026-04-05 15:42:10,231 [INFO]     B_genes_ssgsea/GSE20181: AUC=0.3566 (n=154, pos=110)
+2026-04-05 15:42:11,252 [INFO]     B_genes_ssgsea/GSE20194: AUC=0.8973 (n=278, pos=56)
+2026-04-05 15:42:12,263 [INFO]     B_genes_ssgsea/GSE20271: AUC=0.6964 (n=178, pos=26)
+2026-04-05 15:42:13,267 [INFO]     B_genes_ssgsea/GSE21974: AUC=0.6510 (n=57, pos=18)
+2026-04-05 15:42:14,316 [INFO]     B_genes_ssgsea/GSE22093: AUC=0.6636 (n=97, pos=28)
+2026-04-05 15:42:15,337 [INFO]     B_genes_ssgsea/GSE23988: AUC=0.9366 (n=61, pos=20)
+2026-04-05 15:42:16,368 [INFO]     B_genes_ssgsea/GSE25066: AUC=0.8680 (n=488, pos=99)
+2026-04-05 15:42:17,380 [INFO]     B_genes_ssgsea/GSE28702: AUC=0.5209 (n=83, pos=42)
+2026-04-05 15:42:18,419 [INFO]     B_genes_ssgsea/GSE32646: AUC=0.6768 (n=115, pos=27)
+2026-04-05 15:42:19,449 [INFO]     B_genes_ssgsea/GSE35640: AUC=0.5441 (n=56, pos=22)
+2026-04-05 15:42:20,466 [INFO]     B_genes_ssgsea/GSE37946: AUC=0.7923 (n=50, pos=27)
+2026-04-05 15:42:21,508 [INFO]     B_genes_ssgsea/GSE41998: AUC=0.6219 (n=206, pos=201)
+2026-04-05 15:42:22,547 [INFO]     B_genes_ssgsea/GSE44272: AUC=0.4460 (n=53, pos=35)
+2026-04-05 15:42:23,562 [INFO]     B_genes_ssgsea/GSE4779: AUC=0.9849 (n=102, pos=39)
+2026-04-05 15:42:24,589 [INFO]     B_genes_ssgsea/GSE48905: AUC=0.4694 (n=39, pos=15)
+2026-04-05 15:42:25,595 [INFO]     B_genes_ssgsea/GSE50948: AUC=0.5257 (n=156, pos=53)
+2026-04-05 15:42:26,609 [INFO]     B_genes_ssgsea/GSE5122: AUC=0.5991 (n=57, pos=4)
+2026-04-05 15:42:27,646 [INFO]     B_genes_ssgsea/GSE61676: AUC=0.5000 (n=86, pos=46)
+2026-04-05 15:42:28,665 [INFO]     B_genes_ssgsea/GSE62321: AUC=0.5670 (n=57, pos=26)
+2026-04-05 15:42:29,691 [INFO]     B_genes_ssgsea/GSE63885: AUC=0.5333 (n=68, pos=65)
+2026-04-05 15:42:30,710 [INFO]     B_genes_ssgsea/GSE65021: AUC=0.5161 (n=40, pos=31)
+2026-04-05 15:42:31,731 [INFO]     B_genes_ssgsea/GSE66999: AUC=0.5857 (n=76, pos=70)
+2026-04-05 15:42:32,735 [INFO]     B_genes_ssgsea/GSE6861: AUC=0.8459 (n=161, pos=66)
+2026-04-05 15:42:33,736 [INFO]     B_genes_ssgsea/GSE68871: AUC=0.5199 (n=118, pos=97)
+2026-04-05 15:42:34,754 [INFO]     B_genes_ssgsea/GSE72970: AUC=0.5230 (n=124, pos=63)
+2026-04-05 15:42:35,765 [INFO]     B_genes_ssgsea/GSE73578: AUC=0.6620 (n=63, pos=40)
+2026-04-05 15:42:36,765 [INFO]     B_genes_ssgsea/GSE76360: AUC=0.5581 (n=96, pos=66)
+2026-04-05 15:42:37,826 [INFO]     B_genes_ssgsea/GSE82172: AUC=0.4726 (n=152, pos=21)
+2026-04-05 15:42:38,838 [INFO]     B_genes_ssgsea/GSE8970: AUC=0.6036 (n=26, pos=13)
+2026-04-05 15:42:39,861 [INFO]     B_genes_ssgsea/GSE9782: AUC=0.5273 (n=312, pos=180)
+2026-04-05 15:42:40,872 [INFO]     B_genes_ssgsea/ISPY2: AUC=0.5246 (n=988, pos=319)
+2026-04-05 15:42:40,873 [INFO] 
+--- LODO D_genes_ssgsea_progeny (246 features) ---
+2026-04-05 15:42:41,893 [INFO]     D_genes_ssgsea_progeny/BrighTNess: AUC=0.6022 (n=482, pos=236)
+2026-04-05 15:42:42,885 [INFO]     D_genes_ssgsea_progeny/GSE104645: AUC=0.4337 (n=126, pos=112)
+2026-04-05 15:42:43,916 [INFO]     D_genes_ssgsea_progeny/GSE104958: AUC=0.5588 (n=46, pos=12)
+2026-04-05 15:42:44,907 [INFO]     D_genes_ssgsea_progeny/GSE109211: AUC=0.7009 (n=140, pos=42)
+2026-04-05 15:42:45,933 [INFO]     D_genes_ssgsea_progeny/GSE131978: AUC=0.5322 (n=37, pos=18)
+2026-04-05 15:42:46,941 [INFO]     D_genes_ssgsea_progeny/GSE14615: AUC=0.4881 (n=20, pos=6)
+2026-04-05 15:42:47,972 [INFO]     D_genes_ssgsea_progeny/GSE14671: AUC=0.5908 (n=59, pos=41)
+2026-04-05 15:42:49,013 [INFO]     D_genes_ssgsea_progeny/GSE173263: AUC=0.4310 (n=39, pos=29)
+2026-04-05 15:42:50,039 [INFO]     D_genes_ssgsea_progeny/GSE19293: AUC=0.6101 (n=52, pos=24)
+2026-04-05 15:42:51,056 [INFO]     D_genes_ssgsea_progeny/GSE20181: AUC=0.3566 (n=154, pos=110)
+2026-04-05 15:42:52,079 [INFO]     D_genes_ssgsea_progeny/GSE20194: AUC=0.8973 (n=278, pos=56)
+2026-04-05 15:42:53,083 [INFO]     D_genes_ssgsea_progeny/GSE20271: AUC=0.6964 (n=178, pos=26)
+2026-04-05 15:42:54,086 [INFO]     D_genes_ssgsea_progeny/GSE21974: AUC=0.6510 (n=57, pos=18)
+2026-04-05 15:42:55,122 [INFO]     D_genes_ssgsea_progeny/GSE22093: AUC=0.6636 (n=97, pos=28)
+2026-04-05 15:42:56,151 [INFO]     D_genes_ssgsea_progeny/GSE23988: AUC=0.9366 (n=61, pos=20)
+2026-04-05 15:42:57,176 [INFO]     D_genes_ssgsea_progeny/GSE25066: AUC=0.8680 (n=488, pos=99)
+2026-04-05 15:42:58,207 [INFO]     D_genes_ssgsea_progeny/GSE28702: AUC=0.5209 (n=83, pos=42)
+2026-04-05 15:42:59,226 [INFO]     D_genes_ssgsea_progeny/GSE32646: AUC=0.6768 (n=115, pos=27)
+2026-04-05 15:43:00,261 [INFO]     D_genes_ssgsea_progeny/GSE35640: AUC=0.5441 (n=56, pos=22)
+2026-04-05 15:43:01,274 [INFO]     D_genes_ssgsea_progeny/GSE37946: AUC=0.7923 (n=50, pos=27)
+2026-04-05 15:43:02,315 [INFO]     D_genes_ssgsea_progeny/GSE41998: AUC=0.6219 (n=206, pos=201)
+2026-04-05 15:43:03,332 [INFO]     D_genes_ssgsea_progeny/GSE44272: AUC=0.4460 (n=53, pos=35)
+2026-04-05 15:43:04,349 [INFO]     D_genes_ssgsea_progeny/GSE4779: AUC=0.9849 (n=102, pos=39)
+2026-04-05 15:43:05,375 [INFO]     D_genes_ssgsea_progeny/GSE48905: AUC=0.4694 (n=39, pos=15)
+2026-04-05 15:43:06,377 [INFO]     D_genes_ssgsea_progeny/GSE50948: AUC=0.5257 (n=156, pos=53)
+2026-04-05 15:43:07,390 [INFO]     D_genes_ssgsea_progeny/GSE5122: AUC=0.5991 (n=57, pos=4)
+2026-04-05 15:43:08,440 [INFO]     D_genes_ssgsea_progeny/GSE61676: AUC=0.5000 (n=86, pos=46)
+2026-04-05 15:43:09,471 [INFO]     D_genes_ssgsea_progeny/GSE62321: AUC=0.5670 (n=57, pos=26)
+2026-04-05 15:43:10,504 [INFO]     D_genes_ssgsea_progeny/GSE63885: AUC=0.5333 (n=68, pos=65)
+2026-04-05 15:43:11,527 [INFO]     D_genes_ssgsea_progeny/GSE65021: AUC=0.5161 (n=40, pos=31)
+2026-04-05 15:43:12,549 [INFO]     D_genes_ssgsea_progeny/GSE66999: AUC=0.5857 (n=76, pos=70)
+2026-04-05 15:43:13,550 [INFO]     D_genes_ssgsea_progeny/GSE6861: AUC=0.8459 (n=161, pos=66)
+2026-04-05 15:43:14,551 [INFO]     D_genes_ssgsea_progeny/GSE68871: AUC=0.5199 (n=118, pos=97)
+2026-04-05 15:43:15,574 [INFO]     D_genes_ssgsea_progeny/GSE72970: AUC=0.5230 (n=124, pos=63)
+2026-04-05 15:43:16,584 [INFO]     D_genes_ssgsea_progeny/GSE73578: AUC=0.6620 (n=63, pos=40)
+2026-04-05 15:43:17,589 [INFO]     D_genes_ssgsea_progeny/GSE76360: AUC=0.5581 (n=96, pos=66)
+2026-04-05 15:43:18,622 [INFO]     D_genes_ssgsea_progeny/GSE82172: AUC=0.4726 (n=152, pos=21)
+2026-04-05 15:43:19,640 [INFO]     D_genes_ssgsea_progeny/GSE8970: AUC=0.6036 (n=26, pos=13)
+2026-04-05 15:43:20,666 [INFO]     D_genes_ssgsea_progeny/GSE9782: AUC=0.5273 (n=312, pos=180)
+2026-04-05 15:43:21,678 [INFO]     D_genes_ssgsea_progeny/ISPY2: AUC=0.5246 (n=988, pos=319)
+2026-04-05 15:43:21,678 [INFO] 
+--- LODO E_full_combat (256 features) ---
+2026-04-05 15:43:22,661 [INFO]     E_full_combat/BrighTNess: AUC=0.5411 (n=482, pos=236)
+2026-04-05 15:43:23,666 [INFO]     E_full_combat/GSE104645: AUC=0.9732 (n=126, pos=112)
+2026-04-05 15:43:24,668 [INFO]     E_full_combat/GSE104958: AUC=0.7206 (n=46, pos=12)
+2026-04-05 15:43:25,690 [INFO]     E_full_combat/GSE109211: AUC=0.9900 (n=140, pos=42)
+2026-04-05 15:43:26,693 [INFO]     E_full_combat/GSE131978: AUC=1.0000 (n=37, pos=18)
+2026-04-05 15:43:27,702 [INFO]     E_full_combat/GSE14615: AUC=0.4762 (n=20, pos=6)
+2026-04-05 15:43:28,730 [INFO]     E_full_combat/GSE14671: AUC=0.4905 (n=59, pos=41)
+2026-04-05 15:43:29,756 [INFO]     E_full_combat/GSE173263: AUC=0.5931 (n=39, pos=29)
+2026-04-05 15:43:30,753 [INFO]     E_full_combat/GSE19293: AUC=0.5089 (n=52, pos=24)
+2026-04-05 15:43:31,746 [INFO]     E_full_combat/GSE20181: AUC=1.0000 (n=154, pos=110)
+2026-04-05 15:43:32,758 [INFO]     E_full_combat/GSE20194: AUC=1.0000 (n=278, pos=56)
+2026-04-05 15:43:33,773 [INFO]     E_full_combat/GSE20271: AUC=1.0000 (n=178, pos=26)
+2026-04-05 15:43:34,785 [INFO]     E_full_combat/GSE21974: AUC=0.9858 (n=57, pos=18)
+2026-04-05 15:43:35,795 [INFO]     E_full_combat/GSE22093: AUC=1.0000 (n=97, pos=28)
+2026-04-05 15:43:36,811 [INFO]     E_full_combat/GSE23988: AUC=0.9890 (n=61, pos=20)
+2026-04-05 15:43:37,802 [INFO]     E_full_combat/GSE25066: AUC=0.9996 (n=488, pos=99)
+2026-04-05 15:43:38,801 [INFO]     E_full_combat/GSE28702: AUC=0.3961 (n=83, pos=42)
+2026-04-05 15:43:39,806 [INFO]     E_full_combat/GSE32646: AUC=0.5610 (n=115, pos=27)
+2026-04-05 15:43:40,812 [INFO]     E_full_combat/GSE35640: AUC=0.5762 (n=56, pos=22)
+2026-04-05 15:43:41,849 [INFO]     E_full_combat/GSE37946: AUC=1.0000 (n=50, pos=27)
+2026-04-05 15:43:42,883 [INFO]     E_full_combat/GSE41998: AUC=0.0169 (n=206, pos=201)
+2026-04-05 15:43:43,897 [INFO]     E_full_combat/GSE44272: AUC=0.9905 (n=53, pos=35)
+2026-04-05 15:43:44,903 [INFO]     E_full_combat/GSE4779: AUC=1.0000 (n=102, pos=39)
+2026-04-05 15:43:45,905 [INFO]     E_full_combat/GSE48905: AUC=0.6361 (n=39, pos=15)
+2026-04-05 15:43:46,892 [INFO]     E_full_combat/GSE50948: AUC=0.4691 (n=156, pos=53)
+2026-04-05 15:43:47,894 [INFO]     E_full_combat/GSE5122: AUC=1.0000 (n=57, pos=4)
+2026-04-05 15:43:48,897 [INFO]     E_full_combat/GSE61676: AUC=1.0000 (n=86, pos=46)
+2026-04-05 15:43:49,891 [INFO]     E_full_combat/GSE62321: AUC=0.3201 (n=57, pos=26)
+2026-04-05 15:43:50,900 [INFO]     E_full_combat/GSE63885: AUC=0.4923 (n=68, pos=65)
+2026-04-05 15:43:51,909 [INFO]     E_full_combat/GSE65021: AUC=1.0000 (n=40, pos=31)
+2026-04-05 15:43:52,915 [INFO]     E_full_combat/GSE66999: AUC=0.9833 (n=76, pos=70)
+2026-04-05 15:43:53,945 [INFO]     E_full_combat/GSE6861: AUC=1.0000 (n=161, pos=66)
+2026-04-05 15:43:54,939 [INFO]     E_full_combat/GSE68871: AUC=0.5218 (n=118, pos=97)
+2026-04-05 15:43:55,956 [INFO]     E_full_combat/GSE72970: AUC=0.5105 (n=124, pos=63)
+2026-04-05 15:43:56,974 [INFO]     E_full_combat/GSE73578: AUC=0.4272 (n=63, pos=40)
+2026-04-05 15:43:57,997 [INFO]     E_full_combat/GSE76360: AUC=0.9919 (n=96, pos=66)
+2026-04-05 15:43:59,033 [INFO]     E_full_combat/GSE82172: AUC=0.4664 (n=152, pos=21)
+2026-04-05 15:44:00,035 [INFO]     E_full_combat/GSE8970: AUC=1.0000 (n=26, pos=13)
+2026-04-05 15:44:01,020 [INFO]     E_full_combat/GSE9782: AUC=1.0000 (n=312, pos=180)
+2026-04-05 15:44:01,998 [INFO]     E_full_combat/ISPY2: AUC=0.8217 (n=988, pos=319)
+2026-04-05 15:44:01,998 [INFO] ======================================================================
+2026-04-05 15:44:01,998 [INFO] Building result tables
+2026-04-05 15:44:01,998 [INFO] ======================================================================
+2026-04-05 15:44:02,001 [INFO] Saved lodo_per_dataset.tsv (160 rows)
+2026-04-05 15:44:02,004 [INFO] Saved lodo_ablation_summary.tsv
+2026-04-05 15:44:02,004 [INFO] 
+======================================================================
+2026-04-05 15:44:02,004 [INFO] ABLATION SUMMARY
+2026-04-05 15:44:02,004 [INFO] ======================================================================
+2026-04-05 15:44:02,004 [INFO]   E_full_combat: mean_AUC=0.7612 (+/-0.2727), 256 feat, 40 folds
+2026-04-05 15:44:02,004 [INFO]   A_genes_only: mean_AUC=0.6101 (+/-0.1523), 212 feat, 40 folds
+2026-04-05 15:44:02,004 [INFO]   B_genes_ssgsea: mean_AUC=0.6034 (+/-0.1440), 246 feat, 40 folds
+2026-04-05 15:44:02,005 [INFO]   D_genes_ssgsea_progeny: mean_AUC=0.6034 (+/-0.1440), 246 feat, 40 folds
+2026-04-05 15:44:02,005 [INFO] ======================================================================
+2026-04-05 15:44:02,005 [INFO] STEP 11: Treatment class stratification
+2026-04-05 15:44:02,005 [INFO] ======================================================================
+2026-04-05 15:44:02,006 [INFO] Saved lodo_by_treatment_class.tsv
+2026-04-05 15:44:02,006 [INFO] 
+  chemo:
+2026-04-05 15:44:02,007 [INFO]     E_full_combat: mean_AUC=0.7654 (n=38)
+2026-04-05 15:44:02,007 [INFO]     A_genes_only: mean_AUC=0.6111 (n=38)
+2026-04-05 15:44:02,007 [INFO]     B_genes_ssgsea: mean_AUC=0.6055 (n=38)
+2026-04-05 15:44:02,007 [INFO]     D_genes_ssgsea_progeny: mean_AUC=0.6055 (n=38)
+2026-04-05 15:44:02,007 [INFO] 
+  combination:
+2026-04-05 15:44:02,007 [INFO]     E_full_combat: mean_AUC=0.8217 (n=1)
+2026-04-05 15:44:02,007 [INFO]     A_genes_only: mean_AUC=0.5375 (n=1)
+2026-04-05 15:44:02,007 [INFO]     B_genes_ssgsea: mean_AUC=0.5246 (n=1)
+2026-04-05 15:44:02,007 [INFO]     D_genes_ssgsea_progeny: mean_AUC=0.5246 (n=1)
+2026-04-05 15:44:02,007 [INFO] 
+  parp:
+2026-04-05 15:44:02,007 [INFO]     A_genes_only: mean_AUC=0.6444 (n=1)
+2026-04-05 15:44:02,007 [INFO]     B_genes_ssgsea: mean_AUC=0.6022 (n=1)
+2026-04-05 15:44:02,007 [INFO]     D_genes_ssgsea_progeny: mean_AUC=0.6022 (n=1)
+2026-04-05 15:44:02,007 [INFO]     E_full_combat: mean_AUC=0.5411 (n=1)
+2026-04-05 15:44:02,007 [INFO] ======================================================================
+2026-04-05 15:44:02,007 [INFO] STEP 12: Training final model
+2026-04-05 15:44:02,007 [INFO] ======================================================================
+2026-04-05 15:44:02,007 [INFO] Best config: E_full_combat
+2026-04-05 15:44:03,026 [INFO] Final model: 5598 samples, 256 features
+2026-04-05 15:44:03,028 [INFO] Saved feature_importances.tsv (top-10):
+2026-04-05 15:44:03,028 [INFO]   gene_UGT1A1: 583
+2026-04-05 15:44:03,029 [INFO]   gene_DLL1: 528
+2026-04-05 15:44:03,029 [INFO]   gene_PKM: 349
+2026-04-05 15:44:03,029 [INFO]   gene_CD274: 317
+2026-04-05 15:44:03,029 [INFO]   gene_CXCL8: 153
+2026-04-05 15:44:03,029 [INFO]   gene_KDM1A: 102
+2026-04-05 15:44:03,029 [INFO]   gene_MTOR: 66
+2026-04-05 15:44:03,029 [INFO]   ssgsea_TGF-beta Signaling: 64
+2026-04-05 15:44:03,029 [INFO]   gene_GZMB: 62
+2026-04-05 15:44:03,029 [INFO]   gene_CDK1: 59
+2026-04-05 15:44:03,029 [INFO] ======================================================================
+2026-04-05 15:44:03,029 [INFO] STEP 13: Saving artifacts
+2026-04-05 15:44:03,029 [INFO] ======================================================================
+2026-04-05 15:44:03,032 [INFO] Saved model: /Users/marinaesteban-medina/Desktop/INVEREX/inverex-mvp/results/full_retrain_patient_model.joblib
+2026-04-05 15:44:03,033 [INFO] Saved headline_metrics.tsv
+2026-04-05 15:44:03,033 [INFO] 
+======================================================================
+2026-04-05 15:44:03,033 [INFO] PIPELINE COMPLETE
+2026-04-05 15:44:03,033 [INFO] ======================================================================
+2026-04-05 15:44:03,034 [INFO]   Datasets:      40
+2026-04-05 15:44:03,034 [INFO]   Patients:      5598
+2026-04-05 15:44:03,034 [INFO]   Best config:   E_full_combat
+2026-04-05 15:44:03,034 [INFO]   Mean LODO AUC: 0.7612
+2026-04-05 15:44:03,034 [INFO]   ComBat:        Yes
+2026-04-05 15:44:03,034 [INFO]   ssGSEA:        Yes
+2026-04-05 15:44:03,034 [INFO]   PROGENy:       Yes
+2026-04-05 15:44:03,034 [INFO]   Output:        /Users/marinaesteban-medina/Desktop/INVEREX/inverex-mvp/results/full_retrain
+2026-04-05 15:44:03,034 [INFO]   Model:         /Users/marinaesteban-medina/Desktop/INVEREX/inverex-mvp/results/full_retrain_patient_model.joblib

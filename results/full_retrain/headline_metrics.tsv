@@ -1,0 +1,14 @@
+metric	value
+n_datasets	40
+n_patients	5598
+n_responders	2445
+n_nonresponders	3153
+best_config	E_full_combat
+n_features	256
+mean_auc_lodo	0.7612
+median_auc_lodo	0.9783
+std_auc_lodo	0.2727
+combat_applied	True
+ssgsea_computed	True
+progeny_computed	True
+n_l1000_genes	212
