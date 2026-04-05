@@ -1,0 +1,37 @@
+dataset_id	source	geo_accession	n_patients	platform	treatment	treatment_class	endpoint_family	has_expression	has_response	integration_status
+ctrdb_GSE20181	ctrdb	GSE20181	154	various	Letrozole	endocrine	pharmacodynamic	True	True	already_in_ctrdb
+ctrdb_GSE20194	ctrdb	GSE20194	278	various	FEC (Cyclophosphamide+Epirubicin+Fluorouracil)	chemotherapy	pathologic_response	True	True	already_in_ctrdb
+ctrdb_GSE20271	ctrdb	GSE20271	178	various	TFAC (Cyclophosphamide+Doxorubicin+Fluorouracil+Paclitaxel)	chemotherapy	pathologic_response	True	True	already_in_ctrdb
+ctrdb_GSE21974	ctrdb	GSE21974	57	various	Cyclophosphamide+Docetaxel+Epirubicin	chemotherapy	pathologic_response	True	True	already_in_ctrdb
+ctrdb_GSE22093	ctrdb	GSE22093	97	various	FEC (Cyclophosphamide+Epirubicin+Fluorouracil)	chemotherapy	pathologic_response	True	True	already_in_ctrdb
+ctrdb_GSE23988	ctrdb	GSE23988	61	various	FEC (Cyclophosphamide+Epirubicin+Fluorouracil)+Capecitabine+Docetaxel	chemotherapy	pathologic_response	True	True	already_in_ctrdb
+ctrdb_GSE25066	ctrdb	GSE25066	488	various	Anthracycline+Taxane	chemotherapy	pathologic_response	True	True	already_in_ctrdb
+ctrdb_GSE32646	ctrdb	GSE32646	115	various	TFEC (Cyclophosphamide+Epirubicin+Fluorouracil+Paclitaxel)	chemotherapy	pathologic_response	True	True	already_in_ctrdb
+ctrdb_GSE37946	ctrdb	GSE37946	50	various	Trastuzumab	targeted	pathologic_response	True	True	already_in_ctrdb
+ctrdb_GSE41998	ctrdb	GSE41998	206	various	AC (Cyclophosphamide+Doxorubicin)+Paclitaxel	chemotherapy	radiographic	True	True	already_in_ctrdb
+ctrdb_GSE44272	ctrdb	GSE44272	53	various	Trastuzumab	targeted	pharmacodynamic	True	True	already_in_ctrdb
+ctrdb_GSE4779	ctrdb	GSE4779	102	various	Cyclophosphamide+Epirubicin+Fluorouracil	chemotherapy	pathologic_response	True	True	already_in_ctrdb
+ctrdb_GSE48905	ctrdb	GSE48905	39	various	Fulvestrant	endocrine	radiographic	True	True	already_in_ctrdb
+ctrdb_GSE50948	ctrdb	GSE50948	156	various	AT (Doxorubicin+Paclitaxel)+CMF (Cyclophosphamide+Fluorouracil+Methotrexate)	chemotherapy	pathologic_response	True	True	already_in_ctrdb
+ctrdb_GSE66999	ctrdb	GSE66999	76	various	Docetaxel+Epirubicin+Pegfilgrastim	chemotherapy	radiographic	True	True	already_in_ctrdb
+ctrdb_GSE6861	ctrdb	GSE6861	161	various	Docetaxel+Epirubicin	chemotherapy	pathologic_response	True	True	already_in_ctrdb
+ctrdb_GSE76360	ctrdb	GSE76360	96	various	Trastuzumab	targeted	pathologic_response	True	True	already_in_ctrdb
+ctrdb_GSE82172	ctrdb	GSE82172	152	various	Tamoxifen	endocrine	radiographic	True	True	already_in_ctrdb
+cdsdb_GSE87455	cdsdb	GSE87455	58	Microarray	Letrozole	endocrine	perturbation_signature	True	False	already_in_cdsdb
+cdsdb_GSE20181	cdsdb	GSE20181	55	Microarray	Letrozole	endocrine	perturbation_signature	True	False	already_in_cdsdb
+cdsdb_GSE33658	cdsdb	GSE33658	81	Microarray	Anastrozole	endocrine	perturbation_signature	True	False	already_in_cdsdb
+cdsdb_GSE55374	cdsdb	GSE55374	51	Microarray	Trastuzumab + Lapatinib	targeted	perturbation_signature	True	False	already_in_cdsdb
+ispy2	geo_new	GSE194040	988	various	Multi-arm: Paclitaxel, Pembrolizumab, Veliparib+Carboplatin, Neratinib, T-DM1+Pertuzumab, MK-2206, etc.	mixed	pathologic_response	True	True	downloaded
+brightness	geo_new	GSE164458	482	various	Paclitaxel +/- Carboplatin +/- Veliparib (PARP inhibitor)	parp_inhibitor	pathologic_response	True	True	downloaded
+hurvitz_her2	geo_new	GSE130788	199	various	T-DM1 + Pertuzumab (HER2+ ADC)	adc	unknown	True	True	downloaded
+transneos	geo_new	GSE87411	218	various	Neoadjuvant endocrine (letrozole/AI) pre/post	endocrine	perturbation_signature	True	True	downloaded
+z1031	geo_new	GSE78958	424	various	Neoadjuvant aromatase inhibitor (Z1031 trial)	endocrine	molecular_subtype	True	True	downloaded
+hoogstraat_1	geo_new	GSE191127	46	various	Neoadjuvant chemotherapy (various regimens)	chemotherapy	neoadjuvant_response_index	True	True	downloaded
+hoogstraat_2	geo_new	GSE192341	87	various	Neoadjuvant chemotherapy (various regimens)	chemotherapy	pathologic_response	True	True	downloaded
+durva_olap_breast	geo_new	GSE173839	105	various	Durvalumab + Olaparib (immunotherapy + PARP) vs control	immunotherapy	pathologic_response	True	True	downloaded
+endocrine_response_letrozole	geo_new	GSE59515	75	various	Letrozole (neoadjuvant endocrine, 3 timepoints)	endocrine	clinical_response	True	True	downloaded
+endocrine_resistance_er	geo_new	GSE111563	101	various	ER+ breast tumors - dormant vs acquired resistant	endocrine	resistance_phenotype	True	True	downloaded
+letrozole_rnaseq	geo_new	GSE145325	58	various	Letrozole (ER+ breast RNA-seq)	endocrine	clinical_response	True	True	downloaded
+pdl1_tnbc	geo_new	GSE157284	82	various	TNBC with PD-L1 biomarker (immunotherapy eligibility)	immunotherapy	biomarker	True	True	downloaded
+neoadj_letrozole_rnaseq	geo_new	GSE240671	122	various	Neoadjuvant chemotherapy + adjuvant endocrine (Femara/Nolvadex/Arimidex)	mixed	pathologic_response	True	True	downloaded
+impact_endocrine_WRONG	geo_new	GSE36339	0		WRONG DATASET - fish study, not IMPACT breast trial	endocrine		False	False	failed_wrong_accession
