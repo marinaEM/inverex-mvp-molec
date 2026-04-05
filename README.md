@@ -69,7 +69,3 @@ python -m src.models.predict_patients
 streamlit run app/main.py
 ```
 
-## Disclaimer
-
-This is a **retrospective mock ranking model** with no clinical validation.
-All outputs are for research demonstration purposes only.
