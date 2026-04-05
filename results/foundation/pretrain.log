@@ -1,0 +1,366 @@
+2026-04-05 22:10:41,090 [INFO] ============================================================
+2026-04-05 22:10:41,090 [INFO] STEP 1: Building gene universe
+2026-04-05 22:10:41,091 [INFO] ============================================================
+2026-04-05 22:10:41,091 [INFO] Loading cached gene universe from /Users/marinaesteban-medina/Desktop/INVEREX/inverex-mvp/results/foundation/gene_universe.json
+2026-04-05 22:10:41,091 [INFO] Gene universe: 2000 genes
+2026-04-05 22:10:41,091 [INFO] ============================================================
+2026-04-05 22:10:41,091 [INFO] STEP 2: Loading expression data
+2026-04-05 22:10:41,091 [INFO] ============================================================
+2026-04-05 22:10:41,093 [INFO] Found 52 expression datasets
+2026-04-05 22:10:41,395 [INFO]   GSE10255: 161 samples, 1998/2000 genes
+2026-04-05 22:10:41,817 [INFO]   GSE104645: 193 samples, 1997/2000 genes
+2026-04-05 22:10:42,637 [INFO]   GSE104958: 46 samples, 1999/2000 genes
+2026-04-05 22:10:43,210 [INFO]   GSE109211: 140 samples, 1994/2000 genes
+2026-04-05 22:10:43,517 [INFO]   GSE131978: 39 samples, 1998/2000 genes
+2026-04-05 22:10:44,071 [INFO]   GSE14615: 50 samples, 2000/2000 genes
+2026-04-05 22:10:44,571 [INFO]   GSE14671: 59 samples, 2000/2000 genes
+2026-04-05 22:10:44,864 [INFO]   GSE14764: 80 samples, 1998/2000 genes
+2026-04-05 22:10:45,259 [INFO]   GSE150576: 288 samples, 1982/2000 genes
+2026-04-05 22:10:45,753 [INFO]   GSE16446: 120 samples, 2000/2000 genes
+2026-04-05 22:10:46,167 [INFO]   GSE173263: 39 samples, 1998/2000 genes
+2026-04-05 22:10:47,045 [INFO]   GSE19293: 52 samples, 2000/2000 genes
+2026-04-05 22:10:47,565 [INFO]   GSE20181: 176 samples, 1998/2000 genes
+2026-04-05 22:10:47,853 [INFO]   GSE20194: 278 samples, 1998/2000 genes
+2026-04-05 22:10:48,158 [INFO]   GSE20271: 178 samples, 1998/2000 genes
+2026-04-05 22:10:49,168 [INFO]   GSE21974: 57 samples, 1997/2000 genes
+2026-04-05 22:10:49,467 [INFO]   GSE22093: 103 samples, 1998/2000 genes
+2026-04-05 22:10:50,657 [INFO]   GSE225178: 44 samples, 1999/2000 genes
+2026-04-05 22:10:50,924 [INFO]   GSE23988: 61 samples, 1998/2000 genes
+2026-04-05 22:10:51,356 [INFO]   GSE25066: 508 samples, 1998/2000 genes
+2026-04-05 22:10:51,830 [INFO]   GSE28702: 83 samples, 2000/2000 genes
+2026-04-05 22:10:52,348 [INFO]   GSE32646: 115 samples, 2000/2000 genes
+2026-04-05 22:10:52,962 [INFO]   GSE35640: 65 samples, 2000/2000 genes
+2026-04-05 22:10:53,562 [INFO]   GSE35935: 62 samples, 2000/2000 genes
+2026-04-05 22:10:55,234 [WARNING]   GSE37138: only 0 gene overlap, skipping
+2026-04-05 22:10:55,615 [INFO]   GSE37946: 50 samples, 1998/2000 genes
+2026-04-05 22:10:55,925 [INFO]   GSE41998: 279 samples, 1998/2000 genes
+2026-04-05 22:10:56,540 [INFO]   GSE42822: 91 samples, 1998/2000 genes
+2026-04-05 22:10:56,941 [INFO]   GSE44272: 53 samples, 1998/2000 genes
+2026-04-05 22:10:57,384 [INFO]   GSE4779: 102 samples, 1992/2000 genes
+2026-04-05 22:10:57,854 [INFO]   GSE48905: 42 samples, 2000/2000 genes
+2026-04-05 22:10:58,343 [INFO]   GSE50948: 156 samples, 2000/2000 genes
+2026-04-05 22:10:58,779 [INFO]   GSE5122: 58 samples, 1998/2000 genes
+2026-04-05 22:10:59,105 [INFO]   GSE5851: 80 samples, 1998/2000 genes
+2026-04-05 22:11:00,231 [WARNING]   GSE61676: only 0 gene overlap, skipping
+2026-04-05 22:11:00,755 [INFO]   GSE62321: 57 samples, 1853/2000 genes
+2026-04-05 22:11:01,293 [INFO]   GSE63885: 101 samples, 2000/2000 genes
+2026-04-05 22:11:01,743 [INFO]   GSE65021: 40 samples, 1994/2000 genes
+2026-04-05 22:11:02,452 [INFO]   GSE66305: 88 samples, 2000/2000 genes
+2026-04-05 22:11:02,877 [INFO]   GSE66999: 76 samples, 1997/2000 genes
+2026-04-05 22:11:03,440 [INFO]   GSE6861: 161 samples, 1992/2000 genes
+2026-04-05 22:11:03,980 [INFO]   GSE68871: 118 samples, 2000/2000 genes
+2026-04-05 22:11:05,004 [INFO]   GSE72970: 124 samples, 2000/2000 genes
+2026-04-05 22:11:05,530 [INFO]   GSE73578: 133 samples, 2000/2000 genes
+2026-04-05 22:11:06,486 [INFO]   GSE76360: 100 samples, 1977/2000 genes
+2026-04-05 22:11:06,933 [INFO]   GSE82172: 152 samples, 1998/2000 genes
+2026-04-05 22:11:08,150 [INFO]   GSE87865: 54 samples, 2000/2000 genes
+2026-04-05 22:11:08,495 [INFO]   GSE8970: 34 samples, 1998/2000 genes
+2026-04-05 22:11:08,500 [INFO]   GSE9782: 528 samples, 83/2000 genes
+2026-04-05 22:11:09,100 [INFO]   ISPY2: 988 samples, 1999/2000 genes
+2026-04-05 22:11:09,722 [INFO]   BrighTNess: 482 samples, 2000/2000 genes
+2026-04-05 22:11:10,733 [INFO]   TCGA_BRCA: 1218 samples, 1998/2000 genes
+2026-04-05 22:11:10,733 [INFO] ============================================================
+2026-04-05 22:11:10,733 [INFO] STEP 3: Fitting tokenizer statistics
+2026-04-05 22:11:10,733 [INFO] ============================================================
+2026-04-05 22:11:11,016 [INFO] Fitted stats on 8362 samples, 2000 genes
+2026-04-05 22:11:11,019 [INFO] ============================================================
+2026-04-05 22:11:11,019 [INFO] STEP 4: Building pretraining dataset
+2026-04-05 22:11:11,019 [INFO] ============================================================
+2026-04-05 22:11:11,019 [INFO] Building pretraining dataset from 50 sources …
+2026-04-05 22:11:13,082 [INFO] Downloading and generating Enrichr library gene sets...
+2026-04-05 22:11:13,083 [INFO] Library is already downloaded in: /Users/marinaesteban-medina/.cache/gseapy/Enrichr.MSigDB_Hallmark_2020.gmt, use local file
+2026-04-05 22:11:13,214 [INFO] Computed 50 pathway scores for 161 samples
+2026-04-05 22:11:13,215 [INFO] Inferred subtypes: LumA=28, LumB=29, HER2=40, Basal=64
+2026-04-05 22:11:14,357 [INFO] Downloading and generating Enrichr library gene sets...
+2026-04-05 22:11:14,357 [INFO] Library is already downloaded in: /Users/marinaesteban-medina/.cache/gseapy/Enrichr.MSigDB_Hallmark_2020.gmt, use local file
+2026-04-05 22:11:14,504 [INFO] Computed 50 pathway scores for 193 samples
+2026-04-05 22:11:14,504 [INFO] Inferred subtypes: LumA=27, LumB=35, HER2=48, Basal=83
+2026-04-05 22:11:15,693 [INFO] Downloading and generating Enrichr library gene sets...
+2026-04-05 22:11:15,693 [INFO] Library is already downloaded in: /Users/marinaesteban-medina/.cache/gseapy/Enrichr.MSigDB_Hallmark_2020.gmt, use local file
+2026-04-05 22:11:15,806 [INFO] Computed 50 pathway scores for 46 samples
+2026-04-05 22:11:15,806 [INFO] Inferred subtypes: LumA=7, LumB=7, HER2=12, Basal=20
+2026-04-05 22:11:16,996 [INFO] Downloading and generating Enrichr library gene sets...
+2026-04-05 22:11:16,996 [INFO] Library is already downloaded in: /Users/marinaesteban-medina/.cache/gseapy/Enrichr.MSigDB_Hallmark_2020.gmt, use local file
+2026-04-05 22:11:17,126 [INFO] Computed 50 pathway scores for 140 samples
+2026-04-05 22:11:17,126 [INFO] Inferred subtypes: LumA=21, LumB=31, HER2=35, Basal=53
+2026-04-05 22:11:18,290 [INFO] Downloading and generating Enrichr library gene sets...
+2026-04-05 22:11:18,290 [INFO] Library is already downloaded in: /Users/marinaesteban-medina/.cache/gseapy/Enrichr.MSigDB_Hallmark_2020.gmt, use local file
+2026-04-05 22:11:18,417 [INFO] Computed 50 pathway scores for 39 samples
+2026-04-05 22:11:18,417 [INFO] Inferred subtypes: LumA=6, LumB=4, HER2=10, Basal=19
+2026-04-05 22:11:19,616 [INFO] Downloading and generating Enrichr library gene sets...
+2026-04-05 22:11:19,616 [INFO] Library is already downloaded in: /Users/marinaesteban-medina/.cache/gseapy/Enrichr.MSigDB_Hallmark_2020.gmt, use local file
+2026-04-05 22:11:19,743 [INFO] Computed 50 pathway scores for 50 samples
+2026-04-05 22:11:19,744 [INFO] Inferred subtypes: LumA=12, LumB=3, HER2=13, Basal=22
+2026-04-05 22:11:20,911 [INFO] Downloading and generating Enrichr library gene sets...
+2026-04-05 22:11:20,911 [INFO] Library is already downloaded in: /Users/marinaesteban-medina/.cache/gseapy/Enrichr.MSigDB_Hallmark_2020.gmt, use local file
+2026-04-05 22:11:21,029 [INFO] Computed 50 pathway scores for 59 samples
+2026-04-05 22:11:21,029 [INFO] Inferred subtypes: LumA=10, LumB=4, HER2=15, Basal=30
+2026-04-05 22:11:22,217 [INFO] Downloading and generating Enrichr library gene sets...
+2026-04-05 22:11:22,217 [INFO] Library is already downloaded in: /Users/marinaesteban-medina/.cache/gseapy/Enrichr.MSigDB_Hallmark_2020.gmt, use local file
+2026-04-05 22:11:22,335 [INFO] Computed 50 pathway scores for 80 samples
+2026-04-05 22:11:22,336 [INFO] Inferred subtypes: LumA=13, LumB=17, HER2=20, Basal=30
+2026-04-05 22:11:23,567 [INFO] Downloading and generating Enrichr library gene sets...
+2026-04-05 22:11:23,568 [INFO] Library is already downloaded in: /Users/marinaesteban-medina/.cache/gseapy/Enrichr.MSigDB_Hallmark_2020.gmt, use local file
+2026-04-05 22:11:23,711 [INFO] Computed 50 pathway scores for 288 samples
+2026-04-05 22:11:23,713 [INFO] Inferred subtypes: LumA=4, LumB=68, HER2=72, Basal=144
+2026-04-05 22:11:24,942 [INFO] Downloading and generating Enrichr library gene sets...
+2026-04-05 22:11:24,942 [INFO] Library is already downloaded in: /Users/marinaesteban-medina/.cache/gseapy/Enrichr.MSigDB_Hallmark_2020.gmt, use local file
+2026-04-05 22:11:25,075 [INFO] Computed 50 pathway scores for 120 samples
+2026-04-05 22:11:25,076 [INFO] Inferred subtypes: LumA=27, LumB=15, HER2=30, Basal=48
+2026-04-05 22:11:26,247 [INFO] Downloading and generating Enrichr library gene sets...
+2026-04-05 22:11:26,247 [INFO] Library is already downloaded in: /Users/marinaesteban-medina/.cache/gseapy/Enrichr.MSigDB_Hallmark_2020.gmt, use local file
+2026-04-05 22:11:26,356 [INFO] Computed 50 pathway scores for 39 samples
+2026-04-05 22:11:26,357 [INFO] Inferred subtypes: LumA=10, LumB=5, HER2=10, Basal=14
+2026-04-05 22:11:27,546 [INFO] Downloading and generating Enrichr library gene sets...
+2026-04-05 22:11:27,546 [INFO] Library is already downloaded in: /Users/marinaesteban-medina/.cache/gseapy/Enrichr.MSigDB_Hallmark_2020.gmt, use local file
+2026-04-05 22:11:27,666 [INFO] Computed 50 pathway scores for 52 samples
+2026-04-05 22:11:27,666 [INFO] Inferred subtypes: LumA=8, LumB=12, HER2=13, Basal=19
+2026-04-05 22:11:28,848 [INFO] Downloading and generating Enrichr library gene sets...
+2026-04-05 22:11:28,849 [INFO] Library is already downloaded in: /Users/marinaesteban-medina/.cache/gseapy/Enrichr.MSigDB_Hallmark_2020.gmt, use local file
+2026-04-05 22:11:28,983 [INFO] Computed 50 pathway scores for 176 samples
+2026-04-05 22:11:28,984 [INFO] Inferred subtypes: LumA=38, LumB=23, HER2=44, Basal=71
+2026-04-05 22:11:30,167 [INFO] Downloading and generating Enrichr library gene sets...
+2026-04-05 22:11:30,167 [INFO] Library is already downloaded in: /Users/marinaesteban-medina/.cache/gseapy/Enrichr.MSigDB_Hallmark_2020.gmt, use local file
+2026-04-05 22:11:30,314 [INFO] Computed 50 pathway scores for 278 samples
+2026-04-05 22:11:30,315 [INFO] Inferred subtypes: LumA=68, LumB=41, HER2=70, Basal=99
+2026-04-05 22:11:31,496 [INFO] Downloading and generating Enrichr library gene sets...
+2026-04-05 22:11:31,496 [INFO] Library is already downloaded in: /Users/marinaesteban-medina/.cache/gseapy/Enrichr.MSigDB_Hallmark_2020.gmt, use local file
+2026-04-05 22:11:31,627 [INFO] Computed 50 pathway scores for 178 samples
+2026-04-05 22:11:31,628 [INFO] Inferred subtypes: LumA=36, LumB=27, HER2=45, Basal=70
+2026-04-05 22:11:32,840 [INFO] Downloading and generating Enrichr library gene sets...
+2026-04-05 22:11:32,840 [INFO] Library is already downloaded in: /Users/marinaesteban-medina/.cache/gseapy/Enrichr.MSigDB_Hallmark_2020.gmt, use local file
+2026-04-05 22:11:32,962 [INFO] Computed 50 pathway scores for 57 samples
+2026-04-05 22:11:32,963 [INFO] Inferred subtypes: LumA=11, LumB=10, HER2=14, Basal=22
+2026-04-05 22:11:34,129 [INFO] Downloading and generating Enrichr library gene sets...
+2026-04-05 22:11:34,129 [INFO] Library is already downloaded in: /Users/marinaesteban-medina/.cache/gseapy/Enrichr.MSigDB_Hallmark_2020.gmt, use local file
+2026-04-05 22:11:34,260 [INFO] Computed 50 pathway scores for 103 samples
+2026-04-05 22:11:34,260 [INFO] Inferred subtypes: LumA=22, LumB=17, HER2=26, Basal=38
+2026-04-05 22:11:35,459 [INFO] Downloading and generating Enrichr library gene sets...
+2026-04-05 22:11:35,459 [INFO] Library is already downloaded in: /Users/marinaesteban-medina/.cache/gseapy/Enrichr.MSigDB_Hallmark_2020.gmt, use local file
+2026-04-05 22:11:35,571 [INFO] Computed 50 pathway scores for 44 samples
+2026-04-05 22:11:35,572 [INFO] Inferred subtypes: LumA=7, LumB=10, HER2=6, Basal=21
+2026-04-05 22:11:36,704 [INFO] Downloading and generating Enrichr library gene sets...
+2026-04-05 22:11:36,704 [INFO] Library is already downloaded in: /Users/marinaesteban-medina/.cache/gseapy/Enrichr.MSigDB_Hallmark_2020.gmt, use local file
+2026-04-05 22:11:36,814 [INFO] Computed 50 pathway scores for 61 samples
+2026-04-05 22:11:36,814 [INFO] Inferred subtypes: LumA=9, LumB=11, HER2=15, Basal=26
+2026-04-05 22:11:37,985 [INFO] Downloading and generating Enrichr library gene sets...
+2026-04-05 22:11:37,985 [INFO] Library is already downloaded in: /Users/marinaesteban-medina/.cache/gseapy/Enrichr.MSigDB_Hallmark_2020.gmt, use local file
+2026-04-05 22:11:38,160 [INFO] Computed 50 pathway scores for 508 samples
+2026-04-05 22:11:38,161 [INFO] Inferred subtypes: LumA=98, LumB=59, HER2=127, Basal=224
+2026-04-05 22:11:39,351 [INFO] Downloading and generating Enrichr library gene sets...
+2026-04-05 22:11:39,351 [INFO] Library is already downloaded in: /Users/marinaesteban-medina/.cache/gseapy/Enrichr.MSigDB_Hallmark_2020.gmt, use local file
+2026-04-05 22:11:39,482 [INFO] Computed 50 pathway scores for 83 samples
+2026-04-05 22:11:39,482 [INFO] Inferred subtypes: LumA=19, LumB=13, HER2=21, Basal=30
+2026-04-05 22:11:40,701 [INFO] Downloading and generating Enrichr library gene sets...
+2026-04-05 22:11:40,701 [INFO] Library is already downloaded in: /Users/marinaesteban-medina/.cache/gseapy/Enrichr.MSigDB_Hallmark_2020.gmt, use local file
+2026-04-05 22:11:40,821 [INFO] Computed 50 pathway scores for 115 samples
+2026-04-05 22:11:40,821 [INFO] Inferred subtypes: LumA=30, LumB=16, HER2=29, Basal=40
+2026-04-05 22:11:42,065 [INFO] Downloading and generating Enrichr library gene sets...
+2026-04-05 22:11:42,065 [INFO] Library is already downloaded in: /Users/marinaesteban-medina/.cache/gseapy/Enrichr.MSigDB_Hallmark_2020.gmt, use local file
+2026-04-05 22:11:42,188 [INFO] Computed 50 pathway scores for 65 samples
+2026-04-05 22:11:42,189 [INFO] Inferred subtypes: LumA=15, LumB=7, HER2=16, Basal=27
+2026-04-05 22:11:43,335 [INFO] Downloading and generating Enrichr library gene sets...
+2026-04-05 22:11:43,335 [INFO] Library is already downloaded in: /Users/marinaesteban-medina/.cache/gseapy/Enrichr.MSigDB_Hallmark_2020.gmt, use local file
+2026-04-05 22:11:43,461 [INFO] Computed 50 pathway scores for 62 samples
+2026-04-05 22:11:43,461 [INFO] Inferred subtypes: LumA=7, LumB=15, HER2=16, Basal=24
+2026-04-05 22:11:44,685 [INFO] Downloading and generating Enrichr library gene sets...
+2026-04-05 22:11:44,685 [INFO] Library is already downloaded in: /Users/marinaesteban-medina/.cache/gseapy/Enrichr.MSigDB_Hallmark_2020.gmt, use local file
+2026-04-05 22:11:44,796 [INFO] Computed 50 pathway scores for 50 samples
+2026-04-05 22:11:44,797 [INFO] Inferred subtypes: LumA=10, LumB=10, HER2=13, Basal=17
+2026-04-05 22:11:45,980 [INFO] Downloading and generating Enrichr library gene sets...
+2026-04-05 22:11:45,980 [INFO] Library is already downloaded in: /Users/marinaesteban-medina/.cache/gseapy/Enrichr.MSigDB_Hallmark_2020.gmt, use local file
+2026-04-05 22:11:46,130 [INFO] Computed 50 pathway scores for 279 samples
+2026-04-05 22:11:46,131 [INFO] Inferred subtypes: LumA=67, LumB=32, HER2=70, Basal=110
+2026-04-05 22:11:47,322 [INFO] Downloading and generating Enrichr library gene sets...
+2026-04-05 22:11:47,322 [INFO] Library is already downloaded in: /Users/marinaesteban-medina/.cache/gseapy/Enrichr.MSigDB_Hallmark_2020.gmt, use local file
+2026-04-05 22:11:47,444 [INFO] Computed 50 pathway scores for 91 samples
+2026-04-05 22:11:47,445 [INFO] Inferred subtypes: LumA=24, LumB=15, HER2=23, Basal=29
+2026-04-05 22:11:48,648 [INFO] Downloading and generating Enrichr library gene sets...
+2026-04-05 22:11:48,648 [INFO] Library is already downloaded in: /Users/marinaesteban-medina/.cache/gseapy/Enrichr.MSigDB_Hallmark_2020.gmt, use local file
+2026-04-05 22:11:48,772 [INFO] Computed 50 pathway scores for 53 samples
+2026-04-05 22:11:48,772 [INFO] Inferred subtypes: LumA=12, LumB=10, HER2=13, Basal=18
+2026-04-05 22:11:49,966 [INFO] Downloading and generating Enrichr library gene sets...
+2026-04-05 22:11:49,966 [INFO] Library is already downloaded in: /Users/marinaesteban-medina/.cache/gseapy/Enrichr.MSigDB_Hallmark_2020.gmt, use local file
+2026-04-05 22:11:50,094 [INFO] Computed 50 pathway scores for 102 samples
+2026-04-05 22:11:50,094 [INFO] Inferred subtypes: LumA=25, LumB=13, HER2=26, Basal=38
+2026-04-05 22:11:51,229 [INFO] Downloading and generating Enrichr library gene sets...
+2026-04-05 22:11:51,229 [INFO] Library is already downloaded in: /Users/marinaesteban-medina/.cache/gseapy/Enrichr.MSigDB_Hallmark_2020.gmt, use local file
+2026-04-05 22:11:51,347 [INFO] Computed 50 pathway scores for 42 samples
+2026-04-05 22:11:51,347 [INFO] Inferred subtypes: LumA=6, LumB=8, HER2=11, Basal=17
+2026-04-05 22:11:52,525 [INFO] Downloading and generating Enrichr library gene sets...
+2026-04-05 22:11:52,525 [INFO] Library is already downloaded in: /Users/marinaesteban-medina/.cache/gseapy/Enrichr.MSigDB_Hallmark_2020.gmt, use local file
+2026-04-05 22:11:52,662 [INFO] Computed 50 pathway scores for 156 samples
+2026-04-05 22:11:52,662 [INFO] Inferred subtypes: LumA=38, LumB=31, HER2=39, Basal=48
+2026-04-05 22:11:53,889 [INFO] Downloading and generating Enrichr library gene sets...
+2026-04-05 22:11:53,889 [INFO] Library is already downloaded in: /Users/marinaesteban-medina/.cache/gseapy/Enrichr.MSigDB_Hallmark_2020.gmt, use local file
+2026-04-05 22:11:54,010 [INFO] Computed 50 pathway scores for 58 samples
+2026-04-05 22:11:54,010 [INFO] Inferred subtypes: LumA=8, LumB=10, HER2=15, Basal=25
+2026-04-05 22:11:55,205 [INFO] Downloading and generating Enrichr library gene sets...
+2026-04-05 22:11:55,206 [INFO] Library is already downloaded in: /Users/marinaesteban-medina/.cache/gseapy/Enrichr.MSigDB_Hallmark_2020.gmt, use local file
+2026-04-05 22:11:55,329 [INFO] Computed 50 pathway scores for 80 samples
+2026-04-05 22:11:55,329 [INFO] Inferred subtypes: LumA=21, LumB=10, HER2=20, Basal=29
+2026-04-05 22:11:56,535 [INFO] Downloading and generating Enrichr library gene sets...
+2026-04-05 22:11:56,535 [INFO] Library is already downloaded in: /Users/marinaesteban-medina/.cache/gseapy/Enrichr.MSigDB_Hallmark_2020.gmt, use local file
+2026-04-05 22:11:56,645 [INFO] Computed 50 pathway scores for 57 samples
+2026-04-05 22:11:56,645 [WARNING] Missing ESR1/ERBB2/MKI67 for subtype inference
+2026-04-05 22:11:57,842 [INFO] Downloading and generating Enrichr library gene sets...
+2026-04-05 22:11:57,842 [INFO] Library is already downloaded in: /Users/marinaesteban-medina/.cache/gseapy/Enrichr.MSigDB_Hallmark_2020.gmt, use local file
+2026-04-05 22:11:57,969 [INFO] Computed 50 pathway scores for 101 samples
+2026-04-05 22:11:57,970 [INFO] Inferred subtypes: LumA=23, LumB=15, HER2=25, Basal=38
+2026-04-05 22:11:59,168 [INFO] Downloading and generating Enrichr library gene sets...
+2026-04-05 22:11:59,168 [INFO] Library is already downloaded in: /Users/marinaesteban-medina/.cache/gseapy/Enrichr.MSigDB_Hallmark_2020.gmt, use local file
+2026-04-05 22:11:59,279 [INFO] Computed 50 pathway scores for 40 samples
+2026-04-05 22:11:59,279 [INFO] Inferred subtypes: LumA=7, LumB=8, HER2=10, Basal=15
+2026-04-05 22:12:00,467 [INFO] Downloading and generating Enrichr library gene sets...
+2026-04-05 22:12:00,467 [INFO] Library is already downloaded in: /Users/marinaesteban-medina/.cache/gseapy/Enrichr.MSigDB_Hallmark_2020.gmt, use local file
+2026-04-05 22:12:00,584 [INFO] Computed 50 pathway scores for 88 samples
+2026-04-05 22:12:00,584 [INFO] Inferred subtypes: LumA=22, LumB=15, HER2=22, Basal=29
+2026-04-05 22:12:01,836 [INFO] Downloading and generating Enrichr library gene sets...
+2026-04-05 22:12:01,836 [INFO] Library is already downloaded in: /Users/marinaesteban-medina/.cache/gseapy/Enrichr.MSigDB_Hallmark_2020.gmt, use local file
+2026-04-05 22:12:01,958 [INFO] Computed 50 pathway scores for 76 samples
+2026-04-05 22:12:01,958 [INFO] Inferred subtypes: LumA=19, LumB=13, HER2=19, Basal=25
+2026-04-05 22:12:03,102 [INFO] Downloading and generating Enrichr library gene sets...
+2026-04-05 22:12:03,102 [INFO] Library is already downloaded in: /Users/marinaesteban-medina/.cache/gseapy/Enrichr.MSigDB_Hallmark_2020.gmt, use local file
+2026-04-05 22:12:03,236 [INFO] Computed 50 pathway scores for 161 samples
+2026-04-05 22:12:03,236 [INFO] Inferred subtypes: LumA=37, LumB=22, HER2=40, Basal=62
+2026-04-05 22:12:04,434 [INFO] Downloading and generating Enrichr library gene sets...
+2026-04-05 22:12:04,434 [INFO] Library is already downloaded in: /Users/marinaesteban-medina/.cache/gseapy/Enrichr.MSigDB_Hallmark_2020.gmt, use local file
+2026-04-05 22:12:04,564 [INFO] Computed 50 pathway scores for 118 samples
+2026-04-05 22:12:04,565 [INFO] Inferred subtypes: LumA=22, LumB=19, HER2=30, Basal=47
+2026-04-05 22:12:05,729 [INFO] Downloading and generating Enrichr library gene sets...
+2026-04-05 22:12:05,729 [INFO] Library is already downloaded in: /Users/marinaesteban-medina/.cache/gseapy/Enrichr.MSigDB_Hallmark_2020.gmt, use local file
+2026-04-05 22:12:05,852 [INFO] Computed 50 pathway scores for 124 samples
+2026-04-05 22:12:05,852 [INFO] Inferred subtypes: LumA=30, LumB=20, HER2=31, Basal=43
+2026-04-05 22:12:07,016 [INFO] Downloading and generating Enrichr library gene sets...
+2026-04-05 22:12:07,016 [INFO] Library is already downloaded in: /Users/marinaesteban-medina/.cache/gseapy/Enrichr.MSigDB_Hallmark_2020.gmt, use local file
+2026-04-05 22:12:07,150 [INFO] Computed 50 pathway scores for 133 samples
+2026-04-05 22:12:07,150 [INFO] Inferred subtypes: LumA=28, LumB=22, HER2=33, Basal=50
+2026-04-05 22:12:08,346 [INFO] Downloading and generating Enrichr library gene sets...
+2026-04-05 22:12:08,346 [INFO] Library is already downloaded in: /Users/marinaesteban-medina/.cache/gseapy/Enrichr.MSigDB_Hallmark_2020.gmt, use local file
+2026-04-05 22:12:08,475 [INFO] Computed 50 pathway scores for 100 samples
+2026-04-05 22:12:08,475 [INFO] Inferred subtypes: LumA=24, LumB=19, HER2=24, Basal=33
+2026-04-05 22:12:09,682 [INFO] Downloading and generating Enrichr library gene sets...
+2026-04-05 22:12:09,682 [INFO] Library is already downloaded in: /Users/marinaesteban-medina/.cache/gseapy/Enrichr.MSigDB_Hallmark_2020.gmt, use local file
+2026-04-05 22:12:09,813 [INFO] Computed 50 pathway scores for 152 samples
+2026-04-05 22:12:09,813 [INFO] Inferred subtypes: LumA=28, LumB=27, HER2=38, Basal=59
+2026-04-05 22:12:10,963 [INFO] Downloading and generating Enrichr library gene sets...
+2026-04-05 22:12:10,963 [INFO] Library is already downloaded in: /Users/marinaesteban-medina/.cache/gseapy/Enrichr.MSigDB_Hallmark_2020.gmt, use local file
+2026-04-05 22:12:11,074 [INFO] Computed 50 pathway scores for 54 samples
+2026-04-05 22:12:11,075 [INFO] Inferred subtypes: LumA=10, LumB=7, HER2=14, Basal=23
+2026-04-05 22:12:12,258 [INFO] Downloading and generating Enrichr library gene sets...
+2026-04-05 22:12:12,258 [INFO] Library is already downloaded in: /Users/marinaesteban-medina/.cache/gseapy/Enrichr.MSigDB_Hallmark_2020.gmt, use local file
+2026-04-05 22:12:12,378 [INFO] Computed 50 pathway scores for 34 samples
+2026-04-05 22:12:12,379 [INFO] Inferred subtypes: LumA=6, LumB=6, HER2=9, Basal=13
+2026-04-05 22:12:13,633 [INFO] Downloading and generating Enrichr library gene sets...
+2026-04-05 22:12:13,633 [INFO] Library is already downloaded in: /Users/marinaesteban-medina/.cache/gseapy/Enrichr.MSigDB_Hallmark_2020.gmt, use local file
+2026-04-05 22:12:13,634 [WARNING] Too few genes (83) for pathway scoring
+2026-04-05 22:12:13,634 [WARNING] Missing ESR1/ERBB2/MKI67 for subtype inference
+2026-04-05 22:12:14,791 [INFO] Downloading and generating Enrichr library gene sets...
+2026-04-05 22:12:14,791 [INFO] Library is already downloaded in: /Users/marinaesteban-medina/.cache/gseapy/Enrichr.MSigDB_Hallmark_2020.gmt, use local file
+2026-04-05 22:12:15,014 [INFO] Computed 50 pathway scores for 988 samples
+2026-04-05 22:12:15,015 [INFO] Inferred subtypes: LumA=207, LumB=134, HER2=247, Basal=400
+2026-04-05 22:12:16,156 [INFO] Downloading and generating Enrichr library gene sets...
+2026-04-05 22:12:16,156 [INFO] Library is already downloaded in: /Users/marinaesteban-medina/.cache/gseapy/Enrichr.MSigDB_Hallmark_2020.gmt, use local file
+2026-04-05 22:12:16,326 [INFO] Computed 50 pathway scores for 482 samples
+2026-04-05 22:12:16,327 [INFO] Inferred subtypes: LumA=116, LumB=75, HER2=121, Basal=170
+2026-04-05 22:12:17,515 [INFO] Downloading and generating Enrichr library gene sets...
+2026-04-05 22:12:17,515 [INFO] Library is already downloaded in: /Users/marinaesteban-medina/.cache/gseapy/Enrichr.MSigDB_Hallmark_2020.gmt, use local file
+2026-04-05 22:12:17,784 [INFO] Computed 50 pathway scores for 1218 samples
+2026-04-05 22:12:17,785 [INFO] Inferred subtypes: LumA=236, LumB=208, HER2=305, Basal=469
+2026-04-05 22:12:17,785 [INFO] Pathway dimension: 50
+2026-04-05 22:12:17,833 [INFO]   GSE10255: 161 samples tokenized
+2026-04-05 22:12:17,875 [INFO]   GSE104645: 193 samples tokenized
+2026-04-05 22:12:17,898 [INFO]   GSE104958: 46 samples tokenized
+2026-04-05 22:12:17,942 [INFO]   GSE109211: 140 samples tokenized
+2026-04-05 22:12:17,967 [INFO]   GSE131978: 39 samples tokenized
+2026-04-05 22:12:17,995 [INFO]   GSE14615: 50 samples tokenized
+2026-04-05 22:12:18,024 [INFO]   GSE14671: 59 samples tokenized
+2026-04-05 22:12:18,056 [INFO]   GSE14764: 80 samples tokenized
+2026-04-05 22:12:18,104 [INFO]   GSE150576: 288 samples tokenized
+2026-04-05 22:12:18,148 [INFO]   GSE16446: 120 samples tokenized
+2026-04-05 22:12:18,174 [INFO]   GSE173263: 39 samples tokenized
+2026-04-05 22:12:18,200 [INFO]   GSE19293: 52 samples tokenized
+2026-04-05 22:12:18,246 [INFO]   GSE20181: 176 samples tokenized
+2026-04-05 22:12:18,311 [INFO]   GSE20194: 278 samples tokenized
+2026-04-05 22:12:18,358 [INFO]   GSE20271: 178 samples tokenized
+2026-04-05 22:12:18,385 [INFO]   GSE21974: 57 samples tokenized
+2026-04-05 22:12:18,419 [INFO]   GSE22093: 103 samples tokenized
+2026-04-05 22:12:18,439 [INFO]   GSE225178: 44 samples tokenized
+2026-04-05 22:12:18,466 [INFO]   GSE23988: 61 samples tokenized
+2026-04-05 22:12:18,575 [INFO]   GSE25066: 508 samples tokenized
+2026-04-05 22:12:18,608 [INFO]   GSE28702: 83 samples tokenized
+2026-04-05 22:12:18,647 [INFO]   GSE32646: 115 samples tokenized
+2026-04-05 22:12:18,675 [INFO]   GSE35640: 65 samples tokenized
+2026-04-05 22:12:18,703 [INFO]   GSE35935: 62 samples tokenized
+2026-04-05 22:12:18,728 [INFO]   GSE37946: 50 samples tokenized
+2026-04-05 22:12:18,795 [INFO]   GSE41998: 279 samples tokenized
+2026-04-05 22:12:18,827 [INFO]   GSE42822: 91 samples tokenized
+2026-04-05 22:12:18,854 [INFO]   GSE44272: 53 samples tokenized
+2026-04-05 22:12:18,889 [INFO]   GSE4779: 102 samples tokenized
+2026-04-05 22:12:18,919 [INFO]   GSE48905: 42 samples tokenized
+2026-04-05 22:12:18,964 [INFO]   GSE50948: 156 samples tokenized
+2026-04-05 22:12:18,990 [INFO]   GSE5122: 58 samples tokenized
+2026-04-05 22:12:19,020 [INFO]   GSE5851: 80 samples tokenized
+2026-04-05 22:12:19,046 [INFO]   GSE62321: 57 samples tokenized
+2026-04-05 22:12:19,079 [INFO]   GSE63885: 101 samples tokenized
+2026-04-05 22:12:19,103 [INFO]   GSE65021: 40 samples tokenized
+2026-04-05 22:12:19,134 [INFO]   GSE66305: 88 samples tokenized
+2026-04-05 22:12:19,163 [INFO]   GSE66999: 76 samples tokenized
+2026-04-05 22:12:19,207 [INFO]   GSE6861: 161 samples tokenized
+2026-04-05 22:12:19,244 [INFO]   GSE68871: 118 samples tokenized
+2026-04-05 22:12:19,282 [INFO]   GSE72970: 124 samples tokenized
+2026-04-05 22:12:19,321 [INFO]   GSE73578: 133 samples tokenized
+2026-04-05 22:12:19,357 [INFO]   GSE76360: 100 samples tokenized
+2026-04-05 22:12:19,401 [INFO]   GSE82172: 152 samples tokenized
+2026-04-05 22:12:19,428 [INFO]   GSE87865: 54 samples tokenized
+2026-04-05 22:12:19,451 [INFO]   GSE8970: 34 samples tokenized
+2026-04-05 22:12:19,470 [INFO]   GSE9782: 528 samples tokenized
+2026-04-05 22:12:19,664 [INFO]   ISPY2: 988 samples tokenized
+2026-04-05 22:12:19,770 [INFO]   BrighTNess: 482 samples tokenized
+2026-04-05 22:12:19,999 [INFO]   TCGA_BRCA: 1218 samples tokenized
+2026-04-05 22:12:20,021 [INFO] Total pretraining samples: 8362
+2026-04-05 22:12:20,031 [INFO] ============================================================
+2026-04-05 22:12:20,031 [INFO] STEP 5: Building Perceiver-style encoder
+2026-04-05 22:12:20,031 [INFO] ============================================================
+2026-04-05 22:12:20,035 [INFO] Model parameters: 537,271
+2026-04-05 22:12:20,035 [INFO] Architecture: Perceiver with 16 latent tokens
+2026-04-05 22:12:20,035 [INFO] ============================================================
+2026-04-05 22:12:20,035 [INFO] STEP 6: Pretraining (30 epochs, 261 batches/epoch)
+2026-04-05 22:12:20,035 [INFO] ============================================================
+2026-04-05 22:12:53,542 [INFO] Epoch  1/30 | total=0.7604 mgp=0.0688 pap=0.0522 sub=1.3310 | 33s elapsed
+2026-04-05 22:13:26,603 [INFO] Epoch  2/30 | total=0.7076 mgp=0.0390 pap=0.0132 sub=1.3241 | 66s elapsed
+2026-04-05 22:13:59,594 [INFO] Epoch  3/30 | total=0.7025 mgp=0.0376 pap=0.0108 sub=1.3188 | 99s elapsed
+2026-04-05 22:14:32,775 [INFO] Epoch  4/30 | total=0.7003 mgp=0.0372 pap=0.0096 sub=1.3166 | 132s elapsed
+2026-04-05 22:15:05,531 [INFO] Epoch  5/30 | total=0.6991 mgp=0.0369 pap=0.0092 sub=1.3152 | 165s elapsed
+2026-04-05 22:15:40,117 [INFO] Epoch  6/30 | total=0.6979 mgp=0.0367 pap=0.0088 sub=1.3136 | 200s elapsed
+2026-04-05 22:16:14,198 [INFO] Epoch  7/30 | total=0.6964 mgp=0.0365 pap=0.0084 sub=1.3115 | 234s elapsed
+2026-04-05 22:16:47,829 [INFO] Epoch  8/30 | total=0.6964 mgp=0.0364 pap=0.0082 sub=1.3118 | 267s elapsed
+2026-04-05 22:17:20,665 [INFO] Epoch  9/30 | total=0.6958 mgp=0.0362 pap=0.0079 sub=1.3112 | 300s elapsed
+2026-04-05 22:17:53,456 [INFO] Epoch 10/30 | total=0.6959 mgp=0.0362 pap=0.0078 sub=1.3116 | 333s elapsed
+2026-04-05 22:18:26,429 [INFO] Epoch 11/30 | total=0.6952 mgp=0.0361 pap=0.0077 sub=1.3105 | 366s elapsed
+2026-04-05 22:18:59,611 [INFO] Epoch 12/30 | total=0.6947 mgp=0.0359 pap=0.0075 sub=1.3102 | 399s elapsed
+2026-04-05 22:19:32,418 [INFO] Epoch 13/30 | total=0.6942 mgp=0.0358 pap=0.0074 sub=1.3094 | 432s elapsed
+2026-04-05 22:20:05,319 [INFO] Epoch 14/30 | total=0.6939 mgp=0.0357 pap=0.0073 sub=1.3091 | 465s elapsed
+2026-04-05 22:20:38,126 [INFO] Epoch 15/30 | total=0.6937 mgp=0.0355 pap=0.0072 sub=1.3092 | 498s elapsed
+2026-04-05 22:21:10,983 [INFO] Epoch 16/30 | total=0.6934 mgp=0.0355 pap=0.0072 sub=1.3086 | 530s elapsed
+2026-04-05 22:21:43,790 [INFO] Epoch 17/30 | total=0.6930 mgp=0.0355 pap=0.0070 sub=1.3078 | 563s elapsed
+2026-04-05 22:22:16,561 [INFO] Epoch 18/30 | total=0.6923 mgp=0.0354 pap=0.0069 sub=1.3069 | 596s elapsed
+2026-04-05 22:22:49,943 [INFO] Epoch 19/30 | total=0.6926 mgp=0.0353 pap=0.0068 sub=1.3078 | 629s elapsed
+2026-04-05 22:23:23,597 [INFO] Epoch 20/30 | total=0.6919 mgp=0.0354 pap=0.0068 sub=1.3063 | 663s elapsed
+2026-04-05 22:23:56,565 [INFO] Epoch 21/30 | total=0.6923 mgp=0.0353 pap=0.0067 sub=1.3073 | 696s elapsed
+2026-04-05 22:24:29,375 [INFO] Epoch 22/30 | total=0.6922 mgp=0.0352 pap=0.0067 sub=1.3073 | 729s elapsed
+2026-04-05 22:25:02,167 [INFO] Epoch 23/30 | total=0.6917 mgp=0.0352 pap=0.0067 sub=1.3064 | 762s elapsed
+2026-04-05 22:25:35,033 [INFO] Epoch 24/30 | total=0.6912 mgp=0.0352 pap=0.0066 sub=1.3052 | 794s elapsed
+2026-04-05 22:26:04,780 [INFO] Epoch 25/30 | total=0.6916 mgp=0.0351 pap=0.0066 sub=1.3065 | 824s elapsed
+2026-04-05 22:26:24,121 [INFO] Epoch 26/30 | total=0.6906 mgp=0.0352 pap=0.0066 sub=1.3043 | 844s elapsed
+2026-04-05 22:26:43,318 [INFO] Epoch 27/30 | total=0.6907 mgp=0.0351 pap=0.0066 sub=1.3046 | 863s elapsed
+2026-04-05 22:27:02,508 [INFO] Epoch 28/30 | total=0.6910 mgp=0.0351 pap=0.0066 sub=1.3052 | 882s elapsed
+2026-04-05 22:27:22,004 [INFO] Epoch 29/30 | total=0.6908 mgp=0.0351 pap=0.0066 sub=1.3047 | 901s elapsed
+2026-04-05 22:27:41,741 [INFO] Epoch 30/30 | total=0.6910 mgp=0.0352 pap=0.0066 sub=1.3052 | 921s elapsed
+2026-04-05 22:27:41,741 [INFO] ============================================================
+2026-04-05 22:27:41,742 [INFO] STEP 7: Saving artifacts
+2026-04-05 22:27:41,742 [INFO] ============================================================
+2026-04-05 22:27:41,747 [INFO] Saved pretrain_history.csv
+2026-04-05 22:27:41,756 [INFO] Saved model checkpoints
+2026-04-05 22:27:41,756 [INFO] Saved pretrain_config.json
+2026-04-05 22:27:41,756 [INFO] Pretraining complete in 15.4 minutes

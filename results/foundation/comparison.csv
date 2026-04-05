@@ -1,0 +1,4 @@
+method,mean_auc,median_auc,n_datasets
+A. LightGBM 212 genes,0.6085,0.5588,8
+B. Foundation [CLS] linear probe,0.4901,0.4826,8
+C. LightGBM 212 + [CLS] 128,0.5862,0.5664,8

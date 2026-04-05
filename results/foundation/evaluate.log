@@ -1,0 +1,74 @@
+2026-04-05 22:28:01,045 [INFO] Loading pretrained model …
+2026-04-05 22:28:01,045 [INFO] Loading cached gene universe from /Users/marinaesteban-medina/Desktop/INVEREX/inverex-mvp/results/foundation/gene_universe.json
+2026-04-05 22:28:01,085 [INFO] Landmark genes: 212
+2026-04-05 22:28:01,088 [INFO] Found 40 labeled datasets
+2026-04-05 22:28:01,147 [INFO] Evaluating on 10 representative datasets
+2026-04-05 22:28:01,536 [INFO]   GSE104645: 126 samples
+2026-04-05 22:28:02,242 [INFO]   GSE104958: 46 samples
+2026-04-05 22:28:02,659 [INFO]   GSE109211: 140 samples
+2026-04-05 22:28:02,979 [INFO]   GSE131978: 37 samples
+2026-04-05 22:28:03,431 [INFO]   GSE14615: 20 samples
+2026-04-05 22:28:03,876 [INFO]   GSE14671: 59 samples
+2026-04-05 22:28:04,260 [INFO]   GSE173263: 39 samples
+2026-04-05 22:28:04,894 [INFO]   GSE19293: 52 samples
+2026-04-05 22:28:05,160 [INFO]   GSE20181: 154 samples
+2026-04-05 22:28:05,650 [INFO]   GSE20194: 278 samples
+2026-04-05 22:28:05,918 [INFO]   GSE20271: 178 samples
+2026-04-05 22:28:06,377 [INFO]   GSE21974: 57 samples
+2026-04-05 22:28:06,640 [INFO]   GSE22093: 97 samples
+2026-04-05 22:28:06,903 [INFO]   GSE23988: 61 samples
+2026-04-05 22:28:07,179 [INFO]   GSE25066: 488 samples
+2026-04-05 22:28:07,904 [INFO]   GSE28702: 83 samples
+2026-04-05 22:28:08,626 [INFO]   GSE32646: 115 samples
+2026-04-05 22:28:09,076 [INFO]   GSE35640: 56 samples
+2026-04-05 22:28:09,335 [INFO]   GSE37946: 50 samples
+2026-04-05 22:28:09,603 [INFO]   GSE41998: 206 samples
+2026-04-05 22:28:10,062 [INFO]   GSE44272: 53 samples
+2026-04-05 22:28:10,466 [INFO]   GSE4779: 102 samples
+2026-04-05 22:28:10,914 [INFO]   GSE48905: 39 samples
+2026-04-05 22:28:11,477 [INFO]   GSE50948: 156 samples
+2026-04-05 22:28:11,938 [INFO]   GSE5122: 57 samples
+2026-04-05 22:28:12,943 [INFO]   GSE61676: 86 samples
+2026-04-05 22:28:13,165 [INFO]   GSE62321: 57 samples
+2026-04-05 22:28:13,620 [INFO]   GSE63885: 68 samples
+2026-04-05 22:28:14,707 [INFO]   GSE65021: 40 samples
+2026-04-05 22:28:15,381 [INFO]   GSE66999: 76 samples
+2026-04-05 22:28:16,271 [INFO]   GSE6861: 161 samples
+2026-04-05 22:28:17,290 [INFO]   GSE68871: 118 samples
+2026-04-05 22:28:17,742 [INFO]   GSE72970: 124 samples
+2026-04-05 22:28:18,197 [INFO]   GSE73578: 63 samples
+2026-04-05 22:28:18,658 [INFO]   GSE76360: 96 samples
+2026-04-05 22:28:19,552 [INFO]   GSE82172: 152 samples
+2026-04-05 22:28:19,807 [INFO]   GSE8970: 26 samples
+2026-04-05 22:28:19,812 [INFO]   GSE9782: 312 samples
+2026-04-05 22:28:20,772 [INFO] ==================================================
+2026-04-05 22:28:20,772 [INFO] LODO held-out: GSE20181 (154 samples)
+2026-04-05 22:28:27,121 [INFO]   AUC — LightGBM-212: 0.462 | Linear-probe: 0.451 | Combined: 0.546
+2026-04-05 22:28:27,121 [INFO] ==================================================
+2026-04-05 22:28:27,121 [INFO] LODO held-out: GSE20194 (278 samples)
+2026-04-05 22:28:32,665 [INFO]   AUC — LightGBM-212: 0.817 | Linear-probe: 0.500 | Combined: 0.622
+2026-04-05 22:28:32,665 [INFO] ==================================================
+2026-04-05 22:28:32,665 [INFO] LODO held-out: GSE20271 (178 samples)
+2026-04-05 22:28:38,228 [INFO]   AUC — LightGBM-212: 0.558 | Linear-probe: 0.539 | Combined: 0.536
+2026-04-05 22:28:38,228 [INFO] ==================================================
+2026-04-05 22:28:38,228 [INFO] LODO held-out: GSE25066 (488 samples)
+2026-04-05 22:28:43,755 [INFO]   AUC — LightGBM-212: 0.798 | Linear-probe: 0.414 | Combined: 0.778
+2026-04-05 22:28:43,756 [INFO] ==================================================
+2026-04-05 22:28:43,756 [INFO] LODO held-out: GSE41998 (206 samples)
+2026-04-05 22:28:49,298 [INFO]   AUC — LightGBM-212: 0.468 | Linear-probe: 0.607 | Combined: 0.445
+2026-04-05 22:28:49,298 [INFO] ==================================================
+2026-04-05 22:28:49,298 [INFO] LODO held-out: GSE50948 (156 samples)
+2026-04-05 22:28:54,906 [INFO]   AUC — LightGBM-212: 0.560 | Linear-probe: 0.493 | Combined: 0.587
+2026-04-05 22:28:54,906 [INFO] ==================================================
+2026-04-05 22:28:54,906 [INFO] LODO held-out: GSE6861 (161 samples)
+2026-04-05 22:29:00,492 [INFO]   AUC — LightGBM-212: 0.664 | Linear-probe: 0.443 | Combined: 0.662
+2026-04-05 22:29:00,492 [INFO] ==================================================
+2026-04-05 22:29:00,492 [INFO] LODO held-out: GSE9782 (312 samples)
+2026-04-05 22:29:06,031 [INFO]   AUC — LightGBM-212: 0.542 | Linear-probe: 0.472 | Combined: 0.515
+2026-04-05 22:29:06,032 [INFO] Saved lodo_results.csv (8 datasets)
+2026-04-05 22:29:06,035 [INFO] 
+                          method  mean_auc  median_auc  n_datasets
+           A. LightGBM 212 genes    0.6085      0.5588           8
+B. Foundation [CLS] linear probe    0.4901      0.4826           8
+     C. LightGBM 212 + [CLS] 128    0.5862      0.5664           8
+2026-04-05 22:29:06,035 [INFO] Saved comparison.csv
