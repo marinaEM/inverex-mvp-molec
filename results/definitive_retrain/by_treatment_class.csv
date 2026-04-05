@@ -1,0 +1,4 @@
+treatment_class,auc_genes,auc_clinical,n_datasets,n_patients
+chemo,0.619,0.613,36,3730
+combination,0.527,0.431,1,988
+parp,0.633,0.268,1,482

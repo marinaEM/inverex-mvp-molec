@@ -1,0 +1,5 @@
+config,mean_auc,n_features
+A_212_genes_only,0.617,212
+D_genes+clinical,0.599,215
+previous_978_genes,0.572,978
+previous_212_genes,0.61,212
