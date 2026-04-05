@@ -1,7 +1,6 @@
 # INVEREX MVP — Breast Cancer Drug Ranking Pipeline
 
 **Retrospective mock demo** using TCGA-BRCA patient data.  
-**Not** a clinical response predictor. Shows an end-to-end pipeline:
 
 > TCGA-BRCA patient molecular profile → disease signature → drug ranking → mapped breast-cancer trial suggestions → interpretable rationale
 
@@ -19,16 +18,12 @@ The ranking layer is now explicit and modular for each patient-drug pair:
 
 Final rankings are therefore not driven by perturbation potency alone.
 
-### Auxiliary LightGBM Drug-Response Model (inspired by scTherapy)
-
-Trained on the same data schema as scTherapy (Ianevski & Nader et al., Nat Commun 2024),
-but **scoped to breast cancer cell lines** and **rebuilt locally** for interpretability:
+### Auxiliary LightGBM Drug-Response Model
+**scoped to breast cancer cell lines** and **rebuilt locally** for interpretability:
 
 - **Features**: L1000 landmark gene fold-changes (~978) + ECFP4 drug fingerprints (1024-bit) + log-dose
 - **Target**: Percent cell inhibition (continuous, from PharmacoDB dose-response curves)
 - **Model**: LightGBM regressor with Bayesian hyperparameter optimization
-
-Important: this model is not treated as a validated patient response predictor. It is one component inside the broader personalized rationale stack.
 
 ### Baseline: Signature Reversal Score
 
