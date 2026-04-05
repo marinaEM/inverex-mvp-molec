@@ -1,0 +1,29 @@
+PRISM Pan-Cancer Multi-Task NN Experiment
+==================================================
+Date: 2026-04-05 21:04:55
+Total time: 202s
+
+Dataset: 150000 samples, 979 features, 375 drugs
+Train/Val: 135000/15000 (90/10)
+Pathway groups: 10
+
+Model Comparison:
+  Single-task NN (GDSC2):    RMSE = 14.48  (719 samples)
+  Multi-task NN (GDSC2):     RMSE = 15.25  (719 samples)
+  Single-task NN (PRISM):    RMSE = 8.3857, R2 = 0.7175  (15000 samples)
+  Multi-task NN (PRISM):     RMSE = 8.4238, R2 = 0.7149  (15000 samples)
+
+Per-Pathway-Group RMSE (Multi-Task):
+  apoptosis                : MT=12.6962, ST=12.2846, delta=-0.4116 (260 samples)
+  cytotoxic                : MT=11.6568, ST=11.6864, delta=+0.0296 (962 samples)
+  dna_damage               : MT=9.8353, ST=9.7759, delta=-0.0594 (1089 samples)
+  epigenetic               : MT=11.2647, ST=11.1889, delta=-0.0758 (485 samples)
+  hormone                  : MT=6.5471, ST=6.4624, delta=-0.0847 (1434 samples)
+  hsp_chaperone            : MT=10.5808, ST=10.5869, delta=+0.0061 (46 samples)
+  immune                   : MT=7.0383, ST=7.0191, delta=-0.0192 (199 samples)
+  kinase_inhibitor         : MT=10.2489, ST=10.2676, delta=+0.0187 (2328 samples)
+  other                    : MT=7.0567, ST=7.0148, delta=-0.0419 (8039 samples)
+  signaling                : MT=4.7452, ST=4.7387, delta=-0.0065 (158 samples)
+
+Drug embeddings: 375 drugs x 128 dims
+Saved to: /Users/marinaesteban-medina/Desktop/INVEREX/inverex-mvp/data/cache/prism_multitask_drug_embeddings.parquet
