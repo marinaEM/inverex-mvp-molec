@@ -1,0 +1,4 @@
+treatment_class	mean_auc	n_datasets	n_patients
+chemo	0.612	36	3730
+combination	0.52	1	988
+parp	0.631	1	482
