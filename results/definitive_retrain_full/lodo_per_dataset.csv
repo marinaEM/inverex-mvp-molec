@@ -1,0 +1,38 @@
+dataset,source,n,resp,resp_rate,n_genes,auc_A_genes_only,auc_B_genes_clinical,treatment_class,endpoint_family,drug,has_clinical
+GSE104645,ctrdb,126,112,0.889,954,0.3839,0.5261,chemo,pharmacodynamic,Fluorouracil+Leucovorin+Oxaliplatin,False
+GSE104958,ctrdb,46,12,0.261,953,0.6127,0.5833,chemo,pathologic,Cisplatin+Docetaxel+Fluorouracil,False
+GSE109211,ctrdb,140,42,0.3,938,0.5656,0.5321,other,pathologic,Sorafenib,False
+GSE131978,ctrdb,37,18,0.486,954,0.4912,0.5848,chemo,pathologic,Carboplatin,False
+GSE14615,ctrdb,20,6,0.3,954,0.5,0.3333,chemo,pathologic,Doxorubicin+Mercaptopurine+Methotrexate+Prednisone+Vincristine,False
+GSE14671,ctrdb,59,41,0.695,954,0.4932,0.5556,other,pathologic,Imatinib,False
+GSE173263,ctrdb,39,29,0.744,946,0.6379,0.5069,chemo,pathologic,Cyclophosphamide+Doxorubicin+Prednisolone+Rituximab+Vincristine,False
+GSE19293,ctrdb,52,24,0.462,954,0.506,0.5521,other,pharmacodynamic,Melphalan,False
+GSE20181,ctrdb,154,110,0.714,954,0.4213,0.4959,endocrine,pathologic,Letrozole,False
+GSE20194,ctrdb,278,56,0.201,954,0.9585,0.9599,chemo,pathologic,TFAC (Cyclophosphamide+Doxorubicin+Fluorouracil+Paclitaxel),False
+GSE20271,ctrdb,178,26,0.146,954,0.7624,0.7662,chemo,pathologic,FAC (Cyclophosphamide+Doxorubicin+Fluorouracil),False
+GSE21974,ctrdb,57,18,0.316,954,0.5427,0.6538,chemo,pathologic,Cyclophosphamide+Docetaxel+Epirubicin,False
+GSE22093,ctrdb,97,28,0.289,954,0.7469,0.7246,chemo,pathologic,FEC (Cyclophosphamide+Epirubicin+Fluorouracil),False
+GSE23988,ctrdb,61,20,0.328,954,0.9988,0.9988,chemo,pathologic,FEC (Cyclophosphamide+Epirubicin+Fluorouracil)+Capecitabine+Docetaxel,False
+GSE25066,ctrdb,488,99,0.203,954,0.915,0.9178,chemo,pathologic,Anthracycline+Taxane,False
+GSE28702,ctrdb,83,42,0.506,954,0.5738,0.4768,chemo,pharmacodynamic,FOLFOX (Fluorouracil+Leucovorin+Oxaliplatin),False
+GSE32646,ctrdb,115,27,0.235,954,0.6987,0.7264,chemo,pathologic,TFEC (Cyclophosphamide+Epirubicin+Fluorouracil+Paclitaxel),False
+GSE35640,ctrdb,56,22,0.393,954,0.5481,0.5882,combination,pharmacodynamic,AS02B/AS15+recMAGE-A3,False
+GSE37946,ctrdb,50,27,0.54,954,0.6908,0.7295,targeted,pathologic,Trastuzumab,False
+GSE41998,ctrdb,206,201,0.976,954,0.6388,0.5701,chemo,pharmacodynamic,AC (Cyclophosphamide+Doxorubicin)+Ixabepilone,False
+GSE44272,ctrdb,53,35,0.66,946,0.5159,0.4841,targeted,pathologic,Trastuzumab,False
+GSE4779,ctrdb,102,39,0.382,930,1.0,1.0,chemo,pathologic,Cyclophosphamide+Epirubicin+Fluorouracil,False
+GSE48905,ctrdb,39,15,0.385,954,0.4944,0.5111,endocrine,pharmacodynamic,Fulvestrant,False
+GSE50948,ctrdb,156,53,0.34,954,0.54,0.5049,targeted+chemo,pathologic,AT (Doxorubicin+Paclitaxel)+CMF (Cyclophosphamide+Fluorouracil+Methotrexate)+Trastuzumab,False
+GSE5122,ctrdb,57,4,0.07,954,0.8208,0.7972,other,pharmacodynamic,Tipifarnib,False
+GSE63885,ctrdb,68,65,0.956,954,0.2205,0.1846,chemo,pharmacodynamic,Platinum+Taxane,False
+GSE65021,ctrdb,40,31,0.775,938,0.5233,0.6774,other,survival,Cetuximab,False
+GSE66999,ctrdb,76,70,0.921,954,0.4095,0.4905,chemo,pharmacodynamic,Docetaxel+Epirubicin+Pegfilgrastim,False
+GSE6861,ctrdb,161,66,0.41,930,0.9139,0.9222,chemo,pathologic,Cyclophosphamide+Epirubicin+Fluorouracil,False
+GSE68871,ctrdb,118,97,0.822,954,0.5223,0.6284,combination,pharmacodynamic,VTD (Bortezomib+Thalidomide),False
+GSE72970,ctrdb,124,63,0.508,954,0.5756,0.5561,chemo,pharmacodynamic,FOLFIRI (Fluorouracil+Irinotecan+Leucovorin),False
+GSE73578,ctrdb,63,40,0.635,954,0.4348,0.4652,other,pharmacodynamic,Prednisone,False
+GSE76360,ctrdb,96,66,0.688,881,0.4591,0.4793,targeted,pathologic,Trastuzumab,False
+GSE82172,ctrdb,152,21,0.138,947,0.4598,0.4791,endocrine,pharmacodynamic,Tamoxifen,False
+GSE8970,ctrdb,26,13,0.5,954,0.4083,0.4793,other,pharmacodynamic,Tipifarnib,False
+ispy2,ispy2,988,319,0.323,954,0.5208,0.5208,combination,pathologic,"ISPY2 arms: Paclitaxel + Ganitumab, Paclitaxel + Ganetespib, Paclitaxel + MK-2206, Paclitaxel + Pembrolizumab, Paclitaxel",True
+brightness,brightness,482,236,0.49,939,0.5902,0.6169,parp,pathologic,Veliparib+Carboplatin+Paclitaxel (BRIGHTNESS),False

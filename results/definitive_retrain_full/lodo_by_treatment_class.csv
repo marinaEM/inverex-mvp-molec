@@ -1,0 +1,8 @@
+treatment_class,n_datasets,total_patients,mean_auc_A,median_auc_A,mean_auc_B,median_auc_B
+chemo,19,2362,0.6621,0.6379,0.657,0.5848
+combination,3,1162,0.5304,0.5223,0.5791,0.5882
+endocrine,3,345,0.4585,0.4598,0.4954,0.4959
+other,7,437,0.536,0.506,0.5798,0.5521
+parp,1,482,0.5902,0.5902,0.6169,0.6169
+targeted,3,199,0.5553,0.5159,0.5643,0.4841
+targeted+chemo,1,156,0.54,0.54,0.5049,0.5049

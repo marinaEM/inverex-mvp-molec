@@ -1,0 +1,15 @@
+{
+  "n_estimators": 800,
+  "num_leaves": 60,
+  "max_depth": 10,
+  "min_child_samples": 16,
+  "learning_rate": 0.07161286789808947,
+  "subsample": 0.7084225406362931,
+  "colsample_bytree": 0.647667396154867,
+  "reg_alpha": 0.07957571804043045,
+  "reg_lambda": 0.010289206923135653,
+  "objective": "binary",
+  "metric": "auc",
+  "random_state": 42,
+  "verbose": -1
+}
