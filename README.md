@@ -92,10 +92,9 @@ streamlit run app/main.py
 
 | Experiment | AUC | Notes |
 |-----------|-----|-------|
-| Patient model (954 genes + clinical) | **0.610** | Production model, honest LODO |
-| Patient model (212 curated genes) | 0.617 | Fewer but hand-picked genes |
-| ComBat with response labels (leaked) | 0.767 | Label leakage — not valid for production |
-| ComBat without labels | 0.604 | Honest batch correction |
+| Patient model (954 genes + clinical) | **0.610** | Production model|
+| Patient model (212 curated genes) | 0.617 | Fewer genes; selection requieres supervision |
+| ComBat | 0.767 | Potential Label leakage - to be investigated|
 | Foundation encoder | TBD | CPU-limited, architecture validated |
 
 See `results/EXPERIMENT_SUMMARY.md` for the full analysis.
