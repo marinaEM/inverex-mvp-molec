@@ -1,0 +1,2 @@
+dataset	drug	n	resp_rate	auroc	ci_lo	ci_hi	verdict
+GSE104958	cisplatin+docetaxel+fluorouracil	46	0.261	0.598	0.3776	0.8049	WIDE_CI

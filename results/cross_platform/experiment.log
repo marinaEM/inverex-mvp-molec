@@ -1,0 +1,119 @@
+2026-04-06 18:08:36,927 [INFO] ======================================================================
+2026-04-06 18:08:36,927 [INFO] STEP 1: Data loading + gene harmonization
+2026-04-06 18:08:36,927 [INFO] ======================================================================
+2026-04-06 18:09:02,482 [INFO] Excluded datasets: [('GSE61676', 'beadarray', 86), ('GSE9782', 'targeted', 312)]
+2026-04-06 18:09:02,482 [INFO] Remaining: 38 datasets, 5200 patients
+2026-04-06 18:09:02,520 [INFO] Common genes (>=80% per platform): 918
+2026-04-06 18:09:02,978 [INFO] Pooled: 5200 patients x 918 genes
+2026-04-06 18:09:02,979 [INFO]   affymetrix: 2642 patients
+2026-04-06 18:09:02,979 [INFO]   agilent: 2030 patients
+2026-04-06 18:09:02,979 [INFO]   rnaseq: 528 patients
+2026-04-06 18:09:02,979 [INFO] ======================================================================
+2026-04-06 18:09:02,979 [INFO] STEP 2: Pre-computing pathway features
+2026-04-06 18:09:02,979 [INFO] ======================================================================
+2026-04-06 18:09:02,979 [INFO] Computing within-sample rank + inverse-normal...
+2026-04-06 18:09:03,394 [INFO] Rank expression: (5200, 918)
+2026-04-06 18:09:03,394 [INFO] Computing ssGSEA (on rank-normalized data)...
+2026-04-06 18:09:16,821 [INFO] ssGSEA: 47 pathways
+2026-04-06 18:09:16,821 [INFO] Computing PROGENy...
+2026-04-06 18:09:17,462 [WARNING] PROGENy failed: module 'decoupler' has no attribute 'get_progeny'
+2026-04-06 18:09:17,463 [INFO] Computing singscore...
+2026-04-06 18:09:18,686 [INFO] Downloading and generating Enrichr library gene sets...
+2026-04-06 18:09:18,687 [INFO] Library is already downloaded in: /Users/marinaesteban-medina/.cache/gseapy/Enrichr.MSigDB_Hallmark_2020.gmt, use local file
+2026-04-06 18:09:19,006 [INFO] singscore: 47 pathways
+2026-04-06 18:09:19,006 [INFO] Computing REO (knowledge-driven)...
+2026-04-06 18:09:19,007 [INFO] REO knowledge: 5 pairs
+2026-04-06 18:09:19,007 [INFO] ======================================================================
+2026-04-06 18:09:19,007 [INFO] STEP 3-4: LODO experiment grid
+2026-04-06 18:09:19,007 [INFO] ======================================================================
+2026-04-06 18:09:19,007 [INFO] 
+--- raw_common__agnostic ---
+2026-04-06 18:10:56,808 [INFO]   → raw_common__agnostic: AUROC=0.5781  AUPRC=0.6117  MCC=0.1379  (98s, 38 folds)
+2026-04-06 18:10:56,808 [INFO] 
+--- rank_genes__agnostic ---
+2026-04-06 18:12:29,675 [INFO]   → rank_genes__agnostic: AUROC=0.5997  AUPRC=0.6060  MCC=0.1634  (93s, 38 folds)
+2026-04-06 18:12:29,675 [INFO] 
+--- rank_genes__platform_covariate ---
+2026-04-06 18:14:14,405 [INFO]   → rank_genes__platform_covariate: AUROC=0.5929  AUPRC=0.6131  MCC=0.1359  (105s, 38 folds)
+2026-04-06 18:14:14,405 [INFO] 
+--- ssgsea_only__agnostic ---
+2026-04-06 18:14:42,448 [INFO]   → ssgsea_only__agnostic: AUROC=0.5441  AUPRC=0.5584  MCC=0.0530  (28s, 38 folds)
+2026-04-06 18:14:42,448 [INFO] 
+--- singscore_only__agnostic ---
+2026-04-06 18:15:11,623 [INFO]   → singscore_only__agnostic: AUROC=0.5765  AUPRC=0.5828  MCC=0.1119  (29s, 38 folds)
+2026-04-06 18:15:11,623 [INFO] 
+--- rank_plus_ssgsea__agnostic ---
+2026-04-06 18:17:01,655 [INFO]   → rank_plus_ssgsea__agnostic: AUROC=0.5954  AUPRC=0.6129  MCC=0.1458  (110s, 38 folds)
+2026-04-06 18:17:01,655 [INFO] 
+--- rank_plus_singscore__agnostic ---
+2026-04-06 18:19:00,479 [INFO]   → rank_plus_singscore__agnostic: AUROC=0.5948  AUPRC=0.6149  MCC=0.1382  (119s, 38 folds)
+2026-04-06 18:19:00,479 [INFO] 
+--- rank_plus_all_pathways__agnostic ---
+2026-04-06 18:21:05,393 [INFO]   → rank_plus_all_pathways__agnostic: AUROC=0.5954  AUPRC=0.6099  MCC=0.1393  (125s, 38 folds)
+2026-04-06 18:21:05,394 [INFO] 
+--- rank_plus_all_pathways__platform_covariate ---
+2026-04-06 18:22:58,567 [INFO]   → rank_plus_all_pathways__platform_covariate: AUROC=0.5913  AUPRC=0.6077  MCC=0.1425  (113s, 38 folds)
+2026-04-06 18:22:58,567 [INFO] 
+--- rank_plus_singscore_reo_knowledge__agnostic ---
+2026-04-06 18:24:34,230 [INFO]   → rank_plus_singscore_reo_knowledge__agnostic: AUROC=0.6019  AUPRC=0.6191  MCC=0.1566  (96s, 38 folds)
+2026-04-06 18:24:34,230 [INFO] ======================================================================
+2026-04-06 18:24:34,230 [INFO] STEP 5: Platform-held-out evaluation
+2026-04-06 18:24:34,230 [INFO] ======================================================================
+2026-04-06 18:24:34,231 [INFO] Top 3 configs for platform holdout: ['rank_plus_singscore_reo_knowledge__agnostic', 'rank_genes__agnostic', 'rank_plus_all_pathways__agnostic']
+2026-04-06 18:24:34,231 [INFO] 
+Variant A: microarray → RNA-seq
+2026-04-06 18:24:36,750 [INFO]   Variant A rank_plus_singscore_reo_knowledge__agnostic: AUROC=0.5898 MCC=0.1221
+2026-04-06 18:24:39,138 [INFO]   Variant A rank_genes__agnostic: AUROC=0.6136 MCC=0.1492
+2026-04-06 18:24:41,686 [INFO]   Variant A rank_plus_all_pathways__agnostic: AUROC=0.6062 MCC=0.1290
+2026-04-06 18:24:41,686 [INFO] 
+Variant B: Affymetrix → Agilent
+2026-04-06 18:24:43,948 [INFO]   Variant B rank_plus_singscore_reo_knowledge__agnostic: AUROC=0.4929 MCC=-0.0021
+2026-04-06 18:24:46,153 [INFO]   Variant B rank_genes__agnostic: AUROC=0.4911 MCC=-0.0197
+2026-04-06 18:24:48,503 [INFO]   Variant B rank_plus_all_pathways__agnostic: AUROC=0.4870 MCC=0.0062
+2026-04-06 18:24:48,503 [INFO] 
+Variant C: Per-dataset RNA-seq holdout
+2026-04-06 18:24:48,503 [INFO] RNA-seq datasets: ['BrighTNess', 'GSE104958']
+2026-04-06 18:24:50,997 [INFO]   Variant C rank_plus_singscore_reo_knowledge__agnostic/BrighTNess: AUROC=0.5932 MCC=0.1089
+2026-04-06 18:24:53,398 [INFO]   Variant C rank_genes__agnostic/BrighTNess: AUROC=0.5972 MCC=0.1396
+2026-04-06 18:24:55,921 [INFO]   Variant C rank_plus_all_pathways__agnostic/BrighTNess: AUROC=0.6114 MCC=0.1265
+2026-04-06 18:24:58,447 [INFO]   Variant C rank_plus_singscore_reo_knowledge__agnostic/GSE104958: AUROC=0.7672 MCC=0.3657
+2026-04-06 18:25:00,845 [INFO]   Variant C rank_genes__agnostic/GSE104958: AUROC=0.7500 MCC=0.4066
+2026-04-06 18:25:03,426 [INFO]   Variant C rank_plus_all_pathways__agnostic/GSE104958: AUROC=0.6152 MCC=0.1780
+2026-04-06 18:25:03,426 [INFO] ======================================================================
+2026-04-06 18:25:03,426 [INFO] STEP 6: Results + production config selection
+2026-04-06 18:25:03,426 [INFO] ======================================================================
+2026-04-06 18:25:03,435 [INFO] 
+Production config ranking (standard LODO):
+2026-04-06 18:25:03,435 [INFO]   rank_plus_singscore_reo_knowledge__agnostic         AUROC=0.6019  AUPRC=0.6191  MCC=0.1566  composite=0.5998
+2026-04-06 18:25:03,435 [INFO]   rank_genes__agnostic                                AUROC=0.5997  AUPRC=0.6060  MCC=0.1634  composite=0.5958
+2026-04-06 18:25:03,435 [INFO]   rank_plus_ssgsea__agnostic                          AUROC=0.5954  AUPRC=0.6129  MCC=0.1458  composite=0.5937
+2026-04-06 18:25:03,435 [INFO]   rank_plus_singscore__agnostic                       AUROC=0.5948  AUPRC=0.6149  MCC=0.1382  composite=0.5929
+2026-04-06 18:25:03,435 [INFO]   rank_plus_all_pathways__agnostic                    AUROC=0.5954  AUPRC=0.6099  MCC=0.1393  composite=0.5916
+2026-04-06 18:25:03,435 [INFO]   rank_genes__platform_covariate                      AUROC=0.5929  AUPRC=0.6131  MCC=0.1359  composite=0.5913
+2026-04-06 18:25:03,435 [INFO]   rank_plus_all_pathways__platform_covariate          AUROC=0.5913  AUPRC=0.6077  MCC=0.1425  composite=0.5901
+2026-04-06 18:25:03,435 [INFO]   raw_common__agnostic                                AUROC=0.5781  AUPRC=0.6117  MCC=0.1379  composite=0.5862
+2026-04-06 18:25:03,435 [INFO]   singscore_only__agnostic                            AUROC=0.5765  AUPRC=0.5828  MCC=0.1119  composite=0.5718
+2026-04-06 18:25:03,435 [INFO]   ssgsea_only__agnostic                               AUROC=0.5441  AUPRC=0.5584  MCC=0.0530  composite=0.5430
+2026-04-06 18:25:03,436 [INFO] 
+variant_A_microarray_to_rnaseq:
+2026-04-06 18:25:03,436 [INFO]   rank_plus_singscore_reo_knowledge__agnostic: AUROC=0.5898 MCC=0.1221
+2026-04-06 18:25:03,436 [INFO]   rank_genes__agnostic: AUROC=0.6136 MCC=0.1492
+2026-04-06 18:25:03,436 [INFO]   rank_plus_all_pathways__agnostic: AUROC=0.6062 MCC=0.1290
+2026-04-06 18:25:03,436 [INFO] 
+variant_B_affy_to_agilent:
+2026-04-06 18:25:03,436 [INFO]   rank_plus_singscore_reo_knowledge__agnostic: AUROC=0.4929 MCC=-0.0021
+2026-04-06 18:25:03,436 [INFO]   rank_genes__agnostic: AUROC=0.4911 MCC=-0.0197
+2026-04-06 18:25:03,437 [INFO]   rank_plus_all_pathways__agnostic: AUROC=0.4870 MCC=0.0062
+2026-04-06 18:25:03,437 [INFO] 
+variant_C_rnaseq_holdout_BrighTNess:
+2026-04-06 18:25:03,437 [INFO]   rank_plus_singscore_reo_knowledge__agnostic: AUROC=0.5932 MCC=0.1089
+2026-04-06 18:25:03,437 [INFO]   rank_genes__agnostic: AUROC=0.5972 MCC=0.1396
+2026-04-06 18:25:03,437 [INFO]   rank_plus_all_pathways__agnostic: AUROC=0.6114 MCC=0.1265
+2026-04-06 18:25:03,437 [INFO] 
+variant_C_rnaseq_holdout_GSE104958:
+2026-04-06 18:25:03,437 [INFO]   rank_plus_singscore_reo_knowledge__agnostic: AUROC=0.7672 MCC=0.3657
+2026-04-06 18:25:03,437 [INFO]   rank_genes__agnostic: AUROC=0.7500 MCC=0.4066
+2026-04-06 18:25:03,438 [INFO]   rank_plus_all_pathways__agnostic: AUROC=0.6152 MCC=0.1780
+2026-04-06 18:25:03,438 [INFO] 
+Best production config: rank_plus_singscore_reo_knowledge__agnostic
+2026-04-06 18:25:03,438 [INFO] Done. Results in /Users/marinaesteban-medina/Desktop/INVEREX/inverex-mvp/results/cross_platform/

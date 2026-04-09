@@ -1,0 +1,112 @@
+2026-04-06 23:23:36,879 [INFO] Loading data...
+2026-04-06 23:23:56,679 [INFO] 40 datasets, 5598 patients, 918 genes
+2026-04-06 23:23:56,679 [INFO] ============================================================
+2026-04-06 23:23:56,679 [INFO] PHASE 1A: Parsing SOFT files for clinical metadata
+2026-04-06 23:23:56,679 [INFO] ============================================================
+2026-04-06 23:26:20,419 [INFO] Parsed clinical metadata for 1932 samples
+2026-04-06 23:26:20,422 [INFO]   er_status: 1043 samples
+2026-04-06 23:26:20,422 [INFO]   her2_status: 1344 samples
+2026-04-06 23:26:20,422 [INFO]   pr_status: 556 samples
+2026-04-06 23:26:20,422 [INFO]   pam50_subtype: 0 samples
+2026-04-06 23:26:20,422 [INFO]   tumor_grade: 1096 samples
+2026-04-06 23:26:20,422 [INFO] ============================================================
+2026-04-06 23:26:20,422 [INFO] PHASE 1B: Pooling data and building expression proxies
+2026-04-06 23:26:20,422 [INFO] ============================================================
+2026-04-06 23:26:25,122 [INFO] Pooled: (5598, 918)
+2026-04-06 23:26:25,197 [INFO] Clinical metadata coverage in pooled data:
+2026-04-06 23:26:25,198 [INFO]   ER status: 646/5598 (11.5%)
+2026-04-06 23:26:25,198 [INFO]   HER2 status: 783/5598 (14.0%)
+2026-04-06 23:26:25,198 [INFO]   PR status: 552/5598 (9.9%)
+2026-04-06 23:26:25,198 [INFO]   PAM50 metadata: 0/5598 (0.0%)
+2026-04-06 23:26:25,632 [INFO]   TNBC derived: 1352/5598
+2026-04-06 23:26:25,632 [INFO] Building expression-derived proxies...
+2026-04-06 23:26:28,043 [INFO] PAM50 genes present: 17/50
+2026-04-06 23:26:38,854 [INFO] Built 19 proxy variables
+2026-04-06 23:26:38,854 [INFO] ============================================================
+2026-04-06 23:26:38,854 [INFO] PHASE 2: NMI analysis
+2026-04-06 23:26:38,854 [INFO] ============================================================
+2026-04-06 23:26:39,847 [INFO] 
+Top 15 proxies by response_specificity:
+2026-04-06 23:26:39,847 [INFO]   proxy_pr_status_meta                 NMI(Y)=0.0623  NMI(DS)=0.0118  NMI(tech)=0.0168  spec=0.0455  n=552
+2026-04-06 23:26:39,847 [INFO]   proxy_CCND1_rank                     NMI(Y)=0.0067  NMI(DS)=0.0784  NMI(tech)=0.0944  spec=0.0000  n=5598
+2026-04-06 23:26:39,847 [INFO]   proxy_proliferation_score_binary     NMI(Y)=0.0018  NMI(DS)=0.0115  NMI(tech)=0.0160  spec=0.0000  n=5598
+2026-04-06 23:26:39,847 [INFO]   proxy_her2_status_meta               NMI(Y)=0.0494  NMI(DS)=0.3183  NMI(tech)=0.0040  spec=0.0000  n=783
+2026-04-06 23:26:39,847 [INFO]   proxy_er_status_meta                 NMI(Y)=0.0077  NMI(DS)=0.0474  NMI(tech)=0.0040  spec=0.0000  n=646
+2026-04-06 23:26:39,847 [INFO]   proxy_kmeans_5                       NMI(Y)=0.0099  NMI(DS)=0.1012  NMI(tech)=0.0667  spec=0.0000  n=5598
+2026-04-06 23:26:39,847 [INFO]   proxy_kmeans_4                       NMI(Y)=0.0103  NMI(DS)=0.0659  NMI(tech)=0.0693  spec=0.0000  n=5598
+2026-04-06 23:26:39,847 [INFO]   proxy_kmeans_3                       NMI(Y)=0.0027  NMI(DS)=0.0385  NMI(tech)=0.0577  spec=0.0000  n=5598
+2026-04-06 23:26:39,847 [INFO]   proxy_kmeans_2                       NMI(Y)=0.0043  NMI(DS)=0.0223  NMI(tech)=0.0448  spec=0.0000  n=5598
+2026-04-06 23:26:39,847 [INFO]   proxy_proliferation_score_tertile    NMI(Y)=0.0024  NMI(DS)=0.0433  NMI(tech)=0.0758  spec=0.0000  n=5598
+2026-04-06 23:26:39,847 [INFO]   proxy_TOP2A_rank                     NMI(Y)=0.0027  NMI(DS)=0.0645  NMI(tech)=0.0948  spec=0.0000  n=5598
+2026-04-06 23:26:39,847 [INFO]   proxy_proliferation_score            NMI(Y)=0.0025  NMI(DS)=0.0631  NMI(tech)=0.0933  spec=0.0000  n=5598
+2026-04-06 23:26:39,847 [INFO]   proxy_GATA3_rank                     NMI(Y)=0.0040  NMI(DS)=0.0786  NMI(tech)=0.0940  spec=0.0000  n=5598
+2026-04-06 23:26:39,847 [INFO]   proxy_AKT1_rank                      NMI(Y)=0.0014  NMI(DS)=0.0649  NMI(tech)=0.0940  spec=0.0000  n=5598
+2026-04-06 23:26:39,847 [INFO]   proxy_FOXO3_rank                     NMI(Y)=0.0031  NMI(DS)=0.0619  NMI(tech)=0.0934  spec=0.0000  n=5598
+2026-04-06 23:26:39,847 [INFO] 
+Top 10 by raw NMI(Y):
+2026-04-06 23:26:39,848 [INFO]   proxy_pr_status_meta                 NMI(Y)=0.0623
+2026-04-06 23:26:39,848 [INFO]   proxy_her2_status_meta               NMI(Y)=0.0494
+2026-04-06 23:26:39,848 [INFO]   proxy_kmeans_4                       NMI(Y)=0.0103
+2026-04-06 23:26:39,848 [INFO]   proxy_kmeans_5                       NMI(Y)=0.0099
+2026-04-06 23:26:39,848 [INFO]   proxy_er_status_meta                 NMI(Y)=0.0077
+2026-04-06 23:26:39,848 [INFO]   proxy_CCND1_rank                     NMI(Y)=0.0067
+2026-04-06 23:26:39,848 [INFO]   proxy_kmeans_2                       NMI(Y)=0.0043
+2026-04-06 23:26:39,848 [INFO]   proxy_GATA3_rank                     NMI(Y)=0.0040
+2026-04-06 23:26:39,848 [INFO]   proxy_FOXO3_rank                     NMI(Y)=0.0031
+2026-04-06 23:26:39,848 [INFO]   proxy_TOP2A_rank                     NMI(Y)=0.0027
+2026-04-06 23:26:39,848 [INFO] ============================================================
+2026-04-06 23:26:39,848 [INFO] PHASE 3: Proxy-guided ComBat LODO
+2026-04-06 23:26:39,848 [INFO] ============================================================
+2026-04-06 23:26:39,850 [INFO] 
+--- baseline_no_combat ---
+2026-04-06 23:29:15,015 [INFO]   → baseline_no_combat: AUROC=0.5949  AUPRC=0.6143  MCC=0.1267  (155s)
+2026-04-06 23:29:15,016 [INFO] 
+--- combat_no_covariate ---
+2026-04-06 23:31:49,602 [INFO]   → combat_no_covariate: AUROC=0.5877  AUPRC=0.6105  MCC=0.1122  (155s)
+2026-04-06 23:31:49,602 [INFO] 
+--- combat_pam50_computed ---
+2026-04-06 23:31:49,602 [WARNING]   Correction failed: 'proxy_pam50_computed'
+2026-04-06 23:31:49,602 [INFO] 
+--- combat_kmeans_5 ---
+2026-04-06 23:33:33,512 [INFO]   → combat_kmeans_5: AUROC=0.5907  AUPRC=0.6117  MCC=0.1273  (104s)
+2026-04-06 23:33:33,513 [INFO] 
+--- combat_prolif_tertile ---
+2026-04-06 23:35:17,735 [INFO]   → combat_prolif_tertile: AUROC=0.5849  AUPRC=0.6178  MCC=0.1363  (104s)
+2026-04-06 23:35:17,735 [INFO] 
+--- combat_er_score_binary ---
+2026-04-06 23:35:17,735 [WARNING]   Correction failed: 'proxy_er_score_binary'
+2026-04-06 23:35:17,735 [INFO] 
+--- combat_her2_score_binary ---
+2026-04-06 23:35:17,735 [WARNING]   Correction failed: 'proxy_her2_score_binary'
+2026-04-06 23:35:17,735 [INFO] 
+--- combat_basal_score_binary ---
+2026-04-06 23:35:17,736 [WARNING]   Correction failed: 'proxy_basal_score_binary'
+2026-04-06 23:35:17,736 [INFO] 
+--- combat_prolif_er_combo ---
+2026-04-06 23:35:17,736 [WARNING]   Correction failed: 'proxy_er_score_binary'
+2026-04-06 23:35:17,736 [INFO] 
+--- combat_pam50_prolif ---
+2026-04-06 23:35:17,736 [WARNING]   Correction failed: 'proxy_pam50_computed'
+2026-04-06 23:35:17,736 [INFO] 
+--- combat_response_LEAKED ---
+2026-04-06 23:37:00,468 [INFO]   → combat_response_LEAKED: AUROC=0.5899  AUPRC=0.6249  MCC=0.1588  (103s)
+2026-04-06 23:37:00,468 [INFO] ============================================================
+2026-04-06 23:37:00,468 [INFO] PHASE 4: Information recovery
+2026-04-06 23:37:00,468 [INFO] ============================================================
+2026-04-06 23:37:00,475 [INFO] 
+Baseline (no ComBat): AUROC=0.5949, MCC=0.1267
+2026-04-06 23:37:00,475 [INFO] Leaked (response covariate): AUROC=0.5899, MCC=0.1588
+2026-04-06 23:37:00,475 [INFO] Gap to recover: AUROC=-0.0050, MCC=+0.0322
+2026-04-06 23:37:00,475 [INFO] 
+Full comparison:
+2026-04-06 23:37:00,475 [INFO]   baseline_no_combat                   AUROC=0.5949  MCC=0.1267  recovery=-0.0%
+2026-04-06 23:37:00,475 [INFO]   combat_kmeans_5                      AUROC=0.5907  MCC=0.1273  recovery=+83.8%
+2026-04-06 23:37:00,475 [INFO]   combat_response_LEAKED               AUROC=0.5899  MCC=0.1588  recovery=+100.0% [LEAKED upper bound]
+2026-04-06 23:37:00,475 [INFO]   combat_no_covariate                  AUROC=0.5877  MCC=0.1122  recovery=+143.9%
+2026-04-06 23:37:00,475 [INFO]   combat_prolif_tertile                AUROC=0.5849  MCC=0.1363  recovery=+150.0%
+2026-04-06 23:37:00,476 [INFO] 
+Decision gate:
+2026-04-06 23:37:00,476 [INFO]   Best proxy AUROC: 0.5949
+2026-04-06 23:37:00,476 [INFO]   ✗ FAILED — no proxy materially improves over baseline
+2026-04-06 23:37:00,476 [INFO] 
+Done. Results in /Users/marinaesteban-medina/Desktop/INVEREX/inverex-mvp/results/proxy_analysis/

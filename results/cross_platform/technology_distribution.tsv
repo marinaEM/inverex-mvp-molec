@@ -1,0 +1,4 @@
+technology	n_datasets	n_patients	mean_response_rate
+affymetrix	24	2642	0.464
+agilent	12	2030	0.545
+rnaseq	2	528	0.375

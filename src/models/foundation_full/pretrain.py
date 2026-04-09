@@ -1,5 +1,5 @@
 """
-Foundation Model Pretraining (Full) -- Agent C
+Foundation Model Pretraining (Full)
 ===============================================
 Multi-objective pretraining with domain adversarial training on ALL expression data.
 
@@ -48,7 +48,7 @@ from models.foundation_full.expression_encoder import (
 
 logger = logging.getLogger(__name__)
 
-RESULTS = ROOT / "results" / "agent_c_full"
+RESULTS = ROOT / "results" / "foundation_full"
 DATA_RAW = ROOT / "data" / "raw"
 DATA_CACHE = ROOT / "data" / "cache"
 

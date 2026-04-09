@@ -1,0 +1,101 @@
+2026-04-06 20:01:39,942 [INFO] Loading data...
+2026-04-06 20:02:04,517 [INFO] 40 datasets, 5598 patients, 918 genes
+2026-04-06 20:02:05,325 [INFO] Pooled: (5598, 918)
+2026-04-06 20:02:05,325 [INFO] ============================================================
+2026-04-06 20:02:05,325 [INFO] PHASE 0: GSE104958 investigation
+2026-04-06 20:02:05,325 [INFO] ============================================================
+2026-04-06 20:02:07,253 [INFO] Downloading and generating Enrichr library gene sets...
+2026-04-06 20:02:07,253 [INFO] Library is already downloaded in: /Users/marinaesteban-medina/.cache/gseapy/Enrichr.MSigDB_Hallmark_2020.gmt, use local file
+2026-04-06 20:02:10,445 [INFO] GSE104958: drug=cisplatin+docetaxel+fluorouracil, n=46, resp_rate=0.26
+2026-04-06 20:02:10,446 [INFO] AUROC=0.598 (95% CI: 0.378-0.805), verdict=WIDE_CI
+2026-04-06 20:02:10,448 [INFO] ============================================================
+2026-04-06 20:02:10,448 [INFO] PHASE 1: Drug feature construction
+2026-04-06 20:02:10,448 [INFO] ============================================================
+2026-04-06 20:02:10,448 [INFO] Unique regimens: 31, anchor drugs with SMILES: 17
+2026-04-06 20:02:11,210 [INFO] ECFP4: 17 drugs x 1024 bits
+2026-04-06 20:02:11,225 [INFO] GDSC2 drug targets: 249 drugs
+2026-04-06 20:02:11,226 [INFO] Building per-sample drug features...
+2026-04-06 20:02:12,896 [INFO] ECFP4 per-sample: (5598, 1024)
+2026-04-06 20:02:12,896 [INFO] Drug-target per-sample: (5598, 4)
+2026-04-06 20:02:12,896 [INFO] ============================================================
+2026-04-06 20:02:12,896 [INFO] PHASE 2: LODO experiment grid
+2026-04-06 20:02:12,896 [INFO] ============================================================
+2026-04-06 20:02:12,897 [INFO] 
+--- baseline_rank_singscore_reo ---
+2026-04-06 20:03:52,073 [INFO]   → baseline_rank_singscore_reo: AUROC=0.5952  AUPRC=0.6179  MCC=0.1512  (99s)
+2026-04-06 20:03:52,073 [INFO] 
+--- D1_rank_ecfp4 ---
+2026-04-06 20:05:38,079 [INFO]   → D1_rank_ecfp4: AUROC=0.5952  AUPRC=0.6125  MCC=0.1454  (106s)
+2026-04-06 20:05:38,079 [INFO] 
+--- D4_rank_dtf ---
+2026-04-06 20:07:20,537 [INFO]   → D4_rank_dtf: AUROC=0.5852  AUPRC=0.6079  MCC=0.1463  (102s)
+2026-04-06 20:07:20,537 [INFO] 
+--- D5_rank_ecfp4_dtf ---
+2026-04-06 20:09:06,930 [INFO]   → D5_rank_ecfp4_dtf: AUROC=0.5994  AUPRC=0.6147  MCC=0.1192  (106s)
+2026-04-06 20:09:06,931 [INFO] 
+--- D6_baseline_ecfp4 ---
+2026-04-06 20:10:58,006 [INFO]   → D6_baseline_ecfp4: AUROC=0.5841  AUPRC=0.6044  MCC=0.1343  (111s)
+2026-04-06 20:10:58,006 [INFO] 
+--- D8_baseline_ecfp4_dtf ---
+2026-04-06 20:13:12,571 [INFO]   → D8_baseline_ecfp4_dtf: AUROC=0.5980  AUPRC=0.6226  MCC=0.1202  (135s)
+2026-04-06 20:13:12,572 [INFO] 
+--- D10_rank_dataset_id ---
+2026-04-06 20:15:11,923 [INFO]   → D10_rank_dataset_id: AUROC=0.5809  AUPRC=0.5995  MCC=0.1237  (119s)
+2026-04-06 20:15:11,924 [INFO] ============================================================
+2026-04-06 20:15:11,924 [INFO] RESULTS
+2026-04-06 20:15:11,924 [INFO] ============================================================
+2026-04-06 20:15:11,934 [INFO] 
+Full comparison:
+2026-04-06 20:15:11,934 [INFO]   D5_rank_ecfp4_dtf                         AUROC=0.5994  AUPRC=0.6147  MCC=0.1192
+2026-04-06 20:15:11,934 [INFO]   D8_baseline_ecfp4_dtf                     AUROC=0.5980  AUPRC=0.6226  MCC=0.1202
+2026-04-06 20:15:11,934 [INFO]   baseline_rank_singscore_reo               AUROC=0.5952  AUPRC=0.6179  MCC=0.1512
+2026-04-06 20:15:11,934 [INFO]   D1_rank_ecfp4                             AUROC=0.5952  AUPRC=0.6125  MCC=0.1454
+2026-04-06 20:15:11,934 [INFO]   D4_rank_dtf                               AUROC=0.5852  AUPRC=0.6079  MCC=0.1463
+2026-04-06 20:15:11,934 [INFO]   D6_baseline_ecfp4                         AUROC=0.5841  AUPRC=0.6044  MCC=0.1343
+2026-04-06 20:15:11,935 [INFO]   D10_rank_dataset_id                       AUROC=0.5809  AUPRC=0.5995  MCC=0.1237 [EXPLORATORY]
+2026-04-06 20:15:11,937 [INFO] 
+Per-drug delta (D5_rank_ecfp4_dtf vs baseline):
+2026-04-06 20:15:11,937 [INFO]   GSE63885        (platinum_chemotherapy         ): 0.185 → 0.390 (+0.205) +
+2026-04-06 20:15:11,937 [INFO]   GSE41998        (cyclophosphamide+doxorubicin+ixabepilone): 0.462 → 0.580 (+0.118) +
+2026-04-06 20:15:11,937 [INFO]   GSE20181        (letrozole                     ): 0.249 → 0.362 (+0.114) +
+2026-04-06 20:15:11,937 [INFO]   GSE50948        (doxorubicin+paclitaxel+cyclophosphamide+fluorouracil+methotrexate+trastuzumab): 0.445 → 0.545 (+0.100) +
+2026-04-06 20:15:11,937 [INFO]   GSE19293        (melphalan                     ): 0.496 → 0.576 (+0.080) +
+2026-04-06 20:15:11,937 [INFO]   GSE44272        (trastuzumab                   ): 0.383 → 0.460 (+0.078) +
+2026-04-06 20:15:11,937 [INFO]   GSE14671        (imatinib                      ): 0.515 → 0.589 (+0.075) +
+2026-04-06 20:15:11,937 [INFO]   GSE68871        (bortezomib+thalidomide+dexamethasone): 0.643 → 0.703 (+0.060) +
+2026-04-06 20:15:11,937 [INFO]   GSE73578        (glucocorticoids               ): 0.510 → 0.565 (+0.055) +
+2026-04-06 20:15:11,937 [INFO]   GSE104958       (cisplatin+docetaxel+fluorouracil): 0.598 → 0.637 (+0.039) +
+2026-04-06 20:15:11,937 [INFO]   GSE22093        (taxane+anthracycline          ): 0.723 → 0.761 (+0.039) +
+2026-04-06 20:15:11,937 [INFO]   GSE20271        (cyclophosphamide+doxorubicin+fluorouracil): 0.773 → 0.805 (+0.032) +
+2026-04-06 20:15:11,938 [INFO]   GSE37946        (trastuzumab+chemotherapy      ): 0.649 → 0.680 (+0.031) +
+2026-04-06 20:15:11,938 [INFO]   GSE32646        (cyclophosphamide+epirubicin+fluorouracil+paclitaxel): 0.649 → 0.675 (+0.026) +
+2026-04-06 20:15:11,938 [INFO]   GSE8970         (tipifarnib                    ): 0.580 → 0.604 (+0.024) +
+2026-04-06 20:15:11,938 [INFO]   GSE6861         (cyclophosphamide+epirubicin+fluorouracil): 0.855 → 0.877 (+0.022) +
+2026-04-06 20:15:11,938 [INFO]   GSE62321        (chemotherapy                  ): 0.395 → 0.414 (+0.020) =
+2026-04-06 20:15:11,938 [INFO]   GSE65021        (cetuximab+platinum            ): 0.685 → 0.703 (+0.018) =
+2026-04-06 20:15:11,938 [INFO]   ISPY2           (docetaxel+doxorubicin+cyclophosphamide): 0.508 → 0.522 (+0.013) =
+2026-04-06 20:15:11,938 [INFO]   GSE66999        (docetaxel+epirubicin+pegfilgrastim): 0.493 → 0.500 (+0.007) =
+2026-04-06 20:15:11,938 [INFO]   GSE61676        (unknown                       ): 0.500 → 0.500 (+0.000) =
+2026-04-06 20:15:11,938 [INFO]   BrighTNess      (veliparib+carboplatin+paclitaxel): 0.615 → 0.613 (-0.002) =
+2026-04-06 20:15:11,938 [INFO]   GSE4779         (cyclophosphamide+epirubicin+fluorouracil): 0.992 → 0.985 (-0.008) =
+2026-04-06 20:15:11,938 [INFO]   GSE25066        (anthracycline+taxane          ): 0.892 → 0.881 (-0.011) =
+2026-04-06 20:15:11,938 [INFO]   GSE14615        (doxorubicin+mercaptopurine+methotrexate+prednisone+vincristine): 0.429 → 0.417 (-0.012) =
+2026-04-06 20:15:11,938 [INFO]   GSE104645       (fluorouracil+leucovorin+oxaliplatin): 0.556 → 0.540 (-0.016) =
+2026-04-06 20:15:11,938 [INFO]   GSE9782         (unknown                       ): 0.482 → 0.457 (-0.025) -
+2026-04-06 20:15:11,938 [INFO]   GSE72970        (chemotherapy+targeted         ): 0.505 → 0.477 (-0.028) -
+2026-04-06 20:15:11,938 [INFO]   GSE23988        (docetaxel                     ): 0.980 → 0.949 (-0.032) -
+2026-04-06 20:15:11,938 [INFO]   GSE20194        (cyclophosphamide+doxorubicin+fluorouracil+paclitaxel): 0.962 → 0.928 (-0.034) -
+2026-04-06 20:15:11,938 [INFO]   GSE131978       (platinum_chemotherapy         ): 0.523 → 0.474 (-0.050) -
+2026-04-06 20:15:11,938 [INFO]   GSE35640        (immunotherapy_peptide_vaccine ): 0.600 → 0.544 (-0.056) -
+2026-04-06 20:15:11,938 [INFO]   GSE76360        (trastuzumab                   ): 0.600 → 0.542 (-0.058) -
+2026-04-06 20:15:11,938 [INFO]   GSE82172        (tamoxifen                     ): 0.464 → 0.397 (-0.067) -
+2026-04-06 20:15:11,938 [INFO]   GSE21974        (docetaxel                     ): 0.660 → 0.591 (-0.068) -
+2026-04-06 20:15:11,938 [INFO]   GSE48905        (tamoxifen                     ): 0.539 → 0.467 (-0.072) -
+2026-04-06 20:15:11,939 [INFO]   GSE5122         (tipifarnib                    ): 0.943 → 0.863 (-0.080) -
+2026-04-06 20:15:11,939 [INFO]   GSE109211       (sorafenib                     ): 0.561 → 0.458 (-0.103) -
+2026-04-06 20:15:11,939 [INFO]   GSE173263       (rituximab+cyclophosphamide+doxorubicin+vincristine+prednisolone): 0.655 → 0.545 (-0.110) -
+2026-04-06 20:15:11,939 [INFO]   GSE28702        (fluorouracil+leucovorin+oxaliplatin): 0.558 → 0.400 (-0.158) -
+2026-04-06 20:15:11,939 [INFO] 
+  Improved: 16/40, Hurt: 14/40
+2026-04-06 20:15:11,939 [INFO] 
+Done. Results in /Users/marinaesteban-medina/Desktop/INVEREX/inverex-mvp/results/drug_aware/

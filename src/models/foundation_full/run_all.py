@@ -1,5 +1,5 @@
 """
-Agent C Full Pipeline Runner
+Foundation Model Full Pipeline Runner
 =============================
 Runs ALL stages sequentially:
 1. Main pretraining (medium, hybrid, all objectives)
@@ -24,7 +24,7 @@ os.environ["KMP_DUPLICATE_LIB_OK"] = "TRUE"
 ROOT = Path(__file__).resolve().parents[3]
 sys.path.insert(0, str(ROOT / "src"))
 
-RESULTS = ROOT / "results" / "agent_c_full"
+RESULTS = ROOT / "results" / "foundation_full"
 RESULTS.mkdir(parents=True, exist_ok=True)
 
 logging.basicConfig(
@@ -42,7 +42,7 @@ from models.foundation_full.evaluate import run_full_pipeline
 
 if __name__ == "__main__":
     t0 = time.time()
-    logger.info("Starting Agent C Full Pipeline")
+    logger.info("Starting Foundation Model Full Pipeline")
     results = run_full_pipeline()
     total = time.time() - t0
     logger.info("Full pipeline complete in %.1f hours", total / 3600)

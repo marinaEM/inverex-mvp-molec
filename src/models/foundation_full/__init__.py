@@ -1,5 +1,5 @@
 """
-INVEREX Foundation Model (Full) -- Agent C
+INVEREX Foundation Model (Full)
 ==========================================
 Comprehensive gene-aware expression encoder with multi-objective pretraining,
 domain-adversarial training, input-encoding ablations, and rigorous LODO evaluation.

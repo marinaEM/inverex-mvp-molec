@@ -1,0 +1,5 @@
+feature_set	mean_auc	std_auc	median_auc	n_datasets
+A_ssGSEA_Hallmark	0.6366	0.1108	0.6482	8
+B_PROGENy_only	0.5989	0.0703	0.6006	8
+C_ssGSEA_plus_PROGENy	0.6261	0.1096	0.6435	8
+D_PROGENy_drug_specific	0.5993	0.0704	0.6016	8

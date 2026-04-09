@@ -29,4 +29,6 @@ data/processed/
 .streamlit/secrets.toml
 .claude/
 CLAUDE.md
-INVEREX_FOLLOWUP_PROMPT.md
+INVEREX_*_PROMPT.md
+cross_platform_training_strategy.md
+inverex_ctrdb_platform_inventory.csv

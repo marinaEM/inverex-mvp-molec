@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <!-- Unique label for this LaunchAgent -->
+    <key>Label</key>
+    <string>com.inverex.overnight</string>
+
+    <!-- Program: the orchestrator script (absolute path) -->
+    <key>ProgramArguments</key>
+    <array>
+        <string>/Users/marinaesteban-medina/Desktop/INVEREX/inverex-mvp/scripts/overnight/run_overnight_benchmark.sh</string>
+    </array>
+
+    <!--
+        Run-at-load: also fire on every login/boot.
+        The orchestrator has a date gate inside, so on early invocations
+        it will exit immediately. After 2026-04-08 14:00 it will run for real.
+        After completion, completed.flag prevents re-runs.
+    -->
+    <key>RunAtLoad</key>
+    <true/>
+
+    <!--
+        Calendar trigger: Wednesday 2026-04-08 14:00 local time
+        - Day=8, Month=4 (April), Hour=14, Minute=0
+        - launchd will fire the job at this exact time IF the machine is awake.
+        - If the machine is off/asleep, launchd queues the job and runs it
+          when the machine wakes up (within a reasonable window).
+    -->
+    <key>StartCalendarInterval</key>
+    <dict>
+        <key>Month</key>
+        <integer>4</integer>
+        <key>Day</key>
+        <integer>8</integer>
+        <key>Hour</key>
+        <integer>14</integer>
+        <key>Minute</key>
+        <integer>0</integer>
+    </dict>
+
+    <!--
+        Working directory: project root.
+        The orchestrator also cd's internally as a safety net.
+    -->
+    <key>WorkingDirectory</key>
+    <string>/Users/marinaesteban-medina/Desktop/INVEREX/inverex-mvp</string>
+
+    <!--
+        Environment: launchd starts with a minimal PATH. We add Homebrew
+        and standard locations so pixi (typically in /opt/homebrew/bin or
+        /usr/local/bin) can be found.
+    -->
+    <key>EnvironmentVariables</key>
+    <dict>
+        <key>PATH</key>
+        <string>/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin</string>
+        <key>HOME</key>
+        <string>/Users/marinaesteban-medina</string>
+    </dict>
+
+    <!--
+        Capture launchd-level stdout/stderr (in case the script itself
+        can't be invoked). Once the script runs, it writes its own logs
+        into the bench logs/ directory.
+    -->
+    <key>StandardOutPath</key>
+    <string>/Users/marinaesteban-medina/Desktop/INVEREX/inverex-mvp/results/overnight_model_signal_benchmark/logs/launchd_stdout.log</string>
+    <key>StandardErrorPath</key>
+    <string>/Users/marinaesteban-medina/Desktop/INVEREX/inverex-mvp/results/overnight_model_signal_benchmark/logs/launchd_stderr.log</string>
+
+    <!-- Don't restart on exit (one-shot benchmark) -->
+    <key>KeepAlive</key>
+    <false/>
+
+    <!--
+        Process priority: normal. The orchestrator uses caffeinate internally
+        to prevent system sleep during execution.
+    -->
+    <key>Nice</key>
+    <integer>0</integer>
+</dict>
+</plist>

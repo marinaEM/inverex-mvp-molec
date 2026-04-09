@@ -1,0 +1,2 @@
+method	mean_auc	std_auc	median_auc	n_folds
+batch_combat_per_fold	0.5763331850424468	0.18251449577736562	0.5446640965871734	40

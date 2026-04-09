@@ -27,7 +27,7 @@ logger = logging.getLogger(__name__)
 ROOT = Path(__file__).resolve().parents[3]  # inverex-mvp
 DATA_RAW = ROOT / "data" / "raw"
 DATA_CACHE = ROOT / "data" / "cache"
-RESULTS = ROOT / "results" / "agent_c_full"
+RESULTS = ROOT / "results" / "foundation_full"
 
 
 def _load_dataset_genes(path: Path) -> set[str]:

@@ -1,5 +1,5 @@
 """
-Foundation Model Evaluation (Full) -- Agent C
+Foundation Model Evaluation (Full)
 ==============================================
 Comprehensive evaluation including:
 
@@ -60,7 +60,7 @@ from models.foundation_full.pretrain import (
 
 logger = logging.getLogger(__name__)
 
-RESULTS = ROOT / "results" / "agent_c_full"
+RESULTS = ROOT / "results" / "foundation_full"
 DATA_RAW = ROOT / "data" / "raw"
 DATA_CACHE = ROOT / "data" / "cache"
 
@@ -365,7 +365,7 @@ def run_lodo_evaluation(
     Methods:
       A. LightGBM on 212 landmark genes
       B. LightGBM on 212 + pathways
-      C. LightGBM on 212 + mutations/clinical (Agent A result approximation)
+      C. LightGBM on 212 + mutations/clinical (multimodal baseline)
       D. Foundation [CLS] -> MLP head (frozen encoder)
       E. Foundation [CLS] as LightGBM features (212 + [CLS])
       F. Foundation [CLS] + mutations/clinical -> LightGBM
@@ -696,7 +696,7 @@ def run_embedding_analysis(
 # ===========================================================================
 
 def run_full_pipeline():
-    """Execute the complete Agent C pipeline."""
+    """Execute the complete foundation model pipeline."""
     RESULTS.mkdir(parents=True, exist_ok=True)
     t_start = time.time()
 
@@ -974,14 +974,14 @@ def run_full_pipeline():
         "mean_auc": np.nan,
         "median_auc": np.nan,
         "known_baseline": 0.603,
-        "source": "Known (Agent B)",
+        "source": "Known baseline",
     })
     comparison.append({
         "method": "C. LightGBM 212 + mutations/clinical",
         "mean_auc": np.nan,
         "median_auc": np.nan,
         "known_baseline": 0.624,
-        "source": "Known (Agent A)",
+        "source": "Known baseline",
     })
     comparison.append({
         "method": "D. Foundation [CLS] -> MLP",

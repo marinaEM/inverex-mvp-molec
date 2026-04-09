@@ -30,7 +30,7 @@ os.environ["KMP_DUPLICATE_LIB_OK"] = "TRUE"
 logger = logging.getLogger(__name__)
 
 ROOT = Path(__file__).resolve().parents[3]  # inverex-mvp
-RESULTS = ROOT / "results" / "agent_c_full"
+RESULTS = ROOT / "results" / "foundation_full"
 
 N_MAG_BINS = 64
 MAG_CLIP = 3.0
