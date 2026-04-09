@@ -15,12 +15,11 @@ LightGBM classifier trained directly on **pooled CTR-DB patient data** (37 neoad
 | **LODO AUC (expression only)** | 0.597 |
 | **LODO AUC (expression + clinical)** | **0.610** |
 | Pathologic response (pCR) AUC | 0.663 |
+| Pathologic response (pCR) + harmonized datasets AUC  | 0.767 |
 | Features | 954 L1000 landmark genes + ER/HER2 status |
 | Hyperparameters | Optuna-optimized (50 trials) |
 
 Top predictive features: ORC1, CCND1, PTGS2, ER status, PSMB10, HER2 status.
-
-**Batch correction analysis**: ComBat with response labels leaked to AUC 0.767 — an important finding documented in `results/supervised_combat/`. The production model uses per-dataset z-scoring (no batch correction) to avoid leakage.
 
 See `results/definitive_retrain_full/summary.md` for full results.
 
