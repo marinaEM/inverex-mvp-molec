@@ -8,15 +8,13 @@
 
 ### Composite Personalized Ranker
 
-The ranking layer is now explicit and modular for each patient-drug pair:
+The ranking layer is modular for each patient-drug pair:
 
 - **RNA reversal score**: patient RNA dysregulation versus breast LINCS perturbation signatures
 - **Mutation / pathway score**: curated biomarker-pathway bonuses such as HER2 and PI3K/AKT/mTOR
 - **Subtype / tissue-context score**: PAM50-aware breast-cancer context rules
 - **Clinical actionability score**: favors clinically plausible breast-cancer agents and penalizes tool compounds
 - **Optional ML prior**: LightGBM cell-line inhibition model used only as an auxiliary ranking prior
-
-Final rankings are therefore not driven by perturbation potency alone.
 
 ### Auxiliary LightGBM Drug-Response Model
 **scoped to breast cancer cell lines** and **rebuilt locally** for interpretability:
